@@ -8,6 +8,8 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Spinner } from "@/components/ui/loader";
 import { EmptyState } from "@/components/ui/empty-state";
+import { BrowserAiPanel } from "@/components/app/browser-ai-panel";
+import type { GroundedCitation } from "@/lib/browser-ai";
 
 const PIPELINE_STEPS = [
   { title: "Ingestion", body: "Filings are pulled from SEC EDGAR, NSE, BSE, and official IR sites, then versioned with content hashes." },
@@ -37,6 +39,15 @@ export default function AiResearchPage() {
 
   const hasResults = submitted.length > 2 && results && results.length > 0;
   const showEmpty = submitted.length <= 2;
+
+  // The browser model only ever sees real retrieved snippets — never raw market
+  // data or the model's own prior — so it cannot invent a figure.
+  const citations: GroundedCitation[] = (results ?? []).map((hit) => ({
+    documentTitle: docTitle.get(hit.documentId) ?? "Financial filing",
+    section: hit.section,
+    page: hit.page,
+    text: hit.text,
+  }));
 
   return (
     <div className="mx-auto max-w-7xl space-y-6">
@@ -102,6 +113,7 @@ export default function AiResearchPage() {
               <p className="text-sm text-muted-foreground">
                 {results.length} citation{results.length !== 1 ? "s" : ""} for &ldquo;{submitted}&rdquo;
               </p>
+              <BrowserAiPanel question={submitted} citations={citations} />
               {results.map((r) => (
                 <Card key={r.id}>
                   <CardContent className="p-5">

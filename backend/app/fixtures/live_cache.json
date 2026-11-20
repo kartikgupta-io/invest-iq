@@ -1,5 +1,5 @@
 {
-  "savedAt": "2026-11-20T18:52:46.403174+00:00",
+  "savedAt": "2026-11-20T20:01:08.650638+00:00",
   "quotes": {
     "RELIANCE": {
       "name": "Reliance Industries Limited",
@@ -886,7 +886,7 @@
           "Raw PDF": null
         }
       },
-      "asOf": "2026-11-20T18:52:39.907831+00:00"
+      "asOf": "2026-11-20T20:01:00.859806+00:00"
     },
     "tcs": {
       "slug": "tcs",
@@ -1631,7 +1631,7 @@
           "Raw PDF": null
         }
       },
-      "asOf": "2026-11-20T18:52:41.096277+00:00"
+      "asOf": "2026-11-20T20:01:01.331071+00:00"
     },
     "infosys": {
       "slug": "infosys",
@@ -2378,7 +2378,7 @@
           "Raw PDF": null
         }
       },
-      "asOf": "2026-11-20T18:52:40.906818+00:00"
+      "asOf": "2026-11-20T20:01:01.765951+00:00"
     },
     "wipro": {
       "slug": "wipro",
@@ -3115,7 +3115,7 @@
           "Raw PDF": null
         }
       },
-      "asOf": "2026-11-20T18:52:41.186611+00:00"
+      "asOf": "2026-11-20T20:01:02.406692+00:00"
     },
     "hdfc-bank": {
       "slug": "hdfc-bank",
@@ -3838,7 +3838,7 @@
           "Raw PDF": null
         }
       },
-      "asOf": "2026-11-20T18:52:41.374681+00:00"
+      "asOf": "2026-11-20T20:01:02.818181+00:00"
     },
     "icici-bank": {
       "slug": "icici-bank",
@@ -4565,7 +4565,7 @@
           "Raw PDF": null
         }
       },
-      "asOf": "2026-11-20T18:52:41.692614+00:00"
+      "asOf": "2026-11-20T20:01:03.279044+00:00"
     },
     "state-bank-of-india": {
       "slug": "state-bank-of-india",
@@ -5277,7 +5277,7 @@
           "Raw PDF": null
         }
       },
-      "asOf": "2026-11-20T18:52:42.121523+00:00"
+      "asOf": "2026-11-20T20:01:03.569483+00:00"
     },
     "itc": {
       "slug": "itc",
@@ -6023,7 +6023,7 @@
           "Raw PDF": null
         }
       },
-      "asOf": "2026-11-20T18:52:42.436441+00:00"
+      "asOf": "2026-11-20T20:01:04.093935+00:00"
     },
     "hindustan-unilever": {
       "slug": "hindustan-unilever",
@@ -6779,7 +6779,7 @@
           "Raw PDF": null
         }
       },
-      "asOf": "2026-11-20T18:52:42.683141+00:00"
+      "asOf": "2026-11-20T20:01:04.686392+00:00"
     },
     "bharti-airtel": {
       "slug": "bharti-airtel",
@@ -7524,751 +7524,7 @@
           "Raw PDF": null
         }
       },
-      "asOf": "2026-11-20T18:52:43.439388+00:00"
-    },
-    "asian-paints": {
-      "slug": "asian-paints",
-      "name": "Asian Paints Ltd",
-      "about": "Asian Paints is the home decor company in India. The 80+yr old company has major brands like Asian Paints, Apco, etc under its umbrella. The co. is into wall paints, wall coverings, waterproofing, texture painting, wall stickers, mechanized tools, adhesives, modular kitchens, sanitaryware, lightings, soft furnishings, and uPVC windows. largest",
-      "summary": "Asian Paints · Mkt Cap: 2,50,303 Crore (down -8.79% in 1 year) · Revenue: 38,632 Cr · Profit: 4,904 Cr · Stock is trading at 11.5 times its book value · The company has delivered a poor sales growth of 10.4% over past five years. · Promoter Holding: 52.6%",
-      "marketCapCr": 250303.0,
-      "price": 2608.0,
-      "peRatio": 50.6,
-      "bookValue": 227.0,
-      "dividendYield": 1.05,
-      "roce": 26.3,
-      "roe": 21.8,
-      "pros": [
-        "Company has been maintaining a healthy dividend payout of 61.4%"
-      ],
-      "cons": [
-        "Stock is trading at 11.5 times its book value",
-        "The company has delivered a poor sales growth of 10.4% over past five years."
-      ],
-      "keyPoints": [
-        {
-          "text": "Business Segments - FY26:",
-          "urls": [
-            "https://www.bseindia.com/xml-data/corpfiling/AttachHis/aeefecce-2626-4370-9455-c7c6dd94d670.pdf#page=11"
-          ]
-        }
-      ],
-      "citations": [
-        {
-          "title": "Business Segments - FY26:",
-          "url": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/aeefecce-2626-4370-9455-c7c6dd94d670.pdf#page=11"
-        }
-      ],
-      "topRatios": [
-        {
-          "name": "Market Cap",
-          "values": [
-            250303.0
-          ],
-          "text": "2,50,303 Cr."
-        },
-        {
-          "name": "Current Price",
-          "values": [
-            2608.0
-          ],
-          "text": "2,608"
-        },
-        {
-          "name": "High / Low",
-          "values": [
-            2986.0,
-            2115.0
-          ],
-          "text": "2,986 / 2,115"
-        },
-        {
-          "name": "Stock P/E",
-          "values": [
-            50.6
-          ],
-          "text": "50.6"
-        },
-        {
-          "name": "Book Value",
-          "values": [
-            227.0
-          ],
-          "text": "227"
-        },
-        {
-          "name": "Dividend Yield",
-          "values": [
-            1.05
-          ],
-          "text": "1.05 %"
-        },
-        {
-          "name": "ROCE",
-          "values": [
-            26.3
-          ],
-          "text": "26.3 %"
-        },
-        {
-          "name": "ROE",
-          "values": [
-            21.8
-          ],
-          "text": "21.8 %"
-        },
-        {
-          "name": "Face Value",
-          "values": [
-            1.0
-          ],
-          "text": "1.00"
-        }
-      ],
-      "financials": {
-        "FY2015": {
-          "Sales": 13615.0,
-          "Sales growth": 11.0,
-          "Expenses": 11372.0,
-          "Operating Profit": 2243.0,
-          "OPM %": 16.0,
-          "Other Income": 142.0,
-          "Interest": 42.0,
-          "Depreciation": 266.0,
-          "Profit before tax": 2077.0,
-          "Tax %": 31.0,
-          "Net Profit": 1427.0,
-          "EPS in Rs": 14.54,
-          "Dividend Payout %": 42.0,
-          "Equity Capital": 96.0,
-          "Reserves": 4646.0,
-          "Borrowings": 418.0,
-          "Other Liabilities": 3754.0,
-          "Total Liabilities": 8914.0,
-          "Fixed Assets": 2660.0,
-          "CWIP": 196.0,
-          "Investments": 1588.0,
-          "Other Assets": 4471.0,
-          "Total Assets": 8914.0,
-          "Cash from Operating Activity": 1188.0,
-          "Cash from Investing Activity": -465.0,
-          "Cash from Financing Activity": -576.0,
-          "Net Cash Flow": 147.0,
-          "Free Cash Flow": 750.0,
-          "CFO/EBITDA Share of operating profit converting into cash: CFO (before tax) / Operating Profit": 81.0,
-          "Debtor Days": 32.0,
-          "Inventory Days": 123.0,
-          "Days Payable": 84.0,
-          "Cash Conversion Cycle": 70.0,
-          "Working Capital Days": 11.0,
-          "ROCE %": 42.0
-        },
-        "FY2016": {
-          "Sales": 14271.0,
-          "Sales growth": 5.0,
-          "Expenses": 11546.0,
-          "Operating Profit": 2725.0,
-          "OPM %": 19.0,
-          "Other Income": 213.0,
-          "Interest": 49.0,
-          "Depreciation": 276.0,
-          "Profit before tax": 2614.0,
-          "Tax %": 32.0,
-          "Net Profit": 1803.0,
-          "EPS in Rs": 18.19,
-          "Dividend Payout %": 41.0,
-          "Equity Capital": 96.0,
-          "Reserves": 6429.0,
-          "Borrowings": 323.0,
-          "Other Liabilities": 3711.0,
-          "Total Liabilities": 10559.0,
-          "Fixed Assets": 3416.0,
-          "CWIP": 107.0,
-          "Investments": 2712.0,
-          "Other Assets": 4324.0,
-          "Total Assets": 10559.0,
-          "Cash from Operating Activity": 2243.0,
-          "Cash from Investing Activity": -866.0,
-          "Cash from Financing Activity": -849.0,
-          "Net Cash Flow": 528.0,
-          "Free Cash Flow": 1441.0,
-          "CFO/EBITDA Share of operating profit converting into cash: CFO (before tax) / Operating Profit": 112.0,
-          "Debtor Days": 30.0,
-          "Inventory Days": 108.0,
-          "Days Payable": 84.0,
-          "Cash Conversion Cycle": 54.0,
-          "Working Capital Days": 15.0,
-          "ROCE %": 42.0
-        },
-        "FY2017": {
-          "Sales": 15062.0,
-          "Sales growth": 6.0,
-          "Expenses": 12068.0,
-          "Operating Profit": 2994.0,
-          "OPM %": 20.0,
-          "Other Income": 338.0,
-          "Interest": 37.0,
-          "Depreciation": 335.0,
-          "Profit before tax": 2960.0,
-          "Tax %": 32.0,
-          "Net Profit": 2016.0,
-          "EPS in Rs": 20.22,
-          "Dividend Payout %": 51.0,
-          "Equity Capital": 96.0,
-          "Reserves": 7508.0,
-          "Borrowings": 560.0,
-          "Other Liabilities": 4241.0,
-          "Total Liabilities": 12405.0,
-          "Fixed Assets": 3304.0,
-          "CWIP": 258.0,
-          "Investments": 2652.0,
-          "Other Assets": 6192.0,
-          "Total Assets": 12405.0,
-          "Cash from Operating Activity": 1527.0,
-          "Cash from Investing Activity": -681.0,
-          "Cash from Financing Activity": -756.0,
-          "Net Cash Flow": 90.0,
-          "Free Cash Flow": 860.0,
-          "CFO/EBITDA Share of operating profit converting into cash: CFO (before tax) / Operating Profit": 82.0,
-          "Debtor Days": 35.0,
-          "Inventory Days": 138.0,
-          "Days Payable": 101.0,
-          "Cash Conversion Cycle": 72.0,
-          "Working Capital Days": 22.0,
-          "ROCE %": 38.0
-        },
-        "FY2018": {
-          "Sales": 16825.0,
-          "Sales growth": 12.0,
-          "Expenses": 13621.0,
-          "Operating Profit": 3204.0,
-          "OPM %": 19.0,
-          "Other Income": 336.0,
-          "Interest": 41.0,
-          "Depreciation": 360.0,
-          "Profit before tax": 3138.0,
-          "Tax %": 33.0,
-          "Net Profit": 2098.0,
-          "EPS in Rs": 21.26,
-          "Dividend Payout %": 41.0,
-          "Equity Capital": 96.0,
-          "Reserves": 8314.0,
-          "Borrowings": 533.0,
-          "Other Liabilities": 4820.0,
-          "Total Liabilities": 13763.0,
-          "Fixed Assets": 3732.0,
-          "CWIP": 1405.0,
-          "Investments": 2141.0,
-          "Other Assets": 6485.0,
-          "Total Assets": 13763.0,
-          "Cash from Operating Activity": 2113.0,
-          "Cash from Investing Activity": -1556.0,
-          "Cash from Financing Activity": -1379.0,
-          "Net Cash Flow": -822.0,
-          "Free Cash Flow": 705.0,
-          "CFO/EBITDA Share of operating profit converting into cash: CFO (before tax) / Operating Profit": 100.0,
-          "Debtor Days": 38.0,
-          "Inventory Days": 117.0,
-          "Days Payable": 95.0,
-          "Cash Conversion Cycle": 60.0,
-          "Working Capital Days": 22.0,
-          "ROCE %": 36.0
-        },
-        "FY2019": {
-          "Sales": 19240.0,
-          "Sales growth": 14.0,
-          "Expenses": 15475.0,
-          "Operating Profit": 3765.0,
-          "OPM %": 20.0,
-          "Other Income": 274.0,
-          "Interest": 110.0,
-          "Depreciation": 622.0,
-          "Profit before tax": 3306.0,
-          "Tax %": 33.0,
-          "Net Profit": 2208.0,
-          "EPS in Rs": 22.48,
-          "Dividend Payout %": 47.0,
-          "Equity Capital": 96.0,
-          "Reserves": 9375.0,
-          "Borrowings": 1320.0,
-          "Other Liabilities": 5459.0,
-          "Total Liabilities": 16249.0,
-          "Fixed Assets": 6497.0,
-          "CWIP": 210.0,
-          "Investments": 2569.0,
-          "Other Assets": 6974.0,
-          "Total Assets": 16249.0,
-          "Cash from Operating Activity": 2470.0,
-          "Cash from Investing Activity": -918.0,
-          "Cash from Financing Activity": -1117.0,
-          "Net Cash Flow": 434.0,
-          "Free Cash Flow": 1336.0,
-          "CFO/EBITDA Share of operating profit converting into cash: CFO (before tax) / Operating Profit": 92.0,
-          "Debtor Days": 36.0,
-          "Inventory Days": 119.0,
-          "Days Payable": 90.0,
-          "Cash Conversion Cycle": 65.0,
-          "Working Capital Days": 16.0,
-          "ROCE %": 33.0
-        },
-        "FY2020": {
-          "Sales": 20211.0,
-          "Sales growth": 5.0,
-          "Expenses": 16049.0,
-          "Operating Profit": 4162.0,
-          "OPM %": 21.0,
-          "Other Income": 350.0,
-          "Interest": 102.0,
-          "Depreciation": 780.0,
-          "Profit before tax": 3629.0,
-          "Tax %": 24.0,
-          "Net Profit": 2774.0,
-          "EPS in Rs": 28.2,
-          "Dividend Payout %": 43.0,
-          "Equity Capital": 96.0,
-          "Reserves": 10034.0,
-          "Borrowings": 1118.0,
-          "Other Liabilities": 4889.0,
-          "Total Liabilities": 16138.0,
-          "Fixed Assets": 6272.0,
-          "CWIP": 140.0,
-          "Investments": 2019.0,
-          "Other Assets": 7707.0,
-          "Total Assets": 16138.0,
-          "Cash from Operating Activity": 3038.0,
-          "Cash from Investing Activity": -518.0,
-          "Cash from Financing Activity": -2871.0,
-          "Net Cash Flow": -351.0,
-          "Free Cash Flow": 2661.0,
-          "CFO/EBITDA Share of operating profit converting into cash: CFO (before tax) / Operating Profit": 97.0,
-          "Debtor Days": 32.0,
-          "Inventory Days": 127.0,
-          "Days Payable": 80.0,
-          "Cash Conversion Cycle": 79.0,
-          "Working Capital Days": 34.0,
-          "ROCE %": 33.0
-        },
-        "FY2021": {
-          "Sales": 21713.0,
-          "Sales growth": 7.0,
-          "Expenses": 16857.0,
-          "Operating Profit": 4856.0,
-          "OPM %": 22.0,
-          "Other Income": 332.0,
-          "Interest": 92.0,
-          "Depreciation": 791.0,
-          "Profit before tax": 4304.0,
-          "Tax %": 26.0,
-          "Net Profit": 3207.0,
-          "EPS in Rs": 32.73,
-          "Dividend Payout %": 55.0,
-          "Equity Capital": 96.0,
-          "Reserves": 12710.0,
-          "Borrowings": 1093.0,
-          "Other Liabilities": 6456.0,
-          "Total Liabilities": 20355.0,
-          "Fixed Assets": 5859.0,
-          "CWIP": 183.0,
-          "Investments": 4737.0,
-          "Other Assets": 9577.0,
-          "Total Assets": 20355.0,
-          "Cash from Operating Activity": 3683.0,
-          "Cash from Investing Activity": -541.0,
-          "Cash from Financing Activity": -650.0,
-          "Net Cash Flow": 2492.0,
-          "Free Cash Flow": 3422.0,
-          "CFO/EBITDA Share of operating profit converting into cash: CFO (before tax) / Operating Profit": 98.0,
-          "Debtor Days": 44.0,
-          "Inventory Days": 134.0,
-          "Days Payable": 119.0,
-          "Cash Conversion Cycle": 59.0,
-          "Working Capital Days": 37.0,
-          "ROCE %": 34.0
-        },
-        "FY2022": {
-          "Sales": 29101.0,
-          "Sales growth": 34.0,
-          "Expenses": 24298.0,
-          "Operating Profit": 4804.0,
-          "OPM %": 17.0,
-          "Other Income": 296.0,
-          "Interest": 95.0,
-          "Depreciation": 816.0,
-          "Profit before tax": 4188.0,
-          "Tax %": 26.0,
-          "Net Profit": 3085.0,
-          "EPS in Rs": 31.59,
-          "Dividend Payout %": 61.0,
-          "Equity Capital": 96.0,
-          "Reserves": 13716.0,
-          "Borrowings": 1587.0,
-          "Other Liabilities": 7560.0,
-          "Total Liabilities": 22958.0,
-          "Fixed Assets": 5519.0,
-          "CWIP": 426.0,
-          "Investments": 3248.0,
-          "Other Assets": 13765.0,
-          "Total Assets": 22958.0,
-          "Cash from Operating Activity": 986.0,
-          "Cash from Investing Activity": -317.0,
-          "Cash from Financing Activity": -1808.0,
-          "Net Cash Flow": -1138.0,
-          "Free Cash Flow": 475.0,
-          "CFO/EBITDA Share of operating profit converting into cash: CFO (before tax) / Operating Profit": 45.0,
-          "Debtor Days": 49.0,
-          "Inventory Days": 142.0,
-          "Days Payable": 96.0,
-          "Cash Conversion Cycle": 94.0,
-          "Working Capital Days": 57.0,
-          "ROCE %": 29.0
-        },
-        "FY2023": {
-          "Sales": 34489.0,
-          "Sales growth": 19.0,
-          "Expenses": 28229.0,
-          "Operating Profit": 6260.0,
-          "OPM %": 18.0,
-          "Other Income": 431.0,
-          "Interest": 144.0,
-          "Depreciation": 858.0,
-          "Profit before tax": 5689.0,
-          "Tax %": 26.0,
-          "Net Profit": 4195.0,
-          "EPS in Rs": 42.81,
-          "Dividend Payout %": 60.0,
-          "Equity Capital": 96.0,
-          "Reserves": 15896.0,
-          "Borrowings": 1933.0,
-          "Other Liabilities": 7854.0,
-          "Total Liabilities": 25779.0,
-          "Fixed Assets": 5770.0,
-          "CWIP": 1020.0,
-          "Investments": 4262.0,
-          "Other Assets": 14728.0,
-          "Total Assets": 25779.0,
-          "Cash from Operating Activity": 4193.0,
-          "Cash from Investing Activity": -1282.0,
-          "Cash from Financing Activity": -2140.0,
-          "Net Cash Flow": 771.0,
-          "Free Cash Flow": 2774.0,
-          "CFO/EBITDA Share of operating profit converting into cash: CFO (before tax) / Operating Profit": 91.0,
-          "Debtor Days": 49.0,
-          "Inventory Days": 121.0,
-          "Days Payable": 71.0,
-          "Cash Conversion Cycle": 99.0,
-          "Working Capital Days": 54.0,
-          "ROCE %": 34.0
-        },
-        "FY2024": {
-          "Sales": 35495.0,
-          "Sales growth": 3.0,
-          "Expenses": 27910.0,
-          "Operating Profit": 7585.0,
-          "OPM %": 21.0,
-          "Other Income": 821.0,
-          "Interest": 205.0,
-          "Depreciation": 853.0,
-          "Profit before tax": 7348.0,
-          "Tax %": 24.0,
-          "Net Profit": 5558.0,
-          "EPS in Rs": 56.92,
-          "Dividend Payout %": 58.0,
-          "Equity Capital": 96.0,
-          "Reserves": 18632.0,
-          "Borrowings": 2474.0,
-          "Other Liabilities": 8698.0,
-          "Total Liabilities": 29901.0,
-          "Fixed Assets": 7147.0,
-          "CWIP": 2698.0,
-          "Investments": 4588.0,
-          "Other Assets": 15468.0,
-          "Total Assets": 29901.0,
-          "Cash from Operating Activity": 6104.0,
-          "Cash from Investing Activity": -2548.0,
-          "Cash from Financing Activity": -2982.0,
-          "Net Cash Flow": 573.0,
-          "Free Cash Flow": 3613.0,
-          "CFO/EBITDA Share of operating profit converting into cash: CFO (before tax) / Operating Profit": 105.0,
-          "Debtor Days": 50.0,
-          "Inventory Days": 122.0,
-          "Days Payable": 79.0,
-          "Cash Conversion Cycle": 93.0,
-          "Working Capital Days": 49.0,
-          "ROCE %": 38.0
-        },
-        "FY2025": {
-          "Sales": 33906.0,
-          "Sales growth": -4.0,
-          "Expenses": 27899.0,
-          "Operating Profit": 6006.0,
-          "OPM %": 18.0,
-          "Other Income": 350.0,
-          "Interest": 227.0,
-          "Depreciation": 1026.0,
-          "Profit before tax": 5103.0,
-          "Tax %": 27.0,
-          "Net Profit": 3710.0,
-          "EPS in Rs": 38.23,
-          "Dividend Payout %": 65.0,
-          "Equity Capital": 96.0,
-          "Reserves": 19304.0,
-          "Borrowings": 2290.0,
-          "Other Liabilities": 8665.0,
-          "Total Liabilities": 30355.0,
-          "Fixed Assets": 9220.0,
-          "CWIP": 1254.0,
-          "Investments": 4725.0,
-          "Other Assets": 15156.0,
-          "Total Assets": 30355.0,
-          "Cash from Operating Activity": 4424.0,
-          "Cash from Investing Activity": -941.0,
-          "Cash from Financing Activity": -3753.0,
-          "Net Cash Flow": -270.0,
-          "Free Cash Flow": 2604.0,
-          "CFO/EBITDA Share of operating profit converting into cash: CFO (before tax) / Operating Profit": 97.0,
-          "Debtor Days": 46.0,
-          "Inventory Days": 142.0,
-          "Days Payable": 81.0,
-          "Cash Conversion Cycle": 107.0,
-          "Working Capital Days": 52.0,
-          "ROCE %": 26.0
-        },
-        "FY2026": {
-          "Sales": 35584.0,
-          "Sales growth": 5.0,
-          "Expenses": 28884.0,
-          "Operating Profit": 6700.0,
-          "OPM %": 19.0,
-          "Other Income": 728.0,
-          "Interest": 195.0,
-          "Depreciation": 1229.0,
-          "Profit before tax": 6003.0,
-          "Tax %": 27.0,
-          "Net Profit": 4395.0,
-          "EPS in Rs": 45.09,
-          "Dividend Payout %": 61.0,
-          "Equity Capital": 96.0,
-          "Reserves": 21276.0,
-          "Borrowings": 3929.0,
-          "Other Liabilities": 9218.0,
-          "Total Liabilities": 34519.0,
-          "Fixed Assets": 9640.0,
-          "CWIP": 1849.0,
-          "Investments": 7062.0,
-          "Other Assets": 15968.0,
-          "Total Assets": 34519.0,
-          "Cash from Operating Activity": 7088.0,
-          "Cash from Investing Activity": -1328.0,
-          "Cash from Financing Activity": -2377.0,
-          "Net Cash Flow": 3383.0,
-          "Free Cash Flow": 5604.0,
-          "CFO/EBITDA Share of operating profit converting into cash: CFO (before tax) / Operating Profit": 129.0,
-          "Debtor Days": 46.0,
-          "Inventory Days": 118.0,
-          "Days Payable": 79.0,
-          "Cash Conversion Cycle": 84.0,
-          "Working Capital Days": 38.0,
-          "ROCE %": 26.0
-        }
-      },
-      "quarters": {
-        "Sep 2023": {
-          "Sales": 8479.0,
-          "YoY Sales growth": 0.0,
-          "Expenses": 6762.0,
-          "Operating Profit": 1716.0,
-          "OPM %": 20.0,
-          "Other Income": 194.0,
-          "Interest": 51.0,
-          "Depreciation": 209.0,
-          "Profit before tax": 1651.0,
-          "Tax %": 25.0,
-          "Net Profit": 1232.0,
-          "EPS in Rs": 12.57,
-          "Raw PDF": null
-        },
-        "Dec 2023": {
-          "Sales": 9103.0,
-          "YoY Sales growth": 5.0,
-          "Expenses": 7047.0,
-          "Operating Profit": 2056.0,
-          "OPM %": 23.0,
-          "Other Income": 186.0,
-          "Interest": 54.0,
-          "Depreciation": 220.0,
-          "Profit before tax": 1968.0,
-          "Tax %": 25.0,
-          "Net Profit": 1475.0,
-          "EPS in Rs": 15.09,
-          "Raw PDF": null
-        },
-        "Mar 2024": {
-          "Sales": 8731.0,
-          "YoY Sales growth": -1.0,
-          "Expenses": 7039.0,
-          "Operating Profit": 1691.0,
-          "OPM %": 19.0,
-          "Other Income": 212.0,
-          "Interest": 54.0,
-          "Depreciation": 226.0,
-          "Profit before tax": 1624.0,
-          "Tax %": 21.0,
-          "Net Profit": 1275.0,
-          "EPS in Rs": 13.1,
-          "Raw PDF": null
-        },
-        "Jun 2024": {
-          "Sales": 8970.0,
-          "YoY Sales growth": -2.0,
-          "Expenses": 7276.0,
-          "Operating Profit": 1694.0,
-          "OPM %": 19.0,
-          "Other Income": 193.0,
-          "Interest": 55.0,
-          "Depreciation": 228.0,
-          "Profit before tax": 1604.0,
-          "Tax %": 26.0,
-          "Net Profit": 1187.0,
-          "EPS in Rs": 12.2,
-          "Raw PDF": null
-        },
-        "Sep 2024": {
-          "Sales": 8028.0,
-          "YoY Sales growth": -5.0,
-          "Expenses": 6788.0,
-          "Operating Profit": 1240.0,
-          "OPM %": 15.0,
-          "Other Income": 25.0,
-          "Interest": 63.0,
-          "Depreciation": 242.0,
-          "Profit before tax": 959.0,
-          "Tax %": 28.0,
-          "Net Profit": 694.0,
-          "EPS in Rs": 7.24,
-          "Raw PDF": null
-        },
-        "Dec 2024": {
-          "Sales": 8549.0,
-          "YoY Sales growth": -6.0,
-          "Expenses": 6913.0,
-          "Operating Profit": 1637.0,
-          "OPM %": 19.0,
-          "Other Income": 193.0,
-          "Interest": 56.0,
-          "Depreciation": 256.0,
-          "Profit before tax": 1518.0,
-          "Tax %": 26.0,
-          "Net Profit": 1128.0,
-          "EPS in Rs": 11.58,
-          "Raw PDF": null
-        },
-        "Mar 2025": {
-          "Sales": 8359.0,
-          "YoY Sales growth": -4.0,
-          "Expenses": 6923.0,
-          "Operating Profit": 1436.0,
-          "OPM %": 17.0,
-          "Other Income": -60.0,
-          "Interest": 53.0,
-          "Depreciation": 301.0,
-          "Profit before tax": 1022.0,
-          "Tax %": 31.0,
-          "Net Profit": 701.0,
-          "EPS in Rs": 7.22,
-          "Raw PDF": null
-        },
-        "Jun 2025": {
-          "Sales": 8939.0,
-          "YoY Sales growth": -0.0,
-          "Expenses": 7314.0,
-          "Operating Profit": 1625.0,
-          "OPM %": 18.0,
-          "Other Income": 229.0,
-          "Interest": 44.0,
-          "Depreciation": 301.0,
-          "Profit before tax": 1509.0,
-          "Tax %": 26.0,
-          "Net Profit": 1117.0,
-          "EPS in Rs": 11.47,
-          "Raw PDF": null
-        },
-        "Sep 2025": {
-          "Sales": 8531.0,
-          "YoY Sales growth": 6.0,
-          "Expenses": 7028.0,
-          "Operating Profit": 1503.0,
-          "OPM %": 18.0,
-          "Other Income": 237.0,
-          "Interest": 44.0,
-          "Depreciation": 305.0,
-          "Profit before tax": 1392.0,
-          "Tax %": 27.0,
-          "Net Profit": 1018.0,
-          "EPS in Rs": 10.36,
-          "Raw PDF": null
-        },
-        "Dec 2025": {
-          "Sales": 8867.0,
-          "YoY Sales growth": 4.0,
-          "Expenses": 7086.0,
-          "Operating Profit": 1781.0,
-          "OPM %": 20.0,
-          "Other Income": 69.0,
-          "Interest": 48.0,
-          "Depreciation": 313.0,
-          "Profit before tax": 1489.0,
-          "Tax %": 28.0,
-          "Net Profit": 1074.0,
-          "EPS in Rs": 11.05,
-          "Raw PDF": null
-        },
-        "Mar 2026": {
-          "Sales": 9247.0,
-          "YoY Sales growth": 11.0,
-          "Expenses": 7460.0,
-          "Operating Profit": 1787.0,
-          "OPM %": 19.0,
-          "Other Income": 197.0,
-          "Interest": 59.0,
-          "Depreciation": 310.0,
-          "Profit before tax": 1614.0,
-          "Tax %": 27.0,
-          "Net Profit": 1185.0,
-          "EPS in Rs": 12.22,
-          "Raw PDF": null
-        },
-        "Jun 2026": {
-          "Sales": 10542.0,
-          "YoY Sales growth": 18.0,
-          "Expenses": 8373.0,
-          "Operating Profit": 2169.0,
-          "OPM %": 21.0,
-          "Other Income": 279.0,
-          "Interest": 48.0,
-          "Depreciation": 304.0,
-          "Profit before tax": 2096.0,
-          "Tax %": 26.0,
-          "Net Profit": 1559.0,
-          "EPS in Rs": 16.05,
-          "Raw PDF": null
-        },
-        "Sep 2026": {
-          "Sales": 9977.0,
-          "YoY Sales growth": 17.0,
-          "Expenses": 8419.0,
-          "Operating Profit": 1557.0,
-          "OPM %": 16.0,
-          "Other Income": 290.0,
-          "Interest": 55.0,
-          "Depreciation": 314.0,
-          "Profit before tax": 1478.0,
-          "Tax %": 27.0,
-          "Net Profit": 1085.0,
-          "EPS in Rs": 11.13,
-          "Raw PDF": null
-        }
-      },
-      "asOf": "2026-11-20T18:52:43.647302+00:00"
+      "asOf": "2026-11-20T20:01:05.553191+00:00"
     }
   },
   "indices": {
@@ -8295,136 +7551,79 @@
     }
   },
   "discovered": {
-    "adanipower": {
-      "slug": "adanipower",
-      "ticker": "ADANIPOWER.NS",
-      "name": "Adani Power Limited",
+    "mmm": {
+      "slug": "mmm",
+      "ticker": "MMM",
+      "name": "3M Company",
+      "exchange": "NYQ",
+      "currency": null,
+      "resolvedAt": "2026-11-20T20:04:20.466796+00:00",
+      "quote": null
+    },
+    "m-m": {
+      "slug": "m-m",
+      "ticker": "M&M.NS",
+      "name": "Mahindra & Mahindra Limited",
       "exchange": "NSE",
       "currency": null,
-      "resolvedAt": "2026-11-20T19:20:48.474823+00:00",
+      "resolvedAt": "2026-11-20T20:04:24.072380+00:00",
       "quote": {
-        "name": "Adani Power Limited",
-        "price": 211.95,
-        "changePct": 0.689,
-        "previousClose": 210.5,
-        "dayHigh": 213.49,
-        "dayLow": 208.51,
-        "volume": 30813178,
-        "fiftyTwoWeekHigh": 254.2,
-        "fiftyTwoWeekLow": 128.1,
+        "name": "Mahindra & Mahindra Limited",
+        "price": 3545.0,
+        "changePct": 1.026,
+        "previousClose": 3509.0,
+        "dayHigh": 3570.0,
+        "dayLow": 3479.2,
+        "volume": 3534752,
+        "fiftyTwoWeekHigh": 3839.9,
+        "fiftyTwoWeekLow": 2744.3,
         "currency": "INR",
-        "asOf": "2026-11-20T09:58:04+00:00"
+        "asOf": "2026-11-20T09:58:10+00:00"
       }
     },
-    "adanient": {
-      "slug": "adanient",
-      "ticker": "ADANIENT.BO",
-      "name": "Adani Enterprises Limited",
+    "kotakbank": {
+      "slug": "kotakbank",
+      "ticker": "KOTAKBANK.BO",
+      "name": "Kotak Mahindra Bank Limited",
       "exchange": "BSE",
       "currency": null,
-      "resolvedAt": "2026-11-20T19:20:48.474823+00:00",
+      "resolvedAt": "2026-11-20T20:04:24.072380+00:00",
       "quote": null
     },
-    "adaniports": {
-      "slug": "adaniports",
-      "ticker": "ADANIPORTS.NS",
-      "name": "Adani Ports and Special Economic Zone Limited",
+    "techm": {
+      "slug": "techm",
+      "ticker": "TECHM.NS",
+      "name": "Tech Mahindra Limited",
       "exchange": "NSE",
       "currency": null,
-      "resolvedAt": "2026-11-20T19:20:48.474823+00:00",
+      "resolvedAt": "2026-11-20T20:04:24.072380+00:00",
       "quote": null
     },
-    "adanigreen": {
-      "slug": "adanigreen",
-      "ticker": "ADANIGREEN.NS",
-      "name": "Adani Green Energy Limited",
+    "smlmah": {
+      "slug": "smlmah",
+      "ticker": "SMLMAH.NS",
+      "name": "SML Mahindra Limited",
       "exchange": "NSE",
       "currency": null,
-      "resolvedAt": "2026-11-20T19:20:48.474823+00:00",
+      "resolvedAt": "2026-11-20T20:04:24.072380+00:00",
       "quote": null
     },
-    "adaniensol": {
-      "slug": "adaniensol",
-      "ticker": "ADANIENSOL.NS",
-      "name": "Adani Energy Solutions Limited",
+    "m-mfin": {
+      "slug": "m-mfin",
+      "ticker": "M&MFIN.NS",
+      "name": "Mahindra & Mahindra Financial Services Limited",
       "exchange": "NSE",
       "currency": null,
-      "resolvedAt": "2026-11-20T19:20:48.474823+00:00",
+      "resolvedAt": "2026-11-20T20:04:24.072380+00:00",
       "quote": null
     },
-    "atgl": {
-      "slug": "atgl",
-      "ticker": "ATGL.NS",
-      "name": "Adani Total Gas Limited",
+    "mhril": {
+      "slug": "mhril",
+      "ticker": "MHRIL.NS",
+      "name": "Mahindra Holidays & Resorts India Limited",
       "exchange": "NSE",
       "currency": null,
-      "resolvedAt": "2026-11-20T19:20:48.474823+00:00",
-      "quote": null
-    },
-    "titan": {
-      "slug": "titan",
-      "ticker": "TITAN.NS",
-      "name": "Titan Company Limited",
-      "exchange": "NSE",
-      "currency": null,
-      "resolvedAt": "2026-11-20T19:25:35.250303+00:00",
-      "quote": {
-        "name": "Titan Company Limited",
-        "price": 4620.0,
-        "changePct": -1.702,
-        "previousClose": 4700.0,
-        "dayHigh": 4620.0,
-        "dayLow": 4524.0,
-        "volume": 1478789,
-        "fiftyTwoWeekHigh": 5186.7,
-        "fiftyTwoWeekLow": 3751.0,
-        "currency": "INR",
-        "asOf": "2026-11-20T09:58:04+00:00"
-      }
-    },
-    "tii": {
-      "slug": "tii",
-      "ticker": "TII",
-      "name": "Titan Mining Corporation",
-      "exchange": "ASE",
-      "currency": null,
-      "resolvedAt": "2026-11-20T19:25:35.250303+00:00",
-      "quote": null
-    },
-    "twi": {
-      "slug": "twi",
-      "ticker": "TWI",
-      "name": "Titan International, Inc.",
-      "exchange": "NYQ",
-      "currency": null,
-      "resolvedAt": "2026-11-20T19:25:35.250303+00:00",
-      "quote": null
-    },
-    "ttam": {
-      "slug": "ttam",
-      "ticker": "TTAM",
-      "name": "Titan America SA",
-      "exchange": "NYQ",
-      "currency": null,
-      "resolvedAt": "2026-11-20T19:25:35.250303+00:00",
-      "quote": null
-    },
-    "titn": {
-      "slug": "titn",
-      "ticker": "TITN",
-      "name": "Titan Machinery Inc.",
-      "exchange": "NMS",
-      "currency": null,
-      "resolvedAt": "2026-11-20T19:25:35.250303+00:00",
-      "quote": null
-    },
-    "bttc": {
-      "slug": "bttc",
-      "ticker": "BTTC",
-      "name": "Black Titan Corporation",
-      "exchange": "NCM",
-      "currency": null,
-      "resolvedAt": "2026-11-20T19:25:35.250303+00:00",
+      "resolvedAt": "2026-11-20T20:04:24.072380+00:00",
       "quote": null
     }
   }

@@ -12,6 +12,7 @@ import { Button } from "@/components/ui/button";
 import { useMarketIndices, useNotifications, useUser } from "@/lib/api";
 import { getActiveUser, signOut, type WorkspaceUser } from "@/lib/workspace";
 import { useNotificationsStore } from "@/store";
+import { formatOrDash } from "@/lib/utils";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import {
   DropdownMenu,
@@ -70,9 +71,13 @@ export function Navbar() {
           {indices.slice(0, 4).map((ix) => (
             <span key={ix.ticker} className="flex items-center gap-1.5 text-xs text-muted-foreground">
               <span className="font-medium text-foreground">{ix.ticker}</span>
-              <span className="tabular-nums">{ix.value.toLocaleString("en-IN")}</span>
-              <span className={ix.changePct >= 0 ? "text-emerald-500" : "text-rose-500"}>
-                {ix.changePct >= 0 ? "▲" : "▼"} {Math.abs(ix.changePct).toFixed(2)}%
+              <span className="tabular-nums">
+                {formatOrDash(ix.value, (value) => value.toLocaleString("en-IN"))}
+              </span>
+              <span className={
+                ix.changePct == null ? "text-muted-foreground" : ix.changePct >= 0 ? "text-emerald-500" : "text-rose-500"
+              }>
+                {formatOrDash(ix.changePct, (value) => `${value >= 0 ? "▲" : "▼"} ${Math.abs(value).toFixed(2)}%`)}
               </span>
             </span>
           ))}

@@ -7,7 +7,7 @@ import { useCompanySearch } from "@/lib/api";
 import { useUiStore } from "@/store";
 import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
-import { cn } from "@/lib/utils";
+import { cn, formatOrDash } from "@/lib/utils";
 import { colorFromSlug } from "@/data/account";
 
 export function CommandPalette() {
@@ -77,8 +77,11 @@ export function CommandPalette() {
                 <span className="block font-medium">{c.name}</span>
                 <span className="block text-xs text-muted-foreground">{c.ticker} · {c.exchange} · {c.sector}</span>
               </span>
-              <span className={cn("text-xs font-medium tabular-nums", c.changePct >= 0 ? "text-emerald-500" : "text-rose-500")}>
-                {c.changePct >= 0 ? "+" : ""}{c.changePct.toFixed(2)}%
+              <span className={cn(
+                "text-xs font-medium tabular-nums",
+                c.changePct == null ? "text-muted-foreground" : c.changePct >= 0 ? "text-emerald-500" : "text-rose-500",
+              )}>
+                {formatOrDash(c.changePct, (value) => `${value >= 0 ? "+" : ""}${value.toFixed(2)}%`)}
               </span>
             </button>
           ))}

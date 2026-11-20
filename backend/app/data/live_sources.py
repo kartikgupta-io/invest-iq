@@ -823,27 +823,44 @@ def _empty_cache() -> dict[str, Any]:
     return {"savedAt": None, "quotes": {}, "profiles": {}, "indices": {}, "discovered": {}}
 
 
+def _write_cache_path() -> Path:
+    """On serverless, writes go to a writable path (e.g. /tmp) via env var."""
+    override = os.getenv("INVESTIQ_CACHE_PATH")
+    return Path(override) if override else CACHE_PATH
+
+
+def _cache_candidates() -> list[Path]:
+    """Writable cache first, bundled cache second, without duplicates."""
+    primary = _write_cache_path()
+    paths = [primary]
+    if CACHE_PATH != primary:
+        paths.append(CACHE_PATH)
+    return paths
+
+
 def get_cached() -> dict[str, Any]:
-    """Read the disk cache, returning an empty structure when unavailable."""
-    try:
-        if not CACHE_PATH.exists():
-            return _empty_cache()
-        data = json.loads(CACHE_PATH.read_text(encoding="utf-8"))
-        if not isinstance(data, dict):
-            return _empty_cache()
-        return {
-            "savedAt": data.get("savedAt"),
-            "quotes": data.get("quotes") or {},
-            "profiles": data.get("profiles") or {},
-            "indices": data.get("indices") or {},
-            "discovered": data.get("discovered") or {},
-        }
-    except (OSError, ValueError):
-        return _empty_cache()
+    """Read the newest available cache, falling back to an empty structure."""
+    for path in _cache_candidates():
+        try:
+            if not path.exists():
+                continue
+            data = json.loads(path.read_text(encoding="utf-8"))
+            if not isinstance(data, dict):
+                continue
+            return {
+                "savedAt": data.get("savedAt"),
+                "quotes": data.get("quotes") or {},
+                "profiles": data.get("profiles") or {},
+                "indices": data.get("indices") or {},
+                "discovered": data.get("discovered") or {},
+            }
+        except (OSError, ValueError):
+            continue
+    return _empty_cache()
 
 
 def save_cached(cache: dict[str, Any]) -> dict[str, Any]:
-    """Write the cache to disk (creating the directory) and return the payload."""
+    """Persist the cache where possible; in-memory state still updates if not."""
     payload = {
         "savedAt": cache.get("savedAt") or _now_iso(),
         "quotes": cache.get("quotes") or {},
@@ -851,15 +868,33 @@ def save_cached(cache: dict[str, Any]) -> dict[str, Any]:
         "indices": cache.get("indices") or {},
         "discovered": cache.get("discovered") or {},
     }
-    CACHE_PATH.parent.mkdir(parents=True, exist_ok=True)
-    CACHE_PATH.write_text(json.dumps(payload, indent=2, ensure_ascii=False), encoding="utf-8")
+    for path in _cache_candidates():
+        try:
+            path.parent.mkdir(parents=True, exist_ok=True)
+            path.write_text(json.dumps(payload, indent=2, ensure_ascii=False), encoding="utf-8")
+            break
+        except OSError:
+            continue
     return payload
 
 
 async def refresh() -> dict[str, Any]:
-    """Fetch all live data and persist it to the cache."""
+    """Fetch live data and merge it over the last good snapshot.
+
+    Upstream scraping is best-effort: if a source returns nothing (rate limit,
+    outage), the previously sourced values must not be thrown away. Each field
+    keeps its own real `asOf`, so the UI still shows exactly how fresh it is.
+    """
     fetched = await fetch_all()
-    return save_cached({"savedAt": _now_iso(), **fetched})
+    previous = get_cached()
+    merged = {
+        "savedAt": _now_iso(),
+        "quotes": {**(previous.get("quotes") or {}), **(fetched.get("quotes") or {})},
+        "profiles": {**(previous.get("profiles") or {}), **(fetched.get("profiles") or {})},
+        "indices": {**(previous.get("indices") or {}), **(fetched.get("indices") or {})},
+        "discovered": previous.get("discovered") or {},
+    }
+    return save_cached(merged)
 
 
 # --- Evidence + search ----------------------------------------------------

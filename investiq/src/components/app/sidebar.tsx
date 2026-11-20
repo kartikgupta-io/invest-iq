@@ -4,8 +4,6 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 import { useUiStore, useWatchlistStore } from "@/store";
-import { useAllCompanySlugs, useCompany } from "@/lib/api";
-import { colorFromSlug } from "@/data/account";
 import { NAV_GROUPS, WORKSPACE_LINKS, isNavActive, type NavLink } from "@/lib/navigation";
 import { BrandMark } from "./brand-mark";
 
@@ -13,7 +11,6 @@ export function Sidebar() {
   const pathname = usePathname();
   const { sidebarCollapsed } = useUiStore();
   const watchlists = useWatchlistStore((s) => s.watchlists);
-  const { data: slugs = [] } = useAllCompanySlugs();
   const collapsed = sidebarCollapsed;
 
   return (
@@ -76,7 +73,6 @@ export function Sidebar() {
       </nav>
 
       <div className="space-y-0.5 border-t border-border/60 p-3">
-        {!collapsed && <CompanyShortcuts slugs={slugs.slice(0, 2)} current={pathname} />}
         {WORKSPACE_LINKS.map((item) => (
           <NavItem
             key={item.href}
@@ -87,36 +83,6 @@ export function Sidebar() {
         ))}
       </div>
     </aside>
-  );
-}
-
-function CompanyShortcuts({ slugs, current }: { slugs: string[]; current: string }) {
-  if (!slugs.length) return null;
-  return (
-    <div className="space-y-0.5 pb-2">
-      <p className="px-3 pb-1 text-[10px] font-semibold uppercase tracking-[0.16em] text-muted-foreground/60">
-        Tracked
-      </p>
-      {slugs.map((slug) => (
-        <CompanyShortcut key={slug} slug={slug} active={current.includes(`/company/${slug}`)} />
-      ))}
-    </div>
-  );
-}
-
-function CompanyShortcut({ slug, active }: { slug: string; active: boolean }) {
-  const { data: company } = useCompany(slug);
-  return (
-    <Link
-      href={`/company/${slug}`}
-      className={cn(
-        "flex items-center gap-2.5 rounded-lg px-3 py-2 text-sm text-muted-foreground transition-colors hover:bg-accent hover:text-foreground",
-        active && "bg-accent text-foreground",
-      )}
-    >
-      <span className="h-7 w-7 rounded-lg" style={{ background: `${colorFromSlug(slug)}22` }} />
-      <span className="flex-1 truncate">{company?.profile.name ?? slug}</span>
-    </Link>
   );
 }
 

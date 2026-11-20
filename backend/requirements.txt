@@ -1,0 +1,8 @@
+# Pinned for the Vercel Python 3.12 serverless runtime.
+# The canonical development dependency set lives in pyproject.toml / uv.lock.
+fastapi==0.141.1
+httpx==0.28.1
+pydantic==2.13.4
+pydantic-settings==2.15.0
+python-multipart==0.0.32
+mangum==0.22.0

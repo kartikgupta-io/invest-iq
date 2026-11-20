@@ -1,5 +1,8 @@
 # InvestIQ — Financial Intelligence Platform
 
+> **🚀 Live app: [https://investiq-sepia.vercel.app](https://investiq-sepia.vercel.app)**
+> (API: [https://investiq-api-beta.vercel.app](https://investiq-api-beta.vercel.app))
+
 InvestIQ is an Indian-equity research workspace built on **real public data**. It combines a
 FastAPI research API (Yahoo Finance quotes + Screener.in fundamentals, with a disk cache) and a
 Next.js 16 cockpit UI with server-rendered first paint, SWR hydration, and a grounded local AI
@@ -55,6 +58,23 @@ Refresh the live snapshot from the CLI (the UI's `Refresh now` does this over HT
 ```bash
 cd backend && ../.venv/Scripts/python.exe -m scripts.refresh_data
 ```
+
+## Deployment (Vercel)
+
+Both apps are deployed on Vercel from this repository:
+
+| Project | Root dir | Live URL |
+| --- | --- | --- |
+| `investiq` (web) | `investiq/` | https://investiq-sepia.vercel.app |
+| `investiq-api` (API) | `backend/` | https://investiq-api-beta.vercel.app |
+
+Key configuration:
+
+- **API**: `backend/api/index.py` is a Mangum ASGI handler; `backend/vercel.json` routes all traffic to it and `@vercel/python` installs `backend/requirements.txt`. `INVESTIQ_CACHE_PATH=/tmp/investiq-live-cache.json` keeps cache writes on the writable serverless filesystem; `CORS_ORIGINS` lists the web domain.
+- **Web**: `NEXT_PUBLIC_API_URL=https://investiq-api-beta.vercel.app/api/v1` is injected at build time. Pages render on the server and hydrate through SWR.
+- **AI**: the default AI path is a user-loaded, in-browser model (Transformers.js, no API key or cloud call). The local LM Studio path is still available for development.
+
+Redeploy with `vercel deploy --prod --yes` from each root directory after a commit.
 
 ## Architecture
 
