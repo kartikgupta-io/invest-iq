@@ -1,0 +1,1095 @@
+{
+  "profile": {
+    "slug": "bharti-airtel",
+    "ticker": "BHARTIARTL",
+    "name": "Bharti Airtel",
+    "sector": "Telecommunications",
+    "industry": "Telecom & Internet",
+    "exchange": "NSE",
+    "currency": "\u20b9",
+    "currencyCode": "INR",
+    "founded": 1995,
+    "listed": "2002",
+    "headquarters": "New Delhi, Delhi",
+    "website": "airtel.in",
+    "description": "One of India's leading integrated telecommunications operators, providing mobile, broadband, and enterprise connectivity services, with operations across South Asia and Africa.",
+    "employees": 81553,
+    "accent": "#ef4444",
+    "market": "INDIA"
+  },
+  "quote": {
+    "price": 165.2,
+    "change": 2.55,
+    "changePct": 1.54,
+    "open": 165.71,
+    "high": 167.18,
+    "low": 163.22,
+    "volume": 84551278,
+    "previousClose": 162.65,
+    "marketCap": 966428.4,
+    "peRatio": 28.0,
+    "eps": 5.9,
+    "dividendYield": 0.54,
+    "high52Week": 194.94,
+    "low52Week": 118.94
+  },
+  "annual": [
+    {
+      "year": "FY2018",
+      "revenue": 85000.0,
+      "revenueGrowth": 5.0,
+      "grossProfit": 52700.0,
+      "operatingIncome": 10200.0,
+      "ebitda": 28900.0,
+      "netIncome": -5100.0,
+      "eps": -0.86,
+      "netMargin": -6.0,
+      "grossMargin": 62.0,
+      "operatingMargin": 12.0,
+      "ebitdaMargin": 34.0,
+      "returnOnAssets": -2.1,
+      "totalAssets": 242857.0,
+      "totalEquity": 51000.0,
+      "totalDebt": 153000.0,
+      "netDebt": 146200.0,
+      "cash": 6800.0,
+      "debtToEquity": 3.0,
+      "currentRatio": 1.72,
+      "operatingCashFlow": 13600.0,
+      "investingCashFlow": -15300.0,
+      "financingCashFlow": 761.0,
+      "freeCashFlow": -1700.0,
+      "capex": 15300.0,
+      "roe": -12.0,
+      "roce": 5.17,
+      "interestCover": 0.95,
+      "bookValue": 8.64,
+      "dividendPerShare": -0.13,
+      "dividendYield": -0.37,
+      "sharesOutstanding": 5900.0,
+      "revenuePerShare": 14.41,
+      "priceToSales": 2.4,
+      "evToEbitda": 12.12,
+      "peRatio": -40.0,
+      "priceToBook": 4.0
+    },
+    {
+      "year": "FY2019",
+      "revenue": 89250.0,
+      "revenueGrowth": 5.0,
+      "grossProfit": 56228.0,
+      "operatingIncome": 11603.0,
+      "ebitda": 31237.0,
+      "netIncome": -3570.0,
+      "eps": -0.61,
+      "netMargin": -4.0,
+      "grossMargin": 63.0,
+      "operatingMargin": 13.0,
+      "ebitdaMargin": 35.0,
+      "returnOnAssets": -1.4,
+      "totalAssets": 255000.0,
+      "totalEquity": 35700.0,
+      "totalDebt": 107100.0,
+      "netDebt": 99960.0,
+      "cash": 7140.0,
+      "debtToEquity": 3.0,
+      "currentRatio": 1.72,
+      "operatingCashFlow": 16064.0,
+      "investingCashFlow": -16065.0,
+      "financingCashFlow": -45360.0,
+      "freeCashFlow": -1.0,
+      "capex": 16065.0,
+      "roe": -8.0,
+      "roce": 8.55,
+      "interestCover": 1.55,
+      "bookValue": 6.05,
+      "dividendPerShare": -0.09,
+      "dividendYield": -0.25,
+      "sharesOutstanding": 5900.0,
+      "revenuePerShare": 15.13,
+      "priceToSales": 2.4,
+      "evToEbitda": 10.06,
+      "peRatio": -60.0,
+      "priceToBook": 6.0
+    },
+    {
+      "year": "FY2020",
+      "revenue": 94605.0,
+      "revenueGrowth": 6.0,
+      "grossProfit": 60547.0,
+      "operatingIncome": 13245.0,
+      "ebitda": 35004.0,
+      "netIncome": -1892.0,
+      "eps": -0.32,
+      "netMargin": -2.0,
+      "grossMargin": 64.0,
+      "operatingMargin": 14.0,
+      "ebitdaMargin": 37.0,
+      "returnOnAssets": -0.7,
+      "totalAssets": 270300.0,
+      "totalEquity": 18921.0,
+      "totalDebt": 60547.0,
+      "netDebt": 52033.0,
+      "cash": 8514.0,
+      "debtToEquity": 3.2,
+      "currentRatio": 1.76,
+      "operatingCashFlow": 19867.0,
+      "investingCashFlow": -17029.0,
+      "financingCashFlow": -46270.0,
+      "freeCashFlow": 2838.0,
+      "capex": 17029.0,
+      "roe": -4.0,
+      "roce": 18.67,
+      "interestCover": 3.13,
+      "bookValue": 3.21,
+      "dividendPerShare": -0.05,
+      "dividendYield": -0.12,
+      "sharesOutstanding": 5900.0,
+      "revenuePerShare": 16.03,
+      "priceToSales": 2.4,
+      "evToEbitda": 7.97,
+      "peRatio": -120.0,
+      "priceToBook": 12.0
+    },
+    {
+      "year": "FY2021",
+      "revenue": 105958.0,
+      "revenueGrowth": 12.0,
+      "grossProfit": 69932.0,
+      "operatingIncome": 19072.0,
+      "ebitda": 42383.0,
+      "netIncome": 5298.0,
+      "eps": 0.9,
+      "netMargin": 5.0,
+      "grossMargin": 66.0,
+      "operatingMargin": 18.0,
+      "ebitdaMargin": 40.0,
+      "returnOnAssets": 1.8,
+      "totalAssets": 294327.0,
+      "totalEquity": 88298.0,
+      "totalDebt": 264894.0,
+      "netDebt": 255358.0,
+      "cash": 9536.0,
+      "debtToEquity": 3.0,
+      "currentRatio": 1.76,
+      "operatingCashFlow": 28609.0,
+      "investingCashFlow": -18013.0,
+      "financingCashFlow": 203551.0,
+      "freeCashFlow": 10596.0,
+      "capex": 18013.0,
+      "roe": 6.0,
+      "roce": 5.55,
+      "interestCover": 1.03,
+      "bookValue": 14.97,
+      "dividendPerShare": 0.14,
+      "dividendYield": 0.25,
+      "sharesOutstanding": 5900.0,
+      "revenuePerShare": 17.96,
+      "priceToSales": 3.0,
+      "evToEbitda": 13.53,
+      "peRatio": 60.0,
+      "priceToBook": 3.6
+    },
+    {
+      "year": "FY2022",
+      "revenue": 126090.0,
+      "revenueGrowth": 19.0,
+      "grossProfit": 84480.0,
+      "operatingIncome": 27740.0,
+      "ebitda": 54219.0,
+      "netIncome": 11348.0,
+      "eps": 1.92,
+      "netMargin": 9.0,
+      "grossMargin": 67.0,
+      "operatingMargin": 22.0,
+      "ebitdaMargin": 43.0,
+      "returnOnAssets": 3.24,
+      "totalAssets": 350249.0,
+      "totalEquity": 94567.0,
+      "totalDebt": 264788.0,
+      "netDebt": 252179.0,
+      "cash": 12609.0,
+      "debtToEquity": 2.8,
+      "currentRatio": 1.8,
+      "operatingCashFlow": 37827.0,
+      "investingCashFlow": -20174.0,
+      "financingCashFlow": -1805.0,
+      "freeCashFlow": 17653.0,
+      "capex": 20174.0,
+      "roe": 12.0,
+      "roce": 8.0,
+      "interestCover": 1.5,
+      "bookValue": 16.03,
+      "dividendPerShare": 0.29,
+      "dividendYield": 0.33,
+      "sharesOutstanding": 5900.0,
+      "revenuePerShare": 21.37,
+      "priceToSales": 4.05,
+      "evToEbitda": 14.07,
+      "peRatio": 45.0,
+      "priceToBook": 5.4
+    },
+    {
+      "year": "FY2023",
+      "revenue": 151307.0,
+      "revenueGrowth": 20.0,
+      "grossProfit": 102889.0,
+      "operatingIncome": 36314.0,
+      "ebitda": 68088.0,
+      "netIncome": 18157.0,
+      "eps": 3.08,
+      "netMargin": 12.0,
+      "grossMargin": 68.0,
+      "operatingMargin": 24.0,
+      "ebitdaMargin": 45.0,
+      "returnOnAssets": 4.44,
+      "totalAssets": 408939.0,
+      "totalEquity": 121046.0,
+      "totalDebt": 314720.0,
+      "netDebt": 299589.0,
+      "cash": 15131.0,
+      "debtToEquity": 2.6,
+      "currentRatio": 1.8,
+      "operatingCashFlow": 49931.0,
+      "investingCashFlow": -22696.0,
+      "financingCashFlow": 47206.0,
+      "freeCashFlow": 27235.0,
+      "capex": 22696.0,
+      "roe": 15.0,
+      "roce": 8.63,
+      "interestCover": 1.65,
+      "bookValue": 20.52,
+      "dividendPerShare": 0.46,
+      "dividendYield": 0.38,
+      "sharesOutstanding": 5900.0,
+      "revenuePerShare": 25.65,
+      "priceToSales": 4.8,
+      "evToEbitda": 15.07,
+      "peRatio": 40.0,
+      "priceToBook": 6.0
+    },
+    {
+      "year": "FY2024",
+      "revenue": 175517.0,
+      "revenueGrowth": 16.0,
+      "grossProfit": 119351.0,
+      "operatingIncome": 43879.0,
+      "ebitda": 80738.0,
+      "netIncome": 22817.0,
+      "eps": 3.87,
+      "netMargin": 13.0,
+      "grossMargin": 68.0,
+      "operatingMargin": 25.0,
+      "ebitdaMargin": 46.0,
+      "returnOnAssets": 4.81,
+      "totalAssets": 474369.0,
+      "totalEquity": 142607.0,
+      "totalDebt": 342257.0,
+      "netDebt": 324705.0,
+      "cash": 17552.0,
+      "debtToEquity": 2.4,
+      "currentRatio": 1.8,
+      "operatingCashFlow": 59676.0,
+      "investingCashFlow": -24572.0,
+      "financingCashFlow": 24112.0,
+      "freeCashFlow": 35104.0,
+      "capex": 24572.0,
+      "roe": 16.0,
+      "roce": 9.39,
+      "interestCover": 1.83,
+      "bookValue": 24.17,
+      "dividendPerShare": 0.58,
+      "dividendYield": 0.43,
+      "sharesOutstanding": 5900.0,
+      "revenuePerShare": 29.75,
+      "priceToSales": 4.55,
+      "evToEbitda": 13.91,
+      "peRatio": 35.0,
+      "priceToBook": 5.6
+    },
+    {
+      "year": "FY2025",
+      "revenue": 200089.0,
+      "revenueGrowth": 14.0,
+      "grossProfit": 138061.0,
+      "operatingIncome": 52023.0,
+      "ebitda": 94042.0,
+      "netIncome": 28012.0,
+      "eps": 4.79,
+      "netMargin": 14.0,
+      "grossMargin": 69.0,
+      "operatingMargin": 26.0,
+      "ebitdaMargin": 47.0,
+      "returnOnAssets": 5.32,
+      "totalAssets": 526550.0,
+      "totalEquity": 164779.0,
+      "totalDebt": 362514.0,
+      "netDebt": 344506.0,
+      "cash": 18008.0,
+      "debtToEquity": 2.2,
+      "currentRatio": 1.76,
+      "operatingCashFlow": 70031.0,
+      "investingCashFlow": -26012.0,
+      "financingCashFlow": 16054.0,
+      "freeCashFlow": 44019.0,
+      "capex": 26012.0,
+      "roe": 17.0,
+      "roce": 10.21,
+      "interestCover": 2.05,
+      "bookValue": 28.17,
+      "dividendPerShare": 0.72,
+      "dividendYield": 0.5,
+      "sharesOutstanding": 5850.0,
+      "revenuePerShare": 34.2,
+      "priceToSales": 4.2,
+      "evToEbitda": 12.6,
+      "peRatio": 30.0,
+      "priceToBook": 5.1
+    },
+    {
+      "year": "FY2026",
+      "revenue": 230102.0,
+      "revenueGrowth": 15.0,
+      "grossProfit": 161072.0,
+      "operatingIncome": 62128.0,
+      "ebitda": 110449.0,
+      "netIncome": 34515.0,
+      "eps": 5.9,
+      "netMargin": 15.0,
+      "grossMargin": 70.0,
+      "operatingMargin": 27.0,
+      "ebitdaMargin": 48.0,
+      "returnOnAssets": 5.7,
+      "totalAssets": 605532.0,
+      "totalEquity": 191752.0,
+      "totalDebt": 383504.0,
+      "netDebt": 362795.0,
+      "cash": 20709.0,
+      "debtToEquity": 2.0,
+      "currentRatio": 1.76,
+      "operatingCashFlow": 82836.0,
+      "investingCashFlow": -27612.0,
+      "financingCashFlow": 15813.0,
+      "freeCashFlow": 55224.0,
+      "capex": 27612.0,
+      "roe": 18.0,
+      "roce": 11.2,
+      "interestCover": 2.31,
+      "bookValue": 32.78,
+      "dividendPerShare": 0.89,
+      "dividendYield": 0.54,
+      "sharesOutstanding": 5850.0,
+      "revenuePerShare": 39.33,
+      "priceToSales": 4.2,
+      "evToEbitda": 12.03,
+      "peRatio": 28.0,
+      "priceToBook": 5.04
+    }
+  ],
+  "valuation": [
+    {
+      "year": "FY2018",
+      "price": 34.58,
+      "marketCap": 204022.0,
+      "peRatio": -40.0,
+      "priceToBook": 4.0,
+      "evToEbitda": 12.12,
+      "dividendYield": -0.37
+    },
+    {
+      "year": "FY2019",
+      "price": 36.31,
+      "marketCap": 214229.0,
+      "peRatio": -60.0,
+      "priceToBook": 6.0,
+      "evToEbitda": 10.06,
+      "dividendYield": -0.25
+    },
+    {
+      "year": "FY2020",
+      "price": 38.48,
+      "marketCap": 227032.0,
+      "peRatio": -120.0,
+      "priceToBook": 12.0,
+      "evToEbitda": 7.97,
+      "dividendYield": -0.12
+    },
+    {
+      "year": "FY2021",
+      "price": 53.88,
+      "marketCap": 317892.0,
+      "peRatio": 60.0,
+      "priceToBook": 3.6,
+      "evToEbitda": 13.53,
+      "dividendYield": 0.25
+    },
+    {
+      "year": "FY2022",
+      "price": 86.55,
+      "marketCap": 510645.0,
+      "peRatio": 45.0,
+      "priceToBook": 5.4,
+      "evToEbitda": 14.07,
+      "dividendYield": 0.33
+    },
+    {
+      "year": "FY2023",
+      "price": 123.1,
+      "marketCap": 726290.0,
+      "peRatio": 40.0,
+      "priceToBook": 6.0,
+      "evToEbitda": 15.07,
+      "dividendYield": 0.38
+    },
+    {
+      "year": "FY2024",
+      "price": 135.36,
+      "marketCap": 798624.0,
+      "peRatio": 35.0,
+      "priceToBook": 5.6,
+      "evToEbitda": 13.91,
+      "dividendYield": 0.43
+    },
+    {
+      "year": "FY2025",
+      "price": 143.65,
+      "marketCap": 840353.0,
+      "peRatio": 30.0,
+      "priceToBook": 5.1,
+      "evToEbitda": 12.6,
+      "dividendYield": 0.5
+    },
+    {
+      "year": "FY2026",
+      "price": 165.2,
+      "marketCap": 966420.0,
+      "peRatio": 28.0,
+      "priceToBook": 5.04,
+      "evToEbitda": 12.03,
+      "dividendYield": 0.54
+    }
+  ],
+  "segments": [
+    {
+      "year": "FY2018",
+      "segments": [
+        {
+          "name": "Mobile Services",
+          "revenue": 25915.0,
+          "share": 30.49,
+          "growth": 5.0
+        },
+        {
+          "name": "Airtel Digital",
+          "revenue": 22805.0,
+          "share": 26.83,
+          "growth": 5.0
+        },
+        {
+          "name": "Enterprise Services",
+          "revenue": 19695.0,
+          "share": 23.17,
+          "growth": 5.0
+        },
+        {
+          "name": "Home Services",
+          "revenue": 16585.0,
+          "share": 19.51,
+          "growth": 5.0
+        }
+      ]
+    },
+    {
+      "year": "FY2019",
+      "segments": [
+        {
+          "name": "Mobile Services",
+          "revenue": 26455.0,
+          "share": 29.64,
+          "growth": 5.0
+        },
+        {
+          "name": "Airtel Digital",
+          "revenue": 24211.0,
+          "share": 27.13,
+          "growth": 5.0
+        },
+        {
+          "name": "Enterprise Services",
+          "revenue": 20910.0,
+          "share": 23.43,
+          "growth": 5.0
+        },
+        {
+          "name": "Home Services",
+          "revenue": 18576.0,
+          "share": 20.81,
+          "growth": 5.0
+        }
+      ]
+    },
+    {
+      "year": "FY2020",
+      "segments": [
+        {
+          "name": "Mobile Services",
+          "revenue": 27241.0,
+          "share": 28.79,
+          "growth": 6.0
+        },
+        {
+          "name": "Airtel Digital",
+          "revenue": 25946.0,
+          "share": 27.43,
+          "growth": 6.0
+        },
+        {
+          "name": "Enterprise Services",
+          "revenue": 22408.0,
+          "share": 23.69,
+          "growth": 6.0
+        },
+        {
+          "name": "Home Services",
+          "revenue": 20921.0,
+          "share": 22.11,
+          "growth": 6.0
+        }
+      ]
+    },
+    {
+      "year": "FY2021",
+      "segments": [
+        {
+          "name": "Mobile Services",
+          "revenue": 29612.0,
+          "share": 27.95,
+          "growth": 12.0
+        },
+        {
+          "name": "Airtel Digital",
+          "revenue": 29375.0,
+          "share": 27.72,
+          "growth": 12.0
+        },
+        {
+          "name": "Enterprise Services",
+          "revenue": 25370.0,
+          "share": 23.94,
+          "growth": 12.0
+        },
+        {
+          "name": "Home Services",
+          "revenue": 24810.0,
+          "share": 23.41,
+          "growth": 12.0
+        }
+      ]
+    },
+    {
+      "year": "FY2022",
+      "segments": [
+        {
+          "name": "Mobile Services",
+          "revenue": 34171.0,
+          "share": 27.1,
+          "growth": 19.0
+        },
+        {
+          "name": "Airtel Digital",
+          "revenue": 35332.0,
+          "share": 28.02,
+          "growth": 19.0
+        },
+        {
+          "name": "Enterprise Services",
+          "revenue": 30514.0,
+          "share": 24.2,
+          "growth": 19.0
+        },
+        {
+          "name": "Home Services",
+          "revenue": 31164.0,
+          "share": 24.72,
+          "growth": 19.0
+        }
+      ]
+    },
+    {
+      "year": "FY2023",
+      "segments": [
+        {
+          "name": "Mobile Services",
+          "revenue": 39723.0,
+          "share": 26.25,
+          "growth": 20.0
+        },
+        {
+          "name": "Airtel Digital",
+          "revenue": 42850.0,
+          "share": 28.32,
+          "growth": 20.0
+        },
+        {
+          "name": "Enterprise Services",
+          "revenue": 37007.0,
+          "share": 24.46,
+          "growth": 20.0
+        },
+        {
+          "name": "Home Services",
+          "revenue": 39365.0,
+          "share": 26.02,
+          "growth": 20.0
+        }
+      ]
+    },
+    {
+      "year": "FY2024",
+      "segments": [
+        {
+          "name": "Mobile Services",
+          "revenue": 44593.0,
+          "share": 25.41,
+          "growth": 16.0
+        },
+        {
+          "name": "Airtel Digital",
+          "revenue": 50229.0,
+          "share": 28.62,
+          "growth": 16.0
+        },
+        {
+          "name": "Enterprise Services",
+          "revenue": 43380.0,
+          "share": 24.72,
+          "growth": 16.0
+        },
+        {
+          "name": "Home Services",
+          "revenue": 47946.0,
+          "share": 27.32,
+          "growth": 16.0
+        }
+      ]
+    },
+    {
+      "year": "FY2025",
+      "segments": [
+        {
+          "name": "Mobile Services",
+          "revenue": 49141.0,
+          "share": 24.56,
+          "growth": 14.0
+        },
+        {
+          "name": "Airtel Digital",
+          "revenue": 57858.0,
+          "share": 28.92,
+          "growth": 14.0
+        },
+        {
+          "name": "Enterprise Services",
+          "revenue": 49968.0,
+          "share": 24.97,
+          "growth": 14.0
+        },
+        {
+          "name": "Home Services",
+          "revenue": 57261.0,
+          "share": 28.62,
+          "growth": 14.0
+        }
+      ]
+    },
+    {
+      "year": "FY2026",
+      "segments": [
+        {
+          "name": "Mobile Services",
+          "revenue": 54564.0,
+          "share": 23.71,
+          "growth": 15.0
+        },
+        {
+          "name": "Airtel Digital",
+          "revenue": 67222.0,
+          "share": 29.21,
+          "growth": 15.0
+        },
+        {
+          "name": "Enterprise Services",
+          "revenue": 58056.0,
+          "share": 25.23,
+          "growth": 15.0
+        },
+        {
+          "name": "Home Services",
+          "revenue": 68844.0,
+          "share": 29.92,
+          "growth": 15.0
+        }
+      ]
+    }
+  ],
+  "quarterly": {
+    "FY2024": [
+      {
+        "quarter": "Q1",
+        "endDate": "2024-06-30",
+        "revenue": 10141.0,
+        "netIncome": 1420.0,
+        "ebitda": 4665.0,
+        "eps": 0.24,
+        "margin": 14.0
+      },
+      {
+        "quarter": "Q2",
+        "endDate": "2024-09-30",
+        "revenue": 11831.0,
+        "netIncome": 1656.0,
+        "ebitda": 5442.0,
+        "eps": 0.28,
+        "margin": 14.0
+      },
+      {
+        "quarter": "Q3",
+        "endDate": "2024-12-31",
+        "revenue": 11268.0,
+        "netIncome": 1577.0,
+        "ebitda": 5183.0,
+        "eps": 0.27,
+        "margin": 14.0
+      },
+      {
+        "quarter": "Q4",
+        "endDate": "2025-03-31",
+        "revenue": 12395.0,
+        "netIncome": 1363.0,
+        "ebitda": 5701.0,
+        "eps": 0.23,
+        "margin": 11.0
+      }
+    ],
+    "FY2025": [
+      {
+        "quarter": "Q1",
+        "endDate": "2025-06-30",
+        "revenue": 11561.0,
+        "netIncome": 1734.0,
+        "ebitda": 5434.0,
+        "eps": 0.3,
+        "margin": 15.0
+      },
+      {
+        "quarter": "Q2",
+        "endDate": "2025-09-30",
+        "revenue": 13487.0,
+        "netIncome": 2023.0,
+        "ebitda": 6339.0,
+        "eps": 0.35,
+        "margin": 15.0
+      },
+      {
+        "quarter": "Q3",
+        "endDate": "2025-12-31",
+        "revenue": 12845.0,
+        "netIncome": 1927.0,
+        "ebitda": 6037.0,
+        "eps": 0.33,
+        "margin": 15.0
+      },
+      {
+        "quarter": "Q4",
+        "endDate": "2026-03-31",
+        "revenue": 14130.0,
+        "netIncome": 1696.0,
+        "ebitda": 6641.0,
+        "eps": 0.29,
+        "margin": 12.0
+      }
+    ],
+    "FY2026": [
+      {
+        "quarter": "Q1",
+        "endDate": "2026-06-30",
+        "revenue": 13295.0,
+        "netIncome": 2127.0,
+        "ebitda": 6381.0,
+        "eps": 0.36,
+        "margin": 16.0
+      },
+      {
+        "quarter": "Q2",
+        "endDate": "2026-09-30",
+        "revenue": 15511.0,
+        "netIncome": 2482.0,
+        "ebitda": 7445.0,
+        "eps": 0.42,
+        "margin": 16.0
+      },
+      {
+        "quarter": "Q3",
+        "endDate": "2026-12-31",
+        "revenue": 14772.0,
+        "netIncome": 2364.0,
+        "ebitda": 7091.0,
+        "eps": 0.4,
+        "margin": 16.0
+      },
+      {
+        "quarter": "Q4",
+        "endDate": "2027-03-31",
+        "revenue": 16249.0,
+        "netIncome": 2112.0,
+        "ebitda": 7800.0,
+        "eps": 0.36,
+        "margin": 13.0
+      }
+    ]
+  },
+  "riskFactors": [
+    {
+      "title": "Competitive pricing",
+      "description": "Aggressive pricing by peers pressures ARPU and margin expansion.",
+      "severity": "medium"
+    },
+    {
+      "title": "Spectrum obligations",
+      "description": "Deferred spectrum liabilities and interest burden remain elevated.",
+      "severity": "high"
+    },
+    {
+      "title": "Regulatory environment",
+      "description": "Policy shifts on tariffs and levies affect cash flows.",
+      "severity": "high"
+    }
+  ],
+  "managementDiscussion": "In fiscal year FY2026, Bharti Airtel recorded revenue of \u20b92.30 lakh crore, growing 15.0% year-on-year, driven by continued momentum across Mobile Services, Airtel Digital. Net income stood at \u20b90.35 lakh crore with a net margin of 15.0% and a return on equity of 18.0%. Operating cash flow remained robust at \u20b90.83 lakh crore, supporting capital expenditure of \u20b90.28 lakh crore and a free cash flow of \u20b90.55 lakh crore. The company maintains a measured capital structure with net debt-to-equity of 1.89x. Management continues to invest in digital and AI capabilities, expects sustained volume-led growth and disciplined cost control, and remains committed to value-accretive capital allocation and sustainable returns for shareholders.",
+  "documents": [
+    {
+      "id": "bharti-airtel-20-f-2026-1",
+      "companySlug": "bharti-airtel",
+      "type": "Annual Report",
+      "title": "Annual Report FY2026",
+      "form": "20-F",
+      "fiscalPeriod": "FY2026",
+      "filedDate": "2026-06-22",
+      "periodEnd": "2026-03-31",
+      "source": "SEC EDGAR",
+      "sourceUrl": "https://www.bharti-airtel/reports/20-F/2026",
+      "sizeKb": 2930,
+      "pages": 241,
+      "sha256": "cef22d2b6d8da537e323885c8b075c063edec1f45936379f09b48a9fcbf24bcf",
+      "latestVersion": "v1.1",
+      "versions": [
+        {
+          "version": "v1",
+          "uploadedAt": "2026-01-01",
+          "note": "Initial filing"
+        },
+        {
+          "version": "v1.1",
+          "uploadedAt": "2026-02-01",
+          "note": "Minor metadata corrections"
+        }
+      ]
+    },
+    {
+      "id": "bharti-airtel-10-k-2026-2",
+      "companySlug": "bharti-airtel",
+      "type": "10-K",
+      "title": "Form 10-K - FY2026",
+      "form": "10-K",
+      "fiscalPeriod": "FY2026",
+      "filedDate": "2026-11-21",
+      "periodEnd": "2026-03-31",
+      "source": "SEC EDGAR",
+      "sourceUrl": "https://www.bharti-airtel/reports/10-K/2026",
+      "sizeKb": 3502,
+      "pages": 255,
+      "sha256": "04093986b5609f94bf10757a0bd5e832e8824f47d3d82628633546039c7a641f",
+      "latestVersion": "v1.1",
+      "versions": [
+        {
+          "version": "v1",
+          "uploadedAt": "2026-01-01",
+          "note": "Initial filing"
+        },
+        {
+          "version": "v1.1",
+          "uploadedAt": "2026-02-01",
+          "note": "Minor metadata corrections"
+        }
+      ]
+    },
+    {
+      "id": "bharti-airtel-pres-2026-3",
+      "companySlug": "bharti-airtel",
+      "type": "Investor Presentation",
+      "title": "Q1 FY2027 Investor Presentation",
+      "form": "PRES",
+      "fiscalPeriod": "FY2026",
+      "filedDate": "2026-11-10",
+      "periodEnd": "2026-03-31",
+      "source": "Investor Relations",
+      "sourceUrl": "https://www.bharti-airtel/reports/PRES/2026",
+      "sizeKb": 6533,
+      "pages": 142,
+      "sha256": "e6465c6d65d46a55fe7fd69135f2d3d0712c3ad84b24b44cf46d47232ab14770",
+      "latestVersion": "v1.1",
+      "versions": [
+        {
+          "version": "v1",
+          "uploadedAt": "2026-01-01",
+          "note": "Initial filing"
+        },
+        {
+          "version": "v1.1",
+          "uploadedAt": "2026-02-01",
+          "note": "Minor metadata corrections"
+        }
+      ]
+    },
+    {
+      "id": "bharti-airtel-tran-2026-4",
+      "companySlug": "bharti-airtel",
+      "type": "Earnings Call Transcript",
+      "title": "Q1 FY2027 Earnings Call Transcript",
+      "form": "TRAN",
+      "fiscalPeriod": "FY2026",
+      "filedDate": "2026-11-12",
+      "periodEnd": "2026-03-31",
+      "source": "NSE",
+      "sourceUrl": "https://www.bharti-airtel/reports/TRAN/2026",
+      "sizeKb": 6451,
+      "pages": 93,
+      "sha256": "e6a20c5b396d880572b8c92d65a4e2fdc23f7aaca332ebdb8c33e64e07804a08",
+      "latestVersion": "v1.1",
+      "versions": [
+        {
+          "version": "v1",
+          "uploadedAt": "2026-01-01",
+          "note": "Initial filing"
+        },
+        {
+          "version": "v1.1",
+          "uploadedAt": "2026-02-01",
+          "note": "Minor metadata corrections"
+        }
+      ]
+    },
+    {
+      "id": "bharti-airtel-10-q-2026-5",
+      "companySlug": "bharti-airtel",
+      "type": "10-Q",
+      "title": "Form 10-Q - Q1 FY2026",
+      "form": "10-Q",
+      "fiscalPeriod": "FY2026",
+      "filedDate": "2026-07-22",
+      "periodEnd": "2026-03-31",
+      "source": "BSE",
+      "sourceUrl": "https://www.bharti-airtel/reports/10-Q/2026",
+      "sizeKb": 5721,
+      "pages": 160,
+      "sha256": "fef7089cf5c4b3fc3720b9634311d980e1ae9171190ca67e39bdc4155a765f3e",
+      "latestVersion": "v1.1",
+      "versions": [
+        {
+          "version": "v1",
+          "uploadedAt": "2026-01-01",
+          "note": "Initial filing"
+        },
+        {
+          "version": "v1.1",
+          "uploadedAt": "2026-02-01",
+          "note": "Minor metadata corrections"
+        }
+      ]
+    },
+    {
+      "id": "bharti-airtel-8-k-2026-6",
+      "companySlug": "bharti-airtel",
+      "type": "8-K",
+      "title": "Current Report - Board Update",
+      "form": "8-K",
+      "fiscalPeriod": "FY2026",
+      "filedDate": "2026-10-11",
+      "periodEnd": "2026-03-31",
+      "source": "SEC EDGAR",
+      "sourceUrl": "https://www.bharti-airtel/reports/8-K/2026",
+      "sizeKb": 2329,
+      "pages": 200,
+      "sha256": "fa16ae2faa0d050f31ed4483ad6888723de33623da0166b52c355b8785b1c6c3",
+      "latestVersion": "v1.1",
+      "versions": [
+        {
+          "version": "v1",
+          "uploadedAt": "2026-01-01",
+          "note": "Initial filing"
+        },
+        {
+          "version": "v1.1",
+          "uploadedAt": "2026-02-01",
+          "note": "Minor metadata corrections"
+        }
+      ]
+    },
+    {
+      "id": "bharti-airtel-20-f-2025-7",
+      "companySlug": "bharti-airtel",
+      "type": "Annual Report",
+      "title": "Annual Report FY2025",
+      "form": "20-F",
+      "fiscalPeriod": "FY2025",
+      "filedDate": "2025-07-15",
+      "periodEnd": "2025-03-31",
+      "source": "SEC EDGAR",
+      "sourceUrl": "https://www.bharti-airtel/reports/20-F/2025",
+      "sizeKb": 6891,
+      "pages": 140,
+      "sha256": "d0ceec167385b1f683c19eb3278bbdd0ad73f518e8bfef66b08c67dddb43fa5d",
+      "latestVersion": "v1.1",
+      "versions": [
+        {
+          "version": "v1",
+          "uploadedAt": "2025-01-01",
+          "note": "Initial filing"
+        },
+        {
+          "version": "v1.1",
+          "uploadedAt": "2025-02-01",
+          "note": "Minor metadata corrections"
+        }
+      ]
+    },
+    {
+      "id": "bharti-airtel-pres-2026-8",
+      "companySlug": "bharti-airtel",
+      "type": "Investor Presentation",
+      "title": "Q3 FY2026 Investor Presentation",
+      "form": "PRES",
+      "fiscalPeriod": "FY2026",
+      "filedDate": "2026-11-18",
+      "periodEnd": "2026-03-31",
+      "source": "BSE",
+      "sourceUrl": "https://www.bharti-airtel/reports/PRES/2026",
+      "sizeKb": 4579,
+      "pages": 226,
+      "sha256": "2acb04b43690a26abd1e76e17c1b6761383ff0ac4230d2b1bae18c6e1d22771d",
+      "latestVersion": "v1.1",
+      "versions": [
+        {
+          "version": "v1",
+          "uploadedAt": "2026-01-01",
+          "note": "Initial filing"
+        },
+        {
+          "version": "v1.1",
+          "uploadedAt": "2026-02-01",
+          "note": "Minor metadata corrections"
+        }
+      ]
+    }
+  ]
+}

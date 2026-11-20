@@ -1,0 +1,26 @@
+[
+  {
+    "ticker": "NIFTY 50",
+    "name": "Nifty 50",
+    "value": 25412.35,
+    "changePct": 0.62
+  },
+  {
+    "ticker": "SENSEX",
+    "name": "BSE Sensex",
+    "value": 83215.44,
+    "changePct": 0.54
+  },
+  {
+    "ticker": "BANK NIFTY",
+    "name": "Nifty Bank",
+    "value": 54672.1,
+    "changePct": -0.21
+  },
+  {
+    "ticker": "GOLD",
+    "name": "Gold (MCX)",
+    "value": 74650.0,
+    "changePct": 0.31
+  }
+]

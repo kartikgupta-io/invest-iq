@@ -1,0 +1,1144 @@
+{
+  "profile": {
+    "slug": "itc",
+    "ticker": "ITC",
+    "name": "ITC Limited",
+    "sector": "Consumer Staples",
+    "industry": "FMCG & Hotels",
+    "exchange": "NSE",
+    "currency": "\u20b9",
+    "currencyCode": "INR",
+    "founded": 1910,
+    "listed": "1910",
+    "headquarters": "Kolkata, West Bengal",
+    "website": "itcportal.com",
+    "description": "A diversified conglomerate spanning cigarettes, FMCG, hotels, paperboards, packaging, and agri-business. ITC has steadily pivoted toward non-cigarette fast-moving consumer goods.",
+    "employees": 28000,
+    "accent": "#16a34a",
+    "market": "INDIA"
+  },
+  "quote": {
+    "price": 59.08,
+    "change": 0.16,
+    "changePct": 0.28,
+    "open": 58.86,
+    "high": 59.79,
+    "low": 58.37,
+    "volume": 16033924,
+    "previousClose": 58.92,
+    "marketCap": 737357.0399999999,
+    "peRatio": 28.0,
+    "eps": 2.11,
+    "dividendYield": 2.32,
+    "high52Week": 69.71,
+    "low52Week": 42.54
+  },
+  "annual": [
+    {
+      "year": "FY2018",
+      "revenue": 56000.0,
+      "revenueGrowth": 4.0,
+      "grossProfit": 36960.0,
+      "operatingIncome": 17920.0,
+      "ebitda": 20160.0,
+      "netIncome": 13440.0,
+      "eps": 1.08,
+      "netMargin": 24.0,
+      "grossMargin": 66.0,
+      "operatingMargin": 32.0,
+      "ebitdaMargin": 36.0,
+      "returnOnAssets": 20.4,
+      "totalAssets": 65882.0,
+      "totalEquity": 48000.0,
+      "totalDebt": 9600.0,
+      "netDebt": 2880.0,
+      "cash": 6720.0,
+      "debtToEquity": 0.2,
+      "currentRatio": 1.88,
+      "operatingCashFlow": 15680.0,
+      "investingCashFlow": -2240.0,
+      "financingCashFlow": -8761.0,
+      "freeCashFlow": 13440.0,
+      "capex": 2240.0,
+      "roe": 28.0,
+      "roce": 35.22,
+      "interestCover": 31.11,
+      "bookValue": 3.85,
+      "dividendPerShare": 0.7,
+      "dividendYield": 2.96,
+      "sharesOutstanding": 12480.0,
+      "revenuePerShare": 4.49,
+      "priceToSales": 5.28,
+      "evToEbitda": 14.81,
+      "peRatio": 22.0,
+      "priceToBook": 6.16
+    },
+    {
+      "year": "FY2019",
+      "revenue": 58240.0,
+      "revenueGrowth": 4.0,
+      "grossProfit": 38438.0,
+      "operatingIncome": 19219.0,
+      "ebitda": 21549.0,
+      "netIncome": 14560.0,
+      "eps": 1.17,
+      "netMargin": 25.0,
+      "grossMargin": 66.0,
+      "operatingMargin": 33.0,
+      "ebitdaMargin": 37.0,
+      "returnOnAssets": 21.25,
+      "totalAssets": 68518.0,
+      "totalEquity": 50207.0,
+      "totalDebt": 9037.0,
+      "netDebt": 1466.0,
+      "cash": 7571.0,
+      "debtToEquity": 0.18,
+      "currentRatio": 1.92,
+      "operatingCashFlow": 16890.0,
+      "investingCashFlow": -2330.0,
+      "financingCashFlow": -10054.0,
+      "freeCashFlow": 14560.0,
+      "capex": 2330.0,
+      "roe": 29.0,
+      "roce": 37.19,
+      "interestCover": 35.45,
+      "bookValue": 4.02,
+      "dividendPerShare": 0.76,
+      "dividendYield": 2.72,
+      "sharesOutstanding": 12480.0,
+      "revenuePerShare": 4.67,
+      "priceToSales": 6.0,
+      "evToEbitda": 16.28,
+      "peRatio": 24.0,
+      "priceToBook": 6.96
+    },
+    {
+      "year": "FY2020",
+      "revenue": 59405.0,
+      "revenueGrowth": 2.0,
+      "grossProfit": 38613.0,
+      "operatingIncome": 19010.0,
+      "ebitda": 21386.0,
+      "netIncome": 14257.0,
+      "eps": 1.14,
+      "netMargin": 24.0,
+      "grossMargin": 65.0,
+      "operatingMargin": 32.0,
+      "ebitdaMargin": 36.0,
+      "returnOnAssets": 20.4,
+      "totalAssets": 69888.0,
+      "totalEquity": 50918.0,
+      "totalDebt": 8147.0,
+      "netDebt": -170.0,
+      "cash": 8317.0,
+      "debtToEquity": 0.16,
+      "currentRatio": 1.96,
+      "operatingCashFlow": 16633.0,
+      "investingCashFlow": -2376.0,
+      "financingCashFlow": -10138.0,
+      "freeCashFlow": 14257.0,
+      "capex": 2376.0,
+      "roe": 28.0,
+      "roce": 37.46,
+      "interestCover": 38.89,
+      "bookValue": 4.08,
+      "dividendPerShare": 0.74,
+      "dividendYield": 3.24,
+      "sharesOutstanding": 12480.0,
+      "revenuePerShare": 4.76,
+      "priceToSales": 4.8,
+      "evToEbitda": 13.33,
+      "peRatio": 20.0,
+      "priceToBook": 5.6
+    },
+    {
+      "year": "FY2021",
+      "revenue": 61187.0,
+      "revenueGrowth": 3.0,
+      "grossProfit": 40383.0,
+      "operatingIncome": 19580.0,
+      "ebitda": 22027.0,
+      "netIncome": 14685.0,
+      "eps": 1.18,
+      "netMargin": 24.0,
+      "grossMargin": 66.0,
+      "operatingMargin": 32.0,
+      "ebitdaMargin": 36.0,
+      "returnOnAssets": 20.64,
+      "totalAssets": 71148.0,
+      "totalEquity": 52446.0,
+      "totalDebt": 7867.0,
+      "netDebt": -699.0,
+      "cash": 8566.0,
+      "debtToEquity": 0.15,
+      "currentRatio": 1.96,
+      "operatingCashFlow": 17132.0,
+      "investingCashFlow": -2753.0,
+      "financingCashFlow": -9852.0,
+      "freeCashFlow": 14379.0,
+      "capex": 2753.0,
+      "roe": 28.0,
+      "roce": 37.84,
+      "interestCover": 41.48,
+      "bookValue": 4.2,
+      "dividendPerShare": 0.77,
+      "dividendYield": 3.62,
+      "sharesOutstanding": 12480.0,
+      "revenuePerShare": 4.9,
+      "priceToSales": 4.32,
+      "evToEbitda": 11.97,
+      "peRatio": 18.0,
+      "priceToBook": 5.04
+    },
+    {
+      "year": "FY2022",
+      "revenue": 67306.0,
+      "revenueGrowth": 10.0,
+      "grossProfit": 44422.0,
+      "operatingIncome": 21538.0,
+      "ebitda": 24230.0,
+      "netIncome": 16153.0,
+      "eps": 1.29,
+      "netMargin": 24.0,
+      "grossMargin": 66.0,
+      "operatingMargin": 32.0,
+      "ebitdaMargin": 36.0,
+      "returnOnAssets": 20.64,
+      "totalAssets": 78262.0,
+      "totalEquity": 59827.0,
+      "totalDebt": 8376.0,
+      "netDebt": -1720.0,
+      "cash": 10096.0,
+      "debtToEquity": 0.14,
+      "currentRatio": 2.0,
+      "operatingCashFlow": 18845.0,
+      "investingCashFlow": -3029.0,
+      "financingCashFlow": -9955.0,
+      "freeCashFlow": 15816.0,
+      "capex": 3029.0,
+      "roe": 27.0,
+      "roce": 37.07,
+      "interestCover": 42.86,
+      "bookValue": 4.79,
+      "dividendPerShare": 0.84,
+      "dividendYield": 3.41,
+      "sharesOutstanding": 12480.0,
+      "revenuePerShare": 5.39,
+      "priceToSales": 4.56,
+      "evToEbitda": 12.59,
+      "peRatio": 19.0,
+      "priceToBook": 5.13
+    },
+    {
+      "year": "FY2023",
+      "revenue": 76728.0,
+      "revenueGrowth": 14.0,
+      "grossProfit": 51408.0,
+      "operatingIncome": 25320.0,
+      "ebitda": 28390.0,
+      "netIncome": 19182.0,
+      "eps": 1.54,
+      "netMargin": 25.0,
+      "grossMargin": 67.0,
+      "operatingMargin": 33.0,
+      "ebitdaMargin": 37.0,
+      "returnOnAssets": 21.75,
+      "totalAssets": 88194.0,
+      "totalEquity": 71045.0,
+      "totalDebt": 8525.0,
+      "netDebt": -3752.0,
+      "cash": 12277.0,
+      "debtToEquity": 0.12,
+      "currentRatio": 2.04,
+      "operatingCashFlow": 22252.0,
+      "investingCashFlow": -3836.0,
+      "financingCashFlow": -12343.0,
+      "freeCashFlow": 18416.0,
+      "capex": 3836.0,
+      "roe": 27.0,
+      "roce": 37.63,
+      "interestCover": 49.5,
+      "bookValue": 5.69,
+      "dividendPerShare": 1.0,
+      "dividendYield": 2.96,
+      "sharesOutstanding": 12480.0,
+      "revenuePerShare": 6.15,
+      "priceToSales": 5.5,
+      "evToEbitda": 14.73,
+      "peRatio": 22.0,
+      "priceToBook": 5.94
+    },
+    {
+      "year": "FY2024",
+      "revenue": 82867.0,
+      "revenueGrowth": 8.0,
+      "grossProfit": 55521.0,
+      "operatingIncome": 28175.0,
+      "ebitda": 31489.0,
+      "netIncome": 21545.0,
+      "eps": 1.73,
+      "netMargin": 26.0,
+      "grossMargin": 67.0,
+      "operatingMargin": 34.0,
+      "ebitdaMargin": 38.0,
+      "returnOnAssets": 22.62,
+      "totalAssets": 95249.0,
+      "totalEquity": 76948.0,
+      "totalDebt": 7695.0,
+      "netDebt": -5564.0,
+      "cash": 13259.0,
+      "debtToEquity": 0.1,
+      "currentRatio": 2.04,
+      "operatingCashFlow": 24859.0,
+      "investingCashFlow": -4143.0,
+      "financingCashFlow": -14864.0,
+      "freeCashFlow": 20716.0,
+      "capex": 4143.0,
+      "roe": 28.0,
+      "roce": 39.47,
+      "interestCover": 61.02,
+      "bookValue": 6.17,
+      "dividendPerShare": 1.12,
+      "dividendYield": 2.71,
+      "sharesOutstanding": 12480.0,
+      "revenuePerShare": 6.64,
+      "priceToSales": 6.24,
+      "evToEbitda": 16.24,
+      "peRatio": 24.0,
+      "priceToBook": 6.72
+    },
+    {
+      "year": "FY2025",
+      "revenue": 88667.0,
+      "revenueGrowth": 7.0,
+      "grossProfit": 60294.0,
+      "operatingIncome": 30147.0,
+      "ebitda": 33694.0,
+      "netIncome": 23054.0,
+      "eps": 1.85,
+      "netMargin": 26.0,
+      "grossMargin": 68.0,
+      "operatingMargin": 34.0,
+      "ebitdaMargin": 38.0,
+      "returnOnAssets": 22.88,
+      "totalAssets": 100758.0,
+      "totalEquity": 82334.0,
+      "totalDebt": 8233.0,
+      "netDebt": -5067.0,
+      "cash": 13300.0,
+      "debtToEquity": 0.1,
+      "currentRatio": 2.0,
+      "operatingCashFlow": 26601.0,
+      "investingCashFlow": -4433.0,
+      "financingCashFlow": -14469.0,
+      "freeCashFlow": 22168.0,
+      "capex": 4433.0,
+      "roe": 28.0,
+      "roce": 39.02,
+      "interestCover": 61.03,
+      "bookValue": 6.6,
+      "dividendPerShare": 1.2,
+      "dividendYield": 2.5,
+      "sharesOutstanding": 12480.0,
+      "revenuePerShare": 7.1,
+      "priceToSales": 6.76,
+      "evToEbitda": 17.64,
+      "peRatio": 26.0,
+      "priceToBook": 7.28
+    },
+    {
+      "year": "FY2026",
+      "revenue": 97534.0,
+      "revenueGrowth": 10.0,
+      "grossProfit": 66323.0,
+      "operatingIncome": 34137.0,
+      "ebitda": 38038.0,
+      "netIncome": 26334.0,
+      "eps": 2.11,
+      "netMargin": 27.0,
+      "grossMargin": 68.0,
+      "operatingMargin": 35.0,
+      "ebitdaMargin": 39.0,
+      "returnOnAssets": 23.76,
+      "totalAssets": 110834.0,
+      "totalEquity": 90808.0,
+      "totalDebt": 9081.0,
+      "netDebt": -4574.0,
+      "cash": 13655.0,
+      "debtToEquity": 0.1,
+      "currentRatio": 1.96,
+      "operatingCashFlow": 30235.0,
+      "investingCashFlow": -4877.0,
+      "financingCashFlow": -16268.0,
+      "freeCashFlow": 25358.0,
+      "capex": 4877.0,
+      "roe": 29.0,
+      "roce": 39.59,
+      "interestCover": 62.65,
+      "bookValue": 7.28,
+      "dividendPerShare": 1.37,
+      "dividendYield": 2.32,
+      "sharesOutstanding": 12480.0,
+      "revenuePerShare": 7.82,
+      "priceToSales": 7.56,
+      "evToEbitda": 19.26,
+      "peRatio": 28.0,
+      "priceToBook": 8.12
+    }
+  ],
+  "valuation": [
+    {
+      "year": "FY2018",
+      "price": 23.69,
+      "marketCap": 295651.0,
+      "peRatio": 22.0,
+      "priceToBook": 6.16,
+      "evToEbitda": 14.81,
+      "dividendYield": 2.96
+    },
+    {
+      "year": "FY2019",
+      "price": 28.0,
+      "marketCap": 349440.0,
+      "peRatio": 24.0,
+      "priceToBook": 6.96,
+      "evToEbitda": 16.28,
+      "dividendYield": 2.72
+    },
+    {
+      "year": "FY2020",
+      "price": 22.85,
+      "marketCap": 285168.0,
+      "peRatio": 20.0,
+      "priceToBook": 5.6,
+      "evToEbitda": 13.33,
+      "dividendYield": 3.24
+    },
+    {
+      "year": "FY2021",
+      "price": 21.18,
+      "marketCap": 264326.0,
+      "peRatio": 18.0,
+      "priceToBook": 5.04,
+      "evToEbitda": 11.97,
+      "dividendYield": 3.62
+    },
+    {
+      "year": "FY2022",
+      "price": 24.59,
+      "marketCap": 306883.0,
+      "peRatio": 19.0,
+      "priceToBook": 5.13,
+      "evToEbitda": 12.59,
+      "dividendYield": 3.41
+    },
+    {
+      "year": "FY2023",
+      "price": 33.81,
+      "marketCap": 421949.0,
+      "peRatio": 22.0,
+      "priceToBook": 5.94,
+      "evToEbitda": 14.73,
+      "dividendYield": 2.96
+    },
+    {
+      "year": "FY2024",
+      "price": 41.43,
+      "marketCap": 517046.0,
+      "peRatio": 24.0,
+      "priceToBook": 6.72,
+      "evToEbitda": 16.24,
+      "dividendYield": 2.71
+    },
+    {
+      "year": "FY2025",
+      "price": 48.03,
+      "marketCap": 599414.0,
+      "peRatio": 26.0,
+      "priceToBook": 7.28,
+      "evToEbitda": 17.64,
+      "dividendYield": 2.5
+    },
+    {
+      "year": "FY2026",
+      "price": 59.08,
+      "marketCap": 737318.0,
+      "peRatio": 28.0,
+      "priceToBook": 8.12,
+      "evToEbitda": 19.26,
+      "dividendYield": 2.32
+    }
+  ],
+  "segments": [
+    {
+      "year": "FY2018",
+      "segments": [
+        {
+          "name": "FMCG - Cigarettes",
+          "revenue": 14737.0,
+          "share": 26.32,
+          "growth": 4.0
+        },
+        {
+          "name": "FMCG - Others",
+          "revenue": 12968.0,
+          "share": 23.16,
+          "growth": 4.0
+        },
+        {
+          "name": "Hotels",
+          "revenue": 11200.0,
+          "share": 20.0,
+          "growth": 4.0
+        },
+        {
+          "name": "Paperboards & Packaging",
+          "revenue": 9432.0,
+          "share": 16.84,
+          "growth": 4.0
+        },
+        {
+          "name": "Agri Business",
+          "revenue": 7663.0,
+          "share": 13.68,
+          "growth": 4.0
+        }
+      ]
+    },
+    {
+      "year": "FY2019",
+      "segments": [
+        {
+          "name": "FMCG - Cigarettes",
+          "revenue": 14901.0,
+          "share": 25.58,
+          "growth": 4.0
+        },
+        {
+          "name": "FMCG - Others",
+          "revenue": 13637.0,
+          "share": 23.42,
+          "growth": 4.0
+        },
+        {
+          "name": "Hotels",
+          "revenue": 11777.0,
+          "share": 20.22,
+          "growth": 4.0
+        },
+        {
+          "name": "Paperboards & Packaging",
+          "revenue": 9918.0,
+          "share": 17.03,
+          "growth": 4.0
+        },
+        {
+          "name": "Agri Business",
+          "revenue": 8501.0,
+          "share": 14.6,
+          "growth": 4.0
+        }
+      ]
+    },
+    {
+      "year": "FY2020",
+      "segments": [
+        {
+          "name": "FMCG - Cigarettes",
+          "revenue": 14764.0,
+          "share": 24.85,
+          "growth": 2.0
+        },
+        {
+          "name": "FMCG - Others",
+          "revenue": 14063.0,
+          "share": 23.67,
+          "growth": 2.0
+        },
+        {
+          "name": "Hotels",
+          "revenue": 12145.0,
+          "share": 20.44,
+          "growth": 2.0
+        },
+        {
+          "name": "Paperboards & Packaging",
+          "revenue": 10227.0,
+          "share": 17.22,
+          "growth": 2.0
+        },
+        {
+          "name": "Agri Business",
+          "revenue": 9213.0,
+          "share": 15.51,
+          "growth": 2.0
+        }
+      ]
+    },
+    {
+      "year": "FY2021",
+      "segments": [
+        {
+          "name": "FMCG - Cigarettes",
+          "revenue": 14760.0,
+          "share": 24.12,
+          "growth": 3.0
+        },
+        {
+          "name": "FMCG - Others",
+          "revenue": 14642.0,
+          "share": 23.93,
+          "growth": 3.0
+        },
+        {
+          "name": "Hotels",
+          "revenue": 12645.0,
+          "share": 20.67,
+          "growth": 3.0
+        },
+        {
+          "name": "Paperboards & Packaging",
+          "revenue": 10649.0,
+          "share": 17.4,
+          "growth": 3.0
+        },
+        {
+          "name": "Agri Business",
+          "revenue": 10048.0,
+          "share": 16.42,
+          "growth": 3.0
+        }
+      ]
+    },
+    {
+      "year": "FY2022",
+      "segments": [
+        {
+          "name": "FMCG - Cigarettes",
+          "revenue": 15744.0,
+          "share": 23.39,
+          "growth": 10.0
+        },
+        {
+          "name": "FMCG - Others",
+          "revenue": 16279.0,
+          "share": 24.19,
+          "growth": 10.0
+        },
+        {
+          "name": "Hotels",
+          "revenue": 14059.0,
+          "share": 20.89,
+          "growth": 10.0
+        },
+        {
+          "name": "Paperboards & Packaging",
+          "revenue": 11839.0,
+          "share": 17.59,
+          "growth": 10.0
+        },
+        {
+          "name": "Agri Business",
+          "revenue": 11666.0,
+          "share": 17.33,
+          "growth": 10.0
+        }
+      ]
+    },
+    {
+      "year": "FY2023",
+      "segments": [
+        {
+          "name": "FMCG - Cigarettes",
+          "revenue": 17387.0,
+          "share": 22.66,
+          "growth": 14.0
+        },
+        {
+          "name": "FMCG - Others",
+          "revenue": 18756.0,
+          "share": 24.44,
+          "growth": 14.0
+        },
+        {
+          "name": "Hotels",
+          "revenue": 16198.0,
+          "share": 21.11,
+          "growth": 14.0
+        },
+        {
+          "name": "Paperboards & Packaging",
+          "revenue": 13641.0,
+          "share": 17.78,
+          "growth": 14.0
+        },
+        {
+          "name": "Agri Business",
+          "revenue": 14000.0,
+          "share": 18.25,
+          "growth": 14.0
+        }
+      ]
+    },
+    {
+      "year": "FY2024",
+      "segments": [
+        {
+          "name": "FMCG - Cigarettes",
+          "revenue": 18173.0,
+          "share": 21.93,
+          "growth": 8.0
+        },
+        {
+          "name": "FMCG - Others",
+          "revenue": 20470.0,
+          "share": 24.7,
+          "growth": 8.0
+        },
+        {
+          "name": "Hotels",
+          "revenue": 17678.0,
+          "share": 21.33,
+          "growth": 8.0
+        },
+        {
+          "name": "Paperboards & Packaging",
+          "revenue": 14887.0,
+          "share": 17.96,
+          "growth": 8.0
+        },
+        {
+          "name": "Agri Business",
+          "revenue": 15876.0,
+          "share": 19.16,
+          "growth": 8.0
+        }
+      ]
+    },
+    {
+      "year": "FY2025",
+      "segments": [
+        {
+          "name": "FMCG - Cigarettes",
+          "revenue": 18796.0,
+          "share": 21.2,
+          "growth": 7.0
+        },
+        {
+          "name": "FMCG - Others",
+          "revenue": 22131.0,
+          "share": 24.96,
+          "growth": 7.0
+        },
+        {
+          "name": "Hotels",
+          "revenue": 19113.0,
+          "share": 21.56,
+          "growth": 7.0
+        },
+        {
+          "name": "Paperboards & Packaging",
+          "revenue": 16095.0,
+          "share": 18.15,
+          "growth": 7.0
+        },
+        {
+          "name": "Agri Business",
+          "revenue": 17796.0,
+          "share": 20.07,
+          "growth": 7.0
+        }
+      ]
+    },
+    {
+      "year": "FY2026",
+      "segments": [
+        {
+          "name": "FMCG - Cigarettes",
+          "revenue": 19963.0,
+          "share": 20.47,
+          "growth": 10.0
+        },
+        {
+          "name": "FMCG - Others",
+          "revenue": 24595.0,
+          "share": 25.22,
+          "growth": 10.0
+        },
+        {
+          "name": "Hotels",
+          "revenue": 21241.0,
+          "share": 21.78,
+          "growth": 10.0
+        },
+        {
+          "name": "Paperboards & Packaging",
+          "revenue": 17887.0,
+          "share": 18.34,
+          "growth": 10.0
+        },
+        {
+          "name": "Agri Business",
+          "revenue": 20465.0,
+          "share": 20.98,
+          "growth": 10.0
+        }
+      ]
+    }
+  ],
+  "quarterly": {
+    "FY2024": [
+      {
+        "quarter": "Q1",
+        "endDate": "2024-06-30",
+        "revenue": 4788.0,
+        "netIncome": 1293.0,
+        "ebitda": 1819.0,
+        "eps": 0.1,
+        "margin": 27.0
+      },
+      {
+        "quarter": "Q2",
+        "endDate": "2024-09-30",
+        "revenue": 5586.0,
+        "netIncome": 1508.0,
+        "ebitda": 2123.0,
+        "eps": 0.12,
+        "margin": 27.0
+      },
+      {
+        "quarter": "Q3",
+        "endDate": "2024-12-31",
+        "revenue": 5320.0,
+        "netIncome": 1436.0,
+        "ebitda": 2022.0,
+        "eps": 0.12,
+        "margin": 27.0
+      },
+      {
+        "quarter": "Q4",
+        "endDate": "2025-03-31",
+        "revenue": 5852.0,
+        "netIncome": 1404.0,
+        "ebitda": 2224.0,
+        "eps": 0.11,
+        "margin": 24.0
+      }
+    ],
+    "FY2025": [
+      {
+        "quarter": "Q1",
+        "endDate": "2025-06-30",
+        "revenue": 5123.0,
+        "netIncome": 1383.0,
+        "ebitda": 1947.0,
+        "eps": 0.11,
+        "margin": 27.0
+      },
+      {
+        "quarter": "Q2",
+        "endDate": "2025-09-30",
+        "revenue": 5977.0,
+        "netIncome": 1614.0,
+        "ebitda": 2271.0,
+        "eps": 0.13,
+        "margin": 27.0
+      },
+      {
+        "quarter": "Q3",
+        "endDate": "2025-12-31",
+        "revenue": 5692.0,
+        "netIncome": 1537.0,
+        "ebitda": 2163.0,
+        "eps": 0.12,
+        "margin": 27.0
+      },
+      {
+        "quarter": "Q4",
+        "endDate": "2026-03-31",
+        "revenue": 6261.0,
+        "netIncome": 1503.0,
+        "ebitda": 2379.0,
+        "eps": 0.12,
+        "margin": 24.0
+      }
+    ],
+    "FY2026": [
+      {
+        "quarter": "Q1",
+        "endDate": "2026-06-30",
+        "revenue": 5635.0,
+        "netIncome": 1578.0,
+        "ebitda": 2198.0,
+        "eps": 0.13,
+        "margin": 28.0
+      },
+      {
+        "quarter": "Q2",
+        "endDate": "2026-09-30",
+        "revenue": 6575.0,
+        "netIncome": 1841.0,
+        "ebitda": 2564.0,
+        "eps": 0.15,
+        "margin": 28.0
+      },
+      {
+        "quarter": "Q3",
+        "endDate": "2026-12-31",
+        "revenue": 6261.0,
+        "netIncome": 1753.0,
+        "ebitda": 2442.0,
+        "eps": 0.14,
+        "margin": 28.0
+      },
+      {
+        "quarter": "Q4",
+        "endDate": "2027-03-31",
+        "revenue": 6888.0,
+        "netIncome": 1722.0,
+        "ebitda": 2686.0,
+        "eps": 0.14,
+        "margin": 25.0
+      }
+    ]
+  },
+  "riskFactors": [
+    {
+      "title": "Input inflation",
+      "description": "Rising raw material costs may compress gross margins.",
+      "severity": "high"
+    },
+    {
+      "title": "Consumer competition",
+      "description": "Competition from new brands could pressure market share.",
+      "severity": "medium"
+    }
+  ],
+  "managementDiscussion": "In fiscal year FY2026, ITC Limited recorded revenue of \u20b90.98 lakh crore, growing 10.0% year-on-year, driven by continued momentum across FMCG - Cigarettes, FMCG - Others. Net income stood at \u20b90.26 lakh crore with a net margin of 27.0% and a return on equity of 29.0%. Operating cash flow remained robust at \u20b90.30 lakh crore, supporting capital expenditure of \u20b90.05 lakh crore and a free cash flow of \u20b90.25 lakh crore. The company maintains a measured capital structure with net debt-to-equity of -0.05x. Management continues to invest in digital and AI capabilities, expects sustained volume-led growth and disciplined cost control, and remains committed to value-accretive capital allocation and sustainable returns for shareholders.",
+  "documents": [
+    {
+      "id": "itc-20-f-2026-1",
+      "companySlug": "itc",
+      "type": "Annual Report",
+      "title": "Annual Report FY2026",
+      "form": "20-F",
+      "fiscalPeriod": "FY2026",
+      "filedDate": "2026-11-22",
+      "periodEnd": "2026-03-31",
+      "source": "SEC EDGAR",
+      "sourceUrl": "https://www.itc/reports/20-F/2026",
+      "sizeKb": 3838,
+      "pages": 250,
+      "sha256": "454c8ae0ef628ed1b778e4dc0784ba14001fb4f7a160597b460b4f162aaa4626",
+      "latestVersion": "v1.1",
+      "versions": [
+        {
+          "version": "v1",
+          "uploadedAt": "2026-01-01",
+          "note": "Initial filing"
+        },
+        {
+          "version": "v1.1",
+          "uploadedAt": "2026-02-01",
+          "note": "Minor metadata corrections"
+        }
+      ]
+    },
+    {
+      "id": "itc-10-k-2026-2",
+      "companySlug": "itc",
+      "type": "10-K",
+      "title": "Form 10-K - FY2026",
+      "form": "10-K",
+      "fiscalPeriod": "FY2026",
+      "filedDate": "2026-10-10",
+      "periodEnd": "2026-03-31",
+      "source": "SEC EDGAR",
+      "sourceUrl": "https://www.itc/reports/10-K/2026",
+      "sizeKb": 7201,
+      "pages": 160,
+      "sha256": "73f58f27176d6f11dce02535c85a5d2a5776951883bd3d9ffcdf89f5490bdea0",
+      "latestVersion": "v1.1",
+      "versions": [
+        {
+          "version": "v1",
+          "uploadedAt": "2026-01-01",
+          "note": "Initial filing"
+        },
+        {
+          "version": "v1.1",
+          "uploadedAt": "2026-02-01",
+          "note": "Minor metadata corrections"
+        }
+      ]
+    },
+    {
+      "id": "itc-pres-2026-3",
+      "companySlug": "itc",
+      "type": "Investor Presentation",
+      "title": "Q1 FY2027 Investor Presentation",
+      "form": "PRES",
+      "fiscalPeriod": "FY2026",
+      "filedDate": "2026-10-24",
+      "periodEnd": "2026-03-31",
+      "source": "Investor Relations",
+      "sourceUrl": "https://www.itc/reports/PRES/2026",
+      "sizeKb": 5305,
+      "pages": 214,
+      "sha256": "9d62a486d2df466f4bca63bed9a1def14718fe4d8e5aff1e8b9daeb52416c472",
+      "latestVersion": "v1.1",
+      "versions": [
+        {
+          "version": "v1",
+          "uploadedAt": "2026-01-01",
+          "note": "Initial filing"
+        },
+        {
+          "version": "v1.1",
+          "uploadedAt": "2026-02-01",
+          "note": "Minor metadata corrections"
+        }
+      ]
+    },
+    {
+      "id": "itc-tran-2026-4",
+      "companySlug": "itc",
+      "type": "Earnings Call Transcript",
+      "title": "Q1 FY2027 Earnings Call Transcript",
+      "form": "TRAN",
+      "fiscalPeriod": "FY2026",
+      "filedDate": "2026-10-16",
+      "periodEnd": "2026-03-31",
+      "source": "NSE",
+      "sourceUrl": "https://www.itc/reports/TRAN/2026",
+      "sizeKb": 7218,
+      "pages": 147,
+      "sha256": "373f040c10d2c195634ab9efbdb71e2b298c12e8807c80d465c534a1a6b0db47",
+      "latestVersion": "v1.1",
+      "versions": [
+        {
+          "version": "v1",
+          "uploadedAt": "2026-01-01",
+          "note": "Initial filing"
+        },
+        {
+          "version": "v1.1",
+          "uploadedAt": "2026-02-01",
+          "note": "Minor metadata corrections"
+        }
+      ]
+    },
+    {
+      "id": "itc-10-q-2026-5",
+      "companySlug": "itc",
+      "type": "10-Q",
+      "title": "Form 10-Q - Q1 FY2026",
+      "form": "10-Q",
+      "fiscalPeriod": "FY2026",
+      "filedDate": "2026-06-24",
+      "periodEnd": "2026-03-31",
+      "source": "BSE",
+      "sourceUrl": "https://www.itc/reports/10-Q/2026",
+      "sizeKb": 2621,
+      "pages": 203,
+      "sha256": "d05718405ca3c954f38d17dcf9962ea4ee7643523f869cc9f1b989d3862fad9f",
+      "latestVersion": "v1.1",
+      "versions": [
+        {
+          "version": "v1",
+          "uploadedAt": "2026-01-01",
+          "note": "Initial filing"
+        },
+        {
+          "version": "v1.1",
+          "uploadedAt": "2026-02-01",
+          "note": "Minor metadata corrections"
+        }
+      ]
+    },
+    {
+      "id": "itc-8-k-2026-6",
+      "companySlug": "itc",
+      "type": "8-K",
+      "title": "Current Report - Board Update",
+      "form": "8-K",
+      "fiscalPeriod": "FY2026",
+      "filedDate": "2026-11-10",
+      "periodEnd": "2026-03-31",
+      "source": "SEC EDGAR",
+      "sourceUrl": "https://www.itc/reports/8-K/2026",
+      "sizeKb": 5505,
+      "pages": 132,
+      "sha256": "97bc2cb1382d796a6c2e1cc121d6c6c006371507c531825410b68071279f63ae",
+      "latestVersion": "v1.1",
+      "versions": [
+        {
+          "version": "v1",
+          "uploadedAt": "2026-01-01",
+          "note": "Initial filing"
+        },
+        {
+          "version": "v1.1",
+          "uploadedAt": "2026-02-01",
+          "note": "Minor metadata corrections"
+        }
+      ]
+    },
+    {
+      "id": "itc-20-f-2025-7",
+      "companySlug": "itc",
+      "type": "Annual Report",
+      "title": "Annual Report FY2025",
+      "form": "20-F",
+      "fiscalPeriod": "FY2025",
+      "filedDate": "2025-09-17",
+      "periodEnd": "2025-03-31",
+      "source": "SEC EDGAR",
+      "sourceUrl": "https://www.itc/reports/20-F/2025",
+      "sizeKb": 6095,
+      "pages": 140,
+      "sha256": "a392668009a2c2ab8d1b8f203469eceacbe2a1fc409955f4ee9cd32afddf89c0",
+      "latestVersion": "v1.1",
+      "versions": [
+        {
+          "version": "v1",
+          "uploadedAt": "2025-01-01",
+          "note": "Initial filing"
+        },
+        {
+          "version": "v1.1",
+          "uploadedAt": "2025-02-01",
+          "note": "Minor metadata corrections"
+        }
+      ]
+    },
+    {
+      "id": "itc-pres-2026-8",
+      "companySlug": "itc",
+      "type": "Investor Presentation",
+      "title": "Q3 FY2026 Investor Presentation",
+      "form": "PRES",
+      "fiscalPeriod": "FY2026",
+      "filedDate": "2026-06-10",
+      "periodEnd": "2026-03-31",
+      "source": "BSE",
+      "sourceUrl": "https://www.itc/reports/PRES/2026",
+      "sizeKb": 5489,
+      "pages": 243,
+      "sha256": "729c76ccb80d97d099c7f39a48a6cf3ced6954120040b6ec5104914a0cc093d2",
+      "latestVersion": "v1.1",
+      "versions": [
+        {
+          "version": "v1",
+          "uploadedAt": "2026-01-01",
+          "note": "Initial filing"
+        },
+        {
+          "version": "v1.1",
+          "uploadedAt": "2026-02-01",
+          "note": "Minor metadata corrections"
+        }
+      ]
+    }
+  ]
+}

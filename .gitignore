@@ -1,0 +1,41 @@
+# Python / uv
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.coverage
+dist/
+build/
+
+# Environment & secrets
+.env
+.env.*
+*.pem
+*.key
+
+# Node / Next.js
+node_modules/
+.next/
+out/
+*.tsbuildinfo
+
+# Test / coverage output
+coverage/
+htmlcov/
+*.log
+
+# Local env overrides
+.env.local
+.env.*.local
+investiq/.env.local
+
+# Deployment artifacts
+.vercel/
+.netlify/
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

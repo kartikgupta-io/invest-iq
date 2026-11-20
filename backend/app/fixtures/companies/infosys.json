@@ -1,0 +1,1149 @@
+{
+  "profile": {
+    "slug": "infosys",
+    "ticker": "INFY",
+    "name": "Infosys",
+    "sector": "Information Technology",
+    "industry": "IT Services & Consulting",
+    "exchange": "NSE",
+    "currency": "\u20b9",
+    "currencyCode": "INR",
+    "founded": 1981,
+    "listed": "1993",
+    "headquarters": "Bengaluru, Karnataka",
+    "website": "infosys.com",
+    "description": "A global leader in next-generation digital services and consulting, Infosys helps clients in over 50 countries navigate their digital transformation, from cloud and AI to enterprise applications.",
+    "employees": 317240,
+    "accent": "#8b5cf6",
+    "market": "INDIA"
+  },
+  "quote": {
+    "price": 239.13,
+    "change": 0.03,
+    "changePct": 0.01,
+    "open": 238.25,
+    "high": 242.0,
+    "low": 236.26,
+    "volume": 19177710,
+    "previousClose": 239.1,
+    "marketCap": 992405.0,
+    "peRatio": 25.0,
+    "eps": 9.57,
+    "dividendYield": 2.4,
+    "high52Week": 282.17,
+    "low52Week": 172.17
+  },
+  "annual": [
+    {
+      "year": "FY2018",
+      "revenue": 82000.0,
+      "revenueGrowth": 16.0,
+      "grossProfit": 52480.0,
+      "operatingIncome": 19680.0,
+      "ebitda": 22140.0,
+      "netIncome": 16400.0,
+      "eps": 3.9,
+      "netMargin": 20.0,
+      "grossMargin": 64.0,
+      "operatingMargin": 24.0,
+      "ebitdaMargin": 27.0,
+      "returnOnAssets": 20.0,
+      "totalAssets": 82000.0,
+      "totalEquity": 54667.0,
+      "totalDebt": 5467.0,
+      "netDebt": -7653.0,
+      "cash": 13120.0,
+      "debtToEquity": 0.1,
+      "currentRatio": 2.04,
+      "operatingCashFlow": 18860.0,
+      "investingCashFlow": -1230.0,
+      "financingCashFlow": -9828.0,
+      "freeCashFlow": 17630.0,
+      "capex": 1230.0,
+      "roe": 30.0,
+      "roce": 41.86,
+      "interestCover": 72.0,
+      "bookValue": 13.02,
+      "dividendPerShare": 2.34,
+      "dividendYield": 3.33,
+      "sharesOutstanding": 4200.0,
+      "revenuePerShare": 19.52,
+      "priceToSales": 3.6,
+      "evToEbitda": 12.99,
+      "peRatio": 18.0,
+      "priceToBook": 5.4
+    },
+    {
+      "year": "FY2019",
+      "revenue": 95120.0,
+      "revenueGrowth": 16.0,
+      "grossProfit": 59926.0,
+      "operatingIncome": 21878.0,
+      "ebitda": 24731.0,
+      "netIncome": 18073.0,
+      "eps": 4.3,
+      "netMargin": 19.0,
+      "grossMargin": 63.0,
+      "operatingMargin": 23.0,
+      "ebitdaMargin": 26.0,
+      "returnOnAssets": 19.0,
+      "totalAssets": 95120.0,
+      "totalEquity": 60243.0,
+      "totalDebt": 6024.0,
+      "netDebt": -9195.0,
+      "cash": 15219.0,
+      "debtToEquity": 0.1,
+      "currentRatio": 2.04,
+      "operatingCashFlow": 20926.0,
+      "investingCashFlow": -1427.0,
+      "financingCashFlow": -10279.0,
+      "freeCashFlow": 19499.0,
+      "capex": 1427.0,
+      "roe": 30.0,
+      "roce": 42.86,
+      "interestCover": 72.64,
+      "bookValue": 14.34,
+      "dividendPerShare": 2.58,
+      "dividendYield": 3.0,
+      "sharesOutstanding": 4200.0,
+      "revenuePerShare": 22.65,
+      "priceToSales": 3.8,
+      "evToEbitda": 14.24,
+      "peRatio": 20.0,
+      "priceToBook": 6.0
+    },
+    {
+      "year": "FY2020",
+      "revenue": 104632.0,
+      "revenueGrowth": 10.0,
+      "grossProfit": 66964.0,
+      "operatingIncome": 25112.0,
+      "ebitda": 28251.0,
+      "netIncome": 20926.0,
+      "eps": 4.98,
+      "netMargin": 20.0,
+      "grossMargin": 64.0,
+      "operatingMargin": 24.0,
+      "ebitdaMargin": 27.0,
+      "returnOnAssets": 20.0,
+      "totalAssets": 104632.0,
+      "totalEquity": 65395.0,
+      "totalDebt": 6540.0,
+      "netDebt": -11247.0,
+      "cash": 17787.0,
+      "debtToEquity": 0.1,
+      "currentRatio": 2.08,
+      "operatingCashFlow": 24065.0,
+      "investingCashFlow": -1569.0,
+      "financingCashFlow": -12034.0,
+      "freeCashFlow": 22496.0,
+      "capex": 1569.0,
+      "roe": 32.0,
+      "roce": 46.38,
+      "interestCover": 76.8,
+      "bookValue": 15.57,
+      "dividendPerShare": 2.99,
+      "dividendYield": 3.33,
+      "sharesOutstanding": 4200.0,
+      "revenuePerShare": 24.91,
+      "priceToSales": 3.6,
+      "evToEbitda": 12.93,
+      "peRatio": 18.0,
+      "priceToBook": 5.76
+    },
+    {
+      "year": "FY2021",
+      "revenue": 117188.0,
+      "revenueGrowth": 12.0,
+      "grossProfit": 75000.0,
+      "operatingIncome": 28125.0,
+      "ebitda": 31641.0,
+      "netIncome": 23438.0,
+      "eps": 5.58,
+      "netMargin": 20.0,
+      "grossMargin": 64.0,
+      "operatingMargin": 24.0,
+      "ebitdaMargin": 27.0,
+      "returnOnAssets": 20.0,
+      "totalAssets": 117188.0,
+      "totalEquity": 71023.0,
+      "totalDebt": 7102.0,
+      "netDebt": -13992.0,
+      "cash": 21094.0,
+      "debtToEquity": 0.1,
+      "currentRatio": 2.12,
+      "operatingCashFlow": 26954.0,
+      "investingCashFlow": -1758.0,
+      "financingCashFlow": -13500.0,
+      "freeCashFlow": 25196.0,
+      "capex": 1758.0,
+      "roe": 33.0,
+      "roce": 49.32,
+      "interestCover": 79.2,
+      "bookValue": 16.91,
+      "dividendPerShare": 3.35,
+      "dividendYield": 2.4,
+      "sharesOutstanding": 4200.0,
+      "revenuePerShare": 27.9,
+      "priceToSales": 5.0,
+      "evToEbitda": 18.08,
+      "peRatio": 25.0,
+      "priceToBook": 8.25
+    },
+    {
+      "year": "FY2022",
+      "revenue": 140625.0,
+      "revenueGrowth": 20.0,
+      "grossProfit": 87188.0,
+      "operatingIncome": 30938.0,
+      "ebitda": 35156.0,
+      "netIncome": 25313.0,
+      "eps": 6.03,
+      "netMargin": 18.0,
+      "grossMargin": 62.0,
+      "operatingMargin": 22.0,
+      "ebitdaMargin": 25.0,
+      "returnOnAssets": 18.0,
+      "totalAssets": 140625.0,
+      "totalEquity": 79102.0,
+      "totalDebt": 7910.0,
+      "netDebt": -18809.0,
+      "cash": 26719.0,
+      "debtToEquity": 0.1,
+      "currentRatio": 2.16,
+      "operatingCashFlow": 29531.0,
+      "investingCashFlow": -2109.0,
+      "financingCashFlow": -14388.0,
+      "freeCashFlow": 27422.0,
+      "capex": 2109.0,
+      "roe": 32.0,
+      "roce": 51.31,
+      "interestCover": 78.23,
+      "bookValue": 18.83,
+      "dividendPerShare": 3.62,
+      "dividendYield": 2.5,
+      "sharesOutstanding": 4200.0,
+      "revenuePerShare": 33.48,
+      "priceToSales": 4.32,
+      "evToEbitda": 16.74,
+      "peRatio": 24.0,
+      "priceToBook": 7.68
+    },
+    {
+      "year": "FY2023",
+      "revenue": 171563.0,
+      "revenueGrowth": 22.0,
+      "grossProfit": 104653.0,
+      "operatingIncome": 36028.0,
+      "ebitda": 41175.0,
+      "netIncome": 29166.0,
+      "eps": 6.94,
+      "netMargin": 17.0,
+      "grossMargin": 61.0,
+      "operatingMargin": 21.0,
+      "ebitdaMargin": 24.0,
+      "returnOnAssets": 17.0,
+      "totalAssets": 171563.0,
+      "totalEquity": 100571.0,
+      "totalDebt": 10057.0,
+      "netDebt": -20824.0,
+      "cash": 30881.0,
+      "debtToEquity": 0.1,
+      "currentRatio": 2.12,
+      "operatingCashFlow": 34313.0,
+      "investingCashFlow": -2573.0,
+      "financingCashFlow": -15342.0,
+      "freeCashFlow": 31740.0,
+      "capex": 2573.0,
+      "roe": 29.0,
+      "roce": 45.18,
+      "interestCover": 71.65,
+      "bookValue": 23.95,
+      "dividendPerShare": 4.16,
+      "dividendYield": 3.0,
+      "sharesOutstanding": 4200.0,
+      "revenuePerShare": 40.85,
+      "priceToSales": 3.4,
+      "evToEbitda": 13.66,
+      "peRatio": 20.0,
+      "priceToBook": 5.8
+    },
+    {
+      "year": "FY2024",
+      "revenue": 176710.0,
+      "revenueGrowth": 3.0,
+      "grossProfit": 109560.0,
+      "operatingIncome": 38876.0,
+      "ebitda": 44177.0,
+      "netIncome": 31808.0,
+      "eps": 7.57,
+      "netMargin": 18.0,
+      "grossMargin": 62.0,
+      "operatingMargin": 22.0,
+      "ebitdaMargin": 25.0,
+      "returnOnAssets": 18.0,
+      "totalAssets": 176710.0,
+      "totalEquity": 106026.0,
+      "totalDebt": 10603.0,
+      "netDebt": -19438.0,
+      "cash": 30041.0,
+      "debtToEquity": 0.1,
+      "currentRatio": 2.08,
+      "operatingCashFlow": 37109.0,
+      "investingCashFlow": -2651.0,
+      "financingCashFlow": -18530.0,
+      "freeCashFlow": 34458.0,
+      "capex": 2651.0,
+      "roe": 30.0,
+      "roce": 44.9,
+      "interestCover": 73.33,
+      "bookValue": 25.24,
+      "dividendPerShare": 4.54,
+      "dividendYield": 2.73,
+      "sharesOutstanding": 4200.0,
+      "revenuePerShare": 42.07,
+      "priceToSales": 3.96,
+      "evToEbitda": 15.4,
+      "peRatio": 22.0,
+      "priceToBook": 6.6
+    },
+    {
+      "year": "FY2025",
+      "revenue": 183778.0,
+      "revenueGrowth": 4.0,
+      "grossProfit": 115780.0,
+      "operatingIncome": 42269.0,
+      "ebitda": 47782.0,
+      "netIncome": 34918.0,
+      "eps": 8.41,
+      "netMargin": 19.0,
+      "grossMargin": 63.0,
+      "operatingMargin": 23.0,
+      "ebitdaMargin": 26.0,
+      "returnOnAssets": 19.0,
+      "totalAssets": 183778.0,
+      "totalEquity": 112638.0,
+      "totalDebt": 11264.0,
+      "netDebt": -18141.0,
+      "cash": 29405.0,
+      "debtToEquity": 0.1,
+      "currentRatio": 2.04,
+      "operatingCashFlow": 40431.0,
+      "investingCashFlow": -2757.0,
+      "financingCashFlow": -20280.0,
+      "freeCashFlow": 37674.0,
+      "capex": 2757.0,
+      "roe": 31.0,
+      "roce": 44.73,
+      "interestCover": 75.05,
+      "bookValue": 27.14,
+      "dividendPerShare": 5.05,
+      "dividendYield": 2.5,
+      "sharesOutstanding": 4150.0,
+      "revenuePerShare": 44.28,
+      "priceToSales": 4.56,
+      "evToEbitda": 17.16,
+      "peRatio": 24.0,
+      "priceToBook": 7.44
+    },
+    {
+      "year": "FY2026",
+      "revenue": 198481.0,
+      "revenueGrowth": 8.0,
+      "grossProfit": 127028.0,
+      "operatingIncome": 47635.0,
+      "ebitda": 53590.0,
+      "netIncome": 39696.0,
+      "eps": 9.57,
+      "netMargin": 20.0,
+      "grossMargin": 64.0,
+      "operatingMargin": 24.0,
+      "ebitdaMargin": 27.0,
+      "returnOnAssets": 20.0,
+      "totalAssets": 198481.0,
+      "totalEquity": 124050.0,
+      "totalDebt": 12405.0,
+      "netDebt": -19352.0,
+      "cash": 31757.0,
+      "debtToEquity": 0.1,
+      "currentRatio": 2.04,
+      "operatingCashFlow": 45651.0,
+      "investingCashFlow": -2977.0,
+      "financingCashFlow": -22688.0,
+      "freeCashFlow": 42674.0,
+      "capex": 2977.0,
+      "roe": 32.0,
+      "roce": 45.5,
+      "interestCover": 76.8,
+      "bookValue": 29.89,
+      "dividendPerShare": 5.74,
+      "dividendYield": 2.4,
+      "sharesOutstanding": 4150.0,
+      "revenuePerShare": 47.83,
+      "priceToSales": 5.0,
+      "evToEbitda": 18.16,
+      "peRatio": 25.0,
+      "priceToBook": 8.0
+    }
+  ],
+  "valuation": [
+    {
+      "year": "FY2018",
+      "price": 70.29,
+      "marketCap": 295218.0,
+      "peRatio": 18.0,
+      "priceToBook": 5.4,
+      "evToEbitda": 12.99,
+      "dividendYield": 3.33
+    },
+    {
+      "year": "FY2019",
+      "price": 86.06,
+      "marketCap": 361452.0,
+      "peRatio": 20.0,
+      "priceToBook": 6.0,
+      "evToEbitda": 14.24,
+      "dividendYield": 3.0
+    },
+    {
+      "year": "FY2020",
+      "price": 89.68,
+      "marketCap": 376656.0,
+      "peRatio": 18.0,
+      "priceToBook": 5.76,
+      "evToEbitda": 12.93,
+      "dividendYield": 3.33
+    },
+    {
+      "year": "FY2021",
+      "price": 139.51,
+      "marketCap": 585942.0,
+      "peRatio": 25.0,
+      "priceToBook": 8.25,
+      "evToEbitda": 18.08,
+      "dividendYield": 2.4
+    },
+    {
+      "year": "FY2022",
+      "price": 144.64,
+      "marketCap": 607488.0,
+      "peRatio": 24.0,
+      "priceToBook": 7.68,
+      "evToEbitda": 16.74,
+      "dividendYield": 2.5
+    },
+    {
+      "year": "FY2023",
+      "price": 138.88,
+      "marketCap": 583296.0,
+      "peRatio": 20.0,
+      "priceToBook": 5.8,
+      "evToEbitda": 13.66,
+      "dividendYield": 3.0
+    },
+    {
+      "year": "FY2024",
+      "price": 166.61,
+      "marketCap": 699762.0,
+      "peRatio": 22.0,
+      "priceToBook": 6.6,
+      "evToEbitda": 15.4,
+      "dividendYield": 2.73
+    },
+    {
+      "year": "FY2025",
+      "price": 201.93,
+      "marketCap": 838010.0,
+      "peRatio": 24.0,
+      "priceToBook": 7.44,
+      "evToEbitda": 17.16,
+      "dividendYield": 2.5
+    },
+    {
+      "year": "FY2026",
+      "price": 239.13,
+      "marketCap": 992390.0,
+      "peRatio": 25.0,
+      "priceToBook": 8.0,
+      "evToEbitda": 18.16,
+      "dividendYield": 2.4
+    }
+  ],
+  "segments": [
+    {
+      "year": "FY2018",
+      "segments": [
+        {
+          "name": "Financial Services",
+          "revenue": 21579.0,
+          "share": 26.32,
+          "growth": 16.0
+        },
+        {
+          "name": "Retail",
+          "revenue": 18989.0,
+          "share": 23.16,
+          "growth": 16.0
+        },
+        {
+          "name": "Energy & Utilities",
+          "revenue": 16400.0,
+          "share": 20.0,
+          "growth": 16.0
+        },
+        {
+          "name": "Manufacturing",
+          "revenue": 13811.0,
+          "share": 16.84,
+          "growth": 16.0
+        },
+        {
+          "name": "Hi-Tech",
+          "revenue": 11221.0,
+          "share": 13.68,
+          "growth": 16.0
+        }
+      ]
+    },
+    {
+      "year": "FY2019",
+      "segments": [
+        {
+          "name": "Financial Services",
+          "revenue": 24336.0,
+          "share": 25.58,
+          "growth": 16.0
+        },
+        {
+          "name": "Retail",
+          "revenue": 22273.0,
+          "share": 23.42,
+          "growth": 16.0
+        },
+        {
+          "name": "Energy & Utilities",
+          "revenue": 19235.0,
+          "share": 20.22,
+          "growth": 16.0
+        },
+        {
+          "name": "Manufacturing",
+          "revenue": 16198.0,
+          "share": 17.03,
+          "growth": 16.0
+        },
+        {
+          "name": "Hi-Tech",
+          "revenue": 13884.0,
+          "share": 14.6,
+          "growth": 16.0
+        }
+      ]
+    },
+    {
+      "year": "FY2020",
+      "segments": [
+        {
+          "name": "Financial Services",
+          "revenue": 26005.0,
+          "share": 24.85,
+          "growth": 10.0
+        },
+        {
+          "name": "Retail",
+          "revenue": 24769.0,
+          "share": 23.67,
+          "growth": 10.0
+        },
+        {
+          "name": "Energy & Utilities",
+          "revenue": 21391.0,
+          "share": 20.44,
+          "growth": 10.0
+        },
+        {
+          "name": "Manufacturing",
+          "revenue": 18014.0,
+          "share": 17.22,
+          "growth": 10.0
+        },
+        {
+          "name": "Hi-Tech",
+          "revenue": 16227.0,
+          "share": 15.51,
+          "growth": 10.0
+        }
+      ]
+    },
+    {
+      "year": "FY2021",
+      "segments": [
+        {
+          "name": "Financial Services",
+          "revenue": 28269.0,
+          "share": 24.12,
+          "growth": 12.0
+        },
+        {
+          "name": "Retail",
+          "revenue": 28043.0,
+          "share": 23.93,
+          "growth": 12.0
+        },
+        {
+          "name": "Energy & Utilities",
+          "revenue": 24219.0,
+          "share": 20.67,
+          "growth": 12.0
+        },
+        {
+          "name": "Manufacturing",
+          "revenue": 20395.0,
+          "share": 17.4,
+          "growth": 12.0
+        },
+        {
+          "name": "Hi-Tech",
+          "revenue": 19243.0,
+          "share": 16.42,
+          "growth": 12.0
+        }
+      ]
+    },
+    {
+      "year": "FY2022",
+      "segments": [
+        {
+          "name": "Financial Services",
+          "revenue": 32895.0,
+          "share": 23.39,
+          "growth": 20.0
+        },
+        {
+          "name": "Retail",
+          "revenue": 34013.0,
+          "share": 24.19,
+          "growth": 20.0
+        },
+        {
+          "name": "Energy & Utilities",
+          "revenue": 29375.0,
+          "share": 20.89,
+          "growth": 20.0
+        },
+        {
+          "name": "Manufacturing",
+          "revenue": 24737.0,
+          "share": 17.59,
+          "growth": 20.0
+        },
+        {
+          "name": "Hi-Tech",
+          "revenue": 24375.0,
+          "share": 17.33,
+          "growth": 20.0
+        }
+      ]
+    },
+    {
+      "year": "FY2023",
+      "segments": [
+        {
+          "name": "Financial Services",
+          "revenue": 38878.0,
+          "share": 22.66,
+          "growth": 22.0
+        },
+        {
+          "name": "Retail",
+          "revenue": 41938.0,
+          "share": 24.44,
+          "growth": 22.0
+        },
+        {
+          "name": "Energy & Utilities",
+          "revenue": 36219.0,
+          "share": 21.11,
+          "growth": 22.0
+        },
+        {
+          "name": "Manufacturing",
+          "revenue": 30500.0,
+          "share": 17.78,
+          "growth": 22.0
+        },
+        {
+          "name": "Hi-Tech",
+          "revenue": 31303.0,
+          "share": 18.25,
+          "growth": 22.0
+        }
+      ]
+    },
+    {
+      "year": "FY2024",
+      "segments": [
+        {
+          "name": "Financial Services",
+          "revenue": 38752.0,
+          "share": 21.93,
+          "growth": 3.0
+        },
+        {
+          "name": "Retail",
+          "revenue": 43650.0,
+          "share": 24.7,
+          "growth": 3.0
+        },
+        {
+          "name": "Energy & Utilities",
+          "revenue": 37698.0,
+          "share": 21.33,
+          "growth": 3.0
+        },
+        {
+          "name": "Manufacturing",
+          "revenue": 31746.0,
+          "share": 17.96,
+          "growth": 3.0
+        },
+        {
+          "name": "Hi-Tech",
+          "revenue": 33854.0,
+          "share": 19.16,
+          "growth": 3.0
+        }
+      ]
+    },
+    {
+      "year": "FY2025",
+      "segments": [
+        {
+          "name": "Financial Services",
+          "revenue": 38959.0,
+          "share": 21.2,
+          "growth": 4.0
+        },
+        {
+          "name": "Retail",
+          "revenue": 45869.0,
+          "share": 24.96,
+          "growth": 4.0
+        },
+        {
+          "name": "Energy & Utilities",
+          "revenue": 39614.0,
+          "share": 21.56,
+          "growth": 4.0
+        },
+        {
+          "name": "Manufacturing",
+          "revenue": 33360.0,
+          "share": 18.15,
+          "growth": 4.0
+        },
+        {
+          "name": "Hi-Tech",
+          "revenue": 36885.0,
+          "share": 20.07,
+          "growth": 4.0
+        }
+      ]
+    },
+    {
+      "year": "FY2026",
+      "segments": [
+        {
+          "name": "Financial Services",
+          "revenue": 40625.0,
+          "share": 20.47,
+          "growth": 8.0
+        },
+        {
+          "name": "Retail",
+          "revenue": 50050.0,
+          "share": 25.22,
+          "growth": 8.0
+        },
+        {
+          "name": "Energy & Utilities",
+          "revenue": 43225.0,
+          "share": 21.78,
+          "growth": 8.0
+        },
+        {
+          "name": "Manufacturing",
+          "revenue": 36400.0,
+          "share": 18.34,
+          "growth": 8.0
+        },
+        {
+          "name": "Hi-Tech",
+          "revenue": 41646.0,
+          "share": 20.98,
+          "growth": 8.0
+        }
+      ]
+    }
+  ],
+  "quarterly": {
+    "FY2024": [
+      {
+        "quarter": "Q1",
+        "endDate": "2024-06-30",
+        "revenue": 10210.0,
+        "netIncome": 1940.0,
+        "ebitda": 2552.0,
+        "eps": 0.47,
+        "margin": 19.0
+      },
+      {
+        "quarter": "Q2",
+        "endDate": "2024-09-30",
+        "revenue": 11912.0,
+        "netIncome": 2263.0,
+        "ebitda": 2978.0,
+        "eps": 0.55,
+        "margin": 19.0
+      },
+      {
+        "quarter": "Q3",
+        "endDate": "2024-12-31",
+        "revenue": 11344.0,
+        "netIncome": 2155.0,
+        "ebitda": 2836.0,
+        "eps": 0.52,
+        "margin": 19.0
+      },
+      {
+        "quarter": "Q4",
+        "endDate": "2025-03-31",
+        "revenue": 12479.0,
+        "netIncome": 1997.0,
+        "ebitda": 3120.0,
+        "eps": 0.48,
+        "margin": 16.0
+      }
+    ],
+    "FY2025": [
+      {
+        "quarter": "Q1",
+        "endDate": "2025-06-30",
+        "revenue": 10618.0,
+        "netIncome": 2124.0,
+        "ebitda": 2761.0,
+        "eps": 0.51,
+        "margin": 20.0
+      },
+      {
+        "quarter": "Q2",
+        "endDate": "2025-09-30",
+        "revenue": 12388.0,
+        "netIncome": 2478.0,
+        "ebitda": 3221.0,
+        "eps": 0.6,
+        "margin": 20.0
+      },
+      {
+        "quarter": "Q3",
+        "endDate": "2025-12-31",
+        "revenue": 11798.0,
+        "netIncome": 2360.0,
+        "ebitda": 3068.0,
+        "eps": 0.57,
+        "margin": 20.0
+      },
+      {
+        "quarter": "Q4",
+        "endDate": "2026-03-31",
+        "revenue": 12978.0,
+        "netIncome": 2206.0,
+        "ebitda": 3374.0,
+        "eps": 0.53,
+        "margin": 17.0
+      }
+    ],
+    "FY2026": [
+      {
+        "quarter": "Q1",
+        "endDate": "2026-06-30",
+        "revenue": 11468.0,
+        "netIncome": 2408.0,
+        "ebitda": 3096.0,
+        "eps": 0.58,
+        "margin": 21.0
+      },
+      {
+        "quarter": "Q2",
+        "endDate": "2026-09-30",
+        "revenue": 13379.0,
+        "netIncome": 2810.0,
+        "ebitda": 3612.0,
+        "eps": 0.68,
+        "margin": 21.0
+      },
+      {
+        "quarter": "Q3",
+        "endDate": "2026-12-31",
+        "revenue": 12742.0,
+        "netIncome": 2676.0,
+        "ebitda": 3440.0,
+        "eps": 0.64,
+        "margin": 21.0
+      },
+      {
+        "quarter": "Q4",
+        "endDate": "2027-03-31",
+        "revenue": 14016.0,
+        "netIncome": 2523.0,
+        "ebitda": 3784.0,
+        "eps": 0.61,
+        "margin": 18.0
+      }
+    ]
+  },
+  "riskFactors": [
+    {
+      "title": "Demand cyclicality",
+      "description": "A downturn in banking and technology client budgets pressures deal sizes and margins.",
+      "severity": "high"
+    },
+    {
+      "title": "Attrition and wage inflation",
+      "description": "Rising talent costs can compress operating margins.",
+      "severity": "high"
+    },
+    {
+      "title": "Currency fluctuation",
+      "description": "A stronger INR reduces the rupee value of overseas revenue.",
+      "severity": "medium"
+    }
+  ],
+  "managementDiscussion": "In fiscal year FY2026, Infosys recorded revenue of \u20b91.98 lakh crore, growing 8.0% year-on-year, driven by continued momentum across Financial Services, Retail. Net income stood at \u20b90.40 lakh crore with a net margin of 20.0% and a return on equity of 32.0%. Operating cash flow remained robust at \u20b90.46 lakh crore, supporting capital expenditure of \u20b90.03 lakh crore and a free cash flow of \u20b90.43 lakh crore. The company maintains a measured capital structure with net debt-to-equity of -0.16x. Management continues to invest in digital and AI capabilities, expects sustained volume-led growth and disciplined cost control, and remains committed to value-accretive capital allocation and sustainable returns for shareholders.",
+  "documents": [
+    {
+      "id": "infosys-20-f-2026-1",
+      "companySlug": "infosys",
+      "type": "Annual Report",
+      "title": "Annual Report FY2026",
+      "form": "20-F",
+      "fiscalPeriod": "FY2026",
+      "filedDate": "2026-05-10",
+      "periodEnd": "2026-03-31",
+      "source": "SEC EDGAR",
+      "sourceUrl": "https://www.infosys/reports/20-F/2026",
+      "sizeKb": 3464,
+      "pages": 82,
+      "sha256": "0cdc072e0853019d621797d7dc40ab8d300fc7f4506a889e91376d008a4d135f",
+      "latestVersion": "v1.1",
+      "versions": [
+        {
+          "version": "v1",
+          "uploadedAt": "2026-01-01",
+          "note": "Initial filing"
+        },
+        {
+          "version": "v1.1",
+          "uploadedAt": "2026-02-01",
+          "note": "Minor metadata corrections"
+        }
+      ]
+    },
+    {
+      "id": "infosys-10-k-2026-2",
+      "companySlug": "infosys",
+      "type": "10-K",
+      "title": "Form 10-K - FY2026",
+      "form": "10-K",
+      "fiscalPeriod": "FY2026",
+      "filedDate": "2026-04-23",
+      "periodEnd": "2026-03-31",
+      "source": "SEC EDGAR",
+      "sourceUrl": "https://www.infosys/reports/10-K/2026",
+      "sizeKb": 6229,
+      "pages": 84,
+      "sha256": "18c659622d8dd6ac62e1cbcfad8ffe305caae7b77f54e59febae66f0f1979529",
+      "latestVersion": "v1.1",
+      "versions": [
+        {
+          "version": "v1",
+          "uploadedAt": "2026-01-01",
+          "note": "Initial filing"
+        },
+        {
+          "version": "v1.1",
+          "uploadedAt": "2026-02-01",
+          "note": "Minor metadata corrections"
+        }
+      ]
+    },
+    {
+      "id": "infosys-pres-2026-3",
+      "companySlug": "infosys",
+      "type": "Investor Presentation",
+      "title": "Q1 FY2027 Investor Presentation",
+      "form": "PRES",
+      "fiscalPeriod": "FY2026",
+      "filedDate": "2026-04-16",
+      "periodEnd": "2026-03-31",
+      "source": "Investor Relations",
+      "sourceUrl": "https://www.infosys/reports/PRES/2026",
+      "sizeKb": 5472,
+      "pages": 174,
+      "sha256": "793b56e529184883bb371358ff5f35e6827f4fa8ca2508d73e3adab66a2c4a10",
+      "latestVersion": "v1.1",
+      "versions": [
+        {
+          "version": "v1",
+          "uploadedAt": "2026-01-01",
+          "note": "Initial filing"
+        },
+        {
+          "version": "v1.1",
+          "uploadedAt": "2026-02-01",
+          "note": "Minor metadata corrections"
+        }
+      ]
+    },
+    {
+      "id": "infosys-tran-2026-4",
+      "companySlug": "infosys",
+      "type": "Earnings Call Transcript",
+      "title": "Q1 FY2027 Earnings Call Transcript",
+      "form": "TRAN",
+      "fiscalPeriod": "FY2026",
+      "filedDate": "2026-03-12",
+      "periodEnd": "2026-03-31",
+      "source": "NSE",
+      "sourceUrl": "https://www.infosys/reports/TRAN/2026",
+      "sizeKb": 3278,
+      "pages": 137,
+      "sha256": "4cf1784111e8f1651c4714b1c800918a247bf041027d9abd53389863c253b3db",
+      "latestVersion": "v1.1",
+      "versions": [
+        {
+          "version": "v1",
+          "uploadedAt": "2026-01-01",
+          "note": "Initial filing"
+        },
+        {
+          "version": "v1.1",
+          "uploadedAt": "2026-02-01",
+          "note": "Minor metadata corrections"
+        }
+      ]
+    },
+    {
+      "id": "infosys-10-q-2026-5",
+      "companySlug": "infosys",
+      "type": "10-Q",
+      "title": "Form 10-Q - Q1 FY2026",
+      "form": "10-Q",
+      "fiscalPeriod": "FY2026",
+      "filedDate": "2026-04-15",
+      "periodEnd": "2026-03-31",
+      "source": "BSE",
+      "sourceUrl": "https://www.infosys/reports/10-Q/2026",
+      "sizeKb": 6545,
+      "pages": 226,
+      "sha256": "0680de603ed79f11c1e6c5f173acbffbd8719b0ea52776ed797ddee682db49b1",
+      "latestVersion": "v1.1",
+      "versions": [
+        {
+          "version": "v1",
+          "uploadedAt": "2026-01-01",
+          "note": "Initial filing"
+        },
+        {
+          "version": "v1.1",
+          "uploadedAt": "2026-02-01",
+          "note": "Minor metadata corrections"
+        }
+      ]
+    },
+    {
+      "id": "infosys-8-k-2026-6",
+      "companySlug": "infosys",
+      "type": "8-K",
+      "title": "Current Report - Board Update",
+      "form": "8-K",
+      "fiscalPeriod": "FY2026",
+      "filedDate": "2026-08-18",
+      "periodEnd": "2026-03-31",
+      "source": "SEC EDGAR",
+      "sourceUrl": "https://www.infosys/reports/8-K/2026",
+      "sizeKb": 5140,
+      "pages": 191,
+      "sha256": "62ed4346973fda5d268fdc9002acd0becb5566701b79789c4208e9ca57a03652",
+      "latestVersion": "v1.1",
+      "versions": [
+        {
+          "version": "v1",
+          "uploadedAt": "2026-01-01",
+          "note": "Initial filing"
+        },
+        {
+          "version": "v1.1",
+          "uploadedAt": "2026-02-01",
+          "note": "Minor metadata corrections"
+        }
+      ]
+    },
+    {
+      "id": "infosys-20-f-2025-7",
+      "companySlug": "infosys",
+      "type": "Annual Report",
+      "title": "Annual Report FY2025",
+      "form": "20-F",
+      "fiscalPeriod": "FY2025",
+      "filedDate": "2025-09-14",
+      "periodEnd": "2025-03-31",
+      "source": "SEC EDGAR",
+      "sourceUrl": "https://www.infosys/reports/20-F/2025",
+      "sizeKb": 2659,
+      "pages": 180,
+      "sha256": "a16dc1149ef8450af7a481177d6ef26db6227b1fc1389ebc75edf93b0dce5c84",
+      "latestVersion": "v1.1",
+      "versions": [
+        {
+          "version": "v1",
+          "uploadedAt": "2025-01-01",
+          "note": "Initial filing"
+        },
+        {
+          "version": "v1.1",
+          "uploadedAt": "2025-02-01",
+          "note": "Minor metadata corrections"
+        }
+      ]
+    },
+    {
+      "id": "infosys-pres-2026-8",
+      "companySlug": "infosys",
+      "type": "Investor Presentation",
+      "title": "Q3 FY2026 Investor Presentation",
+      "form": "PRES",
+      "fiscalPeriod": "FY2026",
+      "filedDate": "2026-03-16",
+      "periodEnd": "2026-03-31",
+      "source": "BSE",
+      "sourceUrl": "https://www.infosys/reports/PRES/2026",
+      "sizeKb": 6243,
+      "pages": 179,
+      "sha256": "1bd549e9fdabe1dd78030464abb62da89d8b636d6d5fa33a19f04f88c3cde8a8",
+      "latestVersion": "v1.1",
+      "versions": [
+        {
+          "version": "v1",
+          "uploadedAt": "2026-01-01",
+          "note": "Initial filing"
+        },
+        {
+          "version": "v1.1",
+          "uploadedAt": "2026-02-01",
+          "note": "Minor metadata corrections"
+        }
+      ]
+    }
+  ]
+}

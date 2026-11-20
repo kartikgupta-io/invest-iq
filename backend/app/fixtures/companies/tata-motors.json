@@ -1,0 +1,1095 @@
+{
+  "profile": {
+    "slug": "tata-motors",
+    "ticker": "TATAMOTORS",
+    "name": "Tata Motors",
+    "sector": "Automobiles",
+    "industry": "Automobiles & Components",
+    "exchange": "NSE",
+    "currency": "\u20b9",
+    "currencyCode": "INR",
+    "founded": 1945,
+    "listed": "1945",
+    "headquarters": "Mumbai, Maharashtra",
+    "website": "tatamotors.com",
+    "description": "India's largest commercial vehicle manufacturer and owner of Jaguar Land Rover. The company is accelerating its electrification journey with a dedicated EV portfolio.",
+    "employees": 90000,
+    "accent": "#f59e0b",
+    "market": "INDIA"
+  },
+  "quote": {
+    "price": 1446.74,
+    "change": -1.61,
+    "changePct": -0.11,
+    "open": 1443.18,
+    "high": 1464.1,
+    "low": 1429.38,
+    "volume": 89924528,
+    "previousClose": 1448.35,
+    "marketCap": 1099526.56,
+    "peRatio": 22.0,
+    "eps": 65.76,
+    "dividendYield": 0.23,
+    "high52Week": 1707.15,
+    "low52Week": 1041.65
+  },
+  "annual": [
+    {
+      "year": "FY2018",
+      "revenue": 297000.0,
+      "revenueGrowth": 2.0,
+      "grossProfit": 77220.0,
+      "operatingIncome": 11880.0,
+      "ebitda": 29700.0,
+      "netIncome": -8910.0,
+      "eps": -11.8,
+      "netMargin": -3.0,
+      "grossMargin": 26.0,
+      "operatingMargin": 4.0,
+      "ebitdaMargin": 10.0,
+      "returnOnAssets": -1.8,
+      "totalAssets": 495000.0,
+      "totalEquity": 89100.0,
+      "totalDebt": 160380.0,
+      "netDebt": 142560.0,
+      "cash": 17820.0,
+      "debtToEquity": 1.8,
+      "currentRatio": 1.64,
+      "operatingCashFlow": 8910.0,
+      "investingCashFlow": -16335.0,
+      "financingCashFlow": 445.0,
+      "freeCashFlow": -7425.0,
+      "capex": 16335.0,
+      "roe": -14.0,
+      "roce": 5.13,
+      "interestCover": 1.23,
+      "bookValue": 118.01,
+      "dividendPerShare": -0.59,
+      "dividendYield": -0.28,
+      "sharesOutstanding": 755.0,
+      "revenuePerShare": 393.38,
+      "priceToSales": 0.54,
+      "evToEbitda": 10.2,
+      "peRatio": -18.0,
+      "priceToBook": 1.8
+    },
+    {
+      "year": "FY2019",
+      "revenue": 302940.0,
+      "revenueGrowth": 2.0,
+      "grossProfit": 75735.0,
+      "operatingIncome": 6059.0,
+      "ebitda": 27265.0,
+      "netIncome": -15147.0,
+      "eps": -20.06,
+      "netMargin": -5.0,
+      "grossMargin": 25.0,
+      "operatingMargin": 2.0,
+      "ebitdaMargin": 9.0,
+      "returnOnAssets": -3.0,
+      "totalAssets": 504900.0,
+      "totalEquity": 151470.0,
+      "totalDebt": 287793.0,
+      "netDebt": 269617.0,
+      "cash": 18176.0,
+      "debtToEquity": 1.9,
+      "currentRatio": 1.64,
+      "operatingCashFlow": 6059.0,
+      "investingCashFlow": -15147.0,
+      "financingCashFlow": 128170.0,
+      "freeCashFlow": -9088.0,
+      "capex": 15147.0,
+      "roe": -20.0,
+      "roce": 1.44,
+      "interestCover": 0.35,
+      "bookValue": 200.62,
+      "dividendPerShare": -1.0,
+      "dividendYield": -0.2,
+      "sharesOutstanding": 755.0,
+      "revenuePerShare": 401.25,
+      "priceToSales": 1.25,
+      "evToEbitda": 23.78,
+      "peRatio": -25.0,
+      "priceToBook": 2.5
+    },
+    {
+      "year": "FY2020",
+      "revenue": 287793.0,
+      "revenueGrowth": -5.0,
+      "grossProfit": 74826.0,
+      "operatingIncome": 8634.0,
+      "ebitda": 28779.0,
+      "netIncome": -5756.0,
+      "eps": -7.62,
+      "netMargin": -2.0,
+      "grossMargin": 26.0,
+      "operatingMargin": 3.0,
+      "ebitdaMargin": 10.0,
+      "returnOnAssets": -1.2,
+      "totalAssets": 479655.0,
+      "totalEquity": 57559.0,
+      "totalDebt": 103605.0,
+      "netDebt": 83459.0,
+      "cash": 20146.0,
+      "debtToEquity": 1.8,
+      "currentRatio": 1.68,
+      "operatingCashFlow": 14389.0,
+      "investingCashFlow": -14390.0,
+      "financingCashFlow": -183900.0,
+      "freeCashFlow": -1.0,
+      "capex": 14390.0,
+      "roe": -8.0,
+      "roce": 6.12,
+      "interestCover": 1.39,
+      "bookValue": 76.24,
+      "dividendPerShare": -0.38,
+      "dividendYield": -0.12,
+      "sharesOutstanding": 755.0,
+      "revenuePerShare": 381.18,
+      "priceToSales": 0.8,
+      "evToEbitda": 10.9,
+      "peRatio": -40.0,
+      "priceToBook": 4.0
+    },
+    {
+      "year": "FY2021",
+      "revenue": 302183.0,
+      "revenueGrowth": 5.0,
+      "grossProfit": 81589.0,
+      "operatingIncome": 15109.0,
+      "ebitda": 36262.0,
+      "netIncome": 6044.0,
+      "eps": 8.0,
+      "netMargin": 2.0,
+      "grossMargin": 27.0,
+      "operatingMargin": 5.0,
+      "ebitdaMargin": 12.0,
+      "returnOnAssets": 1.24,
+      "totalAssets": 487391.0,
+      "totalEquity": 75546.0,
+      "totalDebt": 120873.0,
+      "netDebt": 96698.0,
+      "cash": 24175.0,
+      "debtToEquity": 1.6,
+      "currentRatio": 1.72,
+      "operatingCashFlow": 27197.0,
+      "investingCashFlow": -16620.0,
+      "financingCashFlow": 16966.0,
+      "freeCashFlow": 10577.0,
+      "capex": 16620.0,
+      "roe": 8.0,
+      "roce": 8.77,
+      "interestCover": 2.08,
+      "bookValue": 100.06,
+      "dividendPerShare": 0.4,
+      "dividendYield": 0.08,
+      "sharesOutstanding": 755.0,
+      "revenuePerShare": 400.24,
+      "priceToSales": 1.2,
+      "evToEbitda": 12.67,
+      "peRatio": 60.0,
+      "priceToBook": 4.8
+    },
+    {
+      "year": "FY2022",
+      "revenue": 347510.0,
+      "revenueGrowth": 15.0,
+      "grossProfit": 100778.0,
+      "operatingIncome": 27801.0,
+      "ebitda": 52127.0,
+      "netIncome": 13900.0,
+      "eps": 18.41,
+      "netMargin": 4.0,
+      "grossMargin": 29.0,
+      "operatingMargin": 8.0,
+      "ebitdaMargin": 15.0,
+      "returnOnAssets": 2.56,
+      "totalAssets": 542984.0,
+      "totalEquity": 92669.0,
+      "totalDebt": 120470.0,
+      "netDebt": 89194.0,
+      "cash": 31276.0,
+      "debtToEquity": 1.3,
+      "currentRatio": 1.76,
+      "operatingCashFlow": 38226.0,
+      "investingCashFlow": -20851.0,
+      "financingCashFlow": -1098.0,
+      "freeCashFlow": 17375.0,
+      "capex": 20851.0,
+      "roe": 15.0,
+      "roce": 15.29,
+      "interestCover": 3.85,
+      "bookValue": 122.74,
+      "dividendPerShare": 0.92,
+      "dividendYield": 0.12,
+      "sharesOutstanding": 755.0,
+      "revenuePerShare": 460.28,
+      "priceToSales": 1.6,
+      "evToEbitda": 12.38,
+      "peRatio": 40.0,
+      "priceToBook": 6.0
+    },
+    {
+      "year": "FY2023",
+      "revenue": 444813.0,
+      "revenueGrowth": 28.0,
+      "grossProfit": 133444.0,
+      "operatingIncome": 44481.0,
+      "ebitda": 75618.0,
+      "netIncome": 26689.0,
+      "eps": 35.35,
+      "netMargin": 6.0,
+      "grossMargin": 30.0,
+      "operatingMargin": 10.0,
+      "ebitdaMargin": 17.0,
+      "returnOnAssets": 3.9,
+      "totalAssets": 684327.0,
+      "totalEquity": 133444.0,
+      "totalDebt": 133444.0,
+      "netDebt": 88963.0,
+      "cash": 44481.0,
+      "debtToEquity": 1.0,
+      "currentRatio": 1.8,
+      "operatingCashFlow": 57826.0,
+      "investingCashFlow": -26689.0,
+      "financingCashFlow": 11640.0,
+      "freeCashFlow": 31137.0,
+      "capex": 26689.0,
+      "roe": 20.0,
+      "roce": 20.0,
+      "interestCover": 5.56,
+      "bookValue": 176.75,
+      "dividendPerShare": 1.77,
+      "dividendYield": 0.17,
+      "sharesOutstanding": 755.0,
+      "revenuePerShare": 589.16,
+      "priceToSales": 1.8,
+      "evToEbitda": 11.76,
+      "peRatio": 30.0,
+      "priceToBook": 6.0
+    },
+    {
+      "year": "FY2024",
+      "revenue": 489294.0,
+      "revenueGrowth": 10.0,
+      "grossProfit": 151681.0,
+      "operatingIncome": 53822.0,
+      "ebitda": 88073.0,
+      "netIncome": 34251.0,
+      "eps": 45.07,
+      "netMargin": 7.0,
+      "grossMargin": 31.0,
+      "operatingMargin": 11.0,
+      "ebitdaMargin": 18.0,
+      "returnOnAssets": 4.62,
+      "totalAssets": 741355.0,
+      "totalEquity": 155685.0,
+      "totalDebt": 124548.0,
+      "netDebt": 70726.0,
+      "cash": 53822.0,
+      "debtToEquity": 0.8,
+      "currentRatio": 1.84,
+      "operatingCashFlow": 68502.0,
+      "investingCashFlow": -26911.0,
+      "financingCashFlow": -10609.0,
+      "freeCashFlow": 41591.0,
+      "capex": 26911.0,
+      "roe": 22.0,
+      "roce": 23.77,
+      "interestCover": 7.2,
+      "bookValue": 204.85,
+      "dividendPerShare": 2.25,
+      "dividendYield": 0.19,
+      "sharesOutstanding": 760.0,
+      "revenuePerShare": 643.81,
+      "priceToSales": 1.82,
+      "evToEbitda": 10.91,
+      "peRatio": 26.0,
+      "priceToBook": 5.72
+    },
+    {
+      "year": "FY2025",
+      "revenue": 548009.0,
+      "revenueGrowth": 12.0,
+      "grossProfit": 169883.0,
+      "operatingIncome": 65761.0,
+      "ebitda": 98642.0,
+      "netIncome": 38361.0,
+      "eps": 50.47,
+      "netMargin": 7.0,
+      "grossMargin": 31.0,
+      "operatingMargin": 12.0,
+      "ebitdaMargin": 18.0,
+      "returnOnAssets": 4.69,
+      "totalAssets": 817925.0,
+      "totalEquity": 174367.0,
+      "totalDebt": 122057.0,
+      "netDebt": 61776.0,
+      "cash": 60281.0,
+      "debtToEquity": 0.7,
+      "currentRatio": 1.84,
+      "operatingCashFlow": 71242.0,
+      "investingCashFlow": -27400.0,
+      "financingCashFlow": -4409.0,
+      "freeCashFlow": 43842.0,
+      "capex": 27400.0,
+      "roe": 22.0,
+      "roce": 27.85,
+      "interestCover": 8.98,
+      "bookValue": 229.43,
+      "dividendPerShare": 2.52,
+      "dividendYield": 0.21,
+      "sharesOutstanding": 760.0,
+      "revenuePerShare": 721.07,
+      "priceToSales": 1.68,
+      "evToEbitda": 9.96,
+      "peRatio": 24.0,
+      "priceToBook": 5.28
+    },
+    {
+      "year": "FY2026",
+      "revenue": 624731.0,
+      "revenueGrowth": 14.0,
+      "grossProfit": 199914.0,
+      "operatingIncome": 81215.0,
+      "ebitda": 118699.0,
+      "netIncome": 49978.0,
+      "eps": 65.76,
+      "netMargin": 8.0,
+      "grossMargin": 32.0,
+      "operatingMargin": 13.0,
+      "ebitdaMargin": 19.0,
+      "returnOnAssets": 5.44,
+      "totalAssets": 918722.0,
+      "totalEquity": 208244.0,
+      "totalDebt": 124946.0,
+      "netDebt": 49978.0,
+      "cash": 74968.0,
+      "debtToEquity": 0.6,
+      "currentRatio": 1.88,
+      "operatingCashFlow": 87462.0,
+      "investingCashFlow": -31237.0,
+      "financingCashFlow": 390.0,
+      "freeCashFlow": 56225.0,
+      "capex": 31237.0,
+      "roe": 24.0,
+      "roce": 31.45,
+      "interestCover": 10.83,
+      "bookValue": 274.01,
+      "dividendPerShare": 3.29,
+      "dividendYield": 0.23,
+      "sharesOutstanding": 760.0,
+      "revenuePerShare": 822.01,
+      "priceToSales": 1.76,
+      "evToEbitda": 9.68,
+      "peRatio": 22.0,
+      "priceToBook": 5.28
+    }
+  ],
+  "valuation": [
+    {
+      "year": "FY2018",
+      "price": 212.42,
+      "marketCap": 160377.0,
+      "peRatio": -18.0,
+      "priceToBook": 1.8,
+      "evToEbitda": 10.2,
+      "dividendYield": -0.28
+    },
+    {
+      "year": "FY2019",
+      "price": 501.56,
+      "marketCap": 378678.0,
+      "peRatio": -25.0,
+      "priceToBook": 2.5,
+      "evToEbitda": 23.78,
+      "dividendYield": -0.2
+    },
+    {
+      "year": "FY2020",
+      "price": 304.95,
+      "marketCap": 230237.0,
+      "peRatio": -40.0,
+      "priceToBook": 4.0,
+      "evToEbitda": 10.9,
+      "dividendYield": -0.12
+    },
+    {
+      "year": "FY2021",
+      "price": 480.29,
+      "marketCap": 362619.0,
+      "peRatio": 60.0,
+      "priceToBook": 4.8,
+      "evToEbitda": 12.67,
+      "dividendYield": 0.08
+    },
+    {
+      "year": "FY2022",
+      "price": 736.45,
+      "marketCap": 556020.0,
+      "peRatio": 40.0,
+      "priceToBook": 6.0,
+      "evToEbitda": 12.38,
+      "dividendYield": 0.12
+    },
+    {
+      "year": "FY2023",
+      "price": 1060.48,
+      "marketCap": 800662.0,
+      "peRatio": 30.0,
+      "priceToBook": 6.0,
+      "evToEbitda": 11.76,
+      "dividendYield": 0.17
+    },
+    {
+      "year": "FY2024",
+      "price": 1171.73,
+      "marketCap": 890515.0,
+      "peRatio": 26.0,
+      "priceToBook": 5.72,
+      "evToEbitda": 10.91,
+      "dividendYield": 0.19
+    },
+    {
+      "year": "FY2025",
+      "price": 1211.39,
+      "marketCap": 920656.0,
+      "peRatio": 24.0,
+      "priceToBook": 5.28,
+      "evToEbitda": 9.96,
+      "dividendYield": 0.21
+    },
+    {
+      "year": "FY2026",
+      "price": 1446.74,
+      "marketCap": 1099522.0,
+      "peRatio": 22.0,
+      "priceToBook": 5.28,
+      "evToEbitda": 9.68,
+      "dividendYield": 0.23
+    }
+  ],
+  "segments": [
+    {
+      "year": "FY2018",
+      "segments": [
+        {
+          "name": "Jaguar Land Rover",
+          "revenue": 90549.0,
+          "share": 30.49,
+          "growth": 2.0
+        },
+        {
+          "name": "Commercial Vehicles",
+          "revenue": 79683.0,
+          "share": 26.83,
+          "growth": 2.0
+        },
+        {
+          "name": "Passenger Vehicles",
+          "revenue": 68817.0,
+          "share": 23.17,
+          "growth": 2.0
+        },
+        {
+          "name": "Electric Vehicles",
+          "revenue": 57951.0,
+          "share": 19.51,
+          "growth": 2.0
+        }
+      ]
+    },
+    {
+      "year": "FY2019",
+      "segments": [
+        {
+          "name": "Jaguar Land Rover",
+          "revenue": 89794.0,
+          "share": 29.64,
+          "growth": 2.0
+        },
+        {
+          "name": "Commercial Vehicles",
+          "revenue": 82180.0,
+          "share": 27.13,
+          "growth": 2.0
+        },
+        {
+          "name": "Passenger Vehicles",
+          "revenue": 70973.0,
+          "share": 23.43,
+          "growth": 2.0
+        },
+        {
+          "name": "Electric Vehicles",
+          "revenue": 63051.0,
+          "share": 20.81,
+          "growth": 2.0
+        }
+      ]
+    },
+    {
+      "year": "FY2020",
+      "segments": [
+        {
+          "name": "Jaguar Land Rover",
+          "revenue": 82867.0,
+          "share": 28.79,
+          "growth": -5.0
+        },
+        {
+          "name": "Commercial Vehicles",
+          "revenue": 78929.0,
+          "share": 27.43,
+          "growth": -5.0
+        },
+        {
+          "name": "Passenger Vehicles",
+          "revenue": 68166.0,
+          "share": 23.69,
+          "growth": -5.0
+        },
+        {
+          "name": "Electric Vehicles",
+          "revenue": 63642.0,
+          "share": 22.11,
+          "growth": -5.0
+        }
+      ]
+    },
+    {
+      "year": "FY2021",
+      "segments": [
+        {
+          "name": "Jaguar Land Rover",
+          "revenue": 84451.0,
+          "share": 27.95,
+          "growth": 5.0
+        },
+        {
+          "name": "Commercial Vehicles",
+          "revenue": 83776.0,
+          "share": 27.72,
+          "growth": 5.0
+        },
+        {
+          "name": "Passenger Vehicles",
+          "revenue": 72352.0,
+          "share": 23.94,
+          "growth": 5.0
+        },
+        {
+          "name": "Electric Vehicles",
+          "revenue": 70755.0,
+          "share": 23.41,
+          "growth": 5.0
+        }
+      ]
+    },
+    {
+      "year": "FY2022",
+      "segments": [
+        {
+          "name": "Jaguar Land Rover",
+          "revenue": 94176.0,
+          "share": 27.1,
+          "growth": 15.0
+        },
+        {
+          "name": "Commercial Vehicles",
+          "revenue": 97378.0,
+          "share": 28.02,
+          "growth": 15.0
+        },
+        {
+          "name": "Passenger Vehicles",
+          "revenue": 84099.0,
+          "share": 24.2,
+          "growth": 15.0
+        },
+        {
+          "name": "Electric Vehicles",
+          "revenue": 85889.0,
+          "share": 24.72,
+          "growth": 15.0
+        }
+      ]
+    },
+    {
+      "year": "FY2023",
+      "segments": [
+        {
+          "name": "Jaguar Land Rover",
+          "revenue": 116778.0,
+          "share": 26.25,
+          "growth": 28.0
+        },
+        {
+          "name": "Commercial Vehicles",
+          "revenue": 125970.0,
+          "share": 28.32,
+          "growth": 28.0
+        },
+        {
+          "name": "Passenger Vehicles",
+          "revenue": 108792.0,
+          "share": 24.46,
+          "growth": 28.0
+        },
+        {
+          "name": "Electric Vehicles",
+          "revenue": 115724.0,
+          "share": 26.02,
+          "growth": 28.0
+        }
+      ]
+    },
+    {
+      "year": "FY2024",
+      "segments": [
+        {
+          "name": "Jaguar Land Rover",
+          "revenue": 124313.0,
+          "share": 25.41,
+          "growth": 10.0
+        },
+        {
+          "name": "Commercial Vehicles",
+          "revenue": 140026.0,
+          "share": 28.62,
+          "growth": 10.0
+        },
+        {
+          "name": "Passenger Vehicles",
+          "revenue": 120931.0,
+          "share": 24.72,
+          "growth": 10.0
+        },
+        {
+          "name": "Electric Vehicles",
+          "revenue": 133661.0,
+          "share": 27.32,
+          "growth": 10.0
+        }
+      ]
+    },
+    {
+      "year": "FY2025",
+      "segments": [
+        {
+          "name": "Jaguar Land Rover",
+          "revenue": 134589.0,
+          "share": 24.56,
+          "growth": 12.0
+        },
+        {
+          "name": "Commercial Vehicles",
+          "revenue": 158462.0,
+          "share": 28.92,
+          "growth": 12.0
+        },
+        {
+          "name": "Passenger Vehicles",
+          "revenue": 136854.0,
+          "share": 24.97,
+          "growth": 12.0
+        },
+        {
+          "name": "Electric Vehicles",
+          "revenue": 156829.0,
+          "share": 28.62,
+          "growth": 12.0
+        }
+      ]
+    },
+    {
+      "year": "FY2026",
+      "segments": [
+        {
+          "name": "Jaguar Land Rover",
+          "revenue": 148141.0,
+          "share": 23.71,
+          "growth": 14.0
+        },
+        {
+          "name": "Commercial Vehicles",
+          "revenue": 182509.0,
+          "share": 29.21,
+          "growth": 14.0
+        },
+        {
+          "name": "Passenger Vehicles",
+          "revenue": 157622.0,
+          "share": 25.23,
+          "growth": 14.0
+        },
+        {
+          "name": "Electric Vehicles",
+          "revenue": 186911.0,
+          "share": 29.92,
+          "growth": 14.0
+        }
+      ]
+    }
+  ],
+  "quarterly": {
+    "FY2024": [
+      {
+        "quarter": "Q1",
+        "endDate": "2024-06-30",
+        "revenue": 28270.0,
+        "netIncome": 2262.0,
+        "ebitda": 5089.0,
+        "eps": 2.98,
+        "margin": 8.0
+      },
+      {
+        "quarter": "Q2",
+        "endDate": "2024-09-30",
+        "revenue": 32982.0,
+        "netIncome": 2639.0,
+        "ebitda": 5937.0,
+        "eps": 3.47,
+        "margin": 8.0
+      },
+      {
+        "quarter": "Q3",
+        "endDate": "2024-12-31",
+        "revenue": 31411.0,
+        "netIncome": 2513.0,
+        "ebitda": 5654.0,
+        "eps": 3.31,
+        "margin": 8.0
+      },
+      {
+        "quarter": "Q4",
+        "endDate": "2025-03-31",
+        "revenue": 34553.0,
+        "netIncome": 1728.0,
+        "ebitda": 6219.0,
+        "eps": 2.27,
+        "margin": 5.0
+      }
+    ],
+    "FY2025": [
+      {
+        "quarter": "Q1",
+        "endDate": "2025-06-30",
+        "revenue": 31663.0,
+        "netIncome": 2533.0,
+        "ebitda": 5699.0,
+        "eps": 3.33,
+        "margin": 8.0
+      },
+      {
+        "quarter": "Q2",
+        "endDate": "2025-09-30",
+        "revenue": 36940.0,
+        "netIncome": 2955.0,
+        "ebitda": 6649.0,
+        "eps": 3.89,
+        "margin": 8.0
+      },
+      {
+        "quarter": "Q3",
+        "endDate": "2025-12-31",
+        "revenue": 35181.0,
+        "netIncome": 2814.0,
+        "ebitda": 6333.0,
+        "eps": 3.7,
+        "margin": 8.0
+      },
+      {
+        "quarter": "Q4",
+        "endDate": "2026-03-31",
+        "revenue": 38699.0,
+        "netIncome": 1935.0,
+        "ebitda": 6966.0,
+        "eps": 2.55,
+        "margin": 5.0
+      }
+    ],
+    "FY2026": [
+      {
+        "quarter": "Q1",
+        "endDate": "2026-06-30",
+        "revenue": 36096.0,
+        "netIncome": 3249.0,
+        "ebitda": 6858.0,
+        "eps": 4.27,
+        "margin": 9.0
+      },
+      {
+        "quarter": "Q2",
+        "endDate": "2026-09-30",
+        "revenue": 42111.0,
+        "netIncome": 3790.0,
+        "ebitda": 8001.0,
+        "eps": 4.99,
+        "margin": 9.0
+      },
+      {
+        "quarter": "Q3",
+        "endDate": "2026-12-31",
+        "revenue": 40106.0,
+        "netIncome": 3610.0,
+        "ebitda": 7620.0,
+        "eps": 4.75,
+        "margin": 9.0
+      },
+      {
+        "quarter": "Q4",
+        "endDate": "2027-03-31",
+        "revenue": 44117.0,
+        "netIncome": 2647.0,
+        "ebitda": 8382.0,
+        "eps": 3.48,
+        "margin": 6.0
+      }
+    ]
+  },
+  "riskFactors": [
+    {
+      "title": "Demand volatility",
+      "description": "Cyclical demand in commercial and passenger vehicles affects volumes.",
+      "severity": "high"
+    },
+    {
+      "title": "Input cost inflation",
+      "description": "Steel, aluminium and semiconductor input cost swings hit margins.",
+      "severity": "high"
+    },
+    {
+      "title": "EV transition",
+      "description": "Technology transition and competition in EVs carry market share risk.",
+      "severity": "high"
+    }
+  ],
+  "managementDiscussion": "In fiscal year FY2026, Tata Motors recorded revenue of \u20b96.25 lakh crore, growing 14.0% year-on-year, driven by continued momentum across Jaguar Land Rover, Commercial Vehicles. Net income stood at \u20b90.50 lakh crore with a net margin of 8.0% and a return on equity of 24.0%. Operating cash flow remained robust at \u20b90.87 lakh crore, supporting capital expenditure of \u20b90.31 lakh crore and a free cash flow of \u20b90.56 lakh crore. The company maintains a measured capital structure with net debt-to-equity of 0.24x. Management continues to invest in digital and AI capabilities, expects sustained volume-led growth and disciplined cost control, and remains committed to value-accretive capital allocation and sustainable returns for shareholders.",
+  "documents": [
+    {
+      "id": "tata-motors-20-f-2026-1",
+      "companySlug": "tata-motors",
+      "type": "Annual Report",
+      "title": "Annual Report FY2026",
+      "form": "20-F",
+      "fiscalPeriod": "FY2026",
+      "filedDate": "2026-10-22",
+      "periodEnd": "2026-03-31",
+      "source": "SEC EDGAR",
+      "sourceUrl": "https://www.tata-motors/reports/20-F/2026",
+      "sizeKb": 4995,
+      "pages": 189,
+      "sha256": "dcf9bd422bd46a73c8e6d40e354929cc31803d7c99c204f8dbf6c09f40299c20",
+      "latestVersion": "v1.1",
+      "versions": [
+        {
+          "version": "v1",
+          "uploadedAt": "2026-01-01",
+          "note": "Initial filing"
+        },
+        {
+          "version": "v1.1",
+          "uploadedAt": "2026-02-01",
+          "note": "Minor metadata corrections"
+        }
+      ]
+    },
+    {
+      "id": "tata-motors-10-k-2026-2",
+      "companySlug": "tata-motors",
+      "type": "10-K",
+      "title": "Form 10-K - FY2026",
+      "form": "10-K",
+      "fiscalPeriod": "FY2026",
+      "filedDate": "2026-11-23",
+      "periodEnd": "2026-03-31",
+      "source": "SEC EDGAR",
+      "sourceUrl": "https://www.tata-motors/reports/10-K/2026",
+      "sizeKb": 5793,
+      "pages": 182,
+      "sha256": "c86bbade63d67e7eb92b06a523d279a75ab6b5f8cb0d2e352e09f7ca263494b8",
+      "latestVersion": "v1.1",
+      "versions": [
+        {
+          "version": "v1",
+          "uploadedAt": "2026-01-01",
+          "note": "Initial filing"
+        },
+        {
+          "version": "v1.1",
+          "uploadedAt": "2026-02-01",
+          "note": "Minor metadata corrections"
+        }
+      ]
+    },
+    {
+      "id": "tata-motors-pres-2026-3",
+      "companySlug": "tata-motors",
+      "type": "Investor Presentation",
+      "title": "Q1 FY2027 Investor Presentation",
+      "form": "PRES",
+      "fiscalPeriod": "FY2026",
+      "filedDate": "2026-08-19",
+      "periodEnd": "2026-03-31",
+      "source": "Investor Relations",
+      "sourceUrl": "https://www.tata-motors/reports/PRES/2026",
+      "sizeKb": 3654,
+      "pages": 177,
+      "sha256": "0d94a61545c0279d12312e31c67eb254393cf03afdd748c7f743d4f3915798bd",
+      "latestVersion": "v1.1",
+      "versions": [
+        {
+          "version": "v1",
+          "uploadedAt": "2026-01-01",
+          "note": "Initial filing"
+        },
+        {
+          "version": "v1.1",
+          "uploadedAt": "2026-02-01",
+          "note": "Minor metadata corrections"
+        }
+      ]
+    },
+    {
+      "id": "tata-motors-tran-2026-4",
+      "companySlug": "tata-motors",
+      "type": "Earnings Call Transcript",
+      "title": "Q1 FY2027 Earnings Call Transcript",
+      "form": "TRAN",
+      "fiscalPeriod": "FY2026",
+      "filedDate": "2026-09-24",
+      "periodEnd": "2026-03-31",
+      "source": "NSE",
+      "sourceUrl": "https://www.tata-motors/reports/TRAN/2026",
+      "sizeKb": 2143,
+      "pages": 179,
+      "sha256": "ee03bd64469df0055c26255811e43fa70299b655d5b0fff1e8fe9652740a3f0f",
+      "latestVersion": "v1.1",
+      "versions": [
+        {
+          "version": "v1",
+          "uploadedAt": "2026-01-01",
+          "note": "Initial filing"
+        },
+        {
+          "version": "v1.1",
+          "uploadedAt": "2026-02-01",
+          "note": "Minor metadata corrections"
+        }
+      ]
+    },
+    {
+      "id": "tata-motors-10-q-2026-5",
+      "companySlug": "tata-motors",
+      "type": "10-Q",
+      "title": "Form 10-Q - Q1 FY2026",
+      "form": "10-Q",
+      "fiscalPeriod": "FY2026",
+      "filedDate": "2026-07-24",
+      "periodEnd": "2026-03-31",
+      "source": "BSE",
+      "sourceUrl": "https://www.tata-motors/reports/10-Q/2026",
+      "sizeKb": 6151,
+      "pages": 137,
+      "sha256": "14a944e13fd6af17a836efa4a5f078e5f58df027b86110ff8cb357859212b943",
+      "latestVersion": "v1.1",
+      "versions": [
+        {
+          "version": "v1",
+          "uploadedAt": "2026-01-01",
+          "note": "Initial filing"
+        },
+        {
+          "version": "v1.1",
+          "uploadedAt": "2026-02-01",
+          "note": "Minor metadata corrections"
+        }
+      ]
+    },
+    {
+      "id": "tata-motors-8-k-2026-6",
+      "companySlug": "tata-motors",
+      "type": "8-K",
+      "title": "Current Report - Board Update",
+      "form": "8-K",
+      "fiscalPeriod": "FY2026",
+      "filedDate": "2026-06-15",
+      "periodEnd": "2026-03-31",
+      "source": "SEC EDGAR",
+      "sourceUrl": "https://www.tata-motors/reports/8-K/2026",
+      "sizeKb": 6880,
+      "pages": 152,
+      "sha256": "7ddcd82e83f45849241d7f06492768f8fd27cc9cc733fa585e1ec25994353d16",
+      "latestVersion": "v1.1",
+      "versions": [
+        {
+          "version": "v1",
+          "uploadedAt": "2026-01-01",
+          "note": "Initial filing"
+        },
+        {
+          "version": "v1.1",
+          "uploadedAt": "2026-02-01",
+          "note": "Minor metadata corrections"
+        }
+      ]
+    },
+    {
+      "id": "tata-motors-20-f-2025-7",
+      "companySlug": "tata-motors",
+      "type": "Annual Report",
+      "title": "Annual Report FY2025",
+      "form": "20-F",
+      "fiscalPeriod": "FY2025",
+      "filedDate": "2025-05-17",
+      "periodEnd": "2025-03-31",
+      "source": "SEC EDGAR",
+      "sourceUrl": "https://www.tata-motors/reports/20-F/2025",
+      "sizeKb": 6398,
+      "pages": 109,
+      "sha256": "ebb1b4b1f4dc5b546274dde31c98d6e4ec7baa7a36220744222bafafbc00d746",
+      "latestVersion": "v1.1",
+      "versions": [
+        {
+          "version": "v1",
+          "uploadedAt": "2025-01-01",
+          "note": "Initial filing"
+        },
+        {
+          "version": "v1.1",
+          "uploadedAt": "2025-02-01",
+          "note": "Minor metadata corrections"
+        }
+      ]
+    },
+    {
+      "id": "tata-motors-pres-2026-8",
+      "companySlug": "tata-motors",
+      "type": "Investor Presentation",
+      "title": "Q3 FY2026 Investor Presentation",
+      "form": "PRES",
+      "fiscalPeriod": "FY2026",
+      "filedDate": "2026-05-10",
+      "periodEnd": "2026-03-31",
+      "source": "BSE",
+      "sourceUrl": "https://www.tata-motors/reports/PRES/2026",
+      "sizeKb": 6953,
+      "pages": 139,
+      "sha256": "6f5644af168d9a3562b766fad999afed55d85461ae01d20848aa05523c5574be",
+      "latestVersion": "v1.1",
+      "versions": [
+        {
+          "version": "v1",
+          "uploadedAt": "2026-01-01",
+          "note": "Initial filing"
+        },
+        {
+          "version": "v1.1",
+          "uploadedAt": "2026-02-01",
+          "note": "Minor metadata corrections"
+        }
+      ]
+    }
+  ]
+}

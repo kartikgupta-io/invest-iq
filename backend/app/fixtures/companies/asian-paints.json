@@ -1,0 +1,1090 @@
+{
+  "profile": {
+    "slug": "asian-paints",
+    "ticker": "ASIANPAINT",
+    "name": "Asian Paints",
+    "sector": "Consumer Discretionary",
+    "industry": "Paints & Coatings",
+    "exchange": "NSE",
+    "currency": "\u20b9",
+    "currencyCode": "INR",
+    "founded": 1942,
+    "listed": "1945",
+    "headquarters": "Mumbai, Maharashtra",
+    "website": "asianpaints.com",
+    "description": "India's largest paints and coatings company and among the top ten globally, with a strong portfolio of decorative and industrial paints and a wide distribution network.",
+    "employees": 10000,
+    "accent": "#14b8a6",
+    "market": "INDIA"
+  },
+  "quote": {
+    "price": 430.72,
+    "change": 4.1,
+    "changePct": 0.95,
+    "open": 431.69,
+    "high": 435.89,
+    "low": 425.55,
+    "volume": 35430900,
+    "previousClose": 426.62,
+    "marketCap": 413488.80000000005,
+    "peRatio": 60.0,
+    "eps": 7.18,
+    "dividendYield": 1.0,
+    "high52Week": 508.25,
+    "low52Week": 310.12
+  },
+  "annual": [
+    {
+      "year": "FY2018",
+      "revenue": 20000.0,
+      "revenueGrowth": 8.0,
+      "grossProfit": 10000.0,
+      "operatingIncome": 4000.0,
+      "ebitda": 4400.0,
+      "netIncome": 3200.0,
+      "eps": 3.33,
+      "netMargin": 16.0,
+      "grossMargin": 50.0,
+      "operatingMargin": 20.0,
+      "ebitdaMargin": 22.0,
+      "returnOnAssets": 19.2,
+      "totalAssets": 16667.0,
+      "totalEquity": 13333.0,
+      "totalDebt": 667.0,
+      "netDebt": -333.0,
+      "cash": 1000.0,
+      "debtToEquity": 0.05,
+      "currentRatio": 1.6,
+      "operatingCashFlow": 3600.0,
+      "investingCashFlow": -400.0,
+      "financingCashFlow": -1918.0,
+      "freeCashFlow": 3200.0,
+      "capex": 400.0,
+      "roe": 24.0,
+      "roce": 30.77,
+      "interestCover": 99.95,
+      "bookValue": 13.89,
+      "dividendPerShare": 2.0,
+      "dividendYield": 1.0,
+      "sharesOutstanding": 960.0,
+      "revenuePerShare": 20.83,
+      "priceToSales": 9.6,
+      "evToEbitda": 43.56,
+      "peRatio": 60.0,
+      "priceToBook": 14.4
+    },
+    {
+      "year": "FY2019",
+      "revenue": 21600.0,
+      "revenueGrowth": 8.0,
+      "grossProfit": 11016.0,
+      "operatingIncome": 4536.0,
+      "ebitda": 4968.0,
+      "netIncome": 3672.0,
+      "eps": 3.83,
+      "netMargin": 17.0,
+      "grossMargin": 51.0,
+      "operatingMargin": 21.0,
+      "ebitdaMargin": 23.0,
+      "returnOnAssets": 20.4,
+      "totalAssets": 18000.0,
+      "totalEquity": 14688.0,
+      "totalDebt": 734.0,
+      "netDebt": -346.0,
+      "cash": 1080.0,
+      "debtToEquity": 0.05,
+      "currentRatio": 1.6,
+      "operatingCashFlow": 4104.0,
+      "investingCashFlow": -432.0,
+      "financingCashFlow": -2139.0,
+      "freeCashFlow": 3672.0,
+      "capex": 432.0,
+      "roe": 25.0,
+      "roce": 31.63,
+      "interestCover": 103.0,
+      "bookValue": 15.3,
+      "dividendPerShare": 2.3,
+      "dividendYield": 0.92,
+      "sharesOutstanding": 960.0,
+      "revenuePerShare": 22.5,
+      "priceToSales": 11.05,
+      "evToEbitda": 47.97,
+      "peRatio": 65.0,
+      "priceToBook": 16.25
+    },
+    {
+      "year": "FY2020",
+      "revenue": 22464.0,
+      "revenueGrowth": 4.0,
+      "grossProfit": 11232.0,
+      "operatingIncome": 4493.0,
+      "ebitda": 4942.0,
+      "netIncome": 3594.0,
+      "eps": 3.74,
+      "netMargin": 16.0,
+      "grossMargin": 50.0,
+      "operatingMargin": 20.0,
+      "ebitdaMargin": 22.0,
+      "returnOnAssets": 19.2,
+      "totalAssets": 18720.0,
+      "totalEquity": 14976.0,
+      "totalDebt": 749.0,
+      "netDebt": -599.0,
+      "cash": 1348.0,
+      "debtToEquity": 0.05,
+      "currentRatio": 1.64,
+      "operatingCashFlow": 4043.0,
+      "investingCashFlow": -449.0,
+      "financingCashFlow": -2139.0,
+      "freeCashFlow": 3594.0,
+      "capex": 449.0,
+      "roe": 24.0,
+      "roce": 31.25,
+      "interestCover": 99.98,
+      "bookValue": 15.6,
+      "dividendPerShare": 2.24,
+      "dividendYield": 1.0,
+      "sharesOutstanding": 960.0,
+      "revenuePerShare": 23.4,
+      "priceToSales": 9.6,
+      "evToEbitda": 43.52,
+      "peRatio": 60.0,
+      "priceToBook": 14.4
+    },
+    {
+      "year": "FY2021",
+      "revenue": 23812.0,
+      "revenueGrowth": 6.0,
+      "grossProfit": 11906.0,
+      "operatingIncome": 4762.0,
+      "ebitda": 5239.0,
+      "netIncome": 3810.0,
+      "eps": 3.97,
+      "netMargin": 16.0,
+      "grossMargin": 50.0,
+      "operatingMargin": 20.0,
+      "ebitdaMargin": 22.0,
+      "returnOnAssets": 19.2,
+      "totalAssets": 19843.0,
+      "totalEquity": 15875.0,
+      "totalDebt": 794.0,
+      "netDebt": -635.0,
+      "cash": 1429.0,
+      "debtToEquity": 0.05,
+      "currentRatio": 1.64,
+      "operatingCashFlow": 4287.0,
+      "investingCashFlow": -476.0,
+      "financingCashFlow": -2242.0,
+      "freeCashFlow": 3811.0,
+      "capex": 476.0,
+      "roe": 24.0,
+      "roce": 31.25,
+      "interestCover": 99.96,
+      "bookValue": 16.54,
+      "dividendPerShare": 2.38,
+      "dividendYield": 1.09,
+      "sharesOutstanding": 960.0,
+      "revenuePerShare": 24.8,
+      "priceToSales": 8.8,
+      "evToEbitda": 39.88,
+      "peRatio": 55.0,
+      "priceToBook": 13.2
+    },
+    {
+      "year": "FY2022",
+      "revenue": 26669.0,
+      "revenueGrowth": 12.0,
+      "grossProfit": 13335.0,
+      "operatingIncome": 5334.0,
+      "ebitda": 5867.0,
+      "netIncome": 4267.0,
+      "eps": 4.44,
+      "netMargin": 16.0,
+      "grossMargin": 50.0,
+      "operatingMargin": 20.0,
+      "ebitdaMargin": 22.0,
+      "returnOnAssets": 19.2,
+      "totalAssets": 22224.0,
+      "totalEquity": 17780.0,
+      "totalDebt": 889.0,
+      "netDebt": -711.0,
+      "cash": 1600.0,
+      "debtToEquity": 0.05,
+      "currentRatio": 1.64,
+      "operatingCashFlow": 4800.0,
+      "investingCashFlow": -533.0,
+      "financingCashFlow": -2462.0,
+      "freeCashFlow": 4267.0,
+      "capex": 533.0,
+      "roe": 24.0,
+      "roce": 31.25,
+      "interestCover": 100.0,
+      "bookValue": 18.52,
+      "dividendPerShare": 2.66,
+      "dividendYield": 1.15,
+      "sharesOutstanding": 960.0,
+      "revenuePerShare": 27.78,
+      "priceToSales": 8.32,
+      "evToEbitda": 37.7,
+      "peRatio": 52.0,
+      "priceToBook": 12.48
+    },
+    {
+      "year": "FY2023",
+      "revenue": 30403.0,
+      "revenueGrowth": 14.0,
+      "grossProfit": 15506.0,
+      "operatingIncome": 6385.0,
+      "ebitda": 6993.0,
+      "netIncome": 5169.0,
+      "eps": 5.38,
+      "netMargin": 17.0,
+      "grossMargin": 51.0,
+      "operatingMargin": 21.0,
+      "ebitdaMargin": 23.0,
+      "returnOnAssets": 20.4,
+      "totalAssets": 25336.0,
+      "totalEquity": 20674.0,
+      "totalDebt": 1034.0,
+      "netDebt": -790.0,
+      "cash": 1824.0,
+      "debtToEquity": 0.05,
+      "currentRatio": 1.64,
+      "operatingCashFlow": 5777.0,
+      "investingCashFlow": -608.0,
+      "financingCashFlow": -2954.0,
+      "freeCashFlow": 5169.0,
+      "capex": 608.0,
+      "roe": 25.0,
+      "roce": 32.11,
+      "interestCover": 102.92,
+      "bookValue": 21.54,
+      "dividendPerShare": 3.23,
+      "dividendYield": 1.03,
+      "sharesOutstanding": 960.0,
+      "revenuePerShare": 31.67,
+      "priceToSales": 9.86,
+      "evToEbitda": 42.75,
+      "peRatio": 58.0,
+      "priceToBook": 14.5
+    },
+    {
+      "year": "FY2024",
+      "revenue": 32835.0,
+      "revenueGrowth": 8.0,
+      "grossProfit": 17074.0,
+      "operatingIncome": 7224.0,
+      "ebitda": 7880.0,
+      "netIncome": 5910.0,
+      "eps": 6.16,
+      "netMargin": 18.0,
+      "grossMargin": 52.0,
+      "operatingMargin": 22.0,
+      "ebitdaMargin": 24.0,
+      "returnOnAssets": 21.6,
+      "totalAssets": 27363.0,
+      "totalEquity": 22732.0,
+      "totalDebt": 1137.0,
+      "netDebt": -833.0,
+      "cash": 1970.0,
+      "debtToEquity": 0.05,
+      "currentRatio": 1.64,
+      "operatingCashFlow": 6566.0,
+      "investingCashFlow": -657.0,
+      "financingCashFlow": -3445.0,
+      "freeCashFlow": 5909.0,
+      "capex": 657.0,
+      "roe": 26.0,
+      "roce": 32.99,
+      "interestCover": 105.89,
+      "bookValue": 23.68,
+      "dividendPerShare": 3.7,
+      "dividendYield": 0.97,
+      "sharesOutstanding": 960.0,
+      "revenuePerShare": 34.2,
+      "priceToSales": 11.16,
+      "evToEbitda": 46.4,
+      "peRatio": 62.0,
+      "priceToBook": 16.12
+    },
+    {
+      "year": "FY2025",
+      "revenue": 34805.0,
+      "revenueGrowth": 6.0,
+      "grossProfit": 18099.0,
+      "operatingIncome": 7657.0,
+      "ebitda": 8353.0,
+      "netIncome": 6265.0,
+      "eps": 6.53,
+      "netMargin": 18.0,
+      "grossMargin": 52.0,
+      "operatingMargin": 22.0,
+      "ebitdaMargin": 24.0,
+      "returnOnAssets": 21.6,
+      "totalAssets": 29004.0,
+      "totalEquity": 24096.0,
+      "totalDebt": 1205.0,
+      "netDebt": -883.0,
+      "cash": 2088.0,
+      "debtToEquity": 0.05,
+      "currentRatio": 1.64,
+      "operatingCashFlow": 6961.0,
+      "investingCashFlow": -696.0,
+      "financingCashFlow": -3693.0,
+      "freeCashFlow": 6265.0,
+      "capex": 696.0,
+      "roe": 26.0,
+      "roce": 32.99,
+      "interestCover": 105.91,
+      "bookValue": 25.1,
+      "dividendPerShare": 3.92,
+      "dividendYield": 0.92,
+      "sharesOutstanding": 960.0,
+      "revenuePerShare": 36.26,
+      "priceToSales": 11.7,
+      "evToEbitda": 48.65,
+      "peRatio": 65.0,
+      "priceToBook": 16.9
+    },
+    {
+      "year": "FY2026",
+      "revenue": 38286.0,
+      "revenueGrowth": 10.0,
+      "grossProfit": 19909.0,
+      "operatingIncome": 8423.0,
+      "ebitda": 9189.0,
+      "netIncome": 6891.0,
+      "eps": 7.18,
+      "netMargin": 18.0,
+      "grossMargin": 52.0,
+      "operatingMargin": 22.0,
+      "ebitdaMargin": 24.0,
+      "returnOnAssets": 21.6,
+      "totalAssets": 31905.0,
+      "totalEquity": 26506.0,
+      "totalDebt": 1325.0,
+      "netDebt": -972.0,
+      "cash": 2297.0,
+      "debtToEquity": 0.05,
+      "currentRatio": 1.64,
+      "operatingCashFlow": 7657.0,
+      "investingCashFlow": -766.0,
+      "financingCashFlow": -4016.0,
+      "freeCashFlow": 6891.0,
+      "capex": 766.0,
+      "roe": 26.0,
+      "roce": 32.99,
+      "interestCover": 105.95,
+      "bookValue": 27.61,
+      "dividendPerShare": 4.31,
+      "dividendYield": 1.0,
+      "sharesOutstanding": 960.0,
+      "revenuePerShare": 39.88,
+      "priceToSales": 10.8,
+      "evToEbitda": 44.89,
+      "peRatio": 60.0,
+      "priceToBook": 15.6
+    }
+  ],
+  "valuation": [
+    {
+      "year": "FY2018",
+      "price": 200.0,
+      "marketCap": 192000.0,
+      "peRatio": 60.0,
+      "priceToBook": 14.4,
+      "evToEbitda": 43.56,
+      "dividendYield": 1.0
+    },
+    {
+      "year": "FY2019",
+      "price": 248.63,
+      "marketCap": 238685.0,
+      "peRatio": 65.0,
+      "priceToBook": 16.25,
+      "evToEbitda": 47.97,
+      "dividendYield": 0.92
+    },
+    {
+      "year": "FY2020",
+      "price": 224.64,
+      "marketCap": 215654.0,
+      "peRatio": 60.0,
+      "priceToBook": 14.4,
+      "evToEbitda": 43.52,
+      "dividendYield": 1.0
+    },
+    {
+      "year": "FY2021",
+      "price": 218.28,
+      "marketCap": 209549.0,
+      "peRatio": 55.0,
+      "priceToBook": 13.2,
+      "evToEbitda": 39.88,
+      "dividendYield": 1.09
+    },
+    {
+      "year": "FY2022",
+      "price": 231.13,
+      "marketCap": 221885.0,
+      "peRatio": 52.0,
+      "priceToBook": 12.48,
+      "evToEbitda": 37.7,
+      "dividendYield": 1.15
+    },
+    {
+      "year": "FY2023",
+      "price": 312.26,
+      "marketCap": 299770.0,
+      "peRatio": 58.0,
+      "priceToBook": 14.5,
+      "evToEbitda": 42.75,
+      "dividendYield": 1.03
+    },
+    {
+      "year": "FY2024",
+      "price": 381.71,
+      "marketCap": 366442.0,
+      "peRatio": 62.0,
+      "priceToBook": 16.12,
+      "evToEbitda": 46.4,
+      "dividendYield": 0.97
+    },
+    {
+      "year": "FY2025",
+      "price": 424.19,
+      "marketCap": 407222.0,
+      "peRatio": 65.0,
+      "priceToBook": 16.9,
+      "evToEbitda": 48.65,
+      "dividendYield": 0.92
+    },
+    {
+      "year": "FY2026",
+      "price": 430.72,
+      "marketCap": 413491.0,
+      "peRatio": 60.0,
+      "priceToBook": 15.6,
+      "evToEbitda": 44.89,
+      "dividendYield": 1.0
+    }
+  ],
+  "segments": [
+    {
+      "year": "FY2018",
+      "segments": [
+        {
+          "name": "Decorative Paints",
+          "revenue": 6098.0,
+          "share": 30.49,
+          "growth": 8.0
+        },
+        {
+          "name": "Industrial Paints",
+          "revenue": 5366.0,
+          "share": 26.83,
+          "growth": 8.0
+        },
+        {
+          "name": "Home Improvement",
+          "revenue": 4634.0,
+          "share": 23.17,
+          "growth": 8.0
+        },
+        {
+          "name": "International Business",
+          "revenue": 3902.0,
+          "share": 19.51,
+          "growth": 8.0
+        }
+      ]
+    },
+    {
+      "year": "FY2019",
+      "segments": [
+        {
+          "name": "Decorative Paints",
+          "revenue": 6402.0,
+          "share": 29.64,
+          "growth": 8.0
+        },
+        {
+          "name": "Industrial Paints",
+          "revenue": 5860.0,
+          "share": 27.13,
+          "growth": 8.0
+        },
+        {
+          "name": "Home Improvement",
+          "revenue": 5060.0,
+          "share": 23.43,
+          "growth": 8.0
+        },
+        {
+          "name": "International Business",
+          "revenue": 4496.0,
+          "share": 20.81,
+          "growth": 8.0
+        }
+      ]
+    },
+    {
+      "year": "FY2020",
+      "segments": [
+        {
+          "name": "Decorative Paints",
+          "revenue": 6468.0,
+          "share": 28.79,
+          "growth": 4.0
+        },
+        {
+          "name": "Industrial Paints",
+          "revenue": 6161.0,
+          "share": 27.43,
+          "growth": 4.0
+        },
+        {
+          "name": "Home Improvement",
+          "revenue": 5321.0,
+          "share": 23.69,
+          "growth": 4.0
+        },
+        {
+          "name": "International Business",
+          "revenue": 4968.0,
+          "share": 22.11,
+          "growth": 4.0
+        }
+      ]
+    },
+    {
+      "year": "FY2021",
+      "segments": [
+        {
+          "name": "Decorative Paints",
+          "revenue": 6655.0,
+          "share": 27.95,
+          "growth": 6.0
+        },
+        {
+          "name": "Industrial Paints",
+          "revenue": 6601.0,
+          "share": 27.72,
+          "growth": 6.0
+        },
+        {
+          "name": "Home Improvement",
+          "revenue": 5701.0,
+          "share": 23.94,
+          "growth": 6.0
+        },
+        {
+          "name": "International Business",
+          "revenue": 5575.0,
+          "share": 23.41,
+          "growth": 6.0
+        }
+      ]
+    },
+    {
+      "year": "FY2022",
+      "segments": [
+        {
+          "name": "Decorative Paints",
+          "revenue": 7227.0,
+          "share": 27.1,
+          "growth": 12.0
+        },
+        {
+          "name": "Industrial Paints",
+          "revenue": 7473.0,
+          "share": 28.02,
+          "growth": 12.0
+        },
+        {
+          "name": "Home Improvement",
+          "revenue": 6454.0,
+          "share": 24.2,
+          "growth": 12.0
+        },
+        {
+          "name": "International Business",
+          "revenue": 6591.0,
+          "share": 24.72,
+          "growth": 12.0
+        }
+      ]
+    },
+    {
+      "year": "FY2023",
+      "segments": [
+        {
+          "name": "Decorative Paints",
+          "revenue": 7982.0,
+          "share": 26.25,
+          "growth": 14.0
+        },
+        {
+          "name": "Industrial Paints",
+          "revenue": 8610.0,
+          "share": 28.32,
+          "growth": 14.0
+        },
+        {
+          "name": "Home Improvement",
+          "revenue": 7436.0,
+          "share": 24.46,
+          "growth": 14.0
+        },
+        {
+          "name": "International Business",
+          "revenue": 7910.0,
+          "share": 26.02,
+          "growth": 14.0
+        }
+      ]
+    },
+    {
+      "year": "FY2024",
+      "segments": [
+        {
+          "name": "Decorative Paints",
+          "revenue": 8342.0,
+          "share": 25.41,
+          "growth": 8.0
+        },
+        {
+          "name": "Industrial Paints",
+          "revenue": 9397.0,
+          "share": 28.62,
+          "growth": 8.0
+        },
+        {
+          "name": "Home Improvement",
+          "revenue": 8115.0,
+          "share": 24.72,
+          "growth": 8.0
+        },
+        {
+          "name": "International Business",
+          "revenue": 8970.0,
+          "share": 27.32,
+          "growth": 8.0
+        }
+      ]
+    },
+    {
+      "year": "FY2025",
+      "segments": [
+        {
+          "name": "Decorative Paints",
+          "revenue": 8548.0,
+          "share": 24.56,
+          "growth": 6.0
+        },
+        {
+          "name": "Industrial Paints",
+          "revenue": 10064.0,
+          "share": 28.92,
+          "growth": 6.0
+        },
+        {
+          "name": "Home Improvement",
+          "revenue": 8692.0,
+          "share": 24.97,
+          "growth": 6.0
+        },
+        {
+          "name": "International Business",
+          "revenue": 9961.0,
+          "share": 28.62,
+          "growth": 6.0
+        }
+      ]
+    },
+    {
+      "year": "FY2026",
+      "segments": [
+        {
+          "name": "Decorative Paints",
+          "revenue": 9079.0,
+          "share": 23.71,
+          "growth": 10.0
+        },
+        {
+          "name": "Industrial Paints",
+          "revenue": 11185.0,
+          "share": 29.21,
+          "growth": 10.0
+        },
+        {
+          "name": "Home Improvement",
+          "revenue": 9660.0,
+          "share": 25.23,
+          "growth": 10.0
+        },
+        {
+          "name": "International Business",
+          "revenue": 11455.0,
+          "share": 29.92,
+          "growth": 10.0
+        }
+      ]
+    }
+  ],
+  "quarterly": {
+    "FY2024": [
+      {
+        "quarter": "Q1",
+        "endDate": "2024-06-30",
+        "revenue": 1897.0,
+        "netIncome": 360.0,
+        "ebitda": 455.0,
+        "eps": 0.38,
+        "margin": 19.0
+      },
+      {
+        "quarter": "Q2",
+        "endDate": "2024-09-30",
+        "revenue": 2213.0,
+        "netIncome": 421.0,
+        "ebitda": 531.0,
+        "eps": 0.44,
+        "margin": 19.0
+      },
+      {
+        "quarter": "Q3",
+        "endDate": "2024-12-31",
+        "revenue": 2108.0,
+        "netIncome": 401.0,
+        "ebitda": 506.0,
+        "eps": 0.42,
+        "margin": 19.0
+      },
+      {
+        "quarter": "Q4",
+        "endDate": "2025-03-31",
+        "revenue": 2319.0,
+        "netIncome": 371.0,
+        "ebitda": 556.0,
+        "eps": 0.39,
+        "margin": 16.0
+      }
+    ],
+    "FY2025": [
+      {
+        "quarter": "Q1",
+        "endDate": "2025-06-30",
+        "revenue": 2011.0,
+        "netIncome": 382.0,
+        "ebitda": 483.0,
+        "eps": 0.4,
+        "margin": 19.0
+      },
+      {
+        "quarter": "Q2",
+        "endDate": "2025-09-30",
+        "revenue": 2346.0,
+        "netIncome": 446.0,
+        "ebitda": 563.0,
+        "eps": 0.46,
+        "margin": 19.0
+      },
+      {
+        "quarter": "Q3",
+        "endDate": "2025-12-31",
+        "revenue": 2234.0,
+        "netIncome": 425.0,
+        "ebitda": 536.0,
+        "eps": 0.44,
+        "margin": 19.0
+      },
+      {
+        "quarter": "Q4",
+        "endDate": "2026-03-31",
+        "revenue": 2458.0,
+        "netIncome": 393.0,
+        "ebitda": 590.0,
+        "eps": 0.41,
+        "margin": 16.0
+      }
+    ],
+    "FY2026": [
+      {
+        "quarter": "Q1",
+        "endDate": "2026-06-30",
+        "revenue": 2212.0,
+        "netIncome": 420.0,
+        "ebitda": 531.0,
+        "eps": 0.44,
+        "margin": 19.0
+      },
+      {
+        "quarter": "Q2",
+        "endDate": "2026-09-30",
+        "revenue": 2581.0,
+        "netIncome": 490.0,
+        "ebitda": 619.0,
+        "eps": 0.51,
+        "margin": 19.0
+      },
+      {
+        "quarter": "Q3",
+        "endDate": "2026-12-31",
+        "revenue": 2458.0,
+        "netIncome": 467.0,
+        "ebitda": 590.0,
+        "eps": 0.49,
+        "margin": 19.0
+      },
+      {
+        "quarter": "Q4",
+        "endDate": "2027-03-31",
+        "revenue": 2704.0,
+        "netIncome": 433.0,
+        "ebitda": 649.0,
+        "eps": 0.45,
+        "margin": 16.0
+      }
+    ]
+  },
+  "riskFactors": [
+    {
+      "title": "Demand volatility",
+      "description": "A macro slowdown could soften discretionary spending on paints.",
+      "severity": "medium"
+    },
+    {
+      "title": "Input inflation",
+      "description": "Rising crude-linked material costs may squeeze gross margins.",
+      "severity": "medium"
+    }
+  ],
+  "managementDiscussion": "In fiscal year FY2026, Asian Paints recorded revenue of \u20b90.38 lakh crore, growing 10.0% year-on-year, driven by continued momentum across Decorative Paints, Industrial Paints. Net income stood at \u20b90.07 lakh crore with a net margin of 18.0% and a return on equity of 26.0%. Operating cash flow remained robust at \u20b90.08 lakh crore, supporting capital expenditure of \u20b90.01 lakh crore and a free cash flow of \u20b90.07 lakh crore. The company maintains a measured capital structure with net debt-to-equity of -0.04x. Management continues to invest in digital and AI capabilities, expects sustained volume-led growth and disciplined cost control, and remains committed to value-accretive capital allocation and sustainable returns for shareholders.",
+  "documents": [
+    {
+      "id": "asian-paints-20-f-2026-1",
+      "companySlug": "asian-paints",
+      "type": "Annual Report",
+      "title": "Annual Report FY2026",
+      "form": "20-F",
+      "fiscalPeriod": "FY2026",
+      "filedDate": "2026-06-15",
+      "periodEnd": "2026-03-31",
+      "source": "SEC EDGAR",
+      "sourceUrl": "https://www.asian-paints/reports/20-F/2026",
+      "sizeKb": 4507,
+      "pages": 172,
+      "sha256": "e9dc47f38377c153e2c96dc2f09f03fe36b4e9a75aa9cfe27821b8891ea116e5",
+      "latestVersion": "v1.1",
+      "versions": [
+        {
+          "version": "v1",
+          "uploadedAt": "2026-01-01",
+          "note": "Initial filing"
+        },
+        {
+          "version": "v1.1",
+          "uploadedAt": "2026-02-01",
+          "note": "Minor metadata corrections"
+        }
+      ]
+    },
+    {
+      "id": "asian-paints-10-k-2026-2",
+      "companySlug": "asian-paints",
+      "type": "10-K",
+      "title": "Form 10-K - FY2026",
+      "form": "10-K",
+      "fiscalPeriod": "FY2026",
+      "filedDate": "2026-04-20",
+      "periodEnd": "2026-03-31",
+      "source": "SEC EDGAR",
+      "sourceUrl": "https://www.asian-paints/reports/10-K/2026",
+      "sizeKb": 2522,
+      "pages": 203,
+      "sha256": "288b9893d9082b4f7fa51bbf929536fa5211844f802abe7b554c87a36fb75af9",
+      "latestVersion": "v1.1",
+      "versions": [
+        {
+          "version": "v1",
+          "uploadedAt": "2026-01-01",
+          "note": "Initial filing"
+        },
+        {
+          "version": "v1.1",
+          "uploadedAt": "2026-02-01",
+          "note": "Minor metadata corrections"
+        }
+      ]
+    },
+    {
+      "id": "asian-paints-pres-2026-3",
+      "companySlug": "asian-paints",
+      "type": "Investor Presentation",
+      "title": "Q1 FY2027 Investor Presentation",
+      "form": "PRES",
+      "fiscalPeriod": "FY2026",
+      "filedDate": "2026-06-18",
+      "periodEnd": "2026-03-31",
+      "source": "Investor Relations",
+      "sourceUrl": "https://www.asian-paints/reports/PRES/2026",
+      "sizeKb": 4578,
+      "pages": 97,
+      "sha256": "a546d26782e57ef2c0f963f8c0fc4e17006dc508d5394adc6edae09200a0e004",
+      "latestVersion": "v1.1",
+      "versions": [
+        {
+          "version": "v1",
+          "uploadedAt": "2026-01-01",
+          "note": "Initial filing"
+        },
+        {
+          "version": "v1.1",
+          "uploadedAt": "2026-02-01",
+          "note": "Minor metadata corrections"
+        }
+      ]
+    },
+    {
+      "id": "asian-paints-tran-2026-4",
+      "companySlug": "asian-paints",
+      "type": "Earnings Call Transcript",
+      "title": "Q1 FY2027 Earnings Call Transcript",
+      "form": "TRAN",
+      "fiscalPeriod": "FY2026",
+      "filedDate": "2026-10-20",
+      "periodEnd": "2026-03-31",
+      "source": "NSE",
+      "sourceUrl": "https://www.asian-paints/reports/TRAN/2026",
+      "sizeKb": 6096,
+      "pages": 175,
+      "sha256": "70104cf2c379a88b33d0fe01f6b292de64bad48b1aa046e498310e8e91b723c3",
+      "latestVersion": "v1.1",
+      "versions": [
+        {
+          "version": "v1",
+          "uploadedAt": "2026-01-01",
+          "note": "Initial filing"
+        },
+        {
+          "version": "v1.1",
+          "uploadedAt": "2026-02-01",
+          "note": "Minor metadata corrections"
+        }
+      ]
+    },
+    {
+      "id": "asian-paints-10-q-2026-5",
+      "companySlug": "asian-paints",
+      "type": "10-Q",
+      "title": "Form 10-Q - Q1 FY2026",
+      "form": "10-Q",
+      "fiscalPeriod": "FY2026",
+      "filedDate": "2026-04-10",
+      "periodEnd": "2026-03-31",
+      "source": "BSE",
+      "sourceUrl": "https://www.asian-paints/reports/10-Q/2026",
+      "sizeKb": 5763,
+      "pages": 115,
+      "sha256": "3716b0f167107b0e3e11ef3ccfd669be098ba699159887d1f4d1115ec150f5df",
+      "latestVersion": "v1.1",
+      "versions": [
+        {
+          "version": "v1",
+          "uploadedAt": "2026-01-01",
+          "note": "Initial filing"
+        },
+        {
+          "version": "v1.1",
+          "uploadedAt": "2026-02-01",
+          "note": "Minor metadata corrections"
+        }
+      ]
+    },
+    {
+      "id": "asian-paints-8-k-2026-6",
+      "companySlug": "asian-paints",
+      "type": "8-K",
+      "title": "Current Report - Board Update",
+      "form": "8-K",
+      "fiscalPeriod": "FY2026",
+      "filedDate": "2026-03-16",
+      "periodEnd": "2026-03-31",
+      "source": "SEC EDGAR",
+      "sourceUrl": "https://www.asian-paints/reports/8-K/2026",
+      "sizeKb": 6537,
+      "pages": 232,
+      "sha256": "2eebd9b29e2932318582c86b1c639a60d3a4d27f2380e1fa9ab465fd7378c894",
+      "latestVersion": "v1.1",
+      "versions": [
+        {
+          "version": "v1",
+          "uploadedAt": "2026-01-01",
+          "note": "Initial filing"
+        },
+        {
+          "version": "v1.1",
+          "uploadedAt": "2026-02-01",
+          "note": "Minor metadata corrections"
+        }
+      ]
+    },
+    {
+      "id": "asian-paints-20-f-2025-7",
+      "companySlug": "asian-paints",
+      "type": "Annual Report",
+      "title": "Annual Report FY2025",
+      "form": "20-F",
+      "fiscalPeriod": "FY2025",
+      "filedDate": "2025-08-14",
+      "periodEnd": "2025-03-31",
+      "source": "SEC EDGAR",
+      "sourceUrl": "https://www.asian-paints/reports/20-F/2025",
+      "sizeKb": 7059,
+      "pages": 138,
+      "sha256": "3756ab613e6d8204371727a31c172ad60235b1908a8af1e69dc2c6fff4a05e73",
+      "latestVersion": "v1.1",
+      "versions": [
+        {
+          "version": "v1",
+          "uploadedAt": "2025-01-01",
+          "note": "Initial filing"
+        },
+        {
+          "version": "v1.1",
+          "uploadedAt": "2025-02-01",
+          "note": "Minor metadata corrections"
+        }
+      ]
+    },
+    {
+      "id": "asian-paints-pres-2026-8",
+      "companySlug": "asian-paints",
+      "type": "Investor Presentation",
+      "title": "Q3 FY2026 Investor Presentation",
+      "form": "PRES",
+      "fiscalPeriod": "FY2026",
+      "filedDate": "2026-07-21",
+      "periodEnd": "2026-03-31",
+      "source": "BSE",
+      "sourceUrl": "https://www.asian-paints/reports/PRES/2026",
+      "sizeKb": 2514,
+      "pages": 83,
+      "sha256": "8aff30e913bbcc850a146ad1f8427be11a4f81f34f6f176a83b8b6579fa0cf39",
+      "latestVersion": "v1.1",
+      "versions": [
+        {
+          "version": "v1",
+          "uploadedAt": "2026-01-01",
+          "note": "Initial filing"
+        },
+        {
+          "version": "v1.1",
+          "uploadedAt": "2026-02-01",
+          "note": "Minor metadata corrections"
+        }
+      ]
+    }
+  ]
+}

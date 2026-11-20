@@ -1,0 +1,309 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --background: oklch(0.99 0.003 260);
+  --foreground: oklch(0.205 0.03 264);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.205 0.03 264);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.205 0.03 264);
+  /* One cohesive signal family: emerald growth, teal depth, violet data, amber caution. */
+  --primary: oklch(0.62 0.16 162);
+  --primary-foreground: oklch(0.99 0.005 160);
+  --secondary: oklch(0.96 0.01 264);
+  --secondary-foreground: oklch(0.33 0.03 264);
+  --muted: oklch(0.955 0.01 264);
+  --muted-foreground: oklch(0.51 0.02 264);
+  --accent: oklch(0.95 0.035 162);
+  --accent-foreground: oklch(0.3 0.08 162);
+  --destructive: oklch(0.577 0.245 27);
+  --destructive-foreground: oklch(0.99 0.005 27);
+  --border: oklch(0.915 0.012 264);
+  --input: oklch(0.91 0.012 264);
+  --ring: oklch(0.65 0.16 162);
+  --success: oklch(0.627 0.17 149);
+  --warning: oklch(0.769 0.188 70);
+  --info: oklch(0.588 0.158 241);
+  --chart-1: oklch(0.62 0.16 162);
+  --chart-2: oklch(0.7 0.13 200);
+  --chart-3: oklch(0.6 0.2 290);
+  --chart-4: oklch(0.8 0.15 75);
+  --chart-5: oklch(0.62 0.2 20);
+  --radius: 1rem;
+  --shadow-glow: 0 0 40px -12px oklch(0.62 0.16 162 / 0.35);
+  --chart-glow: var(--shadow-glow);
+
+  /* Glassmorphism (light): translucent enough to distort the ambient field. */
+  --glass-bg: oklch(1 0 0 / 0.42);
+  --glass-border: oklch(0.915 0.012 264 / 0.7);
+  --glass-highlight: oklch(1 0 0 / 0.95);
+  --glass-shadow: 0 10px 36px -14px oklch(0.3 0.05 264 / 0.3), inset 0 1px 0 oklch(1 0 0 / 0.9);
+  --glass-blur: blur(26px) saturate(190%);
+  --led: oklch(0.68 0.19 149);
+  --led-halo: oklch(0.72 0.19 149 / 0.45);
+}
+
+.dark {
+  /* Absolute dark cockpit backdrop — black, not washed-out grey. */
+  --background: oklch(0.085 0.012 268);
+  --foreground: oklch(0.96 0.008 264);
+  --card: oklch(0.2 0.015 270);
+  --card-foreground: oklch(0.95 0.008 264);
+  --popover: oklch(0.2 0.015 270);
+  --popover-foreground: oklch(0.95 0.008 264);
+  --primary: oklch(0.8 0.16 160);
+  --primary-foreground: oklch(0.14 0.03 165);
+  --secondary: oklch(0.27 0.015 270);
+  --secondary-foreground: oklch(0.94 0.006 264);
+  --muted: oklch(0.26 0.014 270);
+  --muted-foreground: oklch(0.66 0.02 264);
+  --accent: oklch(0.26 0.06 165);
+  --accent-foreground: oklch(0.9 0.05 160);
+  --destructive: oklch(0.704 0.191 22);
+  --destructive-foreground: oklch(0.99 0.005 22);
+  --border: oklch(0.31 0.02 268);
+  --input: oklch(0.33 0.02 268);
+  --ring: oklch(0.82 0.16 160);
+  --chart-1: oklch(0.8 0.16 160);
+  --chart-2: oklch(0.78 0.14 200);
+  --chart-3: oklch(0.72 0.2 290);
+  --chart-4: oklch(0.82 0.16 80);
+  --chart-5: oklch(0.72 0.19 22);
+  --chart-glow: 0 0 60px -18px oklch(0.8 0.16 160 / 0.45);
+
+  /* Liquid glass (dark): deep translucent panels with a specular edge. */
+  --card: oklch(0.16 0.018 268);
+  --popover: oklch(0.16 0.018 268);
+  --glass-bg: oklch(0.16 0.02 268 / 0.3);
+  --glass-border: oklch(0.78 0.05 268 / 0.26);
+  --glass-highlight: oklch(1 0 0 / 0.2);
+  --glass-shadow: 0 22px 60px -24px oklch(0 0 0 / 0.9), inset 0 1px 0 oklch(1 0 0 / 0.12);
+  --glass-blur: blur(44px) saturate(230%);
+  --led: oklch(0.78 0.19 149);
+  --led-halo: oklch(0.78 0.19 149 / 0.55);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-success: var(--success);
+  --color-warning: var(--warning);
+  --color-info: var(--info);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --font-sans: var(--font-jakarta), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-jetbrains-mono), ui-monospace, monospace;
+  --font-display: var(--font-space-grotesk), var(--font-jakarta), ui-sans-serif, system-ui, sans-serif;
+  --radius-xl: 1rem;
+  --radius-lg: 0.75rem;
+  --radius-md: 0.5rem;
+  --shadow-glow: var(--chart-glow);
+}
+
+* {
+  border-color: var(--border);
+}
+
+/* Typography system: geometric display, quiet UI sans, tabular numerals. */
+h1, h2, h3, h4, .display {
+  font-family: var(--font-display);
+  letter-spacing: -0.025em;
+  text-wrap: balance;
+}
+.font-display {
+  font-family: var(--font-display);
+  letter-spacing: -0.02em;
+}
+table, .tabular-nums, [data-numeric] {
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum" 1;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html[data-scroll-behavior] {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--background);
+  /* A colourful ambient field is what makes backdrop-filter read as glass. */
+  background-image:
+    radial-gradient(52rem 40rem at 10% -8%, oklch(0.72 0.2 285 / 0.11), transparent 62%),
+    radial-gradient(48rem 38rem at 96% 4%, oklch(0.7 0.18 192 / 0.09), transparent 62%),
+    radial-gradient(46rem 38rem at 50% 108%, oklch(0.68 0.19 149 / 0.07), transparent 64%);
+  background-attachment: fixed;
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Absolute dark cockpit: near-black with green + violet telemetry glow behind the glass. */
+.dark body {
+  background-color: oklch(0.055 0.008 268);
+  background-image:
+    radial-gradient(50rem 38rem at 6% -6%, oklch(0.7 0.2 149 / 0.2), transparent 62%),
+    radial-gradient(48rem 40rem at 96% 2%, oklch(0.68 0.22 285 / 0.22), transparent 62%),
+    radial-gradient(60rem 50rem at 50% 120%, oklch(0.7 0.18 192 / 0.1), transparent 65%);
+  background-attachment: fixed;
+}
+
+/* Ambient page glow */
+.bg-mesh {
+  background-image:
+    radial-gradient(60rem 60rem at 12% -8%, oklch(0.72 0.22 285/0.12), transparent 60%),
+    radial-gradient(50rem 50rem at 100% 0%, oklch(0.7 0.16 192/0.1), transparent 60%),
+    radial-gradient(60rem 60rem at 50% 110%, oklch(0.627 0.17 149/0.06), transparent 60%);
+}
+
+.bg-grid {
+  background-image:
+    linear-gradient(to right, var(--border) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--border) 1px, transparent 1px);
+  background-size: 52px 52px;
+  mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, #000 40%, transparent 100%);
+}
+
+/* Legacy glass surface — shares the same tokenised blur as .glass-panel. */
+.glass {
+  background: var(--glass-bg);
+  -webkit-backdrop-filter: var(--glass-blur);
+  backdrop-filter: var(--glass-blur);
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--glass-shadow), inset 0 1px 0 var(--glass-highlight);
+}
+.dark .glass {
+  border-color: var(--glass-border);
+}
+
+/* Cockpit surfaces: frosted glass in light, liquid glass in dark. */
+.glass-panel {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  -webkit-backdrop-filter: var(--glass-blur);
+  backdrop-filter: var(--glass-blur);
+  box-shadow: var(--glass-shadow), inset 0 1px 0 var(--glass-highlight);
+}
+
+/* Quick, user-initiated micro-motion — never a layout jump on load. */
+.jump {
+  transition: transform 0.24s cubic-bezier(0.2, 0.9, 0.25, 1.15), box-shadow 0.24s ease;
+  will-change: transform;
+}
+.jump:hover {
+  transform: translateY(-3px);
+}
+.jump:active {
+  transform: translateY(0);
+  transition-duration: 0.09s;
+}
+
+.metric-num {
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.02em;
+}
+
+/* Notification / live-status LED with a restrained halo. */
+@keyframes led-pulse {
+  0%, 100% { box-shadow: 0 0 0 0 var(--led-halo), 0 0 10px 1px var(--led-halo); }
+  50% { box-shadow: 0 0 0 4px oklch(0.72 0.19 149 / 0), 0 0 16px 3px var(--led-halo); }
+}
+.led-live {
+  background: var(--led);
+  box-shadow: 0 0 10px 1px var(--led-halo);
+  animation: led-pulse 2.4s ease-in-out infinite;
+}
+
+.text-gradient {
+  background: linear-gradient(120deg, oklch(0.62 0.2 285), oklch(0.7 0.16 192));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 9999px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--muted-foreground);
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+
+::selection {
+  background: color-mix(in oklab, var(--primary) 30%, transparent);
+}
+
+@keyframes shimmer {
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Focus ring for accessibility */
+:focus-visible {
+  outline: 2px solid var(--ring);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}

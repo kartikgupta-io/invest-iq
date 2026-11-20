@@ -1,0 +1,1095 @@
+{
+  "profile": {
+    "slug": "reliance",
+    "ticker": "RELIANCE",
+    "name": "Reliance Industries",
+    "sector": "Energy",
+    "industry": "Oil & Gas, Retail, Telecom",
+    "exchange": "NSE",
+    "currency": "\u20b9",
+    "currencyCode": "INR",
+    "founded": 1966,
+    "listed": "1977",
+    "headquarters": "Mumbai, Maharashtra",
+    "website": "relianceindustries.com",
+    "description": "India's largest private-sector conglomerate operating across energy, petrochemicals, retail, and digital services. Reliance pioneered the Jio telecom network and operates one of the world's largest single-location refining complexes at Jamnagar.",
+    "employees": 389414,
+    "accent": "#7c3aed",
+    "market": "INDIA"
+  },
+  "quote": {
+    "price": 2048.93,
+    "change": -14.83,
+    "changePct": -0.72,
+    "open": 2057.5,
+    "high": 2073.52,
+    "low": 2024.34,
+    "volume": 51416131,
+    "previousClose": 2063.76,
+    "marketCap": 3462697.3499999996,
+    "peRatio": 27.0,
+    "eps": 75.89,
+    "dividendYield": 0.37,
+    "high52Week": 2417.74,
+    "low52Week": 1475.23
+  },
+  "annual": [
+    {
+      "year": "FY2018",
+      "revenue": 620000.0,
+      "revenueGrowth": 13.0,
+      "grossProfit": 347200.0,
+      "operatingIncome": 62000.0,
+      "ebitda": 93000.0,
+      "netIncome": 34720.0,
+      "eps": 21.43,
+      "netMargin": 5.6,
+      "grossMargin": 56.0,
+      "operatingMargin": 10.0,
+      "ebitdaMargin": 15.0,
+      "returnOnAssets": 3.36,
+      "totalAssets": 1033333.0,
+      "totalEquity": 408471.0,
+      "totalDebt": 204235.0,
+      "netDebt": 136035.0,
+      "cash": 68200.0,
+      "debtToEquity": 0.5,
+      "currentRatio": 1.84,
+      "operatingCashFlow": 65720.0,
+      "investingCashFlow": -46500.0,
+      "financingCashFlow": -3472.0,
+      "freeCashFlow": 19220.0,
+      "capex": 46500.0,
+      "roe": 8.5,
+      "roce": 11.39,
+      "interestCover": 4.67,
+      "bookValue": 252.14,
+      "dividendPerShare": 2.14,
+      "dividendYield": 0.38,
+      "sharesOutstanding": 1620.0,
+      "revenuePerShare": 382.72,
+      "priceToSales": 1.46,
+      "evToEbitda": 11.17,
+      "peRatio": 26.0,
+      "priceToBook": 2.21
+    },
+    {
+      "year": "FY2019",
+      "revenue": 700600.0,
+      "revenueGrowth": 13.0,
+      "grossProfit": 399342.0,
+      "operatingIncome": 73563.0,
+      "ebitda": 112096.0,
+      "netIncome": 42036.0,
+      "eps": 25.95,
+      "netMargin": 6.0,
+      "grossMargin": 57.0,
+      "operatingMargin": 10.5,
+      "ebitdaMargin": 16.0,
+      "returnOnAssets": 3.6,
+      "totalAssets": 1167667.0,
+      "totalEquity": 467067.0,
+      "totalDebt": 224192.0,
+      "netDebt": 140120.0,
+      "cash": 84072.0,
+      "debtToEquity": 0.48,
+      "currentRatio": 1.88,
+      "operatingCashFlow": 80569.0,
+      "investingCashFlow": -56048.0,
+      "financingCashFlow": 15753.0,
+      "freeCashFlow": 24521.0,
+      "capex": 56048.0,
+      "roe": 9.0,
+      "roce": 12.12,
+      "interestCover": 5.05,
+      "bookValue": 288.31,
+      "dividendPerShare": 2.6,
+      "dividendYield": 0.33,
+      "sharesOutstanding": 1620.0,
+      "revenuePerShare": 432.47,
+      "priceToSales": 1.8,
+      "evToEbitda": 12.5,
+      "peRatio": 30.0,
+      "priceToBook": 2.7
+    },
+    {
+      "year": "FY2020",
+      "revenue": 777666.0,
+      "revenueGrowth": 11.0,
+      "grossProfit": 451046.0,
+      "operatingIncome": 85543.0,
+      "ebitda": 132203.0,
+      "netIncome": 50548.0,
+      "eps": 31.01,
+      "netMargin": 6.5,
+      "grossMargin": 58.0,
+      "operatingMargin": 11.0,
+      "ebitdaMargin": 17.0,
+      "returnOnAssets": 3.9,
+      "totalAssets": 1296110.0,
+      "totalEquity": 532087.0,
+      "totalDebt": 292648.0,
+      "netDebt": 191551.0,
+      "cash": 101097.0,
+      "debtToEquity": 0.55,
+      "currentRatio": 1.92,
+      "operatingCashFlow": 97208.0,
+      "investingCashFlow": -69990.0,
+      "financingCashFlow": 63401.0,
+      "freeCashFlow": 27218.0,
+      "capex": 69990.0,
+      "roe": 9.5,
+      "roce": 11.82,
+      "interestCover": 4.5,
+      "bookValue": 326.43,
+      "dividendPerShare": 3.1,
+      "dividendYield": 0.45,
+      "sharesOutstanding": 1630.0,
+      "revenuePerShare": 477.1,
+      "priceToSales": 1.43,
+      "evToEbitda": 9.86,
+      "peRatio": 22.0,
+      "priceToBook": 2.09
+    },
+    {
+      "year": "FY2021",
+      "revenue": 1112062.0,
+      "revenueGrowth": 43.0,
+      "grossProfit": 633876.0,
+      "operatingIncome": 115654.0,
+      "ebitda": 183490.0,
+      "netIncome": 70060.0,
+      "eps": 41.46,
+      "netMargin": 6.3,
+      "grossMargin": 57.0,
+      "operatingMargin": 10.4,
+      "ebitdaMargin": 16.5,
+      "returnOnAssets": 3.91,
+      "totalAssets": 1793649.0,
+      "totalEquity": 714897.0,
+      "totalDebt": 357449.0,
+      "netDebt": 224002.0,
+      "cash": 133447.0,
+      "debtToEquity": 0.5,
+      "currentRatio": 1.88,
+      "operatingCashFlow": 137896.0,
+      "investingCashFlow": -111206.0,
+      "financingCashFlow": 57794.0,
+      "freeCashFlow": 26690.0,
+      "capex": 111206.0,
+      "roe": 9.8,
+      "roce": 12.32,
+      "interestCover": 4.98,
+      "bookValue": 423.02,
+      "dividendPerShare": 4.15,
+      "dividendYield": 0.56,
+      "sharesOutstanding": 1690.0,
+      "revenuePerShare": 658.03,
+      "priceToSales": 1.13,
+      "evToEbitda": 8.09,
+      "peRatio": 18.0,
+      "priceToBook": 1.76
+    },
+    {
+      "year": "FY2022",
+      "revenue": 1312234.0,
+      "revenueGrowth": 18.0,
+      "grossProfit": 747973.0,
+      "operatingIncome": 131223.0,
+      "ebitda": 220455.0,
+      "netIncome": 81358.0,
+      "eps": 48.14,
+      "netMargin": 6.2,
+      "grossMargin": 57.0,
+      "operatingMargin": 10.0,
+      "ebitdaMargin": 16.8,
+      "returnOnAssets": 3.91,
+      "totalAssets": 2082910.0,
+      "totalEquity": 813585.0,
+      "totalDebt": 309162.0,
+      "netDebt": 138572.0,
+      "cash": 170590.0,
+      "debtToEquity": 0.38,
+      "currentRatio": 1.92,
+      "operatingCashFlow": 170590.0,
+      "investingCashFlow": -91856.0,
+      "financingCashFlow": -56423.0,
+      "freeCashFlow": 78734.0,
+      "capex": 91856.0,
+      "roe": 10.0,
+      "roce": 13.78,
+      "interestCover": 6.53,
+      "bookValue": 481.41,
+      "dividendPerShare": 4.81,
+      "dividendYield": 0.42,
+      "sharesOutstanding": 1690.0,
+      "revenuePerShare": 776.47,
+      "priceToSales": 1.49,
+      "evToEbitda": 9.49,
+      "peRatio": 24.0,
+      "priceToBook": 2.4
+    },
+    {
+      "year": "FY2023",
+      "revenue": 1377845.0,
+      "revenueGrowth": 5.0,
+      "grossProfit": 799150.0,
+      "operatingIncome": 140540.0,
+      "ebitda": 234234.0,
+      "netIncome": 88182.0,
+      "eps": 52.18,
+      "netMargin": 6.4,
+      "grossMargin": 58.0,
+      "operatingMargin": 10.2,
+      "ebitdaMargin": 17.0,
+      "returnOnAssets": 4.03,
+      "totalAssets": 2187056.0,
+      "totalEquity": 864530.0,
+      "totalDebt": 311231.0,
+      "netDebt": 118333.0,
+      "cash": 192898.0,
+      "debtToEquity": 0.36,
+      "currentRatio": 1.96,
+      "operatingCashFlow": 181876.0,
+      "investingCashFlow": -82671.0,
+      "financingCashFlow": -6749.0,
+      "freeCashFlow": 99205.0,
+      "capex": 82671.0,
+      "roe": 10.2,
+      "roce": 14.3,
+      "interestCover": 6.95,
+      "bookValue": 511.56,
+      "dividendPerShare": 5.22,
+      "dividendYield": 0.45,
+      "sharesOutstanding": 1690.0,
+      "revenuePerShare": 815.29,
+      "priceToSales": 1.41,
+      "evToEbitda": 8.79,
+      "peRatio": 22.0,
+      "priceToBook": 2.24
+    },
+    {
+      "year": "FY2024",
+      "revenue": 1488073.0,
+      "revenueGrowth": 8.0,
+      "grossProfit": 863082.0,
+      "operatingIncome": 156248.0,
+      "ebitda": 255949.0,
+      "netIncome": 98213.0,
+      "eps": 58.11,
+      "netMargin": 6.6,
+      "grossMargin": 58.0,
+      "operatingMargin": 10.5,
+      "ebitdaMargin": 17.2,
+      "returnOnAssets": 4.22,
+      "totalAssets": 2325114.0,
+      "totalEquity": 935360.0,
+      "totalDebt": 318022.0,
+      "netDebt": 124573.0,
+      "cash": 193449.0,
+      "debtToEquity": 0.34,
+      "currentRatio": 1.92,
+      "operatingCashFlow": 197914.0,
+      "investingCashFlow": -81844.0,
+      "financingCashFlow": -3030.0,
+      "freeCashFlow": 116070.0,
+      "capex": 81844.0,
+      "roe": 10.5,
+      "roce": 14.74,
+      "interestCover": 7.56,
+      "bookValue": 553.47,
+      "dividendPerShare": 5.81,
+      "dividendYield": 0.38,
+      "sharesOutstanding": 1690.0,
+      "revenuePerShare": 880.52,
+      "priceToSales": 1.72,
+      "evToEbitda": 10.46,
+      "peRatio": 26.0,
+      "priceToBook": 2.73
+    },
+    {
+      "year": "FY2025",
+      "revenue": 1696403.0,
+      "revenueGrowth": 14.0,
+      "grossProfit": 1000878.0,
+      "operatingIncome": 183212.0,
+      "ebitda": 295174.0,
+      "netIncome": 115355.0,
+      "eps": 68.26,
+      "netMargin": 6.8,
+      "grossMargin": 59.0,
+      "operatingMargin": 10.8,
+      "ebitdaMargin": 17.4,
+      "returnOnAssets": 4.42,
+      "totalAssets": 2609851.0,
+      "totalEquity": 1068106.0,
+      "totalDebt": 341794.0,
+      "netDebt": 138226.0,
+      "cash": 203568.0,
+      "debtToEquity": 0.32,
+      "currentRatio": 1.88,
+      "operatingCashFlow": 227317.0,
+      "investingCashFlow": -84820.0,
+      "financingCashFlow": 12236.0,
+      "freeCashFlow": 142497.0,
+      "capex": 84820.0,
+      "roe": 10.8,
+      "roce": 15.19,
+      "interestCover": 8.25,
+      "bookValue": 632.02,
+      "dividendPerShare": 6.83,
+      "dividendYield": 0.36,
+      "sharesOutstanding": 1690.0,
+      "revenuePerShare": 1003.79,
+      "priceToSales": 1.9,
+      "evToEbitda": 11.41,
+      "peRatio": 28.0,
+      "priceToBook": 3.02
+    },
+    {
+      "year": "FY2026",
+      "revenue": 1832115.0,
+      "revenueGrowth": 8.0,
+      "grossProfit": 1080948.0,
+      "operatingIncome": 201533.0,
+      "ebitda": 322452.0,
+      "netIncome": 128248.0,
+      "eps": 75.89,
+      "netMargin": 7.0,
+      "grossMargin": 59.0,
+      "operatingMargin": 11.0,
+      "ebitdaMargin": 17.6,
+      "returnOnAssets": 4.55,
+      "totalAssets": 2818639.0,
+      "totalEquity": 1165892.0,
+      "totalDebt": 349767.0,
+      "netDebt": 148234.0,
+      "cash": 201533.0,
+      "debtToEquity": 0.3,
+      "currentRatio": 1.84,
+      "operatingCashFlow": 249167.0,
+      "investingCashFlow": -87942.0,
+      "financingCashFlow": -4852.0,
+      "freeCashFlow": 161225.0,
+      "capex": 87942.0,
+      "roe": 11.0,
+      "roce": 15.34,
+      "interestCover": 8.86,
+      "bookValue": 689.88,
+      "dividendPerShare": 7.59,
+      "dividendYield": 0.37,
+      "sharesOutstanding": 1690.0,
+      "revenuePerShare": 1084.09,
+      "priceToSales": 1.89,
+      "evToEbitda": 11.2,
+      "peRatio": 27.0,
+      "priceToBook": 2.97
+    }
+  ],
+  "valuation": [
+    {
+      "year": "FY2018",
+      "price": 557.23,
+      "marketCap": 902713.0,
+      "peRatio": 26.0,
+      "priceToBook": 2.21,
+      "evToEbitda": 11.17,
+      "dividendYield": 0.38
+    },
+    {
+      "year": "FY2019",
+      "price": 778.44,
+      "marketCap": 1261073.0,
+      "peRatio": 30.0,
+      "priceToBook": 2.7,
+      "evToEbitda": 12.5,
+      "dividendYield": 0.33
+    },
+    {
+      "year": "FY2020",
+      "price": 682.25,
+      "marketCap": 1112068.0,
+      "peRatio": 22.0,
+      "priceToBook": 2.09,
+      "evToEbitda": 9.86,
+      "dividendYield": 0.45
+    },
+    {
+      "year": "FY2021",
+      "price": 746.2,
+      "marketCap": 1261078.0,
+      "peRatio": 18.0,
+      "priceToBook": 1.76,
+      "evToEbitda": 8.09,
+      "dividendYield": 0.56
+    },
+    {
+      "year": "FY2022",
+      "price": 1155.39,
+      "marketCap": 1952609.0,
+      "peRatio": 24.0,
+      "priceToBook": 2.4,
+      "evToEbitda": 9.49,
+      "dividendYield": 0.42
+    },
+    {
+      "year": "FY2023",
+      "price": 1147.93,
+      "marketCap": 1940002.0,
+      "peRatio": 22.0,
+      "priceToBook": 2.24,
+      "evToEbitda": 8.79,
+      "dividendYield": 0.45
+    },
+    {
+      "year": "FY2024",
+      "price": 1510.97,
+      "marketCap": 2553539.0,
+      "peRatio": 26.0,
+      "priceToBook": 2.73,
+      "evToEbitda": 10.46,
+      "dividendYield": 0.38
+    },
+    {
+      "year": "FY2025",
+      "price": 1911.21,
+      "marketCap": 3229945.0,
+      "peRatio": 28.0,
+      "priceToBook": 3.02,
+      "evToEbitda": 11.41,
+      "dividendYield": 0.36
+    },
+    {
+      "year": "FY2026",
+      "price": 2048.93,
+      "marketCap": 3462692.0,
+      "peRatio": 27.0,
+      "priceToBook": 2.97,
+      "evToEbitda": 11.2,
+      "dividendYield": 0.37
+    }
+  ],
+  "segments": [
+    {
+      "year": "FY2018",
+      "segments": [
+        {
+          "name": "Oil-to-Chemicals",
+          "revenue": 189024.0,
+          "share": 30.49,
+          "growth": 13.0
+        },
+        {
+          "name": "Retail",
+          "revenue": 166341.0,
+          "share": 26.83,
+          "growth": 13.0
+        },
+        {
+          "name": "Digital Services (Jio)",
+          "revenue": 143659.0,
+          "share": 23.17,
+          "growth": 13.0
+        },
+        {
+          "name": "Oil & Gas E&P",
+          "revenue": 120976.0,
+          "share": 19.51,
+          "growth": 13.0
+        }
+      ]
+    },
+    {
+      "year": "FY2019",
+      "segments": [
+        {
+          "name": "Oil-to-Chemicals",
+          "revenue": 207664.0,
+          "share": 29.64,
+          "growth": 13.0
+        },
+        {
+          "name": "Retail",
+          "revenue": 190054.0,
+          "share": 27.13,
+          "growth": 13.0
+        },
+        {
+          "name": "Digital Services (Jio)",
+          "revenue": 164138.0,
+          "share": 23.43,
+          "growth": 13.0
+        },
+        {
+          "name": "Oil & Gas E&P",
+          "revenue": 145816.0,
+          "share": 20.81,
+          "growth": 13.0
+        }
+      ]
+    },
+    {
+      "year": "FY2020",
+      "segments": [
+        {
+          "name": "Oil-to-Chemicals",
+          "revenue": 223921.0,
+          "share": 28.79,
+          "growth": 11.0
+        },
+        {
+          "name": "Retail",
+          "revenue": 213279.0,
+          "share": 27.43,
+          "growth": 11.0
+        },
+        {
+          "name": "Digital Services (Jio)",
+          "revenue": 184195.0,
+          "share": 23.69,
+          "growth": 11.0
+        },
+        {
+          "name": "Oil & Gas E&P",
+          "revenue": 171972.0,
+          "share": 22.11,
+          "growth": 11.0
+        }
+      ]
+    },
+    {
+      "year": "FY2021",
+      "segments": [
+        {
+          "name": "Oil-to-Chemicals",
+          "revenue": 310790.0,
+          "share": 27.95,
+          "growth": 43.0
+        },
+        {
+          "name": "Retail",
+          "revenue": 308303.0,
+          "share": 27.72,
+          "growth": 43.0
+        },
+        {
+          "name": "Digital Services (Jio)",
+          "revenue": 266262.0,
+          "share": 23.94,
+          "growth": 43.0
+        },
+        {
+          "name": "Oil & Gas E&P",
+          "revenue": 260385.0,
+          "share": 23.41,
+          "growth": 43.0
+        }
+      ]
+    },
+    {
+      "year": "FY2022",
+      "segments": [
+        {
+          "name": "Oil-to-Chemicals",
+          "revenue": 355619.0,
+          "share": 27.1,
+          "growth": 18.0
+        },
+        {
+          "name": "Retail",
+          "revenue": 367710.0,
+          "share": 28.02,
+          "growth": 18.0
+        },
+        {
+          "name": "Digital Services (Jio)",
+          "revenue": 317568.0,
+          "share": 24.2,
+          "growth": 18.0
+        },
+        {
+          "name": "Oil & Gas E&P",
+          "revenue": 324324.0,
+          "share": 24.72,
+          "growth": 18.0
+        }
+      ]
+    },
+    {
+      "year": "FY2023",
+      "segments": [
+        {
+          "name": "Oil-to-Chemicals",
+          "revenue": 361731.0,
+          "share": 26.25,
+          "growth": 5.0
+        },
+        {
+          "name": "Retail",
+          "revenue": 390203.0,
+          "share": 28.32,
+          "growth": 5.0
+        },
+        {
+          "name": "Digital Services (Jio)",
+          "revenue": 336993.0,
+          "share": 24.46,
+          "growth": 5.0
+        },
+        {
+          "name": "Oil & Gas E&P",
+          "revenue": 358464.0,
+          "share": 26.02,
+          "growth": 5.0
+        }
+      ]
+    },
+    {
+      "year": "FY2024",
+      "segments": [
+        {
+          "name": "Oil-to-Chemicals",
+          "revenue": 378067.0,
+          "share": 25.41,
+          "growth": 8.0
+        },
+        {
+          "name": "Retail",
+          "revenue": 425855.0,
+          "share": 28.62,
+          "growth": 8.0
+        },
+        {
+          "name": "Digital Services (Jio)",
+          "revenue": 367784.0,
+          "share": 24.72,
+          "growth": 8.0
+        },
+        {
+          "name": "Oil & Gas E&P",
+          "revenue": 406498.0,
+          "share": 27.32,
+          "growth": 8.0
+        }
+      ]
+    },
+    {
+      "year": "FY2025",
+      "segments": [
+        {
+          "name": "Oil-to-Chemicals",
+          "revenue": 416630.0,
+          "share": 24.56,
+          "growth": 14.0
+        },
+        {
+          "name": "Retail",
+          "revenue": 490532.0,
+          "share": 28.92,
+          "growth": 14.0
+        },
+        {
+          "name": "Digital Services (Jio)",
+          "revenue": 423641.0,
+          "share": 24.97,
+          "growth": 14.0
+        },
+        {
+          "name": "Oil & Gas E&P",
+          "revenue": 485475.0,
+          "share": 28.62,
+          "growth": 14.0
+        }
+      ]
+    },
+    {
+      "year": "FY2026",
+      "segments": [
+        {
+          "name": "Oil-to-Chemicals",
+          "revenue": 434445.0,
+          "share": 23.71,
+          "growth": 8.0
+        },
+        {
+          "name": "Retail",
+          "revenue": 535236.0,
+          "share": 29.21,
+          "growth": 8.0
+        },
+        {
+          "name": "Digital Services (Jio)",
+          "revenue": 462249.0,
+          "share": 25.23,
+          "growth": 8.0
+        },
+        {
+          "name": "Oil & Gas E&P",
+          "revenue": 548145.0,
+          "share": 29.92,
+          "growth": 8.0
+        }
+      ]
+    }
+  ],
+  "quarterly": {
+    "FY2024": [
+      {
+        "quarter": "Q1",
+        "endDate": "2024-06-30",
+        "revenue": 85978.0,
+        "netIncome": 6534.0,
+        "ebitda": 14788.0,
+        "eps": 3.87,
+        "margin": 7.6
+      },
+      {
+        "quarter": "Q2",
+        "endDate": "2024-09-30",
+        "revenue": 100307.0,
+        "netIncome": 7623.0,
+        "ebitda": 17253.0,
+        "eps": 4.51,
+        "margin": 7.6
+      },
+      {
+        "quarter": "Q3",
+        "endDate": "2024-12-31",
+        "revenue": 95531.0,
+        "netIncome": 7260.0,
+        "ebitda": 16431.0,
+        "eps": 4.3,
+        "margin": 7.6
+      },
+      {
+        "quarter": "Q4",
+        "endDate": "2025-03-31",
+        "revenue": 105084.0,
+        "netIncome": 4834.0,
+        "ebitda": 18074.0,
+        "eps": 2.86,
+        "margin": 4.6
+      }
+    ],
+    "FY2025": [
+      {
+        "quarter": "Q1",
+        "endDate": "2025-06-30",
+        "revenue": 98014.0,
+        "netIncome": 7645.0,
+        "ebitda": 17055.0,
+        "eps": 4.52,
+        "margin": 7.8
+      },
+      {
+        "quarter": "Q2",
+        "endDate": "2025-09-30",
+        "revenue": 114350.0,
+        "netIncome": 8919.0,
+        "ebitda": 19897.0,
+        "eps": 5.28,
+        "margin": 7.8
+      },
+      {
+        "quarter": "Q3",
+        "endDate": "2025-12-31",
+        "revenue": 108905.0,
+        "netIncome": 8495.0,
+        "ebitda": 18949.0,
+        "eps": 5.03,
+        "margin": 7.8
+      },
+      {
+        "quarter": "Q4",
+        "endDate": "2026-03-31",
+        "revenue": 119795.0,
+        "netIncome": 5750.0,
+        "ebitda": 20844.0,
+        "eps": 3.4,
+        "margin": 4.8
+      }
+    ],
+    "FY2026": [
+      {
+        "quarter": "Q1",
+        "endDate": "2026-06-30",
+        "revenue": 105856.0,
+        "netIncome": 8468.0,
+        "ebitda": 18631.0,
+        "eps": 5.01,
+        "margin": 8.0
+      },
+      {
+        "quarter": "Q2",
+        "endDate": "2026-09-30",
+        "revenue": 123498.0,
+        "netIncome": 9880.0,
+        "ebitda": 21736.0,
+        "eps": 5.85,
+        "margin": 8.0
+      },
+      {
+        "quarter": "Q3",
+        "endDate": "2026-12-31",
+        "revenue": 117617.0,
+        "netIncome": 9409.0,
+        "ebitda": 20701.0,
+        "eps": 5.57,
+        "margin": 8.0
+      },
+      {
+        "quarter": "Q4",
+        "endDate": "2027-03-31",
+        "revenue": 129379.0,
+        "netIncome": 6469.0,
+        "ebitda": 22771.0,
+        "eps": 3.83,
+        "margin": 5.0
+      }
+    ]
+  },
+  "riskFactors": [
+    {
+      "title": "Crude price volatility",
+      "description": "A sustained fall in international crude prices compresses refining margins and inventory gains.",
+      "severity": "high"
+    },
+    {
+      "title": "Regulatory pricing",
+      "description": "Changes to energy and telecom tariffs could affect segment profitability.",
+      "severity": "low"
+    },
+    {
+      "title": "High capital intensity",
+      "description": "Large greenfield projects carry execution and funding risk.",
+      "severity": "low"
+    }
+  ],
+  "managementDiscussion": "In fiscal year FY2026, Reliance Industries recorded revenue of \u20b918.32 lakh crore, growing 8.0% year-on-year, driven by continued momentum across Oil-to-Chemicals, Retail. Net income stood at \u20b91.28 lakh crore with a net margin of 7.0% and a return on equity of 11.0%. Operating cash flow remained robust at \u20b92.49 lakh crore, supporting capital expenditure of \u20b90.88 lakh crore and a free cash flow of \u20b91.61 lakh crore. The company maintains a measured capital structure with net debt-to-equity of 0.13x. Management continues to invest in digital and AI capabilities, expects sustained volume-led growth and disciplined cost control, and remains committed to value-accretive capital allocation and sustainable returns for shareholders.",
+  "documents": [
+    {
+      "id": "reliance-20-f-2026-1",
+      "companySlug": "reliance",
+      "type": "Annual Report",
+      "title": "Annual Report FY2026",
+      "form": "20-F",
+      "fiscalPeriod": "FY2026",
+      "filedDate": "2026-08-20",
+      "periodEnd": "2026-03-31",
+      "source": "SEC EDGAR",
+      "sourceUrl": "https://www.reliance/reports/20-F/2026",
+      "sizeKb": 3711,
+      "pages": 228,
+      "sha256": "baa7e5a608eb0877624e35edeb2038b35b435781a9e859a1f04942dbf597e61a",
+      "latestVersion": "v1.1",
+      "versions": [
+        {
+          "version": "v1",
+          "uploadedAt": "2026-01-01",
+          "note": "Initial filing"
+        },
+        {
+          "version": "v1.1",
+          "uploadedAt": "2026-02-01",
+          "note": "Minor metadata corrections"
+        }
+      ]
+    },
+    {
+      "id": "reliance-10-k-2026-2",
+      "companySlug": "reliance",
+      "type": "10-K",
+      "title": "Form 10-K - FY2026",
+      "form": "10-K",
+      "fiscalPeriod": "FY2026",
+      "filedDate": "2026-04-18",
+      "periodEnd": "2026-03-31",
+      "source": "SEC EDGAR",
+      "sourceUrl": "https://www.reliance/reports/10-K/2026",
+      "sizeKb": 3769,
+      "pages": 163,
+      "sha256": "892f3e13922784b6c0a29933f17890e3509c31a142d56b5e6023676269b3afc4",
+      "latestVersion": "v1.1",
+      "versions": [
+        {
+          "version": "v1",
+          "uploadedAt": "2026-01-01",
+          "note": "Initial filing"
+        },
+        {
+          "version": "v1.1",
+          "uploadedAt": "2026-02-01",
+          "note": "Minor metadata corrections"
+        }
+      ]
+    },
+    {
+      "id": "reliance-pres-2026-3",
+      "companySlug": "reliance",
+      "type": "Investor Presentation",
+      "title": "Q1 FY2027 Investor Presentation",
+      "form": "PRES",
+      "fiscalPeriod": "FY2026",
+      "filedDate": "2026-10-19",
+      "periodEnd": "2026-03-31",
+      "source": "Investor Relations",
+      "sourceUrl": "https://www.reliance/reports/PRES/2026",
+      "sizeKb": 3022,
+      "pages": 165,
+      "sha256": "f36c7fef2a7a3f6306fc1741f2da06bde4140215e62b15c981c57be8a6489cb2",
+      "latestVersion": "v1.1",
+      "versions": [
+        {
+          "version": "v1",
+          "uploadedAt": "2026-01-01",
+          "note": "Initial filing"
+        },
+        {
+          "version": "v1.1",
+          "uploadedAt": "2026-02-01",
+          "note": "Minor metadata corrections"
+        }
+      ]
+    },
+    {
+      "id": "reliance-tran-2026-4",
+      "companySlug": "reliance",
+      "type": "Earnings Call Transcript",
+      "title": "Q1 FY2027 Earnings Call Transcript",
+      "form": "TRAN",
+      "fiscalPeriod": "FY2026",
+      "filedDate": "2026-04-19",
+      "periodEnd": "2026-03-31",
+      "source": "NSE",
+      "sourceUrl": "https://www.reliance/reports/TRAN/2026",
+      "sizeKb": 3441,
+      "pages": 180,
+      "sha256": "80be00907ff45abf79f68d756b7c302f96096a330237fa1afbb2607a36d8e571",
+      "latestVersion": "v1.1",
+      "versions": [
+        {
+          "version": "v1",
+          "uploadedAt": "2026-01-01",
+          "note": "Initial filing"
+        },
+        {
+          "version": "v1.1",
+          "uploadedAt": "2026-02-01",
+          "note": "Minor metadata corrections"
+        }
+      ]
+    },
+    {
+      "id": "reliance-10-q-2026-5",
+      "companySlug": "reliance",
+      "type": "10-Q",
+      "title": "Form 10-Q - Q1 FY2026",
+      "form": "10-Q",
+      "fiscalPeriod": "FY2026",
+      "filedDate": "2026-07-21",
+      "periodEnd": "2026-03-31",
+      "source": "BSE",
+      "sourceUrl": "https://www.reliance/reports/10-Q/2026",
+      "sizeKb": 2417,
+      "pages": 96,
+      "sha256": "ceac40b8733563138d07ca1f6d6848d230cf3f43bf5595ce5c10807025537b0d",
+      "latestVersion": "v1.1",
+      "versions": [
+        {
+          "version": "v1",
+          "uploadedAt": "2026-01-01",
+          "note": "Initial filing"
+        },
+        {
+          "version": "v1.1",
+          "uploadedAt": "2026-02-01",
+          "note": "Minor metadata corrections"
+        }
+      ]
+    },
+    {
+      "id": "reliance-8-k-2026-6",
+      "companySlug": "reliance",
+      "type": "8-K",
+      "title": "Current Report - Board Update",
+      "form": "8-K",
+      "fiscalPeriod": "FY2026",
+      "filedDate": "2026-11-13",
+      "periodEnd": "2026-03-31",
+      "source": "SEC EDGAR",
+      "sourceUrl": "https://www.reliance/reports/8-K/2026",
+      "sizeKb": 4396,
+      "pages": 159,
+      "sha256": "b72d956d6ea37817c20e6c99e5aac774f31079e2c082696ddb6878be1d6e5da4",
+      "latestVersion": "v1.1",
+      "versions": [
+        {
+          "version": "v1",
+          "uploadedAt": "2026-01-01",
+          "note": "Initial filing"
+        },
+        {
+          "version": "v1.1",
+          "uploadedAt": "2026-02-01",
+          "note": "Minor metadata corrections"
+        }
+      ]
+    },
+    {
+      "id": "reliance-20-f-2025-7",
+      "companySlug": "reliance",
+      "type": "Annual Report",
+      "title": "Annual Report FY2025",
+      "form": "20-F",
+      "fiscalPeriod": "FY2025",
+      "filedDate": "2025-09-22",
+      "periodEnd": "2025-03-31",
+      "source": "SEC EDGAR",
+      "sourceUrl": "https://www.reliance/reports/20-F/2025",
+      "sizeKb": 6942,
+      "pages": 119,
+      "sha256": "ac572f4e8150eaeebdb03d311a00787d9051d09d9fc1425ea8f79fa95587a07f",
+      "latestVersion": "v1.1",
+      "versions": [
+        {
+          "version": "v1",
+          "uploadedAt": "2025-01-01",
+          "note": "Initial filing"
+        },
+        {
+          "version": "v1.1",
+          "uploadedAt": "2025-02-01",
+          "note": "Minor metadata corrections"
+        }
+      ]
+    },
+    {
+      "id": "reliance-pres-2026-8",
+      "companySlug": "reliance",
+      "type": "Investor Presentation",
+      "title": "Q3 FY2026 Investor Presentation",
+      "form": "PRES",
+      "fiscalPeriod": "FY2026",
+      "filedDate": "2026-09-15",
+      "periodEnd": "2026-03-31",
+      "source": "BSE",
+      "sourceUrl": "https://www.reliance/reports/PRES/2026",
+      "sizeKb": 2486,
+      "pages": 236,
+      "sha256": "057bd748249215bf1e16a3515160fe9e1f19614c3d27cf59c99b2b0ce9ca24b4",
+      "latestVersion": "v1.1",
+      "versions": [
+        {
+          "version": "v1",
+          "uploadedAt": "2026-01-01",
+          "note": "Initial filing"
+        },
+        {
+          "version": "v1.1",
+          "uploadedAt": "2026-02-01",
+          "note": "Minor metadata corrections"
+        }
+      ]
+    }
+  ]
+}

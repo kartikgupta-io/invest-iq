@@ -1,0 +1,1095 @@
+{
+  "profile": {
+    "slug": "state-bank-of-india",
+    "ticker": "SBIN",
+    "name": "State Bank of India",
+    "sector": "Financial Services",
+    "industry": "Public Sector Banking",
+    "exchange": "NSE",
+    "currency": "\u20b9",
+    "currencyCode": "INR",
+    "founded": 1806,
+    "listed": "1955",
+    "headquarters": "Mumbai, Maharashtra",
+    "website": "sbi.co.in",
+    "description": "India's largest public-sector bank and a Fortune 500 institution, serving a customer base of over 50 crore through a vast branch, ATM, and digital network.",
+    "employees": 238000,
+    "accent": "#3b82f6",
+    "market": "INDIA"
+  },
+  "quote": {
+    "price": 326.46,
+    "change": 2.56,
+    "changePct": 0.78,
+    "open": 327.41,
+    "high": 330.38,
+    "low": 322.54,
+    "volume": 63713975,
+    "previousClose": 323.9,
+    "marketCap": 2915295.1799999997,
+    "peRatio": 14.0,
+    "eps": 23.32,
+    "dividendYield": 1.07,
+    "high52Week": 385.22,
+    "low52Week": 235.05
+  },
+  "annual": [
+    {
+      "year": "FY2018",
+      "revenue": 290000.0,
+      "revenueGrowth": 7.0,
+      "grossProfit": 203000.0,
+      "operatingIncome": 92800.0,
+      "ebitda": 98600.0,
+      "netIncome": 69600.0,
+      "eps": 7.79,
+      "netMargin": 24.0,
+      "grossMargin": 70.0,
+      "operatingMargin": 32.0,
+      "ebitdaMargin": 34.0,
+      "returnOnAssets": 0.67,
+      "totalAssets": 10357143.0,
+      "totalEquity": 2320000.0,
+      "totalDebt": 6960000.0,
+      "netDebt": 6931000.0,
+      "cash": 29000.0,
+      "debtToEquity": 3.0,
+      "currentRatio": 1.8,
+      "operatingCashFlow": 75400.0,
+      "investingCashFlow": -1160.0,
+      "financingCashFlow": -10435.0,
+      "freeCashFlow": 74240.0,
+      "capex": 1160.0,
+      "roe": 3.0,
+      "roce": 1.0,
+      "interestCover": 0.24,
+      "bookValue": 259.8,
+      "dividendPerShare": 1.17,
+      "dividendYield": 1.25,
+      "sharesOutstanding": 8930.0,
+      "revenuePerShare": 32.47,
+      "priceToSales": 2.88,
+      "evToEbitda": 78.76,
+      "peRatio": 12.0,
+      "priceToBook": 0.36
+    },
+    {
+      "year": "FY2019",
+      "revenue": 310300.0,
+      "revenueGrowth": 7.0,
+      "grossProfit": 217210.0,
+      "operatingIncome": 99296.0,
+      "ebitda": 105502.0,
+      "netIncome": 74472.0,
+      "eps": 8.34,
+      "netMargin": 24.0,
+      "grossMargin": 70.0,
+      "operatingMargin": 32.0,
+      "ebitdaMargin": 34.0,
+      "returnOnAssets": 0.67,
+      "totalAssets": 11082143.0,
+      "totalEquity": 1861800.0,
+      "totalDebt": 5585400.0,
+      "netDebt": 5554370.0,
+      "cash": 31030.0,
+      "debtToEquity": 3.0,
+      "currentRatio": 1.8,
+      "operatingCashFlow": 80678.0,
+      "investingCashFlow": -1241.0,
+      "financingCashFlow": -1385771.0,
+      "freeCashFlow": 79437.0,
+      "capex": 1241.0,
+      "roe": 4.0,
+      "roce": 1.34,
+      "interestCover": 0.32,
+      "bookValue": 208.49,
+      "dividendPerShare": 1.25,
+      "dividendYield": 1.15,
+      "sharesOutstanding": 8930.0,
+      "revenuePerShare": 34.75,
+      "priceToSales": 3.12,
+      "evToEbitda": 61.82,
+      "peRatio": 13.0,
+      "priceToBook": 0.52
+    },
+    {
+      "year": "FY2020",
+      "revenue": 328918.0,
+      "revenueGrowth": 6.0,
+      "grossProfit": 230243.0,
+      "operatingIncome": 108543.0,
+      "ebitda": 115121.0,
+      "netIncome": 82230.0,
+      "eps": 9.21,
+      "netMargin": 25.0,
+      "grossMargin": 70.0,
+      "operatingMargin": 33.0,
+      "ebitdaMargin": 35.0,
+      "returnOnAssets": 0.7,
+      "totalAssets": 11747071.0,
+      "totalEquity": 1644590.0,
+      "totalDebt": 4933770.0,
+      "netDebt": 4900878.0,
+      "cash": 32892.0,
+      "debtToEquity": 3.0,
+      "currentRatio": 1.8,
+      "operatingCashFlow": 88808.0,
+      "investingCashFlow": -1316.0,
+      "financingCashFlow": -663967.0,
+      "freeCashFlow": 87492.0,
+      "capex": 1316.0,
+      "roe": 5.0,
+      "roce": 1.66,
+      "interestCover": 0.4,
+      "bookValue": 184.16,
+      "dividendPerShare": 1.38,
+      "dividendYield": 1.07,
+      "sharesOutstanding": 8930.0,
+      "revenuePerShare": 36.83,
+      "priceToSales": 3.5,
+      "evToEbitda": 52.57,
+      "peRatio": 14.0,
+      "priceToBook": 0.7
+    },
+    {
+      "year": "FY2021",
+      "revenue": 361810.0,
+      "revenueGrowth": 10.0,
+      "grossProfit": 256885.0,
+      "operatingIncome": 123015.0,
+      "ebitda": 130252.0,
+      "netIncome": 94071.0,
+      "eps": 10.53,
+      "netMargin": 26.0,
+      "grossMargin": 71.0,
+      "operatingMargin": 34.0,
+      "ebitdaMargin": 36.0,
+      "returnOnAssets": 0.73,
+      "totalAssets": 12921779.0,
+      "totalEquity": 1175882.0,
+      "totalDebt": 3292469.0,
+      "netDebt": 3256288.0,
+      "cash": 36181.0,
+      "debtToEquity": 2.8,
+      "currentRatio": 1.8,
+      "operatingCashFlow": 101308.0,
+      "investingCashFlow": -1447.0,
+      "financingCashFlow": -1655406.0,
+      "freeCashFlow": 99861.0,
+      "capex": 1447.0,
+      "roe": 8.0,
+      "roce": 2.78,
+      "interestCover": 0.68,
+      "bookValue": 131.68,
+      "dividendPerShare": 1.58,
+      "dividendYield": 1.5,
+      "sharesOutstanding": 8930.0,
+      "revenuePerShare": 40.52,
+      "priceToSales": 2.6,
+      "evToEbitda": 32.22,
+      "peRatio": 10.0,
+      "priceToBook": 0.8
+    },
+    {
+      "year": "FY2022",
+      "revenue": 416081.0,
+      "revenueGrowth": 15.0,
+      "grossProfit": 295418.0,
+      "operatingIncome": 145628.0,
+      "ebitda": 153950.0,
+      "netIncome": 112342.0,
+      "eps": 12.58,
+      "netMargin": 27.0,
+      "grossMargin": 71.0,
+      "operatingMargin": 35.0,
+      "ebitdaMargin": 37.0,
+      "returnOnAssets": 0.76,
+      "totalAssets": 14860045.0,
+      "totalEquity": 936183.0,
+      "totalDebt": 2434075.0,
+      "netDebt": 2392467.0,
+      "cash": 41608.0,
+      "debtToEquity": 2.6,
+      "currentRatio": 1.8,
+      "operatingCashFlow": 120664.0,
+      "investingCashFlow": -1664.0,
+      "financingCashFlow": -875245.0,
+      "freeCashFlow": 119000.0,
+      "capex": 1664.0,
+      "roe": 12.0,
+      "roce": 4.37,
+      "interestCover": 1.09,
+      "bookValue": 104.84,
+      "dividendPerShare": 1.89,
+      "dividendYield": 1.67,
+      "sharesOutstanding": 8930.0,
+      "revenuePerShare": 46.59,
+      "priceToSales": 2.43,
+      "evToEbitda": 22.11,
+      "peRatio": 9.0,
+      "priceToBook": 1.08
+    },
+    {
+      "year": "FY2023",
+      "revenue": 486815.0,
+      "revenueGrowth": 17.0,
+      "grossProfit": 345639.0,
+      "operatingIncome": 175253.0,
+      "ebitda": 184990.0,
+      "netIncome": 136308.0,
+      "eps": 15.26,
+      "netMargin": 28.0,
+      "grossMargin": 71.0,
+      "operatingMargin": 36.0,
+      "ebitdaMargin": 38.0,
+      "returnOnAssets": 0.78,
+      "totalAssets": 17386253.0,
+      "totalEquity": 908721.0,
+      "totalDebt": 2271804.0,
+      "netDebt": 2223122.0,
+      "cash": 48682.0,
+      "debtToEquity": 2.5,
+      "currentRatio": 1.8,
+      "operatingCashFlow": 146045.0,
+      "investingCashFlow": -1947.0,
+      "financingCashFlow": -182712.0,
+      "freeCashFlow": 144098.0,
+      "capex": 1947.0,
+      "roe": 15.0,
+      "roce": 5.6,
+      "interestCover": 1.4,
+      "bookValue": 101.76,
+      "dividendPerShare": 2.29,
+      "dividendYield": 1.5,
+      "sharesOutstanding": 8930.0,
+      "revenuePerShare": 54.51,
+      "priceToSales": 2.8,
+      "evToEbitda": 19.39,
+      "peRatio": 10.0,
+      "priceToBook": 1.5
+    },
+    {
+      "year": "FY2024",
+      "revenue": 545233.0,
+      "revenueGrowth": 12.0,
+      "grossProfit": 387115.0,
+      "operatingIncome": 201736.0,
+      "ebitda": 212641.0,
+      "netIncome": 158118.0,
+      "eps": 17.71,
+      "netMargin": 29.0,
+      "grossMargin": 71.0,
+      "operatingMargin": 37.0,
+      "ebitdaMargin": 39.0,
+      "returnOnAssets": 0.81,
+      "totalAssets": 19472603.0,
+      "totalEquity": 988235.0,
+      "totalDebt": 2371763.0,
+      "netDebt": 2317240.0,
+      "cash": 54523.0,
+      "debtToEquity": 2.4,
+      "currentRatio": 1.8,
+      "operatingCashFlow": 169023.0,
+      "investingCashFlow": -2181.0,
+      "financingCashFlow": 76236.0,
+      "freeCashFlow": 166842.0,
+      "capex": 2181.0,
+      "roe": 16.0,
+      "roce": 6.1,
+      "interestCover": 1.55,
+      "bookValue": 110.66,
+      "dividendPerShare": 2.66,
+      "dividendYield": 1.25,
+      "sharesOutstanding": 8930.0,
+      "revenuePerShare": 61.06,
+      "priceToSales": 3.48,
+      "evToEbitda": 19.82,
+      "peRatio": 12.0,
+      "priceToBook": 1.92
+    },
+    {
+      "year": "FY2025",
+      "revenue": 599756.0,
+      "revenueGrowth": 10.0,
+      "grossProfit": 425827.0,
+      "operatingIncome": 227907.0,
+      "ebitda": 239902.0,
+      "netIncome": 179927.0,
+      "eps": 20.15,
+      "netMargin": 30.0,
+      "grossMargin": 71.0,
+      "operatingMargin": 38.0,
+      "ebitdaMargin": 40.0,
+      "returnOnAssets": 0.84,
+      "totalAssets": 21419864.0,
+      "totalEquity": 1058393.0,
+      "totalDebt": 2434305.0,
+      "netDebt": 2374329.0,
+      "cash": 59976.0,
+      "debtToEquity": 2.3,
+      "currentRatio": 1.8,
+      "operatingCashFlow": 191922.0,
+      "investingCashFlow": -2399.0,
+      "financingCashFlow": 35551.0,
+      "freeCashFlow": 189523.0,
+      "capex": 2399.0,
+      "roe": 17.0,
+      "roce": 6.64,
+      "interestCover": 1.7,
+      "bookValue": 118.52,
+      "dividendPerShare": 3.02,
+      "dividendYield": 1.15,
+      "sharesOutstanding": 8930.0,
+      "revenuePerShare": 67.16,
+      "priceToSales": 3.9,
+      "evToEbitda": 19.65,
+      "peRatio": 13.0,
+      "priceToBook": 2.21
+    },
+    {
+      "year": "FY2026",
+      "revenue": 671727.0,
+      "revenueGrowth": 12.0,
+      "grossProfit": 476926.0,
+      "operatingIncome": 261974.0,
+      "ebitda": 275408.0,
+      "netIncome": 208235.0,
+      "eps": 23.32,
+      "netMargin": 31.0,
+      "grossMargin": 71.0,
+      "operatingMargin": 39.0,
+      "ebitdaMargin": 41.0,
+      "returnOnAssets": 0.87,
+      "totalAssets": 23990247.0,
+      "totalEquity": 1156863.0,
+      "totalDebt": 2545099.0,
+      "netDebt": 2477926.0,
+      "cash": 67173.0,
+      "debtToEquity": 2.2,
+      "currentRatio": 1.8,
+      "operatingCashFlow": 221669.0,
+      "investingCashFlow": -2687.0,
+      "financingCashFlow": 79557.0,
+      "freeCashFlow": 218982.0,
+      "capex": 2687.0,
+      "roe": 18.0,
+      "roce": 7.21,
+      "interestCover": 1.87,
+      "bookValue": 129.55,
+      "dividendPerShare": 3.5,
+      "dividendYield": 1.07,
+      "sharesOutstanding": 8930.0,
+      "revenuePerShare": 75.22,
+      "priceToSales": 4.34,
+      "evToEbitda": 19.58,
+      "peRatio": 14.0,
+      "priceToBook": 2.52
+    }
+  ],
+  "valuation": [
+    {
+      "year": "FY2018",
+      "price": 93.53,
+      "marketCap": 835223.0,
+      "peRatio": 12.0,
+      "priceToBook": 0.36,
+      "evToEbitda": 78.76,
+      "dividendYield": 1.25
+    },
+    {
+      "year": "FY2019",
+      "price": 108.41,
+      "marketCap": 968101.0,
+      "peRatio": 13.0,
+      "priceToBook": 0.52,
+      "evToEbitda": 61.82,
+      "dividendYield": 1.15
+    },
+    {
+      "year": "FY2020",
+      "price": 128.92,
+      "marketCap": 1151256.0,
+      "peRatio": 14.0,
+      "priceToBook": 0.7,
+      "evToEbitda": 52.57,
+      "dividendYield": 1.07
+    },
+    {
+      "year": "FY2021",
+      "price": 105.34,
+      "marketCap": 940686.0,
+      "peRatio": 10.0,
+      "priceToBook": 0.8,
+      "evToEbitda": 32.22,
+      "dividendYield": 1.5
+    },
+    {
+      "year": "FY2022",
+      "price": 113.22,
+      "marketCap": 1011055.0,
+      "peRatio": 9.0,
+      "priceToBook": 1.08,
+      "evToEbitda": 22.11,
+      "dividendYield": 1.67
+    },
+    {
+      "year": "FY2023",
+      "price": 152.64,
+      "marketCap": 1363075.0,
+      "peRatio": 10.0,
+      "priceToBook": 1.5,
+      "evToEbitda": 19.39,
+      "dividendYield": 1.5
+    },
+    {
+      "year": "FY2024",
+      "price": 212.48,
+      "marketCap": 1897446.0,
+      "peRatio": 12.0,
+      "priceToBook": 1.92,
+      "evToEbitda": 19.82,
+      "dividendYield": 1.25
+    },
+    {
+      "year": "FY2025",
+      "price": 261.93,
+      "marketCap": 2339035.0,
+      "peRatio": 13.0,
+      "priceToBook": 2.21,
+      "evToEbitda": 19.65,
+      "dividendYield": 1.15
+    },
+    {
+      "year": "FY2026",
+      "price": 326.46,
+      "marketCap": 2915288.0,
+      "peRatio": 14.0,
+      "priceToBook": 2.52,
+      "evToEbitda": 19.58,
+      "dividendYield": 1.07
+    }
+  ],
+  "segments": [
+    {
+      "year": "FY2018",
+      "segments": [
+        {
+          "name": "Retail Banking",
+          "revenue": 88415.0,
+          "share": 30.49,
+          "growth": 7.0
+        },
+        {
+          "name": "Corporate Banking",
+          "revenue": 77805.0,
+          "share": 26.83,
+          "growth": 7.0
+        },
+        {
+          "name": "Treasury & Markets",
+          "revenue": 67195.0,
+          "share": 23.17,
+          "growth": 7.0
+        },
+        {
+          "name": "International Banking",
+          "revenue": 56585.0,
+          "share": 19.51,
+          "growth": 7.0
+        }
+      ]
+    },
+    {
+      "year": "FY2019",
+      "segments": [
+        {
+          "name": "Retail Banking",
+          "revenue": 91976.0,
+          "share": 29.64,
+          "growth": 7.0
+        },
+        {
+          "name": "Corporate Banking",
+          "revenue": 84176.0,
+          "share": 27.13,
+          "growth": 7.0
+        },
+        {
+          "name": "Treasury & Markets",
+          "revenue": 72698.0,
+          "share": 23.43,
+          "growth": 7.0
+        },
+        {
+          "name": "International Banking",
+          "revenue": 64583.0,
+          "share": 20.81,
+          "growth": 7.0
+        }
+      ]
+    },
+    {
+      "year": "FY2020",
+      "segments": [
+        {
+          "name": "Retail Banking",
+          "revenue": 94709.0,
+          "share": 28.79,
+          "growth": 6.0
+        },
+        {
+          "name": "Corporate Banking",
+          "revenue": 90207.0,
+          "share": 27.43,
+          "growth": 6.0
+        },
+        {
+          "name": "Treasury & Markets",
+          "revenue": 77906.0,
+          "share": 23.69,
+          "growth": 6.0
+        },
+        {
+          "name": "International Banking",
+          "revenue": 72736.0,
+          "share": 22.11,
+          "growth": 6.0
+        }
+      ]
+    },
+    {
+      "year": "FY2021",
+      "segments": [
+        {
+          "name": "Retail Banking",
+          "revenue": 101116.0,
+          "share": 27.95,
+          "growth": 10.0
+        },
+        {
+          "name": "Corporate Banking",
+          "revenue": 100307.0,
+          "share": 27.72,
+          "growth": 10.0
+        },
+        {
+          "name": "Treasury & Markets",
+          "revenue": 86628.0,
+          "share": 23.94,
+          "growth": 10.0
+        },
+        {
+          "name": "International Banking",
+          "revenue": 84716.0,
+          "share": 23.41,
+          "growth": 10.0
+        }
+      ]
+    },
+    {
+      "year": "FY2022",
+      "segments": [
+        {
+          "name": "Retail Banking",
+          "revenue": 112759.0,
+          "share": 27.1,
+          "growth": 15.0
+        },
+        {
+          "name": "Corporate Banking",
+          "revenue": 116593.0,
+          "share": 28.02,
+          "growth": 15.0
+        },
+        {
+          "name": "Treasury & Markets",
+          "revenue": 100694.0,
+          "share": 24.2,
+          "growth": 15.0
+        },
+        {
+          "name": "International Banking",
+          "revenue": 102836.0,
+          "share": 24.72,
+          "growth": 15.0
+        }
+      ]
+    },
+    {
+      "year": "FY2023",
+      "segments": [
+        {
+          "name": "Retail Banking",
+          "revenue": 127805.0,
+          "share": 26.25,
+          "growth": 17.0
+        },
+        {
+          "name": "Corporate Banking",
+          "revenue": 137865.0,
+          "share": 28.32,
+          "growth": 17.0
+        },
+        {
+          "name": "Treasury & Markets",
+          "revenue": 119065.0,
+          "share": 24.46,
+          "growth": 17.0
+        },
+        {
+          "name": "International Banking",
+          "revenue": 126651.0,
+          "share": 26.02,
+          "growth": 17.0
+        }
+      ]
+    },
+    {
+      "year": "FY2024",
+      "segments": [
+        {
+          "name": "Retail Banking",
+          "revenue": 138525.0,
+          "share": 25.41,
+          "growth": 12.0
+        },
+        {
+          "name": "Corporate Banking",
+          "revenue": 156034.0,
+          "share": 28.62,
+          "growth": 12.0
+        },
+        {
+          "name": "Treasury & Markets",
+          "revenue": 134757.0,
+          "share": 24.72,
+          "growth": 12.0
+        },
+        {
+          "name": "International Banking",
+          "revenue": 148942.0,
+          "share": 27.32,
+          "growth": 12.0
+        }
+      ]
+    },
+    {
+      "year": "FY2025",
+      "segments": [
+        {
+          "name": "Retail Banking",
+          "revenue": 147298.0,
+          "share": 24.56,
+          "growth": 10.0
+        },
+        {
+          "name": "Corporate Banking",
+          "revenue": 173425.0,
+          "share": 28.92,
+          "growth": 10.0
+        },
+        {
+          "name": "Treasury & Markets",
+          "revenue": 149777.0,
+          "share": 24.97,
+          "growth": 10.0
+        },
+        {
+          "name": "International Banking",
+          "revenue": 171638.0,
+          "share": 28.62,
+          "growth": 10.0
+        }
+      ]
+    },
+    {
+      "year": "FY2026",
+      "segments": [
+        {
+          "name": "Retail Banking",
+          "revenue": 159285.0,
+          "share": 23.71,
+          "growth": 12.0
+        },
+        {
+          "name": "Corporate Banking",
+          "revenue": 196239.0,
+          "share": 29.21,
+          "growth": 12.0
+        },
+        {
+          "name": "Treasury & Markets",
+          "revenue": 169479.0,
+          "share": 25.23,
+          "growth": 12.0
+        },
+        {
+          "name": "International Banking",
+          "revenue": 200972.0,
+          "share": 29.92,
+          "growth": 12.0
+        }
+      ]
+    }
+  ],
+  "quarterly": {
+    "FY2024": [
+      {
+        "quarter": "Q1",
+        "endDate": "2024-06-30",
+        "revenue": 31502.0,
+        "netIncome": 9451.0,
+        "ebitda": 12286.0,
+        "eps": 1.06,
+        "margin": 30.0
+      },
+      {
+        "quarter": "Q2",
+        "endDate": "2024-09-30",
+        "revenue": 36753.0,
+        "netIncome": 11026.0,
+        "ebitda": 14334.0,
+        "eps": 1.23,
+        "margin": 30.0
+      },
+      {
+        "quarter": "Q3",
+        "endDate": "2024-12-31",
+        "revenue": 35003.0,
+        "netIncome": 10501.0,
+        "ebitda": 13651.0,
+        "eps": 1.18,
+        "margin": 30.0
+      },
+      {
+        "quarter": "Q4",
+        "endDate": "2025-03-31",
+        "revenue": 38503.0,
+        "netIncome": 10396.0,
+        "ebitda": 15016.0,
+        "eps": 1.16,
+        "margin": 27.0
+      }
+    ],
+    "FY2025": [
+      {
+        "quarter": "Q1",
+        "endDate": "2025-06-30",
+        "revenue": 34653.0,
+        "netIncome": 10742.0,
+        "ebitda": 13861.0,
+        "eps": 1.2,
+        "margin": 31.0
+      },
+      {
+        "quarter": "Q2",
+        "endDate": "2025-09-30",
+        "revenue": 40428.0,
+        "netIncome": 12533.0,
+        "ebitda": 16171.0,
+        "eps": 1.4,
+        "margin": 31.0
+      },
+      {
+        "quarter": "Q3",
+        "endDate": "2025-12-31",
+        "revenue": 38503.0,
+        "netIncome": 11936.0,
+        "ebitda": 15401.0,
+        "eps": 1.34,
+        "margin": 31.0
+      },
+      {
+        "quarter": "Q4",
+        "endDate": "2026-03-31",
+        "revenue": 42353.0,
+        "netIncome": 11859.0,
+        "ebitda": 16941.0,
+        "eps": 1.33,
+        "margin": 28.0
+      }
+    ],
+    "FY2026": [
+      {
+        "quarter": "Q1",
+        "endDate": "2026-06-30",
+        "revenue": 38811.0,
+        "netIncome": 12419.0,
+        "ebitda": 15912.0,
+        "eps": 1.39,
+        "margin": 32.0
+      },
+      {
+        "quarter": "Q2",
+        "endDate": "2026-09-30",
+        "revenue": 45279.0,
+        "netIncome": 14489.0,
+        "ebitda": 18565.0,
+        "eps": 1.62,
+        "margin": 32.0
+      },
+      {
+        "quarter": "Q3",
+        "endDate": "2026-12-31",
+        "revenue": 43123.0,
+        "netIncome": 13799.0,
+        "ebitda": 17681.0,
+        "eps": 1.55,
+        "margin": 32.0
+      },
+      {
+        "quarter": "Q4",
+        "endDate": "2027-03-31",
+        "revenue": 47436.0,
+        "netIncome": 13756.0,
+        "ebitda": 19449.0,
+        "eps": 1.54,
+        "margin": 29.0
+      }
+    ]
+  },
+  "riskFactors": [
+    {
+      "title": "Asset quality stress",
+      "description": "Higher provisioning on stressed retail and corporate advances reduces earnings.",
+      "severity": "low"
+    },
+    {
+      "title": "Interest rate transmission",
+      "description": "Rapid rate changes compress net interest margins.",
+      "severity": "high"
+    },
+    {
+      "title": "Regulatory capital",
+      "description": "Tightening prudential norms may require fresh capital.",
+      "severity": "medium"
+    }
+  ],
+  "managementDiscussion": "In fiscal year FY2026, State Bank of India recorded revenue of \u20b96.72 lakh crore, growing 12.0% year-on-year, driven by continued momentum across Retail Banking, Corporate Banking. Net income stood at \u20b92.08 lakh crore with a net margin of 31.0% and a return on equity of 18.0%. Operating cash flow remained robust at \u20b92.22 lakh crore, supporting capital expenditure of \u20b90.03 lakh crore and a free cash flow of \u20b92.19 lakh crore. The company maintains a measured capital structure with net debt-to-equity of 2.14x. Management continues to invest in digital and AI capabilities, expects sustained volume-led growth and disciplined cost control, and remains committed to value-accretive capital allocation and sustainable returns for shareholders.",
+  "documents": [
+    {
+      "id": "state-bank-of-india-20-f-2026-1",
+      "companySlug": "state-bank-of-india",
+      "type": "Annual Report",
+      "title": "Annual Report FY2026",
+      "form": "20-F",
+      "fiscalPeriod": "FY2026",
+      "filedDate": "2026-06-24",
+      "periodEnd": "2026-03-31",
+      "source": "SEC EDGAR",
+      "sourceUrl": "https://www.state-bank-of-india/reports/20-F/2026",
+      "sizeKb": 4844,
+      "pages": 250,
+      "sha256": "dfb885f11ff762af2a8366f00da31f444c233098005a6af4dc124e88455423e8",
+      "latestVersion": "v1.1",
+      "versions": [
+        {
+          "version": "v1",
+          "uploadedAt": "2026-01-01",
+          "note": "Initial filing"
+        },
+        {
+          "version": "v1.1",
+          "uploadedAt": "2026-02-01",
+          "note": "Minor metadata corrections"
+        }
+      ]
+    },
+    {
+      "id": "state-bank-of-india-10-k-2026-2",
+      "companySlug": "state-bank-of-india",
+      "type": "10-K",
+      "title": "Form 10-K - FY2026",
+      "form": "10-K",
+      "fiscalPeriod": "FY2026",
+      "filedDate": "2026-06-16",
+      "periodEnd": "2026-03-31",
+      "source": "SEC EDGAR",
+      "sourceUrl": "https://www.state-bank-of-india/reports/10-K/2026",
+      "sizeKb": 3242,
+      "pages": 191,
+      "sha256": "090c84ffc8179bd99e1fdfb962579953a4b331d0be2f1305e29d25193daa8549",
+      "latestVersion": "v1.1",
+      "versions": [
+        {
+          "version": "v1",
+          "uploadedAt": "2026-01-01",
+          "note": "Initial filing"
+        },
+        {
+          "version": "v1.1",
+          "uploadedAt": "2026-02-01",
+          "note": "Minor metadata corrections"
+        }
+      ]
+    },
+    {
+      "id": "state-bank-of-india-pres-2026-3",
+      "companySlug": "state-bank-of-india",
+      "type": "Investor Presentation",
+      "title": "Q1 FY2027 Investor Presentation",
+      "form": "PRES",
+      "fiscalPeriod": "FY2026",
+      "filedDate": "2026-09-14",
+      "periodEnd": "2026-03-31",
+      "source": "Investor Relations",
+      "sourceUrl": "https://www.state-bank-of-india/reports/PRES/2026",
+      "sizeKb": 5256,
+      "pages": 240,
+      "sha256": "e19f1fc427fb86c3dab58aa4b20b4990930e5b9dc4a30906c385fde49e3b9ef7",
+      "latestVersion": "v1.1",
+      "versions": [
+        {
+          "version": "v1",
+          "uploadedAt": "2026-01-01",
+          "note": "Initial filing"
+        },
+        {
+          "version": "v1.1",
+          "uploadedAt": "2026-02-01",
+          "note": "Minor metadata corrections"
+        }
+      ]
+    },
+    {
+      "id": "state-bank-of-india-tran-2026-4",
+      "companySlug": "state-bank-of-india",
+      "type": "Earnings Call Transcript",
+      "title": "Q1 FY2027 Earnings Call Transcript",
+      "form": "TRAN",
+      "fiscalPeriod": "FY2026",
+      "filedDate": "2026-10-13",
+      "periodEnd": "2026-03-31",
+      "source": "NSE",
+      "sourceUrl": "https://www.state-bank-of-india/reports/TRAN/2026",
+      "sizeKb": 5362,
+      "pages": 87,
+      "sha256": "52528ff0f811df8426e1f0e5d7c72b697ba81ae8587ad64730200ebc691dee0b",
+      "latestVersion": "v1.1",
+      "versions": [
+        {
+          "version": "v1",
+          "uploadedAt": "2026-01-01",
+          "note": "Initial filing"
+        },
+        {
+          "version": "v1.1",
+          "uploadedAt": "2026-02-01",
+          "note": "Minor metadata corrections"
+        }
+      ]
+    },
+    {
+      "id": "state-bank-of-india-10-q-2026-5",
+      "companySlug": "state-bank-of-india",
+      "type": "10-Q",
+      "title": "Form 10-Q - Q1 FY2026",
+      "form": "10-Q",
+      "fiscalPeriod": "FY2026",
+      "filedDate": "2026-07-16",
+      "periodEnd": "2026-03-31",
+      "source": "BSE",
+      "sourceUrl": "https://www.state-bank-of-india/reports/10-Q/2026",
+      "sizeKb": 5416,
+      "pages": 235,
+      "sha256": "a475711dd91bd90e6f8551e847d81e621e276aa0fcc42847527674298b013efc",
+      "latestVersion": "v1.1",
+      "versions": [
+        {
+          "version": "v1",
+          "uploadedAt": "2026-01-01",
+          "note": "Initial filing"
+        },
+        {
+          "version": "v1.1",
+          "uploadedAt": "2026-02-01",
+          "note": "Minor metadata corrections"
+        }
+      ]
+    },
+    {
+      "id": "state-bank-of-india-8-k-2026-6",
+      "companySlug": "state-bank-of-india",
+      "type": "8-K",
+      "title": "Current Report - Board Update",
+      "form": "8-K",
+      "fiscalPeriod": "FY2026",
+      "filedDate": "2026-09-23",
+      "periodEnd": "2026-03-31",
+      "source": "SEC EDGAR",
+      "sourceUrl": "https://www.state-bank-of-india/reports/8-K/2026",
+      "sizeKb": 6074,
+      "pages": 247,
+      "sha256": "634d21535e774d226fb613bd8561cde88350cbedee98e5fe7d1a71b68fcb3021",
+      "latestVersion": "v1.1",
+      "versions": [
+        {
+          "version": "v1",
+          "uploadedAt": "2026-01-01",
+          "note": "Initial filing"
+        },
+        {
+          "version": "v1.1",
+          "uploadedAt": "2026-02-01",
+          "note": "Minor metadata corrections"
+        }
+      ]
+    },
+    {
+      "id": "state-bank-of-india-20-f-2025-7",
+      "companySlug": "state-bank-of-india",
+      "type": "Annual Report",
+      "title": "Annual Report FY2025",
+      "form": "20-F",
+      "fiscalPeriod": "FY2025",
+      "filedDate": "2025-10-12",
+      "periodEnd": "2025-03-31",
+      "source": "SEC EDGAR",
+      "sourceUrl": "https://www.state-bank-of-india/reports/20-F/2025",
+      "sizeKb": 5455,
+      "pages": 86,
+      "sha256": "1e2f70a402145adb60e6932569b3a7f99f7e928e819bd6a541c04ed15e4061fd",
+      "latestVersion": "v1.1",
+      "versions": [
+        {
+          "version": "v1",
+          "uploadedAt": "2025-01-01",
+          "note": "Initial filing"
+        },
+        {
+          "version": "v1.1",
+          "uploadedAt": "2025-02-01",
+          "note": "Minor metadata corrections"
+        }
+      ]
+    },
+    {
+      "id": "state-bank-of-india-pres-2026-8",
+      "companySlug": "state-bank-of-india",
+      "type": "Investor Presentation",
+      "title": "Q3 FY2026 Investor Presentation",
+      "form": "PRES",
+      "fiscalPeriod": "FY2026",
+      "filedDate": "2026-05-21",
+      "periodEnd": "2026-03-31",
+      "source": "BSE",
+      "sourceUrl": "https://www.state-bank-of-india/reports/PRES/2026",
+      "sizeKb": 6016,
+      "pages": 175,
+      "sha256": "4b05f21bcb8f8417c918c17ae84fc110b66f7a10af42aec46f6b18b10afafbb4",
+      "latestVersion": "v1.1",
+      "versions": [
+        {
+          "version": "v1",
+          "uploadedAt": "2026-01-01",
+          "note": "Initial filing"
+        },
+        {
+          "version": "v1.1",
+          "uploadedAt": "2026-02-01",
+          "note": "Minor metadata corrections"
+        }
+      ]
+    }
+  ]
+}

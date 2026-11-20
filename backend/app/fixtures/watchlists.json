@@ -1,0 +1,40 @@
+[
+  {
+    "id": "wl-1",
+    "name": "Blue Chips",
+    "color": "#4f46e5",
+    "symbols": [
+      "RELIANCE",
+      "TCS",
+      "HDFCBANK",
+      "INFY",
+      "ICICIBANK",
+      "BHARTIARTL"
+    ],
+    "updatedAt": "2026-08-01T00:00:00Z"
+  },
+  {
+    "id": "wl-2",
+    "name": "Tech & AI",
+    "color": "#8b5cf6",
+    "symbols": [
+      "RELIANCE",
+      "TCS",
+      "HDFCBANK",
+      "INFY",
+      "WIPRO"
+    ],
+    "updatedAt": "2026-08-02T00:00:00Z"
+  },
+  {
+    "id": "wl-3",
+    "name": "Banks",
+    "color": "#3b82f6",
+    "symbols": [
+      "HDFCBANK",
+      "ICICIBANK",
+      "SBIN"
+    ],
+    "updatedAt": "2026-08-03T00:00:00Z"
+  }
+]

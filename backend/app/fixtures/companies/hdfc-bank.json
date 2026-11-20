@@ -1,0 +1,1095 @@
+{
+  "profile": {
+    "slug": "hdfc-bank",
+    "ticker": "HDFCBANK",
+    "name": "HDFC Bank",
+    "sector": "Financial Services",
+    "industry": "Private Sector Banking",
+    "exchange": "NSE",
+    "currency": "\u20b9",
+    "currencyCode": "INR",
+    "founded": 1994,
+    "listed": "1995",
+    "headquarters": "Mumbai, Maharashtra",
+    "website": "hdfcbank.com",
+    "description": "India's largest private-sector bank by market capitalisation. HDFC Bank provides a full spectrum of retail, corporate, and treasury products with a leading deposit franchise and industry-leading return on equity.",
+    "employees": 210000,
+    "accent": "#0ea5e9",
+    "market": "INDIA"
+  },
+  "quote": {
+    "price": 388.79,
+    "change": -1.46,
+    "changePct": -0.38,
+    "open": 390.52,
+    "high": 393.46,
+    "low": 384.12,
+    "volume": 24529339,
+    "previousClose": 390.25,
+    "marketCap": 2177197.27,
+    "peRatio": 19.0,
+    "eps": 20.46,
+    "dividendYield": 0.95,
+    "high52Week": 458.77,
+    "low52Week": 279.93
+  },
+  "annual": [
+    {
+      "year": "FY2018",
+      "revenue": 125000.0,
+      "revenueGrowth": 14.0,
+      "grossProfit": 102500.0,
+      "operatingIncome": 55000.0,
+      "ebitda": 57500.0,
+      "netIncome": 40000.0,
+      "eps": 7.55,
+      "netMargin": 32.0,
+      "grossMargin": 82.0,
+      "operatingMargin": 44.0,
+      "ebitdaMargin": 46.0,
+      "returnOnAssets": 1.6,
+      "totalAssets": 2500000.0,
+      "totalEquity": 222222.0,
+      "totalDebt": 444444.0,
+      "netDebt": 431944.0,
+      "cash": 12500.0,
+      "debtToEquity": 2.0,
+      "currentRatio": 1.8,
+      "operatingCashFlow": 42500.0,
+      "investingCashFlow": -1000.0,
+      "financingCashFlow": -7203.0,
+      "freeCashFlow": 41500.0,
+      "capex": 1000.0,
+      "roe": 18.0,
+      "roce": 8.41,
+      "interestCover": 2.25,
+      "bookValue": 41.93,
+      "dividendPerShare": 1.36,
+      "dividendYield": 0.75,
+      "sharesOutstanding": 5300.0,
+      "revenuePerShare": 23.58,
+      "priceToSales": 7.68,
+      "evToEbitda": 24.21,
+      "peRatio": 24.0,
+      "priceToBook": 4.32
+    },
+    {
+      "year": "FY2019",
+      "revenue": 142500.0,
+      "revenueGrowth": 14.0,
+      "grossProfit": 116850.0,
+      "operatingIncome": 62700.0,
+      "ebitda": 65550.0,
+      "netIncome": 45600.0,
+      "eps": 8.6,
+      "netMargin": 32.0,
+      "grossMargin": 82.0,
+      "operatingMargin": 44.0,
+      "ebitdaMargin": 46.0,
+      "returnOnAssets": 1.6,
+      "totalAssets": 2850000.0,
+      "totalEquity": 253333.0,
+      "totalDebt": 532000.0,
+      "netDebt": 517750.0,
+      "cash": 14250.0,
+      "debtToEquity": 2.1,
+      "currentRatio": 1.8,
+      "operatingCashFlow": 48450.0,
+      "investingCashFlow": -1140.0,
+      "financingCashFlow": 79352.0,
+      "freeCashFlow": 47310.0,
+      "capex": 1140.0,
+      "roe": 18.0,
+      "roce": 8.13,
+      "interestCover": 2.14,
+      "bookValue": 47.8,
+      "dividendPerShare": 1.55,
+      "dividendYield": 0.82,
+      "sharesOutstanding": 5300.0,
+      "revenuePerShare": 26.89,
+      "priceToSales": 7.04,
+      "evToEbitda": 23.2,
+      "peRatio": 22.0,
+      "priceToBook": 3.96
+    },
+    {
+      "year": "FY2020",
+      "revenue": 163875.0,
+      "revenueGrowth": 15.0,
+      "grossProfit": 134378.0,
+      "operatingIncome": 73744.0,
+      "ebitda": 77021.0,
+      "netIncome": 54079.0,
+      "eps": 10.2,
+      "netMargin": 33.0,
+      "grossMargin": 82.0,
+      "operatingMargin": 45.0,
+      "ebitdaMargin": 47.0,
+      "returnOnAssets": 1.65,
+      "totalAssets": 3277500.0,
+      "totalEquity": 318110.0,
+      "totalDebt": 699843.0,
+      "netDebt": 681817.0,
+      "cash": 18026.0,
+      "debtToEquity": 2.2,
+      "currentRatio": 1.84,
+      "operatingCashFlow": 57356.0,
+      "investingCashFlow": -1311.0,
+      "financingCashFlow": 158112.0,
+      "freeCashFlow": 56045.0,
+      "capex": 1311.0,
+      "roe": 17.0,
+      "roce": 7.37,
+      "interestCover": 1.92,
+      "bookValue": 60.02,
+      "dividendPerShare": 1.84,
+      "dividendYield": 0.9,
+      "sharesOutstanding": 5300.0,
+      "revenuePerShare": 30.92,
+      "priceToSales": 6.6,
+      "evToEbitda": 22.89,
+      "peRatio": 20.0,
+      "priceToBook": 3.4
+    },
+    {
+      "year": "FY2021",
+      "revenue": 196650.0,
+      "revenueGrowth": 20.0,
+      "grossProfit": 161253.0,
+      "operatingIncome": 88493.0,
+      "ebitda": 92426.0,
+      "netIncome": 64895.0,
+      "eps": 12.24,
+      "netMargin": 33.0,
+      "grossMargin": 82.0,
+      "operatingMargin": 45.0,
+      "ebitdaMargin": 47.0,
+      "returnOnAssets": 1.65,
+      "totalAssets": 3933000.0,
+      "totalEquity": 381732.0,
+      "totalDebt": 839811.0,
+      "netDebt": 818179.0,
+      "cash": 21632.0,
+      "debtToEquity": 2.2,
+      "currentRatio": 1.84,
+      "operatingCashFlow": 68828.0,
+      "investingCashFlow": -1573.0,
+      "financingCashFlow": 128291.0,
+      "freeCashFlow": 67255.0,
+      "capex": 1573.0,
+      "roe": 17.0,
+      "roce": 7.37,
+      "interestCover": 1.92,
+      "bookValue": 72.02,
+      "dividendPerShare": 2.2,
+      "dividendYield": 1.0,
+      "sharesOutstanding": 5300.0,
+      "revenuePerShare": 37.1,
+      "priceToSales": 5.94,
+      "evToEbitda": 21.49,
+      "peRatio": 18.0,
+      "priceToBook": 3.06
+    },
+    {
+      "year": "FY2022",
+      "revenue": 243846.0,
+      "revenueGrowth": 24.0,
+      "grossProfit": 197515.0,
+      "operatingIncome": 107292.0,
+      "ebitda": 112169.0,
+      "netIncome": 78031.0,
+      "eps": 14.32,
+      "netMargin": 32.0,
+      "grossMargin": 81.0,
+      "operatingMargin": 44.0,
+      "ebitdaMargin": 46.0,
+      "returnOnAssets": 1.6,
+      "totalAssets": 4876920.0,
+      "totalEquity": 487692.0,
+      "totalDebt": 1024153.0,
+      "netDebt": 999768.0,
+      "cash": 24385.0,
+      "debtToEquity": 2.1,
+      "currentRatio": 1.8,
+      "operatingCashFlow": 82908.0,
+      "investingCashFlow": -1951.0,
+      "financingCashFlow": 170294.0,
+      "freeCashFlow": 80957.0,
+      "capex": 1951.0,
+      "roe": 16.0,
+      "roce": 7.21,
+      "interestCover": 1.9,
+      "bookValue": 89.48,
+      "dividendPerShare": 2.58,
+      "dividendYield": 1.06,
+      "sharesOutstanding": 5450.0,
+      "revenuePerShare": 44.74,
+      "priceToSales": 5.44,
+      "evToEbitda": 20.74,
+      "peRatio": 17.0,
+      "priceToBook": 2.72
+    },
+    {
+      "year": "FY2023",
+      "revenue": 282861.0,
+      "revenueGrowth": 16.0,
+      "grossProfit": 229118.0,
+      "operatingIncome": 121630.0,
+      "ebitda": 127288.0,
+      "netIncome": 87687.0,
+      "eps": 16.09,
+      "netMargin": 31.0,
+      "grossMargin": 81.0,
+      "operatingMargin": 43.0,
+      "ebitdaMargin": 45.0,
+      "returnOnAssets": 1.55,
+      "totalAssets": 5657227.0,
+      "totalEquity": 584580.0,
+      "totalDebt": 1169160.0,
+      "netDebt": 1140874.0,
+      "cash": 28286.0,
+      "debtToEquity": 2.0,
+      "currentRatio": 1.8,
+      "operatingCashFlow": 93345.0,
+      "investingCashFlow": -2263.0,
+      "financingCashFlow": 129223.0,
+      "freeCashFlow": 91082.0,
+      "capex": 2263.0,
+      "roe": 15.0,
+      "roce": 7.05,
+      "interestCover": 1.89,
+      "bookValue": 107.26,
+      "dividendPerShare": 2.9,
+      "dividendYield": 0.95,
+      "sharesOutstanding": 5450.0,
+      "revenuePerShare": 51.9,
+      "priceToSales": 5.89,
+      "evToEbitda": 22.05,
+      "peRatio": 19.0,
+      "priceToBook": 2.85
+    },
+    {
+      "year": "FY2024",
+      "revenue": 311147.0,
+      "revenueGrowth": 10.0,
+      "grossProfit": 248918.0,
+      "operatingIncome": 130682.0,
+      "ebitda": 136905.0,
+      "netIncome": 93344.0,
+      "eps": 16.88,
+      "netMargin": 30.0,
+      "grossMargin": 80.0,
+      "operatingMargin": 42.0,
+      "ebitdaMargin": 44.0,
+      "returnOnAssets": 1.5,
+      "totalAssets": 6222950.0,
+      "totalEquity": 622295.0,
+      "totalDebt": 1182360.0,
+      "netDebt": 1154357.0,
+      "cash": 28003.0,
+      "debtToEquity": 1.9,
+      "currentRatio": 1.76,
+      "operatingCashFlow": 99567.0,
+      "investingCashFlow": -2489.0,
+      "financingCashFlow": -3602.0,
+      "freeCashFlow": 97078.0,
+      "capex": 2489.0,
+      "roe": 15.0,
+      "roce": 7.36,
+      "interestCover": 2.01,
+      "bookValue": 112.53,
+      "dividendPerShare": 3.04,
+      "dividendYield": 0.86,
+      "sharesOutstanding": 5530.0,
+      "revenuePerShare": 56.27,
+      "priceToSales": 6.3,
+      "evToEbitda": 22.75,
+      "peRatio": 21.0,
+      "priceToBook": 3.15
+    },
+    {
+      "year": "FY2025",
+      "revenue": 336039.0,
+      "revenueGrowth": 8.0,
+      "grossProfit": 268831.0,
+      "operatingIncome": 141137.0,
+      "ebitda": 147857.0,
+      "netIncome": 100812.0,
+      "eps": 18.23,
+      "netMargin": 30.0,
+      "grossMargin": 80.0,
+      "operatingMargin": 42.0,
+      "ebitdaMargin": 44.0,
+      "returnOnAssets": 1.5,
+      "totalAssets": 6720786.0,
+      "totalEquity": 630074.0,
+      "totalDebt": 1197140.0,
+      "netDebt": 1166896.0,
+      "cash": 30244.0,
+      "debtToEquity": 1.9,
+      "currentRatio": 1.76,
+      "operatingCashFlow": 107532.0,
+      "investingCashFlow": -2688.0,
+      "financingCashFlow": -3366.0,
+      "freeCashFlow": 104844.0,
+      "capex": 2688.0,
+      "roe": 16.0,
+      "roce": 7.85,
+      "interestCover": 2.14,
+      "bookValue": 113.94,
+      "dividendPerShare": 3.28,
+      "dividendYield": 0.9,
+      "sharesOutstanding": 5530.0,
+      "revenuePerShare": 60.77,
+      "priceToSales": 6.0,
+      "evToEbitda": 21.53,
+      "peRatio": 20.0,
+      "priceToBook": 3.2
+    },
+    {
+      "year": "FY2026",
+      "revenue": 369643.0,
+      "revenueGrowth": 10.0,
+      "grossProfit": 295715.0,
+      "operatingIncome": 158947.0,
+      "ebitda": 166339.0,
+      "netIncome": 114589.0,
+      "eps": 20.46,
+      "netMargin": 31.0,
+      "grossMargin": 80.0,
+      "operatingMargin": 43.0,
+      "ebitdaMargin": 45.0,
+      "returnOnAssets": 1.55,
+      "totalAssets": 7392865.0,
+      "totalEquity": 674055.0,
+      "totalDebt": 1280705.0,
+      "netDebt": 1243741.0,
+      "cash": 36964.0,
+      "debtToEquity": 1.9,
+      "currentRatio": 1.8,
+      "operatingCashFlow": 121981.0,
+      "investingCashFlow": -2957.0,
+      "financingCashFlow": 62941.0,
+      "freeCashFlow": 119024.0,
+      "capex": 2957.0,
+      "roe": 17.0,
+      "roce": 8.29,
+      "interestCover": 2.26,
+      "bookValue": 120.37,
+      "dividendPerShare": 3.68,
+      "dividendYield": 0.95,
+      "sharesOutstanding": 5600.0,
+      "revenuePerShare": 66.01,
+      "priceToSales": 5.89,
+      "evToEbitda": 20.57,
+      "peRatio": 19.0,
+      "priceToBook": 3.23
+    }
+  ],
+  "valuation": [
+    {
+      "year": "FY2018",
+      "price": 181.13,
+      "marketCap": 959989.0,
+      "peRatio": 24.0,
+      "priceToBook": 4.32,
+      "evToEbitda": 24.21,
+      "dividendYield": 0.75
+    },
+    {
+      "year": "FY2019",
+      "price": 189.28,
+      "marketCap": 1003184.0,
+      "peRatio": 22.0,
+      "priceToBook": 3.96,
+      "evToEbitda": 23.2,
+      "dividendYield": 0.82
+    },
+    {
+      "year": "FY2020",
+      "price": 204.07,
+      "marketCap": 1081571.0,
+      "peRatio": 20.0,
+      "priceToBook": 3.4,
+      "evToEbitda": 22.89,
+      "dividendYield": 0.9
+    },
+    {
+      "year": "FY2021",
+      "price": 220.4,
+      "marketCap": 1168120.0,
+      "peRatio": 18.0,
+      "priceToBook": 3.06,
+      "evToEbitda": 21.49,
+      "dividendYield": 1.0
+    },
+    {
+      "year": "FY2022",
+      "price": 243.4,
+      "marketCap": 1326530.0,
+      "peRatio": 17.0,
+      "priceToBook": 2.72,
+      "evToEbitda": 20.74,
+      "dividendYield": 1.06
+    },
+    {
+      "year": "FY2023",
+      "price": 305.7,
+      "marketCap": 1666065.0,
+      "peRatio": 19.0,
+      "priceToBook": 2.85,
+      "evToEbitda": 22.05,
+      "dividendYield": 0.95
+    },
+    {
+      "year": "FY2024",
+      "price": 354.47,
+      "marketCap": 1960219.0,
+      "peRatio": 21.0,
+      "priceToBook": 3.15,
+      "evToEbitda": 22.75,
+      "dividendYield": 0.86
+    },
+    {
+      "year": "FY2025",
+      "price": 364.6,
+      "marketCap": 2016238.0,
+      "peRatio": 20.0,
+      "priceToBook": 3.2,
+      "evToEbitda": 21.53,
+      "dividendYield": 0.9
+    },
+    {
+      "year": "FY2026",
+      "price": 388.79,
+      "marketCap": 2177224.0,
+      "peRatio": 19.0,
+      "priceToBook": 3.23,
+      "evToEbitda": 20.57,
+      "dividendYield": 0.95
+    }
+  ],
+  "segments": [
+    {
+      "year": "FY2018",
+      "segments": [
+        {
+          "name": "Retail Banking",
+          "revenue": 38110.0,
+          "share": 30.49,
+          "growth": 14.0
+        },
+        {
+          "name": "Corporate Banking",
+          "revenue": 33537.0,
+          "share": 26.83,
+          "growth": 14.0
+        },
+        {
+          "name": "Treasury",
+          "revenue": 28963.0,
+          "share": 23.17,
+          "growth": 14.0
+        },
+        {
+          "name": "Wholesale Banking",
+          "revenue": 24390.0,
+          "share": 19.51,
+          "growth": 14.0
+        }
+      ]
+    },
+    {
+      "year": "FY2019",
+      "segments": [
+        {
+          "name": "Retail Banking",
+          "revenue": 42238.0,
+          "share": 29.64,
+          "growth": 14.0
+        },
+        {
+          "name": "Corporate Banking",
+          "revenue": 38657.0,
+          "share": 27.13,
+          "growth": 14.0
+        },
+        {
+          "name": "Treasury",
+          "revenue": 33385.0,
+          "share": 23.43,
+          "growth": 14.0
+        },
+        {
+          "name": "Wholesale Banking",
+          "revenue": 29659.0,
+          "share": 20.81,
+          "growth": 14.0
+        }
+      ]
+    },
+    {
+      "year": "FY2020",
+      "segments": [
+        {
+          "name": "Retail Banking",
+          "revenue": 47186.0,
+          "share": 28.79,
+          "growth": 15.0
+        },
+        {
+          "name": "Corporate Banking",
+          "revenue": 44943.0,
+          "share": 27.43,
+          "growth": 15.0
+        },
+        {
+          "name": "Treasury",
+          "revenue": 38815.0,
+          "share": 23.69,
+          "growth": 15.0
+        },
+        {
+          "name": "Wholesale Banking",
+          "revenue": 36239.0,
+          "share": 22.11,
+          "growth": 15.0
+        }
+      ]
+    },
+    {
+      "year": "FY2021",
+      "segments": [
+        {
+          "name": "Retail Banking",
+          "revenue": 54958.0,
+          "share": 27.95,
+          "growth": 20.0
+        },
+        {
+          "name": "Corporate Banking",
+          "revenue": 54518.0,
+          "share": 27.72,
+          "growth": 20.0
+        },
+        {
+          "name": "Treasury",
+          "revenue": 47084.0,
+          "share": 23.94,
+          "growth": 20.0
+        },
+        {
+          "name": "Wholesale Banking",
+          "revenue": 46045.0,
+          "share": 23.41,
+          "growth": 20.0
+        }
+      ]
+    },
+    {
+      "year": "FY2022",
+      "segments": [
+        {
+          "name": "Retail Banking",
+          "revenue": 66083.0,
+          "share": 27.1,
+          "growth": 24.0
+        },
+        {
+          "name": "Corporate Banking",
+          "revenue": 68330.0,
+          "share": 28.02,
+          "growth": 24.0
+        },
+        {
+          "name": "Treasury",
+          "revenue": 59012.0,
+          "share": 24.2,
+          "growth": 24.0
+        },
+        {
+          "name": "Wholesale Banking",
+          "revenue": 60268.0,
+          "share": 24.72,
+          "growth": 24.0
+        }
+      ]
+    },
+    {
+      "year": "FY2023",
+      "segments": [
+        {
+          "name": "Retail Banking",
+          "revenue": 74261.0,
+          "share": 26.25,
+          "growth": 16.0
+        },
+        {
+          "name": "Corporate Banking",
+          "revenue": 80106.0,
+          "share": 28.32,
+          "growth": 16.0
+        },
+        {
+          "name": "Treasury",
+          "revenue": 69182.0,
+          "share": 24.46,
+          "growth": 16.0
+        },
+        {
+          "name": "Wholesale Banking",
+          "revenue": 73590.0,
+          "share": 26.02,
+          "growth": 16.0
+        }
+      ]
+    },
+    {
+      "year": "FY2024",
+      "segments": [
+        {
+          "name": "Retail Banking",
+          "revenue": 79052.0,
+          "share": 25.41,
+          "growth": 10.0
+        },
+        {
+          "name": "Corporate Banking",
+          "revenue": 89044.0,
+          "share": 28.62,
+          "growth": 10.0
+        },
+        {
+          "name": "Treasury",
+          "revenue": 76901.0,
+          "share": 24.72,
+          "growth": 10.0
+        },
+        {
+          "name": "Wholesale Banking",
+          "revenue": 84996.0,
+          "share": 27.32,
+          "growth": 10.0
+        }
+      ]
+    },
+    {
+      "year": "FY2025",
+      "segments": [
+        {
+          "name": "Retail Banking",
+          "revenue": 82530.0,
+          "share": 24.56,
+          "growth": 8.0
+        },
+        {
+          "name": "Corporate Banking",
+          "revenue": 97169.0,
+          "share": 28.92,
+          "growth": 8.0
+        },
+        {
+          "name": "Treasury",
+          "revenue": 83919.0,
+          "share": 24.97,
+          "growth": 8.0
+        },
+        {
+          "name": "Wholesale Banking",
+          "revenue": 96167.0,
+          "share": 28.62,
+          "growth": 8.0
+        }
+      ]
+    },
+    {
+      "year": "FY2026",
+      "segments": [
+        {
+          "name": "Retail Banking",
+          "revenue": 87653.0,
+          "share": 23.71,
+          "growth": 10.0
+        },
+        {
+          "name": "Corporate Banking",
+          "revenue": 107988.0,
+          "share": 29.21,
+          "growth": 10.0
+        },
+        {
+          "name": "Treasury",
+          "revenue": 93262.0,
+          "share": 25.23,
+          "growth": 10.0
+        },
+        {
+          "name": "Wholesale Banking",
+          "revenue": 110592.0,
+          "share": 29.92,
+          "growth": 10.0
+        }
+      ]
+    }
+  ],
+  "quarterly": {
+    "FY2024": [
+      {
+        "quarter": "Q1",
+        "endDate": "2024-06-30",
+        "revenue": 17977.0,
+        "netIncome": 5573.0,
+        "ebitda": 7910.0,
+        "eps": 1.0,
+        "margin": 31.0
+      },
+      {
+        "quarter": "Q2",
+        "endDate": "2024-09-30",
+        "revenue": 20974.0,
+        "netIncome": 6502.0,
+        "ebitda": 9228.0,
+        "eps": 1.16,
+        "margin": 31.0
+      },
+      {
+        "quarter": "Q3",
+        "endDate": "2024-12-31",
+        "revenue": 19975.0,
+        "netIncome": 6192.0,
+        "ebitda": 8789.0,
+        "eps": 1.11,
+        "margin": 31.0
+      },
+      {
+        "quarter": "Q4",
+        "endDate": "2025-03-31",
+        "revenue": 21972.0,
+        "netIncome": 6152.0,
+        "ebitda": 9668.0,
+        "eps": 1.1,
+        "margin": 28.0
+      }
+    ],
+    "FY2025": [
+      {
+        "quarter": "Q1",
+        "endDate": "2025-06-30",
+        "revenue": 19416.0,
+        "netIncome": 6019.0,
+        "ebitda": 8543.0,
+        "eps": 1.07,
+        "margin": 31.0
+      },
+      {
+        "quarter": "Q2",
+        "endDate": "2025-09-30",
+        "revenue": 22652.0,
+        "netIncome": 7022.0,
+        "ebitda": 9967.0,
+        "eps": 1.25,
+        "margin": 31.0
+      },
+      {
+        "quarter": "Q3",
+        "endDate": "2025-12-31",
+        "revenue": 21573.0,
+        "netIncome": 6688.0,
+        "ebitda": 9492.0,
+        "eps": 1.19,
+        "margin": 31.0
+      },
+      {
+        "quarter": "Q4",
+        "endDate": "2026-03-31",
+        "revenue": 23730.0,
+        "netIncome": 6644.0,
+        "ebitda": 10441.0,
+        "eps": 1.19,
+        "margin": 28.0
+      }
+    ],
+    "FY2026": [
+      {
+        "quarter": "Q1",
+        "endDate": "2026-06-30",
+        "revenue": 21357.0,
+        "netIncome": 6834.0,
+        "ebitda": 9611.0,
+        "eps": 1.22,
+        "margin": 32.0
+      },
+      {
+        "quarter": "Q2",
+        "endDate": "2026-09-30",
+        "revenue": 24917.0,
+        "netIncome": 7973.0,
+        "ebitda": 11213.0,
+        "eps": 1.42,
+        "margin": 32.0
+      },
+      {
+        "quarter": "Q3",
+        "endDate": "2026-12-31",
+        "revenue": 23730.0,
+        "netIncome": 7594.0,
+        "ebitda": 10679.0,
+        "eps": 1.36,
+        "margin": 32.0
+      },
+      {
+        "quarter": "Q4",
+        "endDate": "2027-03-31",
+        "revenue": 26103.0,
+        "netIncome": 7570.0,
+        "ebitda": 11746.0,
+        "eps": 1.35,
+        "margin": 29.0
+      }
+    ]
+  },
+  "riskFactors": [
+    {
+      "title": "Asset quality stress",
+      "description": "Higher provisioning on stressed retail and corporate advances reduces earnings.",
+      "severity": "low"
+    },
+    {
+      "title": "Interest rate transmission",
+      "description": "Rapid rate changes compress net interest margins.",
+      "severity": "high"
+    },
+    {
+      "title": "Regulatory capital",
+      "description": "Tightening prudential norms may require fresh capital.",
+      "severity": "high"
+    }
+  ],
+  "managementDiscussion": "In fiscal year FY2026, HDFC Bank recorded revenue of \u20b93.70 lakh crore, growing 10.0% year-on-year, driven by continued momentum across Retail Banking, Corporate Banking. Net income stood at \u20b91.15 lakh crore with a net margin of 31.0% and a return on equity of 17.0%. Operating cash flow remained robust at \u20b91.22 lakh crore, supporting capital expenditure of \u20b90.03 lakh crore and a free cash flow of \u20b91.19 lakh crore. The company maintains a measured capital structure with net debt-to-equity of 1.85x. Management continues to invest in digital and AI capabilities, expects sustained volume-led growth and disciplined cost control, and remains committed to value-accretive capital allocation and sustainable returns for shareholders.",
+  "documents": [
+    {
+      "id": "hdfc-bank-20-f-2026-1",
+      "companySlug": "hdfc-bank",
+      "type": "Annual Report",
+      "title": "Annual Report FY2026",
+      "form": "20-F",
+      "fiscalPeriod": "FY2026",
+      "filedDate": "2026-10-18",
+      "periodEnd": "2026-03-31",
+      "source": "SEC EDGAR",
+      "sourceUrl": "https://www.hdfc-bank/reports/20-F/2026",
+      "sizeKb": 4601,
+      "pages": 152,
+      "sha256": "614bfd78fc36b6b19596f996242cfab6bca525c35617672cfc800f5dada54d26",
+      "latestVersion": "v1.1",
+      "versions": [
+        {
+          "version": "v1",
+          "uploadedAt": "2026-01-01",
+          "note": "Initial filing"
+        },
+        {
+          "version": "v1.1",
+          "uploadedAt": "2026-02-01",
+          "note": "Minor metadata corrections"
+        }
+      ]
+    },
+    {
+      "id": "hdfc-bank-10-k-2026-2",
+      "companySlug": "hdfc-bank",
+      "type": "10-K",
+      "title": "Form 10-K - FY2026",
+      "form": "10-K",
+      "fiscalPeriod": "FY2026",
+      "filedDate": "2026-06-11",
+      "periodEnd": "2026-03-31",
+      "source": "SEC EDGAR",
+      "sourceUrl": "https://www.hdfc-bank/reports/10-K/2026",
+      "sizeKb": 5786,
+      "pages": 240,
+      "sha256": "506df18a3b693dcccd7a31465d701e8fb6ec76194789ddfd965a98edb3558d3f",
+      "latestVersion": "v1.1",
+      "versions": [
+        {
+          "version": "v1",
+          "uploadedAt": "2026-01-01",
+          "note": "Initial filing"
+        },
+        {
+          "version": "v1.1",
+          "uploadedAt": "2026-02-01",
+          "note": "Minor metadata corrections"
+        }
+      ]
+    },
+    {
+      "id": "hdfc-bank-pres-2026-3",
+      "companySlug": "hdfc-bank",
+      "type": "Investor Presentation",
+      "title": "Q1 FY2027 Investor Presentation",
+      "form": "PRES",
+      "fiscalPeriod": "FY2026",
+      "filedDate": "2026-07-15",
+      "periodEnd": "2026-03-31",
+      "source": "Investor Relations",
+      "sourceUrl": "https://www.hdfc-bank/reports/PRES/2026",
+      "sizeKb": 3843,
+      "pages": 174,
+      "sha256": "74fa02f49daefc370f7e29406e4166da6b37a8c85fd97743ba3f9fbe0c247c6a",
+      "latestVersion": "v1.1",
+      "versions": [
+        {
+          "version": "v1",
+          "uploadedAt": "2026-01-01",
+          "note": "Initial filing"
+        },
+        {
+          "version": "v1.1",
+          "uploadedAt": "2026-02-01",
+          "note": "Minor metadata corrections"
+        }
+      ]
+    },
+    {
+      "id": "hdfc-bank-tran-2026-4",
+      "companySlug": "hdfc-bank",
+      "type": "Earnings Call Transcript",
+      "title": "Q1 FY2027 Earnings Call Transcript",
+      "form": "TRAN",
+      "fiscalPeriod": "FY2026",
+      "filedDate": "2026-10-12",
+      "periodEnd": "2026-03-31",
+      "source": "NSE",
+      "sourceUrl": "https://www.hdfc-bank/reports/TRAN/2026",
+      "sizeKb": 7141,
+      "pages": 162,
+      "sha256": "eee43dbccd5177225a076ce6f2611b9fe11b143bb50604e3f08c5a6856d77d9d",
+      "latestVersion": "v1.1",
+      "versions": [
+        {
+          "version": "v1",
+          "uploadedAt": "2026-01-01",
+          "note": "Initial filing"
+        },
+        {
+          "version": "v1.1",
+          "uploadedAt": "2026-02-01",
+          "note": "Minor metadata corrections"
+        }
+      ]
+    },
+    {
+      "id": "hdfc-bank-10-q-2026-5",
+      "companySlug": "hdfc-bank",
+      "type": "10-Q",
+      "title": "Form 10-Q - Q1 FY2026",
+      "form": "10-Q",
+      "fiscalPeriod": "FY2026",
+      "filedDate": "2026-04-11",
+      "periodEnd": "2026-03-31",
+      "source": "BSE",
+      "sourceUrl": "https://www.hdfc-bank/reports/10-Q/2026",
+      "sizeKb": 6586,
+      "pages": 144,
+      "sha256": "d684dd4c04a618410842174a7add74186719fd1222bf8da95688ba2825608992",
+      "latestVersion": "v1.1",
+      "versions": [
+        {
+          "version": "v1",
+          "uploadedAt": "2026-01-01",
+          "note": "Initial filing"
+        },
+        {
+          "version": "v1.1",
+          "uploadedAt": "2026-02-01",
+          "note": "Minor metadata corrections"
+        }
+      ]
+    },
+    {
+      "id": "hdfc-bank-8-k-2026-6",
+      "companySlug": "hdfc-bank",
+      "type": "8-K",
+      "title": "Current Report - Board Update",
+      "form": "8-K",
+      "fiscalPeriod": "FY2026",
+      "filedDate": "2026-04-23",
+      "periodEnd": "2026-03-31",
+      "source": "SEC EDGAR",
+      "sourceUrl": "https://www.hdfc-bank/reports/8-K/2026",
+      "sizeKb": 2345,
+      "pages": 168,
+      "sha256": "25ea2d056569a2eb4d08cd2604650a6aa665e78d8f9bdaf26f4652b9dc7ddfc4",
+      "latestVersion": "v1.1",
+      "versions": [
+        {
+          "version": "v1",
+          "uploadedAt": "2026-01-01",
+          "note": "Initial filing"
+        },
+        {
+          "version": "v1.1",
+          "uploadedAt": "2026-02-01",
+          "note": "Minor metadata corrections"
+        }
+      ]
+    },
+    {
+      "id": "hdfc-bank-20-f-2025-7",
+      "companySlug": "hdfc-bank",
+      "type": "Annual Report",
+      "title": "Annual Report FY2025",
+      "form": "20-F",
+      "fiscalPeriod": "FY2025",
+      "filedDate": "2025-11-23",
+      "periodEnd": "2025-03-31",
+      "source": "SEC EDGAR",
+      "sourceUrl": "https://www.hdfc-bank/reports/20-F/2025",
+      "sizeKb": 3056,
+      "pages": 113,
+      "sha256": "d0e4b0682f3d959664bb56df19c7a2bbe2dd6b789694f2fc899e145d6ef247c8",
+      "latestVersion": "v1.1",
+      "versions": [
+        {
+          "version": "v1",
+          "uploadedAt": "2025-01-01",
+          "note": "Initial filing"
+        },
+        {
+          "version": "v1.1",
+          "uploadedAt": "2025-02-01",
+          "note": "Minor metadata corrections"
+        }
+      ]
+    },
+    {
+      "id": "hdfc-bank-pres-2026-8",
+      "companySlug": "hdfc-bank",
+      "type": "Investor Presentation",
+      "title": "Q3 FY2026 Investor Presentation",
+      "form": "PRES",
+      "fiscalPeriod": "FY2026",
+      "filedDate": "2026-09-11",
+      "periodEnd": "2026-03-31",
+      "source": "BSE",
+      "sourceUrl": "https://www.hdfc-bank/reports/PRES/2026",
+      "sizeKb": 5623,
+      "pages": 132,
+      "sha256": "9bd59bdefc3f799f60ec89ece3063ce1059fd0aa95c1661d6b0ed04227ffb1c1",
+      "latestVersion": "v1.1",
+      "versions": [
+        {
+          "version": "v1",
+          "uploadedAt": "2026-01-01",
+          "note": "Initial filing"
+        },
+        {
+          "version": "v1.1",
+          "uploadedAt": "2026-02-01",
+          "note": "Minor metadata corrections"
+        }
+      ]
+    }
+  ]
+}

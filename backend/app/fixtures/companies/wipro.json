@@ -1,0 +1,1095 @@
+{
+  "profile": {
+    "slug": "wipro",
+    "ticker": "WIPRO",
+    "name": "Wipro Limited",
+    "sector": "Information Technology",
+    "industry": "IT Services & Consulting",
+    "exchange": "NSE",
+    "currency": "\u20b9",
+    "currencyCode": "INR",
+    "founded": 1945,
+    "listed": "1980",
+    "headquarters": "Bengaluru, Karnataka",
+    "website": "wipro.com",
+    "description": "A global information technology, consulting, and business process services company, helping clients transform with cloud, data, and AI-led solutions.",
+    "employees": 232000,
+    "accent": "#6366f1",
+    "market": "INDIA"
+  },
+  "quote": {
+    "price": 86.34,
+    "change": 1.31,
+    "changePct": 1.51,
+    "open": 86.49,
+    "high": 87.38,
+    "low": 85.3,
+    "volume": 44374529,
+    "previousClose": 85.03,
+    "marketCap": 448959.94,
+    "peRatio": 22.0,
+    "eps": 3.92,
+    "dividendYield": 1.59,
+    "high52Week": 101.88,
+    "low52Week": 62.16
+  },
+  "annual": [
+    {
+      "year": "FY2018",
+      "revenue": 72000.0,
+      "revenueGrowth": 10.0,
+      "grossProfit": 41760.0,
+      "operatingIncome": 12960.0,
+      "ebitda": 14400.0,
+      "netIncome": 9360.0,
+      "eps": 1.77,
+      "netMargin": 13.0,
+      "grossMargin": 58.0,
+      "operatingMargin": 18.0,
+      "ebitdaMargin": 20.0,
+      "returnOnAssets": 13.0,
+      "totalAssets": 72000.0,
+      "totalEquity": 52000.0,
+      "totalDebt": 4160.0,
+      "netDebt": -7360.0,
+      "cash": 11520.0,
+      "debtToEquity": 0.08,
+      "currentRatio": 2.04,
+      "operatingCashFlow": 10800.0,
+      "investingCashFlow": -1008.0,
+      "financingCashFlow": -3283.0,
+      "freeCashFlow": 9792.0,
+      "capex": 1008.0,
+      "roe": 18.0,
+      "roce": 29.03,
+      "interestCover": 62.31,
+      "bookValue": 9.81,
+      "dividendPerShare": 0.62,
+      "dividendYield": 2.19,
+      "sharesOutstanding": 5300.0,
+      "revenuePerShare": 13.58,
+      "priceToSales": 2.08,
+      "evToEbitda": 9.89,
+      "peRatio": 16.0,
+      "priceToBook": 2.88
+    },
+    {
+      "year": "FY2019",
+      "revenue": 79200.0,
+      "revenueGrowth": 10.0,
+      "grossProfit": 45936.0,
+      "operatingIncome": 14256.0,
+      "ebitda": 15840.0,
+      "netIncome": 10296.0,
+      "eps": 1.94,
+      "netMargin": 13.0,
+      "grossMargin": 58.0,
+      "operatingMargin": 18.0,
+      "ebitdaMargin": 20.0,
+      "returnOnAssets": 13.0,
+      "totalAssets": 79200.0,
+      "totalEquity": 57200.0,
+      "totalDebt": 4576.0,
+      "netDebt": -8096.0,
+      "cash": 12672.0,
+      "debtToEquity": 0.08,
+      "currentRatio": 2.04,
+      "operatingCashFlow": 11880.0,
+      "investingCashFlow": -1109.0,
+      "financingCashFlow": -3183.0,
+      "freeCashFlow": 10771.0,
+      "capex": 1109.0,
+      "roe": 18.0,
+      "roce": 29.03,
+      "interestCover": 62.31,
+      "bookValue": 10.79,
+      "dividendPerShare": 0.68,
+      "dividendYield": 1.94,
+      "sharesOutstanding": 5300.0,
+      "revenuePerShare": 14.94,
+      "priceToSales": 2.34,
+      "evToEbitda": 11.19,
+      "peRatio": 18.0,
+      "priceToBook": 3.24
+    },
+    {
+      "year": "FY2020",
+      "revenue": 85536.0,
+      "revenueGrowth": 8.0,
+      "grossProfit": 50466.0,
+      "operatingIncome": 16252.0,
+      "ebitda": 17963.0,
+      "netIncome": 11975.0,
+      "eps": 2.26,
+      "netMargin": 14.0,
+      "grossMargin": 59.0,
+      "operatingMargin": 19.0,
+      "ebitdaMargin": 21.0,
+      "returnOnAssets": 14.0,
+      "totalAssets": 85536.0,
+      "totalEquity": 63027.0,
+      "totalDebt": 5042.0,
+      "netDebt": -9499.0,
+      "cash": 14541.0,
+      "debtToEquity": 0.08,
+      "currentRatio": 2.08,
+      "operatingCashFlow": 13686.0,
+      "investingCashFlow": -1198.0,
+      "financingCashFlow": -3726.0,
+      "freeCashFlow": 12488.0,
+      "capex": 1198.0,
+      "roe": 19.0,
+      "roce": 30.36,
+      "interestCover": 64.47,
+      "bookValue": 11.89,
+      "dividendPerShare": 0.79,
+      "dividendYield": 2.19,
+      "sharesOutstanding": 5300.0,
+      "revenuePerShare": 16.14,
+      "priceToSales": 2.24,
+      "evToEbitda": 10.14,
+      "peRatio": 16.0,
+      "priceToBook": 3.04
+    },
+    {
+      "year": "FY2021",
+      "revenue": 95800.0,
+      "revenueGrowth": 12.0,
+      "grossProfit": 56522.0,
+      "operatingIncome": 18202.0,
+      "ebitda": 20118.0,
+      "netIncome": 13412.0,
+      "eps": 2.53,
+      "netMargin": 14.0,
+      "grossMargin": 59.0,
+      "operatingMargin": 19.0,
+      "ebitdaMargin": 21.0,
+      "returnOnAssets": 14.0,
+      "totalAssets": 95800.0,
+      "totalEquity": 67060.0,
+      "totalDebt": 5365.0,
+      "netDebt": -10921.0,
+      "cash": 16286.0,
+      "debtToEquity": 0.08,
+      "currentRatio": 2.08,
+      "operatingCashFlow": 15328.0,
+      "investingCashFlow": -1341.0,
+      "financingCashFlow": -4370.0,
+      "freeCashFlow": 13987.0,
+      "capex": 1341.0,
+      "roe": 20.0,
+      "roce": 32.42,
+      "interestCover": 67.85,
+      "bookValue": 12.65,
+      "dividendPerShare": 0.89,
+      "dividendYield": 1.75,
+      "sharesOutstanding": 5300.0,
+      "revenuePerShare": 18.08,
+      "priceToSales": 2.8,
+      "evToEbitda": 12.79,
+      "peRatio": 20.0,
+      "priceToBook": 4.0
+    },
+    {
+      "year": "FY2022",
+      "revenue": 114960.0,
+      "revenueGrowth": 20.0,
+      "grossProfit": 66677.0,
+      "operatingIncome": 20693.0,
+      "ebitda": 22992.0,
+      "netIncome": 14945.0,
+      "eps": 2.82,
+      "netMargin": 13.0,
+      "grossMargin": 58.0,
+      "operatingMargin": 18.0,
+      "ebitdaMargin": 20.0,
+      "returnOnAssets": 13.0,
+      "totalAssets": 114960.0,
+      "totalEquity": 78657.0,
+      "totalDebt": 6293.0,
+      "netDebt": -14400.0,
+      "cash": 20693.0,
+      "debtToEquity": 0.08,
+      "currentRatio": 2.12,
+      "operatingCashFlow": 17244.0,
+      "investingCashFlow": -1609.0,
+      "financingCashFlow": -4303.0,
+      "freeCashFlow": 15635.0,
+      "capex": 1609.0,
+      "roe": 19.0,
+      "roce": 32.2,
+      "interestCover": 65.77,
+      "bookValue": 14.84,
+      "dividendPerShare": 0.99,
+      "dividendYield": 1.94,
+      "sharesOutstanding": 5300.0,
+      "revenuePerShare": 21.69,
+      "priceToSales": 2.34,
+      "evToEbitda": 11.07,
+      "peRatio": 18.0,
+      "priceToBook": 3.42
+    },
+    {
+      "year": "FY2023",
+      "revenue": 135653.0,
+      "revenueGrowth": 18.0,
+      "grossProfit": 77322.0,
+      "operatingIncome": 23061.0,
+      "ebitda": 25774.0,
+      "netIncome": 16278.0,
+      "eps": 3.07,
+      "netMargin": 12.0,
+      "grossMargin": 57.0,
+      "operatingMargin": 17.0,
+      "ebitdaMargin": 19.0,
+      "returnOnAssets": 12.0,
+      "totalAssets": 135653.0,
+      "totalEquity": 95755.0,
+      "totalDebt": 7660.0,
+      "netDebt": -15401.0,
+      "cash": 23061.0,
+      "debtToEquity": 0.08,
+      "currentRatio": 2.08,
+      "operatingCashFlow": 18991.0,
+      "investingCashFlow": -1899.0,
+      "financingCashFlow": -4328.0,
+      "freeCashFlow": 17092.0,
+      "capex": 1899.0,
+      "roe": 17.0,
+      "roce": 28.7,
+      "interestCover": 60.21,
+      "bookValue": 18.07,
+      "dividendPerShare": 1.07,
+      "dividendYield": 2.19,
+      "sharesOutstanding": 5300.0,
+      "revenuePerShare": 25.59,
+      "priceToSales": 1.92,
+      "evToEbitda": 9.51,
+      "peRatio": 16.0,
+      "priceToBook": 2.72
+    },
+    {
+      "year": "FY2024",
+      "revenue": 142436.0,
+      "revenueGrowth": 5.0,
+      "grossProfit": 81188.0,
+      "operatingIncome": 24214.0,
+      "ebitda": 27063.0,
+      "netIncome": 17092.0,
+      "eps": 3.22,
+      "netMargin": 12.0,
+      "grossMargin": 57.0,
+      "operatingMargin": 17.0,
+      "ebitdaMargin": 19.0,
+      "returnOnAssets": 12.0,
+      "totalAssets": 142436.0,
+      "totalEquity": 100543.0,
+      "totalDebt": 8043.0,
+      "netDebt": -14747.0,
+      "cash": 22790.0,
+      "debtToEquity": 0.08,
+      "currentRatio": 2.04,
+      "operatingCashFlow": 19941.0,
+      "investingCashFlow": -1994.0,
+      "financingCashFlow": -5590.0,
+      "freeCashFlow": 17947.0,
+      "capex": 1994.0,
+      "roe": 17.0,
+      "roce": 28.22,
+      "interestCover": 60.21,
+      "bookValue": 18.97,
+      "dividendPerShare": 1.13,
+      "dividendYield": 1.94,
+      "sharesOutstanding": 5300.0,
+      "revenuePerShare": 26.87,
+      "priceToSales": 2.16,
+      "evToEbitda": 10.82,
+      "peRatio": 18.0,
+      "priceToBook": 3.06
+    },
+    {
+      "year": "FY2025",
+      "revenue": 146709.0,
+      "revenueGrowth": 3.0,
+      "grossProfit": 85091.0,
+      "operatingIncome": 26408.0,
+      "ebitda": 29342.0,
+      "netIncome": 19072.0,
+      "eps": 3.67,
+      "netMargin": 13.0,
+      "grossMargin": 58.0,
+      "operatingMargin": 18.0,
+      "ebitdaMargin": 20.0,
+      "returnOnAssets": 13.0,
+      "totalAssets": 146709.0,
+      "totalEquity": 105956.0,
+      "totalDebt": 8477.0,
+      "netDebt": -14996.0,
+      "cash": 23473.0,
+      "debtToEquity": 0.08,
+      "currentRatio": 2.04,
+      "operatingCashFlow": 22006.0,
+      "investingCashFlow": -2054.0,
+      "financingCashFlow": -6245.0,
+      "freeCashFlow": 19952.0,
+      "capex": 2054.0,
+      "roe": 18.0,
+      "roce": 29.03,
+      "interestCover": 62.31,
+      "bookValue": 20.38,
+      "dividendPerShare": 1.28,
+      "dividendYield": 1.75,
+      "sharesOutstanding": 5200.0,
+      "revenuePerShare": 28.21,
+      "priceToSales": 2.6,
+      "evToEbitda": 12.49,
+      "peRatio": 20.0,
+      "priceToBook": 3.6
+    },
+    {
+      "year": "FY2026",
+      "revenue": 156979.0,
+      "revenueGrowth": 7.0,
+      "grossProfit": 91048.0,
+      "operatingIncome": 28256.0,
+      "ebitda": 31396.0,
+      "netIncome": 20407.0,
+      "eps": 3.92,
+      "netMargin": 13.0,
+      "grossMargin": 58.0,
+      "operatingMargin": 18.0,
+      "ebitdaMargin": 20.0,
+      "returnOnAssets": 13.0,
+      "totalAssets": 156979.0,
+      "totalEquity": 113373.0,
+      "totalDebt": 9070.0,
+      "netDebt": -14477.0,
+      "cash": 23547.0,
+      "debtToEquity": 0.08,
+      "currentRatio": 2.0,
+      "operatingCashFlow": 23547.0,
+      "investingCashFlow": -2198.0,
+      "financingCashFlow": -6541.0,
+      "freeCashFlow": 21349.0,
+      "capex": 2198.0,
+      "roe": 18.0,
+      "roce": 28.57,
+      "interestCover": 62.31,
+      "bookValue": 21.8,
+      "dividendPerShare": 1.37,
+      "dividendYield": 1.59,
+      "sharesOutstanding": 5200.0,
+      "revenuePerShare": 30.19,
+      "priceToSales": 2.86,
+      "evToEbitda": 13.84,
+      "peRatio": 22.0,
+      "priceToBook": 3.96
+    }
+  ],
+  "valuation": [
+    {
+      "year": "FY2018",
+      "price": 28.26,
+      "marketCap": 149778.0,
+      "peRatio": 16.0,
+      "priceToBook": 2.88,
+      "evToEbitda": 9.89,
+      "dividendYield": 2.19
+    },
+    {
+      "year": "FY2019",
+      "price": 34.97,
+      "marketCap": 185341.0,
+      "peRatio": 18.0,
+      "priceToBook": 3.24,
+      "evToEbitda": 11.19,
+      "dividendYield": 1.94
+    },
+    {
+      "year": "FY2020",
+      "price": 36.15,
+      "marketCap": 191595.0,
+      "peRatio": 16.0,
+      "priceToBook": 3.04,
+      "evToEbitda": 10.14,
+      "dividendYield": 2.19
+    },
+    {
+      "year": "FY2021",
+      "price": 50.61,
+      "marketCap": 268233.0,
+      "peRatio": 20.0,
+      "priceToBook": 4.0,
+      "evToEbitda": 12.79,
+      "dividendYield": 1.75
+    },
+    {
+      "year": "FY2022",
+      "price": 50.76,
+      "marketCap": 269028.0,
+      "peRatio": 18.0,
+      "priceToBook": 3.42,
+      "evToEbitda": 11.07,
+      "dividendYield": 1.94
+    },
+    {
+      "year": "FY2023",
+      "price": 49.14,
+      "marketCap": 260442.0,
+      "peRatio": 16.0,
+      "priceToBook": 2.72,
+      "evToEbitda": 9.51,
+      "dividendYield": 2.19
+    },
+    {
+      "year": "FY2024",
+      "price": 58.05,
+      "marketCap": 307665.0,
+      "peRatio": 18.0,
+      "priceToBook": 3.06,
+      "evToEbitda": 10.82,
+      "dividendYield": 1.94
+    },
+    {
+      "year": "FY2025",
+      "price": 73.35,
+      "marketCap": 381420.0,
+      "peRatio": 20.0,
+      "priceToBook": 3.6,
+      "evToEbitda": 12.49,
+      "dividendYield": 1.75
+    },
+    {
+      "year": "FY2026",
+      "price": 86.34,
+      "marketCap": 448968.0,
+      "peRatio": 22.0,
+      "priceToBook": 3.96,
+      "evToEbitda": 13.84,
+      "dividendYield": 1.59
+    }
+  ],
+  "segments": [
+    {
+      "year": "FY2018",
+      "segments": [
+        {
+          "name": "Americas",
+          "revenue": 21951.0,
+          "share": 30.49,
+          "growth": 10.0
+        },
+        {
+          "name": "Europe",
+          "revenue": 19317.0,
+          "share": 26.83,
+          "growth": 10.0
+        },
+        {
+          "name": "India & Middle East",
+          "revenue": 16683.0,
+          "share": 23.17,
+          "growth": 10.0
+        },
+        {
+          "name": "Asia Pacific",
+          "revenue": 14049.0,
+          "share": 19.51,
+          "growth": 10.0
+        }
+      ]
+    },
+    {
+      "year": "FY2019",
+      "segments": [
+        {
+          "name": "Americas",
+          "revenue": 23476.0,
+          "share": 29.64,
+          "growth": 10.0
+        },
+        {
+          "name": "Europe",
+          "revenue": 21485.0,
+          "share": 27.13,
+          "growth": 10.0
+        },
+        {
+          "name": "India & Middle East",
+          "revenue": 18555.0,
+          "share": 23.43,
+          "growth": 10.0
+        },
+        {
+          "name": "Asia Pacific",
+          "revenue": 16484.0,
+          "share": 20.81,
+          "growth": 10.0
+        }
+      ]
+    },
+    {
+      "year": "FY2020",
+      "segments": [
+        {
+          "name": "Americas",
+          "revenue": 24629.0,
+          "share": 28.79,
+          "growth": 8.0
+        },
+        {
+          "name": "Europe",
+          "revenue": 23459.0,
+          "share": 27.43,
+          "growth": 8.0
+        },
+        {
+          "name": "India & Middle East",
+          "revenue": 20260.0,
+          "share": 23.69,
+          "growth": 8.0
+        },
+        {
+          "name": "Asia Pacific",
+          "revenue": 18915.0,
+          "share": 22.11,
+          "growth": 8.0
+        }
+      ]
+    },
+    {
+      "year": "FY2021",
+      "segments": [
+        {
+          "name": "Americas",
+          "revenue": 26773.0,
+          "share": 27.95,
+          "growth": 12.0
+        },
+        {
+          "name": "Europe",
+          "revenue": 26559.0,
+          "share": 27.72,
+          "growth": 12.0
+        },
+        {
+          "name": "India & Middle East",
+          "revenue": 22938.0,
+          "share": 23.94,
+          "growth": 12.0
+        },
+        {
+          "name": "Asia Pacific",
+          "revenue": 22431.0,
+          "share": 23.41,
+          "growth": 12.0
+        }
+      ]
+    },
+    {
+      "year": "FY2022",
+      "segments": [
+        {
+          "name": "Americas",
+          "revenue": 31155.0,
+          "share": 27.1,
+          "growth": 20.0
+        },
+        {
+          "name": "Europe",
+          "revenue": 32214.0,
+          "share": 28.02,
+          "growth": 20.0
+        },
+        {
+          "name": "India & Middle East",
+          "revenue": 27821.0,
+          "share": 24.2,
+          "growth": 20.0
+        },
+        {
+          "name": "Asia Pacific",
+          "revenue": 28413.0,
+          "share": 24.72,
+          "growth": 20.0
+        }
+      ]
+    },
+    {
+      "year": "FY2023",
+      "segments": [
+        {
+          "name": "Americas",
+          "revenue": 35614.0,
+          "share": 26.25,
+          "growth": 18.0
+        },
+        {
+          "name": "Europe",
+          "revenue": 38417.0,
+          "share": 28.32,
+          "growth": 18.0
+        },
+        {
+          "name": "India & Middle East",
+          "revenue": 33178.0,
+          "share": 24.46,
+          "growth": 18.0
+        },
+        {
+          "name": "Asia Pacific",
+          "revenue": 35292.0,
+          "share": 26.02,
+          "growth": 18.0
+        }
+      ]
+    },
+    {
+      "year": "FY2024",
+      "segments": [
+        {
+          "name": "Americas",
+          "revenue": 36188.0,
+          "share": 25.41,
+          "growth": 5.0
+        },
+        {
+          "name": "Europe",
+          "revenue": 40762.0,
+          "share": 28.62,
+          "growth": 5.0
+        },
+        {
+          "name": "India & Middle East",
+          "revenue": 35204.0,
+          "share": 24.72,
+          "growth": 5.0
+        },
+        {
+          "name": "Asia Pacific",
+          "revenue": 38909.0,
+          "share": 27.32,
+          "growth": 5.0
+        }
+      ]
+    },
+    {
+      "year": "FY2025",
+      "segments": [
+        {
+          "name": "Americas",
+          "revenue": 36031.0,
+          "share": 24.56,
+          "growth": 3.0
+        },
+        {
+          "name": "Europe",
+          "revenue": 42422.0,
+          "share": 28.92,
+          "growth": 3.0
+        },
+        {
+          "name": "India & Middle East",
+          "revenue": 36637.0,
+          "share": 24.97,
+          "growth": 3.0
+        },
+        {
+          "name": "Asia Pacific",
+          "revenue": 41985.0,
+          "share": 28.62,
+          "growth": 3.0
+        }
+      ]
+    },
+    {
+      "year": "FY2026",
+      "segments": [
+        {
+          "name": "Americas",
+          "revenue": 37224.0,
+          "share": 23.71,
+          "growth": 7.0
+        },
+        {
+          "name": "Europe",
+          "revenue": 45860.0,
+          "share": 29.21,
+          "growth": 7.0
+        },
+        {
+          "name": "India & Middle East",
+          "revenue": 39606.0,
+          "share": 25.23,
+          "growth": 7.0
+        },
+        {
+          "name": "Asia Pacific",
+          "revenue": 46966.0,
+          "share": 29.92,
+          "growth": 7.0
+        }
+      ]
+    }
+  ],
+  "quarterly": {
+    "FY2024": [
+      {
+        "quarter": "Q1",
+        "endDate": "2024-06-30",
+        "revenue": 8230.0,
+        "netIncome": 1070.0,
+        "ebitda": 1564.0,
+        "eps": 0.21,
+        "margin": 13.0
+      },
+      {
+        "quarter": "Q2",
+        "endDate": "2024-09-30",
+        "revenue": 9601.0,
+        "netIncome": 1248.0,
+        "ebitda": 1824.0,
+        "eps": 0.24,
+        "margin": 13.0
+      },
+      {
+        "quarter": "Q3",
+        "endDate": "2024-12-31",
+        "revenue": 9144.0,
+        "netIncome": 1189.0,
+        "ebitda": 1737.0,
+        "eps": 0.23,
+        "margin": 13.0
+      },
+      {
+        "quarter": "Q4",
+        "endDate": "2025-03-31",
+        "revenue": 10058.0,
+        "netIncome": 1006.0,
+        "ebitda": 1911.0,
+        "eps": 0.19,
+        "margin": 10.0
+      }
+    ],
+    "FY2025": [
+      {
+        "quarter": "Q1",
+        "endDate": "2025-06-30",
+        "revenue": 8477.0,
+        "netIncome": 1187.0,
+        "ebitda": 1695.0,
+        "eps": 0.23,
+        "margin": 14.0
+      },
+      {
+        "quarter": "Q2",
+        "endDate": "2025-09-30",
+        "revenue": 9889.0,
+        "netIncome": 1384.0,
+        "ebitda": 1978.0,
+        "eps": 0.27,
+        "margin": 14.0
+      },
+      {
+        "quarter": "Q3",
+        "endDate": "2025-12-31",
+        "revenue": 9418.0,
+        "netIncome": 1319.0,
+        "ebitda": 1884.0,
+        "eps": 0.25,
+        "margin": 14.0
+      },
+      {
+        "quarter": "Q4",
+        "endDate": "2026-03-31",
+        "revenue": 10360.0,
+        "netIncome": 1140.0,
+        "ebitda": 2072.0,
+        "eps": 0.22,
+        "margin": 11.0
+      }
+    ],
+    "FY2026": [
+      {
+        "quarter": "Q1",
+        "endDate": "2026-06-30",
+        "revenue": 9070.0,
+        "netIncome": 1270.0,
+        "ebitda": 1814.0,
+        "eps": 0.24,
+        "margin": 14.0
+      },
+      {
+        "quarter": "Q2",
+        "endDate": "2026-09-30",
+        "revenue": 10582.0,
+        "netIncome": 1481.0,
+        "ebitda": 2116.0,
+        "eps": 0.28,
+        "margin": 14.0
+      },
+      {
+        "quarter": "Q3",
+        "endDate": "2026-12-31",
+        "revenue": 10078.0,
+        "netIncome": 1411.0,
+        "ebitda": 2016.0,
+        "eps": 0.27,
+        "margin": 14.0
+      },
+      {
+        "quarter": "Q4",
+        "endDate": "2027-03-31",
+        "revenue": 11085.0,
+        "netIncome": 1219.0,
+        "ebitda": 2217.0,
+        "eps": 0.23,
+        "margin": 11.0
+      }
+    ]
+  },
+  "riskFactors": [
+    {
+      "title": "Demand cyclicality",
+      "description": "A downturn in banking and technology client budgets pressures deal sizes and margins.",
+      "severity": "high"
+    },
+    {
+      "title": "Attrition and wage inflation",
+      "description": "Rising talent costs can compress operating margins.",
+      "severity": "high"
+    },
+    {
+      "title": "Currency fluctuation",
+      "description": "A stronger INR reduces the rupee value of overseas revenue.",
+      "severity": "high"
+    }
+  ],
+  "managementDiscussion": "In fiscal year FY2026, Wipro Limited recorded revenue of \u20b91.57 lakh crore, growing 7.0% year-on-year, driven by continued momentum across Americas, Europe. Net income stood at \u20b90.20 lakh crore with a net margin of 13.0% and a return on equity of 18.0%. Operating cash flow remained robust at \u20b90.24 lakh crore, supporting capital expenditure of \u20b90.02 lakh crore and a free cash flow of \u20b90.21 lakh crore. The company maintains a measured capital structure with net debt-to-equity of -0.13x. Management continues to invest in digital and AI capabilities, expects sustained volume-led growth and disciplined cost control, and remains committed to value-accretive capital allocation and sustainable returns for shareholders.",
+  "documents": [
+    {
+      "id": "wipro-20-f-2026-1",
+      "companySlug": "wipro",
+      "type": "Annual Report",
+      "title": "Annual Report FY2026",
+      "form": "20-F",
+      "fiscalPeriod": "FY2026",
+      "filedDate": "2026-10-17",
+      "periodEnd": "2026-03-31",
+      "source": "SEC EDGAR",
+      "sourceUrl": "https://www.wipro/reports/20-F/2026",
+      "sizeKb": 3558,
+      "pages": 197,
+      "sha256": "e85547dcf56cd453a36e11ee588669f7329b4a2fcf460425129981a5df099678",
+      "latestVersion": "v1.1",
+      "versions": [
+        {
+          "version": "v1",
+          "uploadedAt": "2026-01-01",
+          "note": "Initial filing"
+        },
+        {
+          "version": "v1.1",
+          "uploadedAt": "2026-02-01",
+          "note": "Minor metadata corrections"
+        }
+      ]
+    },
+    {
+      "id": "wipro-10-k-2026-2",
+      "companySlug": "wipro",
+      "type": "10-K",
+      "title": "Form 10-K - FY2026",
+      "form": "10-K",
+      "fiscalPeriod": "FY2026",
+      "filedDate": "2026-10-17",
+      "periodEnd": "2026-03-31",
+      "source": "SEC EDGAR",
+      "sourceUrl": "https://www.wipro/reports/10-K/2026",
+      "sizeKb": 5062,
+      "pages": 143,
+      "sha256": "eacc9c32a954f797d409e9b58cf20d8a5f9ebdcc71baffd00e521c842753a7cb",
+      "latestVersion": "v1.1",
+      "versions": [
+        {
+          "version": "v1",
+          "uploadedAt": "2026-01-01",
+          "note": "Initial filing"
+        },
+        {
+          "version": "v1.1",
+          "uploadedAt": "2026-02-01",
+          "note": "Minor metadata corrections"
+        }
+      ]
+    },
+    {
+      "id": "wipro-pres-2026-3",
+      "companySlug": "wipro",
+      "type": "Investor Presentation",
+      "title": "Q1 FY2027 Investor Presentation",
+      "form": "PRES",
+      "fiscalPeriod": "FY2026",
+      "filedDate": "2026-08-10",
+      "periodEnd": "2026-03-31",
+      "source": "Investor Relations",
+      "sourceUrl": "https://www.wipro/reports/PRES/2026",
+      "sizeKb": 6228,
+      "pages": 122,
+      "sha256": "9f459a4e1198035b2a4e0480c35eb82699292c1f582a6ffa8028368b7925750f",
+      "latestVersion": "v1.1",
+      "versions": [
+        {
+          "version": "v1",
+          "uploadedAt": "2026-01-01",
+          "note": "Initial filing"
+        },
+        {
+          "version": "v1.1",
+          "uploadedAt": "2026-02-01",
+          "note": "Minor metadata corrections"
+        }
+      ]
+    },
+    {
+      "id": "wipro-tran-2026-4",
+      "companySlug": "wipro",
+      "type": "Earnings Call Transcript",
+      "title": "Q1 FY2027 Earnings Call Transcript",
+      "form": "TRAN",
+      "fiscalPeriod": "FY2026",
+      "filedDate": "2026-03-14",
+      "periodEnd": "2026-03-31",
+      "source": "NSE",
+      "sourceUrl": "https://www.wipro/reports/TRAN/2026",
+      "sizeKb": 6929,
+      "pages": 227,
+      "sha256": "d7b1cf6f9530f3ce03a3fa51caf7557356313c5edfb5d2ee0869b878334f1779",
+      "latestVersion": "v1.1",
+      "versions": [
+        {
+          "version": "v1",
+          "uploadedAt": "2026-01-01",
+          "note": "Initial filing"
+        },
+        {
+          "version": "v1.1",
+          "uploadedAt": "2026-02-01",
+          "note": "Minor metadata corrections"
+        }
+      ]
+    },
+    {
+      "id": "wipro-10-q-2026-5",
+      "companySlug": "wipro",
+      "type": "10-Q",
+      "title": "Form 10-Q - Q1 FY2026",
+      "form": "10-Q",
+      "fiscalPeriod": "FY2026",
+      "filedDate": "2026-11-11",
+      "periodEnd": "2026-03-31",
+      "source": "BSE",
+      "sourceUrl": "https://www.wipro/reports/10-Q/2026",
+      "sizeKb": 4356,
+      "pages": 190,
+      "sha256": "7069305c4ec32f938cedd9a46231b11a4ff57d712501a0bca6cf4cec89f21779",
+      "latestVersion": "v1.1",
+      "versions": [
+        {
+          "version": "v1",
+          "uploadedAt": "2026-01-01",
+          "note": "Initial filing"
+        },
+        {
+          "version": "v1.1",
+          "uploadedAt": "2026-02-01",
+          "note": "Minor metadata corrections"
+        }
+      ]
+    },
+    {
+      "id": "wipro-8-k-2026-6",
+      "companySlug": "wipro",
+      "type": "8-K",
+      "title": "Current Report - Board Update",
+      "form": "8-K",
+      "fiscalPeriod": "FY2026",
+      "filedDate": "2026-06-17",
+      "periodEnd": "2026-03-31",
+      "source": "SEC EDGAR",
+      "sourceUrl": "https://www.wipro/reports/8-K/2026",
+      "sizeKb": 5273,
+      "pages": 184,
+      "sha256": "2b8a89cd8721e1551b03dd3443517e30887531a891c3a70cb479e15ebca15426",
+      "latestVersion": "v1.1",
+      "versions": [
+        {
+          "version": "v1",
+          "uploadedAt": "2026-01-01",
+          "note": "Initial filing"
+        },
+        {
+          "version": "v1.1",
+          "uploadedAt": "2026-02-01",
+          "note": "Minor metadata corrections"
+        }
+      ]
+    },
+    {
+      "id": "wipro-20-f-2025-7",
+      "companySlug": "wipro",
+      "type": "Annual Report",
+      "title": "Annual Report FY2025",
+      "form": "20-F",
+      "fiscalPeriod": "FY2025",
+      "filedDate": "2025-08-22",
+      "periodEnd": "2025-03-31",
+      "source": "SEC EDGAR",
+      "sourceUrl": "https://www.wipro/reports/20-F/2025",
+      "sizeKb": 4136,
+      "pages": 118,
+      "sha256": "1bf9ebba05fda2120b4c824728a22c68b71cb66483549bd3be1ca8bd2dedfc9f",
+      "latestVersion": "v1.1",
+      "versions": [
+        {
+          "version": "v1",
+          "uploadedAt": "2025-01-01",
+          "note": "Initial filing"
+        },
+        {
+          "version": "v1.1",
+          "uploadedAt": "2025-02-01",
+          "note": "Minor metadata corrections"
+        }
+      ]
+    },
+    {
+      "id": "wipro-pres-2026-8",
+      "companySlug": "wipro",
+      "type": "Investor Presentation",
+      "title": "Q3 FY2026 Investor Presentation",
+      "form": "PRES",
+      "fiscalPeriod": "FY2026",
+      "filedDate": "2026-04-15",
+      "periodEnd": "2026-03-31",
+      "source": "BSE",
+      "sourceUrl": "https://www.wipro/reports/PRES/2026",
+      "sizeKb": 6332,
+      "pages": 151,
+      "sha256": "96b403ecba5892f7ed76c663efce297b9679b81f7aade45ddfa5a179cf6df021",
+      "latestVersion": "v1.1",
+      "versions": [
+        {
+          "version": "v1",
+          "uploadedAt": "2026-01-01",
+          "note": "Initial filing"
+        },
+        {
+          "version": "v1.1",
+          "uploadedAt": "2026-02-01",
+          "note": "Minor metadata corrections"
+        }
+      ]
+    }
+  ]
+}
