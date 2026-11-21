@@ -1,4 +1,4 @@
-"""Live-data endpoints backed by Yahoo Finance and Screener.in.
+"""Live-data endpoints backed by Yahoo Finance, Screener.in and other real sources.
 
 Fresh cache entries are served directly; stale entries are refreshed on
 demand. If a live fetch fails, the freshest cached values are returned with
@@ -7,12 +7,14 @@ demand. If a live fetch fails, the freshest cached values are returned with
 
 from __future__ import annotations
 
+import asyncio
 from typing import Any
 
 from fastapi import APIRouter, Depends, HTTPException, Query
 from pydantic import BaseModel, Field
 
 from app.api.deps import get_store
+from app.data import alternate_sources as alt
 from app.data import live_sources as live
 from app.data.contract import DataStore
 
@@ -44,6 +46,21 @@ def _with_fallback(body: dict[str, Any], stale: bool, error: str | None) -> dict
     if error:
         body["error"] = error
     return body
+
+
+def _merge_news(*groups: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    """Combine real citations from several sources, deduped by URL, newest first."""
+    seen: set[str] = set()
+    merged: list[dict[str, Any]] = []
+    for group in groups:
+        for item in group or []:
+            url = str(item.get("url") or "")
+            if not url or url in seen:
+                continue
+            seen.add(url)
+            merged.append(item)
+    merged.sort(key=lambda item: str(item.get("publishedAt") or ""), reverse=True)
+    return merged
 
 
 def _quote_body(ticker: str, quote: dict[str, Any], *, stale: bool = False, error: str | None = None) -> dict[str, Any]:
@@ -227,12 +244,14 @@ async def search(body: LiveSearchQuery) -> dict[str, Any]:
         ]
     hits = live.search_evidence(evidence, body.query, limit=body.limit)
 
-    # Real, clickable news headlines from Yahoo Finance. Best-effort: a query
-    # with no coverage simply contributes no news citations, never invented ones.
+    # Real, clickable headlines from independent news sources. Best-effort: a
+    # query with no coverage simply contributes no citations, never invented ones.
     news: list[dict[str, Any]] = []
     news_error: str | None = None
     try:
-        news = await live.fetch_news(body.query, limit=5)
+        yahoo_news = await live.fetch_news(body.query, limit=5)
+        google_news = await alt.fetch_google_news(body.query, limit=5)
+        news = _merge_news(yahoo_news, google_news)[:8]
     except Exception as exc:  # noqa: BLE001 - news is optional enrichment
         news_error = str(exc)
 
@@ -240,7 +259,7 @@ async def search(body: LiveSearchQuery) -> dict[str, Any]:
         "query": body.query,
         "hits": hits,
         "news": news,
-        "newsSource": "Yahoo Finance News",
+        "newsSource": "Yahoo Finance News + Google News",
         "asOf": cache.get("savedAt"),
         "source": COMPANY_SOURCE,
     }
@@ -250,13 +269,59 @@ async def search(body: LiveSearchQuery) -> dict[str, Any]:
 
 
 @router.get("/news")
-async def news(q: str = Query(..., min_length=2, max_length=100), limit: int = Query(6, ge=1, le=10)) -> dict[str, Any]:
-    """Real, clickable news citations for a query (Yahoo Finance)."""
+async def news(
+    q: str = Query(..., min_length=2, max_length=100),
+    limit: int = Query(6, ge=1, le=10),
+    ticker: str | None = Query(default=None, max_length=30),
+) -> dict[str, Any]:
+    """Real, clickable news from Yahoo Finance, Google News and NSE filings."""
     try:
-        items = await live.fetch_news(q, limit)
-        return {"query": q, "items": items, "source": "Yahoo Finance News"}
+        yahoo_news = await live.fetch_news(q, limit)
+        google_news = await alt.fetch_google_news(q, limit)
+        nse_items: list[dict[str, Any]] = []
+        symbol = (ticker or "").strip()
+        if symbol:
+            nse_items = await alt.fetch_nse_announcements(symbol, limit)
+        items = _merge_news(yahoo_news, google_news, nse_items)[: max(limit, 6)]
+        return {
+            "query": q,
+            "items": items,
+            "source": "Yahoo Finance News + Google News + NSE Announcements",
+        }
     except Exception as exc:  # noqa: BLE001 - normalized upstream error
         raise HTTPException(status_code=502, detail=f"Live news unavailable: {exc}") from exc
+
+
+@router.get("/company-extras/{slug}")
+async def company_extras(slug: str) -> dict[str, Any]:
+    """Non-Yahoo company intelligence: Wikipedia background and NSE filings."""
+    key = slug.strip().lower()
+    cache = live.get_cached()
+    entry = live.discovered_entry_for(key)
+    if key in live.UNIVERSE:
+        ticker, name = live.UNIVERSE[key][0], live.UNIVERSE[key][0].replace("-", " ").title()
+    elif entry:
+        ticker = str(entry.get("ticker") or "")
+        name = str(entry.get("name") or "")
+    else:
+        ticker, name = "", key.replace("-", " ")
+    profile = (cache.get("profiles") or {}).get(key) or {}
+    company_name = str(profile.get("name") or name or ticker or key)
+    wikipedia, announcements = await asyncio.gather(
+        alt.fetch_wikipedia_summary(company_name.replace("Limited", "").strip()),
+        alt.fetch_nse_announcements(ticker, limit=6) if ticker else _empty_list(),
+    )
+    return {
+        "slug": key,
+        "ticker": ticker,
+        "wikipedia": wikipedia,
+        "announcements": announcements,
+        "sources": [alt.WIKIPEDIA_SOURCE, alt.NSE_SOURCE],
+    }
+
+
+async def _empty_list() -> list[Any]:
+    return []
 
 
 @router.get("/compare")

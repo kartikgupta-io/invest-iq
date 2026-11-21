@@ -18,7 +18,7 @@ import { ErrorState } from "@/components/ui/error-state";
 import { DataTable, type DataTableColumn } from "@/components/ui/data-table";
 import { useToast } from "@/components/ui/toast";
 import { API_BASE, syncLiveData } from "@/lib/swr";
-import { usePeers } from "@/lib/api";
+import { useCompanyExtras, usePeers } from "@/lib/api";
 import {
   cn,
   formatLargeNumber,
@@ -123,6 +123,7 @@ export function CompanyDetailView({ slug, initial }: { slug: string; initial: Co
     fallbackData: initial.liveStatus ?? undefined,
   });
   const { data: peers = [] } = usePeers(slug);
+  const { data: extras } = useCompanyExtras(slug);
 
   const isValidating = company.isValidating || freshness.isValidating || liveStatus.isValidating;
   const error = company.error ?? freshness.error ?? liveStatus.error;
@@ -346,6 +347,75 @@ export function CompanyDetailView({ slug, initial }: { slug: string; initial: Co
               initialSort={{ key: "marketCap", dir: "desc" }}
               emptyMessage="No comparable company records are available."
             />
+          </CardContent>
+        </Card>
+      </section>
+
+      <section aria-labelledby="company-intel-heading" className="grid gap-6 lg:grid-cols-2">
+        <Card className="h-full">
+          <CardHeader>
+            <CardTitle id="company-intel-heading">Company background</CardTitle>
+            <CardDescription>General reference from Wikipedia · not market data</CardDescription>
+          </CardHeader>
+          <CardContent className="space-y-3">
+            {extras?.wikipedia?.imageUrl ? (
+              <div
+                className="h-32 w-full rounded-lg bg-cover bg-center"
+                style={{ backgroundImage: `url("${extras.wikipedia.imageUrl}")` }}
+                role="img"
+                aria-label={`${extras.wikipedia.title} image`}
+              />
+            ) : null}
+            <p className="text-sm leading-relaxed text-muted-foreground">
+              {extras?.wikipedia?.extract ?? "No background is available from this source."}
+            </p>
+            {extras?.wikipedia?.url ? (
+              <a
+                href={extras.wikipedia.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 text-xs text-primary hover:underline"
+              >
+                <ExternalLink className="h-3.5 w-3.5" /> Read the full article
+              </a>
+            ) : null}
+          </CardContent>
+        </Card>
+
+        <Card className="h-full">
+          <CardHeader>
+            <CardTitle>Official exchange filings</CardTitle>
+            <CardDescription>Corporate announcements from NSE · links open the original filing</CardDescription>
+          </CardHeader>
+          <CardContent>
+            {extras?.announcements?.length ? (
+              <ul className="divide-y divide-border/60">
+                {extras.announcements.slice(0, 6).map((item) => (
+                  <li key={item.id} className="flex items-start justify-between gap-3 py-2.5">
+                    <div className="min-w-0">
+                      <a
+                        href={item.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="block truncate text-sm text-foreground hover:text-primary hover:underline"
+                      >
+                        {item.title}
+                      </a>
+                      <p className="text-[11px] text-muted-foreground">
+                        {[item.publisher, item.publishedAt ? formatTimestamp(item.publishedAt) : null]
+                          .filter(Boolean)
+                          .join(" · ")}
+                      </p>
+                    </div>
+                    <ExternalLink className="mt-1 h-3.5 w-3.5 shrink-0 text-muted-foreground" />
+                  </li>
+                ))}
+              </ul>
+            ) : (
+              <p className="py-6 text-center text-sm text-muted-foreground">
+                No announcements were returned by the exchange.
+              </p>
+            )}
           </CardContent>
         </Card>
       </section>

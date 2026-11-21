@@ -236,11 +236,11 @@ export function useSemanticSearch(query: string, companySlug?: string) {
   return { data: hits, isLoading: result.isLoading, isError: Boolean(result.error) };
 }
 
-/** Real, clickable Yahoo Finance news for a question. Never fabricated. */
-export function useNews(query: string) {
+/** Real, clickable news from Yahoo, Google News and NSE filings. */
+export function useNews(query: string, ticker?: string) {
   const enabled = query.trim().length > 2;
   const result = useSWR<{ items: RawNewsItem[] }>(
-    enabled ? withParams("/live/news", { q: query, limit: 5 }) : null,
+    enabled ? withParams("/live/news", { q: query, limit: 5, ...(ticker ? { ticker } : {}) }) : null,
     fetcher,
   );
   const items: SearchHit[] = (result.data?.items ?? []).map((item) => ({
@@ -255,6 +255,37 @@ export function useNews(query: string) {
     kind: "news",
   }));
   return { data: items, isLoading: result.isLoading, isError: Boolean(result.error) };
+}
+
+export type CompanyExtraItem = {
+  id: string;
+  title: string;
+  publisher?: string | null;
+  url: string;
+  publishedAt?: string | null;
+  source?: string;
+};
+
+export type CompanyExtras = {
+  slug: string;
+  ticker: string;
+  wikipedia: {
+    title: string;
+    description: string;
+    extract: string;
+    url: string;
+    imageUrl?: string | null;
+    source: string;
+  } | null;
+  announcements: CompanyExtraItem[];
+  sources: string[];
+};
+
+/** Non-Yahoo company intelligence: Wikipedia background and NSE filings. */
+export function useCompanyExtras(slug: string) {
+  return withIsError(
+    useSWR<CompanyExtras>(slug ? url(`/live/company-extras/${encodeURIComponent(slug)}`) : null, fetcher),
+  );
 }
 
 /** Genuine local content — documentation, not market data. */
