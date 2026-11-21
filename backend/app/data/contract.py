@@ -169,6 +169,7 @@ class Citation(BaseModel):
     page: int
     snippet: str
     score: float
+    url: str | None = None
 
 
 class RiskPoint(BaseModel):

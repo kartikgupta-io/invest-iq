@@ -56,8 +56,9 @@ export function clamp(value: number, min: number, max: number) {
 }
 
 /**
- * Deterministic timestamp formatter (fixed locale + UTC) so server-rendered
- * HTML and client hydration always agree.
+ * Deterministic timestamp formatter in Indian Standard Time. A fixed
+ * timeZone (not the viewer's local zone) keeps server-rendered HTML and
+ * client hydration identical while matching the market this app covers.
  */
 export function formatTimestamp(value: string | null | undefined): string {
   if (!value) return "—";
@@ -70,9 +71,9 @@ export function formatTimestamp(value: string | null | undefined): string {
     hour: "2-digit",
     minute: "2-digit",
     hour12: false,
-    timeZone: "UTC",
+    timeZone: "Asia/Kolkata",
   }).format(date);
-  return `${formatted} UTC`;
+  return `${formatted} IST`;
 }
 
 /** Human relative age for an ISO timestamp (e.g. "12m ago", "3h ago"). */

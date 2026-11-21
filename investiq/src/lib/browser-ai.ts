@@ -96,20 +96,24 @@ export type GroundedCitation = {
   section: string;
   page: number;
   text: string;
+  /** Real source URL — filings/publisher links or Yahoo Finance news. */
+  url?: string;
+  source?: string;
 };
 
 function buildPrompt(question: string, citations: GroundedCitation[]): string {
   const evidence = citations
-    .map(
-      (item, index) =>
-        `[${index + 1}] ${item.documentTitle} — ${item.section} (page ${item.page})\n${item.text}`,
-    )
+    .map((item, index) => {
+      const location = item.page > 0 ? `page ${item.page}` : (item.source || "external source");
+      const link = item.url ? `\n    Source: ${item.url}` : "";
+      return `[${index + 1}] ${item.documentTitle} — ${item.section} (${location})\n${item.text}${link}`;
+    })
     .join("\n\n");
 
   return [
     "You are a careful equity research assistant.",
     "Answer ONLY from the numbered evidence below. Cite every factual claim with its [n] marker.",
-    'If the evidence is insufficient, say exactly: "The retrieved filings do not contain enough information."',
+    'If the evidence is insufficient, say exactly: "The retrieved sources do not contain enough information."',
     "Never use outside knowledge, never invent numbers, and never state a value absent from the evidence.",
     "",
     `Question: ${question}`,

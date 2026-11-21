@@ -10,7 +10,7 @@ from __future__ import annotations
 import html
 import io
 import re
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 
 from app.ai.base import AIContext, AIReply, AIRequest
 from app.ai.llm import get_llm
@@ -270,7 +270,7 @@ async def interactive_report(
 
     citations_html = "\n".join(_citation_html(c) for c in reply.citations) or "<p>No citations attached.</p>"
     answer_html = _md_to_html(reply.answer)
-    generated = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+    generated = datetime.now(timezone(timedelta(hours=5, minutes=30))).strftime("%Y-%m-%d %H:%M IST")
 
     return f"""<!doctype html>
 <html lang="en">

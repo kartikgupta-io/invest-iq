@@ -120,24 +120,38 @@ class OfflineDataStore(DataStore):
             return None
         short = ticker.removesuffix(".NS").removesuffix(".BO")
         as_of = str(entry.get("resolvedAt") or self._live_cache.get("savedAt") or "")
+        # Use any real Screener profile we fetched for this discovered company.
+        profile = None
+        cache = self._live_cache if isinstance(self._live_cache, dict) else {}
+        cached_profiles = cache.get("profiles") if isinstance(cache.get("profiles"), dict) else {}
+        if isinstance(cached_profiles.get(slug), dict):
+            profile = cached_profiles[slug]
         # Key the quote by both the full and short ticker: reconcile looks up
         # the short symbol derived from the slug.
+        # reconcile looks up the quote by the uppercase slug and by the raw
+        # ticker; discovered tickers can contain punctuation (e.g. M&M.NS).
         synthetic = {
             "savedAt": as_of,
-            "quotes": {ticker: quote, short: quote},
-            "profiles": {},
+            "quotes": {ticker: quote, short: quote, slug.upper(): quote},
+            "profiles": {slug: profile} if profile else {},
         }
         company = build_company(slug, synthetic)
         if company is None:
             return None
         company.profile.name = str(entry.get("name") or company.profile.name)
+        company.profile.ticker = ticker
         company.profile.exchange = str(entry.get("exchange") or "")
         company.profile.currency = str(entry.get("currency") or company.profile.currency)
+        sources = [live_sources.QUOTE_SOURCE]
+        unavailable = ["fundamentals", "financials", "documents", "ratios"]
+        if profile:
+            sources.append(live_sources.COMPANY_SOURCE)
+            unavailable = []
         company.provenance = {
             "mode": "live",
             "asOf": as_of,
-            "sources": [live_sources.QUOTE_SOURCE],
-            "unavailable": ["fundamentals", "financials", "documents", "ratios"],
+            "sources": sources,
+            "unavailable": unavailable,
         }
         return company
 
@@ -158,8 +172,18 @@ class OfflineDataStore(DataStore):
 
     def sync_discovered(self) -> int:
         """Public hook for the discovery endpoint; returns the discovered count."""
+        return self.sync_live()
+
+    def sync_live(self) -> int:
+        """Reload the live cache and rebuild all companies from real data.
+
+        Unlike ``sync_discovered`` this also reconciles the universe and any
+        newly fetched discovered profiles, so fundamentals appear as soon as a
+        source responds.
+        """
         self._live_cache = live_sources.get_cached()
         before = len(self._companies)
+        self._reconcile_live()
         self._sync_discovered()
         return len(self._companies) - before
 
@@ -175,9 +199,14 @@ class OfflineDataStore(DataStore):
             for ticker in quotes
             if str(ticker).upper() in ticker_to_slug
         }
+        discovered = cache.get("discovered") if isinstance(cache.get("discovered"), dict) else {}
         for slug in slugs:
             built = build_company(slug, cache, self._companies.get(slug))
             if built is not None:
+                entry = discovered.get(slug)
+                if isinstance(entry, dict) and entry.get("ticker"):
+                    # Keep the real exchange ticker (e.g. M&M.NS), not a slug guess.
+                    built.profile.ticker = str(entry["ticker"]).upper()
                 self._companies[slug] = built
         for company in self._companies.values():
             if company.provenance is None:
@@ -403,6 +432,7 @@ class OfflineDataStore(DataStore):
             page=chunk.page,
             snippet=chunk.text[:160],
             score=score,
+            url=doc.sourceUrl if doc else None,
         )
 
     async def get_documents(self, slug: str) -> list[FinancialDocument]:

@@ -3,6 +3,7 @@
 from fastapi import APIRouter, Depends, HTTPException, Query
 
 from app.api.deps import get_store
+from app.data import live_sources as live
 from app.data.contract import (
     AnnualFinancials,
     Company,
@@ -13,6 +14,24 @@ from app.data.contract import (
 )
 
 router = APIRouter()
+
+
+async def _company_or_resolve(slug: str, store: DataStore) -> Company | None:
+    """Serve a company from the store, resolving unknown slugs from real sources.
+
+    Search-discovered companies are not in the built-in universe. If someone
+    deep-links to their page (or the process restarted), fetch a real quote and
+    real fundamentals on demand so every company tab works, never a 404.
+    """
+    company = await store.get_company(slug)
+    if company is not None:
+        return company
+    if await live.ensure_company(slug) is None:
+        return None
+    sync = getattr(store, "sync_live", None) or getattr(store, "sync_discovered", None)
+    if callable(sync):
+        sync()
+    return await store.get_company(slug)
 
 
 @router.get("", response_model=list[CompanySummary])
@@ -27,7 +46,7 @@ async def list_companies(
 
 @router.get("/{slug}", response_model=Company)
 async def get_company(slug: str, store: DataStore = Depends(get_store)) -> Company:
-    company = await store.get_company(slug)
+    company = await _company_or_resolve(slug, store)
     if company is None:
         raise HTTPException(status_code=404, detail="Company not found")
     return company
@@ -35,7 +54,7 @@ async def get_company(slug: str, store: DataStore = Depends(get_store)) -> Compa
 
 @router.get("/{slug}/financials", response_model=list[AnnualFinancials])
 async def company_financials(slug: str, store: DataStore = Depends(get_store)) -> list[AnnualFinancials]:
-    company = await store.get_company(slug)
+    company = await _company_or_resolve(slug, store)
     if company is None:
         raise HTTPException(status_code=404, detail="Company not found")
     return company.annual

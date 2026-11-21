@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { Cpu, Download, Loader2, RotateCcw, ShieldCheck, Sparkles } from "lucide-react";
+import { Cpu, Download, ExternalLink, Loader2, RotateCcw, ShieldCheck, Sparkles } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import {
@@ -16,6 +16,69 @@ import {
 import { cn } from "@/lib/utils";
 
 type Status = "idle" | "loading" | "ready" | "error";
+
+/** Turn the model's [n] markers into links to the exact retrieved source. */
+function AnswerText({ text, citations }: { text: string; citations: GroundedCitation[] }) {
+  return (
+    <p className="whitespace-pre-wrap text-sm leading-relaxed">
+      {text.split(/(\[\d+\])/g).map((part, index) => {
+        const match = /^\[(\d+)\]$/.exec(part);
+        const citation = match ? citations[Number(match[1]) - 1] : undefined;
+        if (!citation?.url) return <span key={index}>{part}</span>;
+        return (
+          <a
+            key={index}
+            href={citation.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            title={`${citation.documentTitle} — ${citation.section}`}
+            className="font-semibold text-primary underline underline-offset-2 hover:text-primary/80"
+          >
+            {part}
+          </a>
+        );
+      })}
+    </p>
+  );
+}
+
+function SourceList({ citations }: { citations: GroundedCitation[] }) {
+  if (!citations.length) return null;
+  return (
+    <div className="rounded-xl border border-border/60 bg-background/40 p-3">
+      <p className="mb-2 text-[10px] font-semibold uppercase tracking-wider text-muted-foreground">
+        Sources · open the original filing or article
+      </p>
+      <ol className="space-y-1.5">
+        {citations.map((citation, index) => (
+          <li key={`${citation.url ?? citation.section}-${index}`} className="flex items-start gap-2 text-xs">
+            <span className="mt-0.5 flex h-4 w-4 shrink-0 items-center justify-center rounded bg-primary/10 text-[10px] font-semibold text-primary">
+              {index + 1}
+            </span>
+            {citation.url ? (
+              <a
+                href={citation.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="min-w-0 flex-1 truncate text-foreground hover:text-primary hover:underline"
+              >
+                {citation.documentTitle} — {citation.section}
+              </a>
+            ) : (
+              <span className="min-w-0 flex-1 truncate text-muted-foreground">
+                {citation.documentTitle} — {citation.section}
+              </span>
+            )}
+            {citation.source ? (
+              <span className="shrink-0 text-[10px] text-muted-foreground">{citation.source}</span>
+            ) : null}
+            {citation.url ? <ExternalLink className="h-3 w-3 shrink-0 text-muted-foreground" /> : null}
+          </li>
+        ))}
+      </ol>
+    </div>
+  );
+}
 
 function describeProgress(event: ModelProgress): string {
   if (event.status === "progress" && event.file) {
@@ -186,9 +249,11 @@ export function BrowserAiPanel({
             <p className="mb-1.5 text-[10px] font-semibold uppercase tracking-wider text-muted-foreground">
               Generated answer · verify against the cited excerpts
             </p>
-            <p className="whitespace-pre-wrap text-sm leading-relaxed">{answer}</p>
+            <AnswerText text={answer} citations={citations} />
           </div>
         ) : null}
+
+        <SourceList citations={citations} />
       </div>
     </div>
   );

@@ -49,6 +49,8 @@ type RawSearchHit = {
   page: number;
   snippet: string;
   score: number;
+  url?: string | null;
+  source?: string;
 };
 type SearchHit = {
   id: string;
@@ -57,6 +59,18 @@ type SearchHit = {
   section: string;
   text: string;
   score: number;
+  url?: string;
+  source?: string;
+  kind?: "filing" | "news";
+};
+
+type RawNewsItem = {
+  id: string;
+  title: string;
+  publisher?: string | null;
+  url: string;
+  publishedAt?: string | null;
+  source?: string;
 };
 
 /** SWR exposes `error`; several views also read the convenience `isError`. */
@@ -180,16 +194,15 @@ export function useCompanySearch(query: string) {
   );
 
   const data = useMemo(() => {
-    const merged = [...(local.data ?? [])];
-    const seen = new Set(merged.map((c) => `${c.ticker}|${c.slug}`.toLowerCase()));
-    for (const item of external.data?.companies ?? []) {
-      const key = `${item.ticker}|${item.slug}`.toLowerCase();
-      if (!seen.has(key)) {
-        seen.add(key);
-        merged.push(item);
-      }
+    // One row per slug: NSE/BSE variants of the same company share a detail
+    // route, and duplicate slugs produce duplicate React keys in the palette.
+    const bySlug = new Map<string, CompanySummary>();
+    for (const item of [...(local.data ?? []), ...(external.data?.companies ?? [])]) {
+      const key = item.slug.toLowerCase();
+      const previous = bySlug.get(key);
+      if (!previous || ((item.price ?? 0) > (previous.price ?? 0))) bySlug.set(key, item);
     }
-    return merged;
+    return [...bySlug.values()];
   }, [local.data, external.data]);
 
   return {
@@ -203,8 +216,10 @@ export function useCompanySearch(query: string) {
 
 export function useSemanticSearch(query: string, companySlug?: string) {
   const enabled = query.trim().length > 2;
+  // The first SWR key element is the URL used by postFetcher. It must be a
+  // real absolute endpoint — a bare label produced a relative POST and no data.
   const result = useSWR<{ hits: RawSearchHit[] }>(
-    enabled ? ["semantic", query, companySlug ?? null] : null,
+    enabled ? [`${API_BASE}/search`, query, companySlug ?? null] : null,
     (key) => postFetcher(key, { query, limit: 8, company: companySlug ?? null }),
   );
   const hits: SearchHit[] = (result.data?.hits ?? []).map((hit) => ({
@@ -214,8 +229,32 @@ export function useSemanticSearch(query: string, companySlug?: string) {
     section: hit.title,
     text: hit.snippet,
     score: hit.score,
+    url: hit.url ?? undefined,
+    source: hit.source,
+    kind: "filing",
   }));
   return { data: hits, isLoading: result.isLoading, isError: Boolean(result.error) };
+}
+
+/** Real, clickable Yahoo Finance news for a question. Never fabricated. */
+export function useNews(query: string) {
+  const enabled = query.trim().length > 2;
+  const result = useSWR<{ items: RawNewsItem[] }>(
+    enabled ? withParams("/live/news", { q: query, limit: 5 }) : null,
+    fetcher,
+  );
+  const items: SearchHit[] = (result.data?.items ?? []).map((item) => ({
+    id: item.id,
+    documentId: item.id,
+    page: 0,
+    section: item.title,
+    text: item.publisher ? `${item.publisher} · ${item.title}` : item.title,
+    score: 0,
+    url: item.url,
+    source: item.source ?? item.publisher ?? "Yahoo Finance News",
+    kind: "news",
+  }));
+  return { data: items, isLoading: result.isLoading, isError: Boolean(result.error) };
 }
 
 /** Genuine local content — documentation, not market data. */

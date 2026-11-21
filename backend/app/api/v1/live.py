@@ -147,7 +147,7 @@ async def discover(
             item if "marketCap" in item or "price" in item else _discovered_summary(item)
             for item in raw
         ]
-        sync = getattr(store, "sync_discovered", None)
+        sync = getattr(store, "sync_live", None) or getattr(store, "sync_discovered", None)
         if callable(sync):
             sync()
     return result
@@ -226,16 +226,37 @@ async def search(body: LiveSearchQuery) -> dict[str, Any]:
             if wanted in str(item.get("company", "")).lower() or wanted in str(item.get("slug", "")).lower()
         ]
     hits = live.search_evidence(evidence, body.query, limit=body.limit)
-    return _with_fallback(
-        {
-            "query": body.query,
-            "hits": hits,
-            "asOf": cache.get("savedAt"),
-            "source": COMPANY_SOURCE,
-        },
-        stale,
-        error,
-    )
+
+    # Real, clickable news headlines from Yahoo Finance. Best-effort: a query
+    # with no coverage simply contributes no news citations, never invented ones.
+    news: list[dict[str, Any]] = []
+    news_error: str | None = None
+    try:
+        news = await live.fetch_news(body.query, limit=5)
+    except Exception as exc:  # noqa: BLE001 - news is optional enrichment
+        news_error = str(exc)
+
+    body_response = {
+        "query": body.query,
+        "hits": hits,
+        "news": news,
+        "newsSource": "Yahoo Finance News",
+        "asOf": cache.get("savedAt"),
+        "source": COMPANY_SOURCE,
+    }
+    if news_error:
+        body_response["newsError"] = news_error
+    return _with_fallback(body_response, stale, error)
+
+
+@router.get("/news")
+async def news(q: str = Query(..., min_length=2, max_length=100), limit: int = Query(6, ge=1, le=10)) -> dict[str, Any]:
+    """Real, clickable news citations for a query (Yahoo Finance)."""
+    try:
+        items = await live.fetch_news(q, limit)
+        return {"query": q, "items": items, "source": "Yahoo Finance News"}
+    except Exception as exc:  # noqa: BLE001 - normalized upstream error
+        raise HTTPException(status_code=502, detail=f"Live news unavailable: {exc}") from exc
 
 
 @router.get("/compare")

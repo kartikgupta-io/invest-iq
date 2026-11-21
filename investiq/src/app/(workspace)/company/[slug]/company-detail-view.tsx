@@ -18,6 +18,7 @@ import { ErrorState } from "@/components/ui/error-state";
 import { DataTable, type DataTableColumn } from "@/components/ui/data-table";
 import { useToast } from "@/components/ui/toast";
 import { API_BASE, syncLiveData } from "@/lib/swr";
+import { usePeers } from "@/lib/api";
 import {
   cn,
   formatLargeNumber,
@@ -32,6 +33,7 @@ import type {
   CompanyDetailInitial,
   DataFreshness,
   LiveStatus,
+  PeerCompany,
 } from "@/lib/types";
 import { CompanyDetailSkeleton } from "./company-detail-skeleton";
 
@@ -51,6 +53,65 @@ const annualColumns: DataTableColumn<AnnualFinancials>[] = [
   { key: "freeCashFlow", label: "Free CF (₹ Cr)", align: "right", value: (a) => a.freeCashFlow, render: (a) => <span className="tabular-nums">{formatOrDash(a.freeCashFlow, formatLargeNumber)}</span> },
 ];
 
+type PeerRow = PeerCompany & { current?: boolean };
+
+const peerColumns: DataTableColumn<PeerRow>[] = [
+  {
+    key: "name",
+    label: "Company",
+    value: (p) => p.name,
+    render: (p) => (
+      <span className="font-medium">
+        {p.name}
+        {p.current ? <Badge variant="outline" className="ml-2">This company</Badge> : null}
+      </span>
+    ),
+  },
+  { key: "ticker", label: "Ticker", value: (p) => p.ticker },
+  {
+    key: "marketCap",
+    label: "Market cap (₹ Cr)",
+    align: "right",
+    value: (p) => p.marketCap,
+    render: (p) => <span className="tabular-nums">{formatOrDash(p.marketCap, formatLargeNumber)}</span>,
+  },
+  {
+    key: "peRatio",
+    label: "P/E",
+    align: "right",
+    value: (p) => p.peRatio,
+    render: (p) => <span className="tabular-nums">{formatOrDash(p.peRatio, formatNumber)}</span>,
+  },
+  {
+    key: "roe",
+    label: "ROE",
+    align: "right",
+    value: (p) => p.roe,
+    render: (p) => <span className="tabular-nums">{formatOrDash(p.roe, formatPercent)}</span>,
+  },
+  {
+    key: "margin",
+    label: "Net margin",
+    align: "right",
+    value: (p) => p.margin,
+    render: (p) => <span className="tabular-nums">{formatOrDash(p.margin, formatPercent)}</span>,
+  },
+  {
+    key: "revenueGrowth",
+    label: "Revenue growth",
+    align: "right",
+    value: (p) => p.revenueGrowth,
+    render: (p) => <span className="tabular-nums">{formatOrDash(p.revenueGrowth, formatPercent)}</span>,
+  },
+  {
+    key: "returnYtd",
+    label: "Day change",
+    align: "right",
+    value: (p) => p.returnYtd,
+    render: (p) => <span className="tabular-nums">{formatOrDash(p.returnYtd, formatPercent)}</span>,
+  },
+];
+
 export function CompanyDetailView({ slug, initial }: { slug: string; initial: CompanyDetailInitial }) {
   const company = useSWR<Company>(`${API_BASE}/companies/${encodeURIComponent(slug)}`, {
     fallbackData: initial.company ?? undefined,
@@ -61,6 +122,7 @@ export function CompanyDetailView({ slug, initial }: { slug: string; initial: Co
   const liveStatus = useSWR<LiveStatus>(`${API_BASE}/live/status`, {
     fallbackData: initial.liveStatus ?? undefined,
   });
+  const { data: peers = [] } = usePeers(slug);
 
   const isValidating = company.isValidating || freshness.isValidating || liveStatus.isValidating;
   const error = company.error ?? freshness.error ?? liveStatus.error;
@@ -117,6 +179,21 @@ export function CompanyDetailView({ slug, initial }: { slug: string; initial: Co
         : null;
   const citations = documents.filter((doc) => typeof doc.sourceUrl === "string" && doc.sourceUrl.length > 0);
   const currency = profile?.currency || "INR";
+  const peerRows: PeerRow[] = [
+    {
+      slug: profile?.slug ?? slug,
+      ticker: profile?.ticker ?? slug.toUpperCase(),
+      name: profile?.name ?? slug,
+      marketCap: quote?.marketCap ?? null,
+      peRatio: quote?.peRatio ?? latest?.peRatio ?? null,
+      roe: latest?.roe ?? null,
+      margin: latest?.netMargin ?? null,
+      revenueGrowth: latest?.revenueGrowth ?? null,
+      returnYtd: quote?.changePct ?? null,
+      current: true,
+    },
+    ...peers.filter((peer) => peer.slug !== (profile?.slug ?? slug)),
+  ];
 
   return (
     <div className="space-y-6">
@@ -222,6 +299,55 @@ export function CompanyDetailView({ slug, initial }: { slug: string; initial: Co
           <MetricTile label="Revenue growth" value={formatOrDash(latest?.revenueGrowth, (n) => formatPercent(n))} />
           <MetricTile label="Free cash flow" value={formatOrDash(latest?.freeCashFlow, (n) => formatLargeNumber(n))} />
         </div>
+      </section>
+
+      <section aria-labelledby="ratios-heading" className="space-y-3">
+        <header>
+          <h2 id="ratios-heading" className="text-base font-semibold">Ratios &amp; returns</h2>
+          <p className="text-xs text-muted-foreground">
+            Latest reported year ({latest?.year ?? "—"}) from the company record. “—” means no sourced value.
+          </p>
+        </header>
+        <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 xl:grid-cols-6">
+          <MetricTile label="P/E" value={formatOrDash(latest?.peRatio ?? quote?.peRatio, formatNumber)} />
+          <MetricTile label="Price / book" value={formatOrDash(latest?.priceToBook, formatNumber)} />
+          <MetricTile label="EV / EBITDA" value={formatOrDash(latest?.evToEbitda, formatNumber)} />
+          <MetricTile label="Price / sales" value={formatOrDash(latest?.priceToSales, formatNumber)} />
+          <MetricTile label="Net margin" value={formatOrDash(latest?.netMargin, formatPercent)} />
+          <MetricTile label="Operating margin" value={formatOrDash(latest?.operatingMargin, formatPercent)} />
+          <MetricTile label="EBITDA margin" value={formatOrDash(latest?.ebitdaMargin, formatPercent)} />
+          <MetricTile label="ROE" value={formatOrDash(latest?.roe, formatPercent)} />
+          <MetricTile label="ROCE" value={formatOrDash(latest?.roce, formatPercent)} />
+          <MetricTile label="Return on assets" value={formatOrDash(latest?.returnOnAssets, formatPercent)} />
+          <MetricTile label="Debt / equity" value={formatOrDash(latest?.debtToEquity, formatNumber)} />
+          <MetricTile label="Current ratio" value={formatOrDash(latest?.currentRatio, formatNumber)} />
+          <MetricTile label="Interest cover" value={formatOrDash(latest?.interestCover, formatNumber)} />
+          <MetricTile label="Book value" value={formatOrDash(latest?.bookValue, formatNumber)} />
+          <MetricTile label="Dividend / share" value={formatOrDash(latest?.dividendPerShare, formatNumber)} />
+          <MetricTile label="Shares outstanding" value={formatOrDash(latest?.sharesOutstanding, formatLargeNumber)} />
+        </div>
+      </section>
+
+      <section aria-labelledby="competition-heading">
+        <Card>
+          <CardHeader>
+            <CardTitle id="competition-heading">Competition &amp; comparables</CardTitle>
+            <CardDescription>
+              Reported metrics for this company and other listed companies with a classification available from the
+              same sources. Unavailable fields stay blank rather than estimated.
+            </CardDescription>
+          </CardHeader>
+          <CardContent className="overflow-x-auto">
+            <DataTable
+              rows={peerRows}
+              columns={peerColumns}
+              rowKey={(p) => `${p.slug}-${p.ticker}`}
+              filename={`${slug}-comparables.csv`}
+              initialSort={{ key: "marketCap", dir: "desc" }}
+              emptyMessage="No comparable company records are available."
+            />
+          </CardContent>
+        </Card>
       </section>
 
       <section aria-labelledby="annual-heading">

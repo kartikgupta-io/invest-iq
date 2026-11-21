@@ -539,24 +539,72 @@ async def fetch_quote(ticker: str) -> dict[str, Any]:
         raise LiveDataError(f"Yahoo Finance quote fetch failed for {symbol}: {exc}") from exc
 
 
-async def fetch_profile(slug: str) -> dict[str, Any]:
-    """Fetch and parse a live Screener.in company page. Raises ``LiveDataError``."""
+def discovered_entry_for(slug: str) -> dict[str, Any] | None:
+    """Return the cached discovery entry for a slug, if one exists."""
     key = str(slug).strip().lower()
-    if key not in UNIVERSE:
-        raise LiveDataError(f"Unknown company slug: {slug}")
-    symbol = UNIVERSE[key][1]
-    url = SCREENER_URL.format(symbol=symbol)
+    entry = (get_cached().get("discovered") or {}).get(key)
+    return entry if isinstance(entry, dict) else None
+
+
+def screener_symbol_candidates(slug: str) -> list[str]:
+    """Possible Screener symbols for a slug, best guess first.
+
+    A serverless instance may not share the discovery cache with the request
+    that first found the company, so resolution must also work from the slug
+    alone. Slugs replace punctuation with dashes (``M&M.NS`` -> ``m-m``); we try
+    the punctuation-preserving form before the flattened one.
+    """
+    key = str(slug).strip().lower()
+    candidates: list[str] = []
+    if key in UNIVERSE:
+        candidates.append(UNIVERSE[key][1])
+    entry = discovered_entry_for(key)
+    if isinstance(entry, dict):
+        ticker = str(entry.get("ticker") or "").upper()
+        symbol = ticker.removesuffix(".NS").removesuffix(".BO").strip()
+        if symbol:
+            candidates.append(symbol)
+    upper = key.upper()
+    candidates.extend([
+        upper.replace("-", "&"),
+        upper,
+        upper.replace("-", ""),
+        upper.replace("-", " "),
+    ])
+    return list(dict.fromkeys(candidate for candidate in candidates if candidate))
+
+
+def screener_symbol_for(slug: str) -> str:
+    """Best single Screener symbol guess (used for citation URLs)."""
+    candidates = screener_symbol_candidates(slug)
+    return candidates[0] if candidates else str(slug).upper()
+
+
+async def fetch_profile(slug: str, symbol_override: str | None = None) -> dict[str, Any]:
+    """Fetch and parse a live Screener.in company page. Raises ``LiveDataError``.
+
+    Works for both built-in and externally discovered companies: the symbol is
+    resolved from the universe, the discovery cache, or an explicit override.
+    """
+    key = str(slug).strip().lower()
+    symbols = [symbol_override] if symbol_override else screener_symbol_candidates(key)
+    errors: list[str] = []
     try:
         async with httpx.AsyncClient(timeout=HTTP_TIMEOUT, headers={"User-Agent": USER_AGENT}) as client:
-            response = await _get_with_retry(client, url)
-            profile = parse_profile(response.text, key)
-    except LiveDataError:
-        raise
-    except Exception as exc:  # noqa: BLE001 - normalize all transport errors
+            for symbol in symbols:
+                url = SCREENER_URL.format(symbol=quote(symbol, safe=""))
+                try:
+                    response = await client.get(url)
+                    response.raise_for_status()
+                    profile = parse_profile(response.text, key)
+                    if profile["topRatios"]:
+                        return profile
+                    errors.append(f"{symbol}: no ratios")
+                except Exception as exc:  # noqa: BLE001 - try the next candidate
+                    errors.append(f"{symbol}: {exc}")
+    except Exception as exc:  # noqa: BLE001 - normalize transport errors
         raise LiveDataError(f"Screener.in profile fetch failed for {key}: {exc}") from exc
-    if not profile["topRatios"]:
-        raise LiveDataError(f"Screener.in returned no company ratios for {key}")
-    return profile
+    raise LiveDataError(f"Screener.in returned no company data for {key}: {'; '.join(errors[:4])}")
 
 
 async def _fetch_index(client: httpx.AsyncClient, symbol: str, name: str) -> dict[str, Any]:
@@ -673,7 +721,17 @@ def parse_search_results(payload: dict[str, Any]) -> list[dict[str, Any]]:
             }
         )
     results.sort(key=lambda item: (item["indian"], item["score"] or 0.0), reverse=True)
-    return results
+    # Different exchange suffixes can collapse to the same URL slug (e.g.
+    # JPI.NS and JPI.BO -> "jpi"). Emit one candidate per slug, preferring the
+    # highest-ranked Indian listing so React keys stay unique downstream.
+    unique: list[dict[str, Any]] = []
+    seen_slugs: set[str] = set()
+    for item in results:
+        if item["slug"] in seen_slugs:
+            continue
+        seen_slugs.add(item["slug"])
+        unique.append(item)
+    return unique
 
 
 async def fetch_search(query: str, limit: int = 8) -> list[dict[str, Any]]:
@@ -692,6 +750,86 @@ async def fetch_search(query: str, limit: int = 8) -> list[dict[str, Any]]:
         raise
     except Exception as exc:  # noqa: BLE001 - normalize transport errors
         raise LiveDataError(f"Yahoo Finance symbol search failed for {term!r}: {exc}") from exc
+
+
+def parse_news_results(payload: dict[str, Any], query: str = "", limit: int = 6) -> list[dict[str, Any]]:
+    """Parse Yahoo Finance news into real, clickable, query-relevant citations.
+
+    Missing fields stay ``None``; no headline or URL is ever fabricated. Stories
+    with no token overlap with the query are dropped so a generic market feed
+    never masquerades as an answer to the user's question.
+    """
+    rows = payload.get("news") if isinstance(payload, dict) else None
+    if not isinstance(rows, list):
+        return []
+    tokens = {token for token in _tokens(query) if len(token) > 2}
+    items: list[dict[str, Any]] = []
+    seen: set[str] = set()
+    for row in rows:
+        if not isinstance(row, dict):
+            continue
+        title = _clean_text(row.get("title"))
+        url = _clean_text(row.get("link"))
+        if not title or not url or url in seen:
+            continue
+        related = [str(t) for t in (row.get("relatedTickers") or []) if t]
+        if tokens:
+            haystack = f"{title} {' '.join(related)}".lower()
+            if not any(token in haystack for token in tokens):
+                continue
+        seen.add(url)
+        published = _iso_from_unix(row.get("providerPublishTime"))
+        items.append({
+            "id": f"news-{re.sub(r'[^a-z0-9]+', '-', title.lower()).strip('-')[:60]}",
+            "title": title[:200],
+            "publisher": _clean_text(row.get("publisher")),
+            "url": url,
+            "publishedAt": published,
+            "source": "Yahoo Finance News",
+            "relatedTickers": related,
+        })
+        if len(items) >= limit:
+            break
+    return items
+
+
+def _news_search_term(query: str) -> str:
+    """Reduce a natural-language question to a compact Yahoo news query."""
+    cleaned = str(query).strip()
+    # Proper nouns (company names) are the best search keys in a question, but
+    # a capitalised question word ("How", "What") must not become a search term.
+    question_words = {
+        "how", "what", "why", "when", "where", "which", "who", "whom", "whose",
+        "show", "tell", "give", "please", "list", "compare", "explain",
+        "did", "does", "do", "has", "have", "had", "is", "are", "was", "were",
+        "can", "could", "would", "should", "will", "shall",
+    }
+    proper = [
+        word for word in re.findall(r"\b[A-Z][A-Za-z0-9&.\-]{2,}\b", cleaned)
+        if word.lower() not in _STOPWORDS and word.lower() not in question_words
+    ]
+    if proper:
+        return " ".join(list(dict.fromkeys(proper))[:3])
+    words = [token for token in _tokens(cleaned) if len(token) > 3]
+    return " ".join(words[:3]) or cleaned
+
+
+async def fetch_news(query: str, limit: int = 6) -> list[dict[str, Any]]:
+    """Best-effort real news lookup from Yahoo Finance. Raises ``LiveDataError``."""
+    term = _news_search_term(query)
+    if not term:
+        return []
+    try:
+        async with httpx.AsyncClient(timeout=HTTP_TIMEOUT, headers={"User-Agent": USER_AGENT}) as client:
+            response = await _get_with_retry(
+                client,
+                f"{YAHOO_SEARCH_URL}?q={quote(term)}&quotesCount=0&newsCount={max(limit, 6)}",
+            )
+            return parse_news_results(response.json(), term, limit)
+    except LiveDataError:
+        raise
+    except Exception as exc:  # noqa: BLE001 - normalize transport errors
+        raise LiveDataError(f"Yahoo Finance news search failed for {term!r}: {exc}") from exc
 
 
 def all_quotes(cache: dict[str, Any]) -> dict[str, dict[str, Any]]:
@@ -778,23 +916,113 @@ async def resolve_company(query: str, limit: int = 8) -> dict[str, Any]:
     if not candidates:
         return {"companies": [], "resolved": False, "cached": False, "query": term}
 
-    # Fetch a real quote for the best Indian equity only — one small request.
+    # Fetch a real quote — and real fundamentals — for the best Indian equity
+    # only. Both are best-effort: candidates stay real even if a source fails.
     best = candidates[0]
     quote_data: dict[str, Any] | None = None
+    profile_data: dict[str, Any] | None = None
     try:
         quote_data = await fetch_quote(best["ticker"])
         best["quote"] = quote_data
     except LiveDataError:
         pass  # candidates are still real; their price simply stays unavailable
+    try:
+        profile_data = await fetch_profile(best["slug"])
+        best["profile"] = profile_data
+    except LiveDataError:
+        pass  # fundamentals stay null until the source responds
 
     _store_discovered(cache, candidates)
+    if quote_data or profile_data:
+        cache = get_cached()
+        quotes = dict(cache.get("quotes") or {})
+        profiles = dict(cache.get("profiles") or {})
+        if quote_data:
+            quotes[best["ticker"]] = quote_data
+        if profile_data:
+            profiles[best["slug"]] = profile_data
+        save_cached({**cache, "quotes": quotes, "profiles": profiles})
     return {
         "companies": candidates,
         "resolved": quote_data is not None,
+        "hasFundamentals": profile_data is not None,
         "cached": False,
         "query": term,
-        "source": QUOTE_SOURCE,
+        "source": COMPANY_SOURCE if profile_data else QUOTE_SOURCE,
     }
+
+
+async def ensure_company(slug: str) -> dict[str, Any] | None:
+    """Resolve full real data for a slug on demand (universe or discovered).
+
+    Called when a company-detail request arrives for a slug the store has not
+    materialised yet (e.g. a deep link to a discovered company, or a fresh
+    serverless instance whose in-memory store is empty). It finds the ticker
+    from the discovery cache — or from a fresh symbol search — fetches a real
+    quote and real Screener fundamentals, persists them, and returns the
+    updated cache. Nothing is invented when either source is unreachable.
+    """
+    key = str(slug).strip().lower()
+    if not key:
+        return None
+    if key in UNIVERSE:
+        ticker = UNIVERSE[key][0]
+    else:
+        entry = discovered_entry_for(key)
+        ticker = str(entry.get("ticker") or "").upper() if entry else ""
+        if not ticker:
+            # Deep link on a fresh serverless instance: reconstruct likely NSE
+            # symbols from the slug (m-m -> M&M.NS) and keep the first one that
+            # returns a real Yahoo quote. No match is invented.
+            upper = key.upper()
+            guesses = dict.fromkeys([
+                f"{upper.replace('-', '&')}.NS",
+                f"{upper.replace('-', '')}.NS",
+                f"{upper}.NS",
+                f"{upper.replace('-', ' ')}.NS",
+            ])
+            for guess in guesses:
+                try:
+                    await fetch_quote(guess)
+                    ticker = guess
+                    break
+                except LiveDataError:
+                    continue
+        if not ticker:
+            # Last resort: a fresh keyless symbol search from the slug text.
+            try:
+                candidates = await fetch_search(key.replace("-", " "), limit=5)
+            except LiveDataError:
+                candidates = []
+            if candidates:
+                ticker = candidates[0]["ticker"]
+
+    cache = get_cached()
+    quotes = dict(cache.get("quotes") or {})
+    profiles = dict(cache.get("profiles") or {})
+    fresh = is_fresh(cache.get("savedAt"))
+    changed = False
+
+    if ticker and (not fresh or ticker not in quotes):
+        try:
+            quotes[ticker] = await fetch_quote(ticker)
+            changed = True
+        except LiveDataError:
+            pass
+    if not fresh or key not in profiles:
+        try:
+            profiles[key] = await fetch_profile(key)
+            changed = True
+        except LiveDataError:
+            pass
+
+    if not quotes.get(ticker) and not profiles.get(key):
+        return None
+    updated = {**cache, "quotes": quotes, "profiles": profiles}
+    if changed:
+        save_cached(updated)
+        return get_cached()
+    return updated
 
 
 # --- Disk cache -----------------------------------------------------------
@@ -824,9 +1052,21 @@ def _empty_cache() -> dict[str, Any]:
 
 
 def _write_cache_path() -> Path:
-    """On serverless, writes go to a writable path (e.g. /tmp) via env var."""
+    """On serverless, writes go to a writable path (e.g. /tmp) via env var.
+
+    Git Bash on Windows rewrites ``/tmp/...`` into a Windows temp path when the
+    variable is set from the CLI. That path is read-only on a Linux function,
+    so detect it and use the canonical serverless temp directory instead.
+    """
     override = os.getenv("INVESTIQ_CACHE_PATH")
-    return Path(override) if override else CACHE_PATH
+    if override:
+        windows_style = re.match(r"^[A-Za-z]:[\\/]", override) is not None
+        if windows_style and os.name == "posix":
+            return Path("/tmp/investiq-live-cache.json")
+        return Path(override)
+    if os.name == "posix" and CACHE_PATH.parent.name == "fixtures" and not CACHE_PATH.parent.exists():
+        return Path("/tmp/investiq-live-cache.json")
+    return CACHE_PATH
 
 
 def _cache_candidates() -> list[Path]:
@@ -901,8 +1141,7 @@ async def refresh() -> dict[str, Any]:
 
 
 def screener_url_for(slug: str) -> str:
-    symbol = UNIVERSE.get(slug.lower(), (None, slug.upper()))[1]
-    return SCREENER_URL.format(symbol=symbol)
+    return SCREENER_URL.format(symbol=screener_symbol_for(slug))
 
 
 def _chunk(text: str, size: int = 600) -> list[str]:

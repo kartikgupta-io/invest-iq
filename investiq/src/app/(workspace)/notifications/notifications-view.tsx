@@ -32,7 +32,7 @@ const dateFormatter = new Intl.DateTimeFormat("en-IN", {
   day: "numeric",
   month: "short",
   year: "numeric",
-  timeZone: "UTC",
+  timeZone: "Asia/Kolkata",
 });
 
 function groupLabel(time: string): string {

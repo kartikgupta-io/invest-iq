@@ -65,7 +65,7 @@ export function CommandPalette() {
           )}
           {shown.map((c, i) => (
             <button
-              key={c.slug}
+              key={`${c.slug}-${c.ticker}`}
               onMouseEnter={() => setSelected(i)}
               onClick={() => { pushRecent(c.ticker); router.push(`/company/${c.slug}`); setCommandOpen(false); }}
               className={cn("flex w-full items-center gap-3 rounded-lg px-2 py-2 text-left text-sm", i === selected && "bg-accent")}

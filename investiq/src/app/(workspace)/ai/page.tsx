@@ -2,7 +2,7 @@
 
 import { useMemo, useState } from "react";
 import { Sparkles, FileText, ExternalLink, Database, Search as SearchIcon } from "lucide-react";
-import { useDocuments, useSemanticSearch } from "@/lib/api";
+import { useDocuments, useNews, useSemanticSearch } from "@/lib/api";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -23,6 +23,7 @@ export default function AiResearchPage() {
   const [submitted, setSubmitted] = useState("");
 
   const { data: results, isLoading, isError } = useSemanticSearch(submitted);
+  const { data: news } = useNews(submitted ?? "");
   const { data: documents } = useDocuments("reliance");
 
   const docTitle = useMemo(() => {
@@ -37,16 +38,21 @@ export default function AiResearchPage() {
     setSubmitted(q);
   };
 
-  const hasResults = submitted.length > 2 && results && results.length > 0;
+  // Filing excerpts and real Yahoo Finance news are both grounded evidence.
+  const sources = [...(results ?? []), ...(news ?? [])];
+  const hasResults = submitted.length > 2 && sources.length > 0;
   const showEmpty = submitted.length <= 2;
 
   // The browser model only ever sees real retrieved snippets — never raw market
-  // data or the model's own prior — so it cannot invent a figure.
-  const citations: GroundedCitation[] = (results ?? []).map((hit) => ({
-    documentTitle: docTitle.get(hit.documentId) ?? "Financial filing",
+  // data or the model's own prior — so it cannot invent a figure. Every item
+  // carries a real URL so the generated [n] markers open the original source.
+  const citations: GroundedCitation[] = sources.map((hit) => ({
+    documentTitle: hit.kind === "news" ? (hit.source ?? "News") : (docTitle.get(hit.documentId) ?? hit.section),
     section: hit.section,
     page: hit.page,
     text: hit.text,
+    url: hit.url,
+    source: hit.source,
   }));
 
   return (
@@ -111,10 +117,10 @@ export default function AiResearchPage() {
           {hasResults && (
             <div className="space-y-3">
               <p className="text-sm text-muted-foreground">
-                {results.length} citation{results.length !== 1 ? "s" : ""} for &ldquo;{submitted}&rdquo;
+                {sources.length} citation{sources.length !== 1 ? "s" : ""} for &ldquo;{submitted}&rdquo; · filings and live news
               </p>
               <BrowserAiPanel question={submitted} citations={citations} />
-              {results.map((r) => (
+              {sources.map((r) => (
                 <Card key={r.id}>
                   <CardContent className="p-5">
                     <div className="flex items-start justify-between gap-3">
@@ -123,21 +129,35 @@ export default function AiResearchPage() {
                           <FileText className="h-4 w-4" />
                         </span>
                         <div>
-                          <p className="text-sm font-semibold">{docTitle.get(r.documentId) ?? "Financial filing"}</p>
-                          <p className="text-xs text-muted-foreground">Page {r.page} · {r.section}</p>
+                          <p className="text-sm font-semibold">
+                            {r.kind === "news" ? (r.source ?? "Yahoo Finance News") : (docTitle.get(r.documentId) ?? "Financial filing")}
+                          </p>
+                          <p className="text-xs text-muted-foreground">
+                            {r.kind === "news" ? `${r.source ?? "News"} · ` : `Page ${r.page} · `}{r.section}
+                          </p>
                         </div>
                       </div>
-                      <Badge variant={r.score >= 0.5 ? "success" : "warning"}>
-                        {(r.score * 100).toFixed(0)}% match
-                      </Badge>
+                      {r.kind === "news" ? (
+                        <Badge variant="outline">News</Badge>
+                      ) : (
+                        <Badge variant={r.score >= 0.5 ? "success" : "warning"}>
+                          {(r.score * 100).toFixed(0)}% match
+                        </Badge>
+                      )}
                     </div>
                     <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{r.text}</p>
-                    <div className="mt-3 flex items-center gap-2 text-xs text-primary">
-                      <ExternalLink className="h-3.5 w-3.5" />
-                      <button className="hover:underline" onClick={() => setSubmitted(r.section)}>
-                        Open in document viewer
-                      </button>
-                    </div>
+                    {r.url ? (
+                      <div className="mt-3">
+                        <a
+                          href={r.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center gap-1.5 text-xs text-primary hover:underline"
+                        >
+                          <ExternalLink className="h-3.5 w-3.5" /> Open original source
+                        </a>
+                      </div>
+                    ) : null}
                   </CardContent>
                 </Card>
               ))}
