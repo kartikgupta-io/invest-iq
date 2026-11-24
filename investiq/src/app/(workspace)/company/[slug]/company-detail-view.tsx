@@ -10,6 +10,7 @@ import {
   RefreshCw,
   ShieldAlert,
 } from "lucide-react";
+import { CompanyAiPanel } from "@/components/app/company-ai-panel";
 import { DataFreshnessPanel } from "@/components/app/data-freshness-panel";
 import { CompanyLogo } from "@/components/app/company-logo";
 import { Badge } from "@/components/ui/badge";
@@ -195,6 +196,10 @@ export function CompanyDetailView({ slug, initial }: { slug: string; initial: Co
     },
     ...peers.filter((peer) => peer.slug !== (profile?.slug ?? slug)),
   ];
+  const metricYears = annual.slice(-4).map((item) => item.year);
+  const metricKeys = Array.from(new Set(annual.flatMap((item) => Object.keys(item.metrics ?? {})))).sort((a, b) =>
+    a.localeCompare(b),
+  );
 
   return (
     <div className="space-y-6">
@@ -280,6 +285,15 @@ export function CompanyDetailView({ slug, initial }: { slug: string; initial: Co
         isValidating={isValidating || syncing}
         error={syncError ?? (error ? messageOf(error) : null)}
         onRefresh={refresh}
+      />
+
+      <CompanyAiPanel
+        slug={slug}
+        name={profile.name ?? slug}
+        ticker={profile.ticker ?? slug.toUpperCase()}
+        annual={annual}
+        quote={quote}
+        peers={peers}
       />
 
       <section aria-labelledby="key-metrics-heading" className="space-y-3">
@@ -444,6 +458,47 @@ export function CompanyDetailView({ slug, initial }: { slug: string; initial: Co
           </CardContent>
         </Card>
       </section>
+
+      {metricKeys.length > 0 ? (
+        <section aria-labelledby="all-metrics-heading">
+          <Card>
+            <CardHeader>
+              <CardTitle id="all-metrics-heading">All reported metrics</CardTitle>
+              <CardDescription>
+                Every numeric row published by the source for the latest available years. Values are in Rs crore
+                unless the row label states a percentage, ratio or day count. “—” means the source did not report it.
+              </CardDescription>
+            </CardHeader>
+            <CardContent className="overflow-x-auto">
+              <table className="w-full min-w-[640px] border-collapse text-sm">
+                <thead>
+                  <tr className="border-b border-border/60 text-left text-xs uppercase tracking-wide text-muted-foreground">
+                    <th className="py-2 pr-4 font-medium">Metric</th>
+                    {metricYears.map((year) => (
+                      <th key={year} className="py-2 pl-4 text-right font-medium">{year}</th>
+                    ))}
+                  </tr>
+                </thead>
+                <tbody>
+                  {metricKeys.map((key) => (
+                    <tr key={key} className="border-b border-border/40 last:border-0">
+                      <td className="py-2 pr-4 text-muted-foreground">{key}</td>
+                      {metricYears.map((year) => {
+                        const row = annual.find((item) => item.year === year);
+                        return (
+                          <td key={year} className="py-2 pl-4 text-right tabular-nums">
+                            {formatOrDash(row?.metrics?.[key], (n) => formatNumber(n))}
+                          </td>
+                        );
+                      })}
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </CardContent>
+          </Card>
+        </section>
+      ) : null}
 
       <div className="grid gap-6 lg:grid-cols-2">
         <section aria-labelledby="segments-heading">

@@ -210,14 +210,17 @@ def test_annual_maps_real_rows_and_preserves_nulls() -> None:
     assert first.bookValue is None and first.peRatio is None
     assert first.priceToBook is None and first.dividendYield is None
 
-    # Unsourced concepts stay null — no gross profit / EBITDA / leverage invented.
+    # Values the source actually reports are surfaced; missing concepts stay null.
     assert latest.grossProfit is None
     assert latest.ebitda is None
     assert latest.netDebt is None
-    assert latest.debtToEquity is None
+    assert latest.debtToEquity == pytest.approx(12_000.0 / (1_100.0 + 450_000.0))
     assert latest.roce is None
     assert latest.interestCover is None
     assert latest.cash is None
+    # Every sourced row is preserved, including ones without a typed field.
+    assert latest.metrics["Reserves"] == 450_000.0
+    assert first.metrics["ROE %"] == 9.5
 
 
 def test_segments_empty_and_valuation_has_only_latest_point() -> None:

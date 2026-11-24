@@ -57,6 +57,7 @@ export interface AnnualFinancials {
   evToEbitda: number | null;
   peRatio: number | null;
   priceToBook: number | null;
+  metrics: Record<string, number | null>;
 }
 
 export interface BusinessSegment {
@@ -286,6 +287,8 @@ export interface CompanySummary {
   peRatio: number;
   roe: number | null;
   revenueGrowth: number | null;
+  /** False for a universe-only match whose figures have not been fetched yet. */
+  liveData?: boolean;
 }
 
 export interface CompanyDetails extends CompanyProfile {

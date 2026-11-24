@@ -31,13 +31,8 @@ from app.data.live_sources import UNIVERSE
 UNAVAILABLE: list[str] = [
     "segments",
     "historical valuation",
-    "grossProfit/ebitda/netDebt (not meaningful for banks)",
-    "cash",
-    "debtToEquity",
-    "currentRatio",
+    "cash and current ratio (not disclosed by the free source)",
     "capex",
-    "roce",
-    "interestCover",
     "evToEbitda",
 ]
 
@@ -142,62 +137,101 @@ def _annual_and_valuation(
         (str(key) for key in financials if _FY_RE.fullmatch(str(key))),
         key=lambda year: (_digits(year), year),
     )
-    rows: list[dict[str, Any]] = []
-    revenues: list[float | None] = []
-    for year in years:
-        raw = financials.get(year)
-        row = raw if isinstance(raw, dict) else {}
-        rows.append(row)
-        revenues.append(_num(row.get("Revenue")))
+    rows: list[dict[str, Any]] = [
+        financials.get(year) if isinstance(financials.get(year), dict) else {} for year in years
+    ]
 
-    # Current ratios belong only to the most recent fiscal year; repeating a
-    # today-valued ratio on every historical row would be a fabricated history.
+    # Ratios tied to today's price belong only to the latest fiscal year —
+    # repeating them on historical rows would fabricate a valuation history.
     latest_year = years[-1] if years else None
     book_value = _num(profile.get("bookValue"))
     pe_ratio = _num(profile.get("peRatio"))
     dividend_yield = _num(profile.get("dividendYield"))
+    roce_current = _num(profile.get("roce"))
+    roe_current = _num(profile.get("roe"))
     price_to_book = (price / book_value) if (price and book_value) else None
+
+    def pick(row: dict[str, Any], *names: str) -> float | None:
+        for name in names:
+            value = _num(row.get(name))
+            if value is not None:
+                return value
+        return None
+
+    def divide(numerator: float | None, denominator: float | None, factor: float = 1.0) -> float | None:
+        if numerator is None or denominator in (None, 0):
+            return None
+        return numerator / denominator * factor
 
     annual: list[AnnualFinancials] = []
     for index, year in enumerate(years):
         row = rows[index]
-        revenue = revenues[index]
-        previous_revenue = revenues[index - 1] if index > 0 else None
-        growth = None
-        if revenue is not None and previous_revenue not in (None, 0):
-            growth = (revenue - previous_revenue) / previous_revenue * 100.0
-        net_income = _num(row.get("Net Profit"))
-        margin = (net_income / revenue * 100.0) if (net_income is not None and revenue not in (None, 0)) else None
-        equity_capital = _num(row.get("Equity Capital"))
-        reserves = _num(row.get("Reserves"))
+        revenue = pick(row, "Sales", "Revenue")
+        previous_revenue = pick(rows[index - 1], "Sales", "Revenue") if index > 0 else None
+        sourced_growth = pick(row, "Sales growth", "Revenue Growth")
+        growth = sourced_growth if sourced_growth is not None else divide(
+            (revenue - previous_revenue) if (revenue is not None and previous_revenue is not None) else None,
+            previous_revenue,
+            100.0,
+        )
+        operating_profit = pick(row, "Operating Profit", "Operating Income")
+        interest = pick(row, "Interest")
+        net_income = pick(row, "Net Profit", "Net Income")
+        equity_capital = pick(row, "Equity Capital")
+        reserves = pick(row, "Reserves")
         total_equity = (
             equity_capital + reserves
             if equity_capital is not None and reserves is not None
             else None
         )
+        total_debt = pick(row, "Borrowings", "Borrowing", "Total Debt")
+        total_assets = pick(row, "Total Assets")
+        margin = pick(row, "Net Margin %") or divide(net_income, revenue, 100.0)
+        op_margin = pick(row, "OPM %", "Operating Margin")
+        # Screener's "Operating Profit" is profit before depreciation, interest
+        # and tax — the same quantity commonly reported as EBITDA.
+        ebitda = operating_profit
+        dividend_payout = pick(row, "Dividend Payout %")
+        eps = pick(row, "EPS in Rs", "EPS")
         is_latest = year == latest_year
+        market_cap_value = _num(profile.get("marketCapCr"))
+        shares = divide(market_cap_value * 1e7, price) if (is_latest and market_cap_value) else None
         annual.append(
             AnnualFinancials(
                 year=year,
                 revenue=revenue,
                 revenueGrowth=growth,
+                operatingIncome=operating_profit,
+                ebitda=ebitda,
                 netIncome=net_income,
-                eps=_num(row.get("EPS in Rs")),
+                eps=eps,
                 netMargin=margin,
-                totalAssets=_num(row.get("Total Assets")),
+                operatingMargin=op_margin,
+                ebitdaMargin=op_margin,
+                returnOnAssets=divide(net_income, total_assets, 100.0),
+                totalAssets=total_assets,
                 totalEquity=total_equity,
-                totalDebt=_num(row.get("Borrowing")),
-                operatingCashFlow=_num(row.get("Cash from Operating Activity")),
-                investingCashFlow=_num(row.get("Cash from Investing Activity")),
-                financingCashFlow=_num(row.get("Cash from Financing Activity")),
-                freeCashFlow=_num(row.get("Free Cash Flow")),
-                roe=_num(row.get("ROE %")),
+                totalDebt=total_debt,
+                debtToEquity=divide(total_debt, total_equity),
+                operatingCashFlow=pick(row, "Cash from Operating Activity"),
+                investingCashFlow=pick(row, "Cash from Investing Activity"),
+                financingCashFlow=pick(row, "Cash from Financing Activity"),
+                freeCashFlow=pick(row, "Free Cash Flow"),
+                roe=pick(row, "ROE %") or (roe_current if is_latest else None),
+                roce=pick(row, "ROCE %") or (roce_current if is_latest else None),
+                interestCover=divide(operating_profit, interest),
                 bookValue=book_value if is_latest else None,
-                peRatio=pe_ratio if is_latest else None,
+                dividendPerShare=divide(eps * dividend_payout, 100.0) if dividend_payout is not None else None,
                 dividendYield=dividend_yield if is_latest else None,
+                sharesOutstanding=shares,
+                revenuePerShare=divide(revenue, shares) if shares else None,
+                # Both market cap and revenue are reported in Rs crore.
+                priceToSales=divide(market_cap_value, revenue) if (is_latest and market_cap_value) else None,
+                peRatio=pe_ratio if is_latest else None,
                 priceToBook=price_to_book if is_latest else None,
-                # Every other field stays None — nothing is inferred for
-                # concepts (especially bank-inappropriate ones) we cannot source.
+                # Preserve every row the source actually reported, including
+                # working-capital days and payout ratios not modelled above.
+                metrics={str(key): _num(value) for key, value in row.items()},
             )
         )
 

@@ -78,6 +78,10 @@ class AnnualFinancials(BaseModel):
     evToEbitda: float | None = None
     peRatio: float | None = None
     priceToBook: float | None = None
+    # Every numeric row actually reported by the source, keyed by its exact
+    # label. Typed fields above are a convenience view; this dict guarantees
+    # no sourced metric is discarded.
+    metrics: dict[str, float | None] = Field(default_factory=dict)
 
 
 class BusinessSegment(BaseModel):
@@ -218,6 +222,8 @@ class CompanySummary(BaseModel):
     peRatio: float
     roe: float | None = None
     revenueGrowth: float | None = None
+    # False for a universe-only match whose figures have not been fetched yet.
+    liveData: bool = True
 
 
 class MarketIndex(BaseModel):

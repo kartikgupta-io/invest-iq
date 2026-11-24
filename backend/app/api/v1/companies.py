@@ -4,6 +4,7 @@ from fastapi import APIRouter, Depends, HTTPException, Query
 
 from app.api.deps import get_store
 from app.data import live_sources as live
+from app.data import nse_universe as universe
 from app.data.contract import (
     AnnualFinancials,
     Company,
@@ -40,7 +41,28 @@ async def list_companies(
     store: DataStore = Depends(get_store),
 ) -> list[CompanySummary]:
     if q:
-        return await store.search_companies(q)
+        known = await store.search_companies(q)
+        seen = {item.slug.lower() for item in known}
+        for candidate in universe.search(q, limit=12):
+            if candidate["slug"].lower() in seen:
+                continue
+            known.append(
+                CompanySummary(
+                    slug=candidate["slug"],
+                    ticker=candidate["ticker"],
+                    name=candidate["name"],
+                    sector=f"NSE · {candidate.get('series') or 'EQ'}",
+                    exchange=candidate["exchange"],
+                    currency=candidate["currency"],
+                    marketCap=0.0,
+                    price=0.0,
+                    changePct=0.0,
+                    peRatio=0.0,
+                    liveData=False,
+                )
+            )
+            seen.add(candidate["slug"].lower())
+        return known
     return await store.list_companies()
 
 

@@ -16,6 +16,7 @@ from pydantic import BaseModel, Field
 from app.api.deps import get_store
 from app.data import alternate_sources as alt
 from app.data import live_sources as live
+from app.data import nse_universe as universe
 from app.data.contract import DataStore
 
 router = APIRouter()
@@ -132,6 +133,18 @@ def _discovered_summary(entry: dict[str, Any]) -> dict[str, Any]:
         "source": QUOTE_SOURCE,
         "available": isinstance(price, (int, float)),
     }
+
+
+@router.get("/universe")
+async def universe_info() -> dict[str, Any]:
+    """Coverage summary for the full NSE domestic-equity universe."""
+    return {**universe.meta(), "sourceDetail": "NSE India EQUITY_L.csv (official master list)"}
+
+
+@router.get("/symbols")
+async def symbols(q: str = Query(..., min_length=1, max_length=100), limit: int = Query(12, ge=1, le=50)) -> dict[str, Any]:
+    """Instant local lookup across every NSE-listed domestic equity."""
+    return {"query": q, "count": len(universe.search(q, limit)), "companies": universe.search(q, limit)}
 
 
 @router.get("/discover")
@@ -412,4 +425,6 @@ async def status() -> dict[str, Any]:
         "companies": len(profiles),
         "evidenceCount": len(live.build_evidence(profiles)),
         "sources": list(live.SOURCES),
+        "universe": universe.meta(),
+        "nationalSources": list(alt.SOURCES) if hasattr(alt, "SOURCES") else [alt.GOOGLE_NEWS, alt.NSE_SOURCE, alt.WIKIPEDIA_SOURCE],
     }

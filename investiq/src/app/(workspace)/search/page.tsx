@@ -14,7 +14,7 @@ import { EmptyState } from "@/components/ui/empty-state";
 export default function SearchPage() {
   const [query, setQuery] = useState("");
   const [activeSector, setActiveSector] = useState<string>("All");
-  const { data: results, isLoading, external } = useCompanySearch(query);
+  const { data: results, isLoading, external, universe } = useCompanySearch(query);
   const { data: recommended } = useCompanies();
   const recommendedSlice = useMemo(() => recommended?.slice(0, 8) ?? [], [recommended]);
 
@@ -39,7 +39,8 @@ export default function SearchPage() {
       <div className="space-y-2">
         <h1 className="text-2xl font-bold">Discover companies</h1>
         <p className="text-sm text-muted-foreground">
-          Search by name, ticker, sector, or industry across the InvestIQ coverage universe.
+          Search by name or ticker across every NSE-listed domestic equity. Open any result to load live
+          sourced fundamentals, ratios and filings on demand.
         </p>
       </div>
 
@@ -126,6 +127,12 @@ export default function SearchPage() {
             <p className="text-sm text-muted-foreground">
               {visibleRows.length} result{visibleRows.length !== 1 ? "s" : ""} for &ldquo;{query}&rdquo;
             </p>
+            {universe ? (
+              <Badge variant="outline" className="gap-1">
+                <Building2 className="h-3 w-3" />
+                {universe.count} NSE stocks indexed
+              </Badge>
+            ) : null}
             {external ? (
               <Badge variant="info" className="gap-1">
                 <Globe2 className="h-3 w-3" />
@@ -157,13 +164,17 @@ export default function SearchPage() {
                     </div>
                     <div className="text-right">
                       <p className="text-sm font-semibold tabular-nums">
-                        {formatOrDash(c.price, (value) => formatCurrency(value, "₹"))}
+                        {c.liveData === false
+                          ? "Load live data"
+                          : formatOrDash(c.price, (value) => formatCurrency(value, "₹"))}
                       </p>
                       <Badge
-                        variant={c.changePct == null ? "outline" : c.changePct >= 0 ? "success" : "destructive"}
+                        variant={c.liveData === false || c.changePct == null ? "outline" : c.changePct >= 0 ? "success" : "destructive"}
                         className="mt-0.5"
                       >
-                        {formatOrDash(c.changePct, (value) => `${value >= 0 ? "+" : ""}${formatPercent(value)}`)}
+                        {c.liveData === false
+                          ? "NSE listed"
+                          : formatOrDash(c.changePct, (value) => `${value >= 0 ? "+" : ""}${formatPercent(value)}`)}
                       </Badge>
                     </div>
                   </div>

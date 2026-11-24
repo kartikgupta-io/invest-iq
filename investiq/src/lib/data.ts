@@ -179,6 +179,27 @@ export function useQuoteFor(slug: string) {
  * only when the built-in universe has no match. External results are cached on
  * the backend, so the fallback is cheap and never invents a company.
  */
+export type SymbolMatch = {
+  ticker: string;
+  slug: string;
+  name: string;
+  exchange: string;
+  currency: string;
+  series?: string;
+  isin?: string;
+  local?: boolean;
+};
+
+/** Instant local lookup across all 2,600+ NSE-listed domestic equities. */
+export function useSymbolSearch(query: string, limit = 12) {
+  const term = query.trim();
+  return useSWR<{ companies: SymbolMatch[]; count: number }>(
+    term.length > 0 ? withParams("/live/symbols", { q: term, limit }) : null,
+    fetcher,
+    { dedupingInterval: 30_000 },
+  );
+}
+
 export function useCompanySearch(query: string) {
   const term = query.trim();
   const local = useSWR<CompanySummary[]>(
@@ -186,6 +207,7 @@ export function useCompanySearch(query: string) {
     fetcher,
     { dedupingInterval: 10_000 },
   );
+  const symbols = useSymbolSearch(term, 12);
   const needExternal = term.length >= 2 && local.data !== undefined && (local.data?.length ?? 0) === 0;
   const external = useSWR<DiscoveryResult>(
     needExternal ? withParams("/live/discover", { q: term }) : null,
@@ -197,20 +219,36 @@ export function useCompanySearch(query: string) {
     // One row per slug: NSE/BSE variants of the same company share a detail
     // route, and duplicate slugs produce duplicate React keys in the palette.
     const bySlug = new Map<string, CompanySummary>();
-    for (const item of [...(local.data ?? []), ...(external.data?.companies ?? [])]) {
+    const fromSymbols: CompanySummary[] = (symbols.data?.companies ?? []).map((item) => ({
+      slug: item.slug,
+      ticker: item.ticker,
+      name: item.name,
+      sector: item.series ? `NSE · ${item.series}` : "NSE",
+      exchange: item.exchange,
+      currency: item.currency,
+      marketCap: 0,
+      price: 0,
+      changePct: 0,
+      peRatio: 0,
+      roe: null,
+      revenueGrowth: null,
+      liveData: false,
+    }));
+    for (const item of [...(local.data ?? []), ...(external.data?.companies ?? []), ...fromSymbols]) {
       const key = item.slug.toLowerCase();
       const previous = bySlug.get(key);
-      if (!previous || ((item.price ?? 0) > (previous.price ?? 0))) bySlug.set(key, item);
+      if (!previous || ((item.liveData ? 1 : 0) > (previous.liveData ? 1 : 0))) bySlug.set(key, item);
     }
     return [...bySlug.values()];
-  }, [local.data, external.data]);
+  }, [local.data, external.data, symbols.data]);
 
   return {
     data,
-    isLoading: local.isLoading || (needExternal && external.isLoading),
-    isError: Boolean(local.error || external.error),
-    error: local.error ?? external.error ?? null,
+    isLoading: symbols.isLoading || local.isLoading || (needExternal && external.isLoading),
+    isError: Boolean(symbols.error || local.error || external.error),
+    error: symbols.error ?? local.error ?? external.error ?? null,
     external: needExternal ? external.data ?? null : null,
+    universe: symbols.data ?? null,
   };
 }
 

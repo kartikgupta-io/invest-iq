@@ -53,18 +53,18 @@ def test_resolve_company_caches_external_result(monkeypatch) -> None:
     monkeypatch.setattr(live, "fetch_search", fake_search)
     monkeypatch.setattr(live, "fetch_quote", fake_quote)
 
-    result = __import__("asyncio").run(live.resolve_company("hdfc"))
+    result = __import__("asyncio").run(live.resolve_company("hdfc bank"))
     assert result["resolved"] is True
     assert result["companies"][0]["ticker"] == "HDFCBANK.NS"
     assert result["companies"][0]["quote"]["price"] == 1640.0
-    assert "hdfcbank" in saved["discovered"]
+    assert any(entry.get("ticker") == "HDFCBANK.NS" for entry in saved["discovered"].values())
 
     # A second lookup is served from cache without touching the network.
     def fail_search(query, limit=8):
         raise AssertionError("network should not be used on a cache hit")
 
     monkeypatch.setattr(live, "fetch_search", fail_search)
-    cached = __import__("asyncio").run(live.resolve_company("hdfc"))
+    cached = __import__("asyncio").run(live.resolve_company("hdfc bank"))
     assert cached["cached"] is True
     assert cached["companies"][0]["ticker"] == "HDFCBANK.NS"
 

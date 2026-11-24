@@ -79,9 +79,11 @@ export function CommandPalette() {
               </span>
               <span className={cn(
                 "text-xs font-medium tabular-nums",
-                c.changePct == null ? "text-muted-foreground" : c.changePct >= 0 ? "text-emerald-500" : "text-rose-500",
+                c.liveData === false || c.changePct == null ? "text-muted-foreground" : c.changePct >= 0 ? "text-emerald-500" : "text-rose-500",
               )}>
-                {formatOrDash(c.changePct, (value) => `${value >= 0 ? "+" : ""}${value.toFixed(2)}%`)}
+                {c.liveData === false
+                  ? "NSE"
+                  : formatOrDash(c.changePct, (value) => `${value >= 0 ? "+" : ""}${value.toFixed(2)}%`)}
               </span>
             </button>
           ))}

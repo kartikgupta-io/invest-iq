@@ -24,6 +24,8 @@ from urllib.parse import quote
 
 import httpx
 
+from app.data import nse_universe as universe
+
 # --- Constants -----------------------------------------------------------
 
 USER_AGENT = "Mozilla/5.0 (compatible; InvestIQ/1.0; research demo)"
@@ -377,6 +379,11 @@ _RATIO_FIELD_MAP = {
     "dividend yield": "dividendYield",
     "roce": "roce",
     "roe": "roe",
+    "face value": "faceValue",
+    "industry pe": "industryPe",
+    "peg": "peg",
+    "ev ebitda": "evToEbitda",
+    "ev/ebitda": "evToEbitda",
 }
 
 
@@ -462,9 +469,14 @@ def parse_profile(markup: str, slug: str) -> dict[str, Any]:
 
     fields: dict[str, float | None] = {
         "marketCapCr": None, "price": None, "peRatio": None, "bookValue": None,
-        "dividendYield": None, "roce": None, "roe": None,
+        "dividendYield": None, "roce": None, "roe": None, "faceValue": None,
+        "industryPe": None, "peg": None, "evToEbitda": None,
     }
+    ratio_map: dict[str, float | None] = {}
     for ratio in top_ratios:
+        ratio_name = str(ratio.get("name") or "").strip()
+        if ratio_name:
+            ratio_map[ratio_name] = ratio["values"][0] if ratio["values"] else None
         field = _RATIO_FIELD_MAP.get(_normalize_ratio_name(ratio["name"]))
         if field and ratio["values"]:
             fields[field] = ratio["values"][0]
@@ -492,6 +504,7 @@ def parse_profile(markup: str, slug: str) -> dict[str, Any]:
         "about": about,
         "summary": summary,
         **fields,
+        "ratioMap": ratio_map,
         "pros": pros,
         "cons": cons,
         "keyPoints": key_points,
@@ -558,6 +571,9 @@ def screener_symbol_candidates(slug: str) -> list[str]:
     candidates: list[str] = []
     if key in UNIVERSE:
         candidates.append(UNIVERSE[key][1])
+    local = universe.by_slug(key)
+    if isinstance(local, dict) and local.get("symbol"):
+        candidates.append(str(local["symbol"]).upper())
     entry = discovered_entry_for(key)
     if isinstance(entry, dict):
         ticker = str(entry.get("ticker") or "").upper()
@@ -883,7 +899,7 @@ async def resolve_company(query: str, limit: int = 8) -> dict[str, Any]:
     cache = get_cached()
     discovered = cache.get("discovered") or {}
     lowered = term.lower()
-    matches = [
+    cached_matches = [
         entry
         for entry in discovered.values()
         if isinstance(entry, dict)
@@ -893,25 +909,34 @@ async def resolve_company(query: str, limit: int = 8) -> dict[str, Any]:
             or lowered in str(entry.get("slug") or "").lower()
         )
     ]
-    if matches:
-        return {
-            "companies": matches[:limit],
-            "resolved": any(isinstance(item.get("quote"), dict) for item in matches),
-            "cached": True,
-            "query": term,
-            "source": QUOTE_SOURCE,
-        }
 
-    try:
-        candidates = await fetch_search(term, limit=limit)
-    except LiveDataError as exc:
-        return {
-            "companies": matches,
-            "resolved": False,
-            "cached": bool(matches),
-            "query": term,
-            "error": str(exc),
-        }
+    # The full NSE universe is indexed locally, so search covers every domestic
+    # listing instantly and keeps working if a third-party symbol API fails.
+    candidates: list[dict[str, Any]] = []
+    seen_slugs: set[str] = set()
+    for item in [*universe.search(term, limit=limit), *cached_matches]:
+        slug = str(item.get("slug") or "")
+        if not slug or slug in seen_slugs:
+            continue
+        seen_slugs.add(slug)
+        candidates.append(item)
+
+    if not candidates:
+        try:
+            yahoo = await fetch_search(term, limit=limit)
+        except LiveDataError as exc:
+            return {
+                "companies": [],
+                "resolved": False,
+                "cached": False,
+                "query": term,
+                "error": str(exc),
+            }
+        for item in yahoo:
+            slug = str(item.get("slug") or "")
+            if slug and slug not in seen_slugs:
+                seen_slugs.add(slug)
+                candidates.append(item)
 
     if not candidates:
         return {"companies": [], "resolved": False, "cached": False, "query": term}
@@ -946,7 +971,10 @@ async def resolve_company(query: str, limit: int = 8) -> dict[str, Any]:
         "companies": candidates,
         "resolved": quote_data is not None,
         "hasFundamentals": profile_data is not None,
-        "cached": False,
+        "cached": any(
+            str(item.get("slug")) in {str(entry.get("slug")) for entry in cached_matches}
+            for item in candidates[:limit]
+        ),
         "query": term,
         "source": COMPANY_SOURCE if profile_data else QUOTE_SOURCE,
     }
@@ -965,11 +993,15 @@ async def ensure_company(slug: str) -> dict[str, Any] | None:
     key = str(slug).strip().lower()
     if not key:
         return None
+    local_entry = universe.by_slug(key)
     if key in UNIVERSE:
         ticker = UNIVERSE[key][0]
     else:
         entry = discovered_entry_for(key)
         ticker = str(entry.get("ticker") or "").upper() if entry else ""
+        if not ticker and isinstance(local_entry, dict) and local_entry.get("symbol"):
+            # Every NSE listing is resolvable from the bundled universe index.
+            ticker = f"{str(local_entry['symbol']).upper()}.NS"
         if not ticker:
             # Deep link on a fresh serverless instance: reconstruct likely NSE
             # symbols from the slug (m-m -> M&M.NS) and keep the first one that
@@ -1018,7 +1050,21 @@ async def ensure_company(slug: str) -> dict[str, Any] | None:
 
     if not quotes.get(ticker) and not profiles.get(key):
         return None
-    updated = {**cache, "quotes": quotes, "profiles": profiles}
+    discovered = dict(cache.get("discovered") or {})
+    if key not in UNIVERSE and ticker:
+        previous = discovered.get(key) if isinstance(discovered.get(key), dict) else {}
+        discovered[key] = {
+            "slug": key,
+            "ticker": ticker,
+            "name": str((local_entry or {}).get("name") or previous.get("name") or key),
+            "exchange": "NSE",
+            "currency": "INR",
+            "resolvedAt": _now_iso(),
+            "quote": quotes.get(ticker),
+            **{k: v for k, v in previous.items() if k not in {"slug", "ticker", "quote"}},
+        }
+        changed = True
+    updated = {**cache, "quotes": quotes, "profiles": profiles, "discovered": discovered}
     if changed:
         save_cached(updated)
         return get_cached()
