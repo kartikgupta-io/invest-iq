@@ -1,7 +1,9 @@
 "use client";
 
 import { useState } from "react";
-import { Bot, Database, ExternalLink, Search, Sparkles } from "lucide-react";
+import { BrowserAiPanel } from "@/components/app/browser-ai-panel";
+import type { GroundedCitation } from "@/lib/browser-ai";
+import { Bot, Building2, Database, ExternalLink, Search, Sparkles } from "lucide-react";
 import useSWR from "swr";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
@@ -14,6 +16,7 @@ import { useUiStore } from "@/store";
 type Source = { id: string; company: string; title: string; snippet: string; url: string; score: number };
 type Answer = {
   question: string;
+  company: string | null;
   available: boolean;
   answer: string | null;
   sources: Source[];
@@ -31,32 +34,54 @@ const EXAMPLES = [
 export function AiResearchDrawer() {
   const open = useUiStore((s) => s.aiDrawerOpen);
   const setOpen = useUiStore((s) => s.setAiDrawer);
+  const target = useUiStore((s) => s.aiTarget);
   const { data: status } = useSWR<{ available: boolean; provider: string | null; model: string | null }>(
     `${API_BASE}/ai-local/status`,
     fetcher,
     { revalidateOnFocus: false },
   );
   const [question, setQuestion] = useState("");
-  const [result, setResult] = useState<Answer | null>(null);
+  const [lastQuestion, setLastQuestion] = useState("");
+  const [answerState, setAnswerState] = useState<(Answer & { target: string | null }) | null>(null);
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const examples = target
+    ? [
+        `What does ${target} do?`,
+        `Summarize ${target}'s latest fundamentals and risks`,
+        `What do the latest filings say about ${target}?`,
+      ]
+    : EXAMPLES;
+
+  // An answer is only shown for the security it was retrieved for; changing
+  // the searched security hides the old answer without a cascading effect.
+  const result = answerState?.target === target ? answerState : null;
+  const browserCitations: GroundedCitation[] = result?.sources.map((source) => ({
+    documentTitle: source.title,
+    section: source.company,
+    page: 0,
+    text: source.snippet,
+    url: source.url,
+    source: source.company,
+  })) ?? [];
 
   async function ask(q: string) {
     if (!q.trim() || busy) return;
     setBusy(true);
     setError(null);
-    setResult(null);
+    setAnswerState(null);
+    setLastQuestion(q);
     try {
       const response = await fetch(
         `${API_BASE}/ai-local/ask`,
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ question: q, limit: 6 }),
+          body: JSON.stringify({ question: q, limit: 6, company: target ?? undefined }),
         },
       );
       if (!response.ok) throw new Error(`Research request failed (${response.status})`);
-      setResult((await response.json()) as Answer);
+      setAnswerState({ ...((await response.json()) as Answer), target });
     } catch (err) {
       setError(err instanceof Error ? err.message : "Research request failed");
     } finally {
@@ -72,9 +97,12 @@ export function AiResearchDrawer() {
             <Sparkles className="h-5 w-5 text-primary" /> AI Research
           </DialogTitle>
           <DialogDescription className="text-xs">
-            Grounded in real harvested evidence and a local model. Every claim links to its source.
+            {target
+              ? `Scoped to ${target}. Grounded in its real filings, fundamentals and secondary sources; every claim links to its source.`
+              : "Grounded in real harvested evidence and a local model. Every claim links to its source."}
           </DialogDescription>
           <div className="flex items-center gap-2 pt-1">
+            {target ? <Badge variant="outline" className="gap-1.5"><Building2 className="h-3 w-3" /> {target}</Badge> : null}
             {status?.available ? (
               <Badge variant="success" className="gap-1.5">
                 <StatusLed tone="live" label="Model ready" /> {status.provider} · {status.model}
@@ -109,7 +137,7 @@ export function AiResearchDrawer() {
           {!result && !busy && (
             <div className="space-y-2">
               <p className="text-xs font-medium text-muted-foreground">Try a question</p>
-              {EXAMPLES.map((example) => (
+              {examples.map((example) => (
                 <button
                   key={example}
                   onClick={() => {
@@ -136,14 +164,17 @@ export function AiResearchDrawer() {
           {result && (
             <div className="space-y-4">
               <ol className="space-y-1 text-xs text-muted-foreground">
-                <li>1 · Retrieved {result.sources.length} real evidence snippets</li>
-                <li>2 · {result.available ? `Synthesized with ${result.provider}` : "No model available — evidence only"}</li>
+                <li>1 · Retrieved {result.sources.length} real evidence snippets{result.company ? ` for ${result.company}` : ""}</li>
+                <li>2 · {result.available ? `Synthesized with ${result.provider}` : "No server model — optional in-browser AI below"}</li>
               </ol>
               {result.available && result.answer ? (
                 <p className="whitespace-pre-wrap text-sm leading-relaxed">{result.answer}</p>
               ) : (
                 <p className="text-sm text-muted-foreground">{result.reason}</p>
               )}
+              {!result.available && result.sources.length > 0 ? (
+                <BrowserAiPanel question={lastQuestion} citations={browserCitations} />
+              ) : null}
               <div className="space-y-2">
                 <p className="text-xs font-medium text-muted-foreground">Sources (click to verify)</p>
                 {result.sources.map((source) => (

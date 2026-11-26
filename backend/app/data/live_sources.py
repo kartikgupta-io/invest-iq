@@ -42,6 +42,9 @@ SOURCES = [QUOTE_SOURCE, COMPANY_SOURCE]
 
 CACHE_PATH = Path(__file__).resolve().parents[1] / "fixtures" / "live_cache.json"
 DEFAULT_CACHE_TTL_SECONDS = 1800
+# Quotes move during market hours: index levels are re-fetched on demand at
+# least this often, independently of the slower full-snapshot harvest.
+DEFAULT_INDEX_TTL_SECONDS = 60
 
 # slug -> (Yahoo ticker, Screener.in symbol)
 UNIVERSE: dict[str, tuple[str, str]] = {
@@ -65,6 +68,13 @@ INDEX_SYMBOLS: dict[str, str] = {
     "^NSEI": "NIFTY 50",
     "^BSESN": "SENSEX",
     "^NSEBANK": "NIFTY BANK",
+    "^CNXIT": "NIFTY IT",
+    "^CNXFIN": "NIFTY FINANCIAL SERVICES",
+    "^CNXAUTO": "NIFTY AUTO",
+    "^CNXPHARMA": "NIFTY PHARMA",
+    "^CNXFMCG": "NIFTY FMCG",
+    "^CNXMETAL": "NIFTY METAL",
+    "^NSEMDCP50": "NIFTY MIDCAP 50",
 }
 
 # Screener.in annual statement table container ids (Rs. Crores, one column per year).
@@ -174,12 +184,19 @@ def parse_quote(payload: dict[str, Any]) -> dict[str, Any]:
     }
 
 
-def parse_index(payload: dict[str, Any], symbol: str, name: str) -> dict[str, Any]:
+def parse_index(
+    payload: dict[str, Any],
+    symbol: str,
+    name: str,
+    fetched_at: str | None = None,
+    source: str | None = None,
+) -> dict[str, Any]:
     """Parse a Yahoo chart payload for a market index.
 
     Reuses :func:`parse_quote` for the meta extraction, but keeps the caller's
     symbol verbatim — index tickers such as ``^NSEI`` must never receive a
-    ``.NS`` suffix. Missing values stay ``None``; nothing is invented.
+    ``.NS`` suffix. ``asOf`` is the exchange's market time; ``fetchedAt`` is
+    when InvestIQ actually retrieved it. Missing values stay ``None``.
     """
     quote_data = parse_quote(payload)
     return {
@@ -188,6 +205,8 @@ def parse_index(payload: dict[str, Any], symbol: str, name: str) -> dict[str, An
         "value": quote_data["price"],
         "changePct": quote_data["changePct"],
         "asOf": quote_data["asOf"],
+        "fetchedAt": fetched_at,
+        "source": _clean_text(source),
     }
 
 
@@ -628,7 +647,7 @@ async def _fetch_index(client: httpx.AsyncClient, symbol: str, name: str) -> dic
     encoded = quote(symbol, safe="")
     url = YAHOO_CHART_URL.format(symbol=encoded)
     response = await _get_with_retry(client, url)
-    return parse_index(response.json(), symbol, name)
+    return parse_index(response.json(), symbol, name, fetched_at=_now_iso(), source=QUOTE_SOURCE)
 
 
 async def fetch_indices() -> dict[str, dict[str, Any]]:
@@ -648,6 +667,106 @@ async def fetch_indices() -> dict[str, dict[str, Any]]:
     if not indices:
         raise LiveDataError("All index fetches failed: " + "; ".join(errors[:5]))
     return indices
+
+
+def index_ttl_seconds() -> int:
+    try:
+        return max(0, int(os.getenv("LIVE_INDEX_TTL_SECONDS", str(DEFAULT_INDEX_TTL_SECONDS))))
+    except ValueError:
+        return DEFAULT_INDEX_TTL_SECONDS
+
+
+_index_refresh_lock = asyncio.Lock()
+
+
+def _index_age_seconds(entry: dict[str, Any]) -> float | None:
+    """Age since InvestIQ last fetched an index (not the exchange's market time)."""
+    stamp = entry.get("fetchedAt") or entry.get("asOf")
+    if not stamp:
+        return None
+    try:
+        fetched = datetime.fromisoformat(str(stamp))
+    except (TypeError, ValueError):
+        return None
+    if fetched.tzinfo is None:
+        fetched = fetched.replace(tzinfo=timezone.utc)
+    return max(0.0, (datetime.now(timezone.utc) - fetched).total_seconds())
+
+
+def indices_need_refresh(cache: dict[str, Any]) -> bool:
+    """True when no index batch has been fetched inside the index TTL."""
+    indices = cache.get("indices") or {}
+    if not isinstance(indices, dict) or not indices:
+        return True
+    stamp = cache.get("indicesFetchedAt")
+    if not stamp:
+        stamps = [
+            str(entry.get("fetchedAt"))
+            for entry in indices.values()
+            if isinstance(entry, dict) and entry.get("fetchedAt")
+        ]
+        stamp = max(stamps) if stamps else None
+    if not stamp:
+        return True
+    try:
+        fetched = datetime.fromisoformat(str(stamp))
+    except (TypeError, ValueError):
+        return True
+    if fetched.tzinfo is None:
+        fetched = fetched.replace(tzinfo=timezone.utc)
+    return (datetime.now(timezone.utc) - fetched).total_seconds() > index_ttl_seconds()
+
+
+async def ensure_fresh_indices() -> dict[str, Any]:
+    """Re-fetch index levels on demand when the cached snapshot has gone stale.
+
+    A single in-process lock prevents concurrent requests (and SWR polls from
+    many browser tabs) from hammering Yahoo. On upstream failure the last real
+    values are kept and the response still reports their age and staleness.
+    """
+    cache = get_cached()
+    if not indices_need_refresh(cache):
+        return cache
+    async with _index_refresh_lock:
+        cache = get_cached()
+        if not indices_need_refresh(cache):
+            return cache
+        try:
+            fetched = await fetch_indices()
+        except LiveDataError:
+            return cache
+        indices = {**(cache.get("indices") or {}), **fetched}
+        return save_cached({**cache, "indices": indices, "indicesFetchedAt": _now_iso()})
+
+
+def index_payloads(cache: dict[str, Any]) -> list[dict[str, Any]]:
+    """Flatten cached indices into the API contract, with provenance.
+
+    Entries whose level could not be sourced are returned with ``value=None``
+    so the UI can show an explicit unavailable state instead of a zero.
+    """
+    indices = cache.get("indices") or {}
+    if not isinstance(indices, dict):
+        return []
+    payloads: list[dict[str, Any]] = []
+    for symbol, entry in indices.items():
+        if not isinstance(entry, dict):
+            continue
+        age = _index_age_seconds(entry)
+        payloads.append({
+            "ticker": str(symbol),
+            "name": str(entry.get("name") or symbol),
+            "value": _as_float(entry.get("value")),
+            "changePct": _as_float(entry.get("changePct")),
+            "asOf": entry.get("asOf"),
+            "fetchedAt": entry.get("fetchedAt"),
+            "source": entry.get("source") or QUOTE_SOURCE,
+            "stale": age is None or age > index_ttl_seconds(),
+        })
+    # Headline order is stable across refreshes; any extra indices follow.
+    order = {symbol: position for position, symbol in enumerate(INDEX_SYMBOLS)}
+    payloads.sort(key=lambda item: order.get(item["ticker"], len(order)))
+    return payloads
 
 
 async def fetch_all() -> dict[str, dict[str, dict[str, Any]]]:
@@ -698,11 +817,19 @@ def slug_from_ticker(ticker: str) -> str:
     return re.sub(r"[^a-z0-9]+", "-", base).strip("-") or "company"
 
 
-def parse_search_results(payload: dict[str, Any]) -> list[dict[str, Any]]:
-    """Parse Yahoo symbol search into minimal, real company candidates.
+def is_indian_listing(item: dict[str, Any]) -> bool:
+    """True for NSE/BSE equities — the only listings InvestIQ researches."""
+    ticker = str(item.get("ticker") or "").upper()
+    exchange = str(item.get("exchange") or "").upper()
+    return bool(item.get("indian")) or ticker.endswith((".NS", ".BO")) or exchange in {"NSE", "BSE", "NSI"}
 
-    ETFs, funds and non-equity instruments are dropped, and Indian listings
-    (``.NS``/``.BO``) rank above foreign ones. Missing fields stay ``None``.
+
+def parse_search_results(payload: dict[str, Any]) -> list[dict[str, Any]]:
+    """Parse Yahoo symbol search into real, Indian-listed equity candidates.
+
+    ETFs, funds, non-equity instruments and foreign listings are dropped: the
+    product researches Indian securities only, so a foreign ADR must never be
+    cached, priced or linked as a company page. Missing fields stay ``None``.
     """
     rows = payload.get("quotes") if isinstance(payload, dict) else None
     if not isinstance(rows, list):
@@ -725,6 +852,8 @@ def parse_search_results(payload: dict[str, Any]) -> list[dict[str, Any]]:
         seen.add(ticker)
         exchange = _clean_text(row.get("exchange")) or None
         indian = ticker.endswith(".NS") or ticker.endswith(".BO") or exchange in {"NSI", "BSE"}
+        if not indian:
+            continue
         results.append(
             {
                 "ticker": ticker,
@@ -862,6 +991,8 @@ def _store_discovered(cache: dict[str, Any], candidates: list[dict[str, Any]]) -
     discovered = dict(cache.get("discovered") or {})
     now = _now_iso()
     for item in candidates:
+        if not is_indian_listing(item):
+            continue
         slug = item["slug"]
         previous = discovered.get(slug) if isinstance(discovered.get(slug), dict) else {}
         discovered[slug] = {
@@ -903,6 +1034,7 @@ async def resolve_company(query: str, limit: int = 8) -> dict[str, Any]:
         entry
         for entry in discovered.values()
         if isinstance(entry, dict)
+        and is_indian_listing(entry)
         and (
             lowered in str(entry.get("name") or "").lower()
             or lowered in str(entry.get("ticker") or "").lower()
@@ -1094,7 +1226,7 @@ def is_fresh(saved_at: str | None) -> bool:
 
 
 def _empty_cache() -> dict[str, Any]:
-    return {"savedAt": None, "quotes": {}, "profiles": {}, "indices": {}, "discovered": {}}
+    return {"savedAt": None, "quotes": {}, "profiles": {}, "indices": {}, "indicesFetchedAt": None, "discovered": {}}
 
 
 def _write_cache_path() -> Path:
@@ -1138,6 +1270,7 @@ def get_cached() -> dict[str, Any]:
                 "quotes": data.get("quotes") or {},
                 "profiles": data.get("profiles") or {},
                 "indices": data.get("indices") or {},
+                "indicesFetchedAt": data.get("indicesFetchedAt"),
                 "discovered": data.get("discovered") or {},
             }
         except (OSError, ValueError):
@@ -1152,6 +1285,7 @@ def save_cached(cache: dict[str, Any]) -> dict[str, Any]:
         "quotes": cache.get("quotes") or {},
         "profiles": cache.get("profiles") or {},
         "indices": cache.get("indices") or {},
+        "indicesFetchedAt": cache.get("indicesFetchedAt"),
         "discovered": cache.get("discovered") or {},
     }
     for path in _cache_candidates():
@@ -1178,6 +1312,7 @@ async def refresh() -> dict[str, Any]:
         "quotes": {**(previous.get("quotes") or {}), **(fetched.get("quotes") or {})},
         "profiles": {**(previous.get("profiles") or {}), **(fetched.get("profiles") or {})},
         "indices": {**(previous.get("indices") or {}), **(fetched.get("indices") or {})},
+        "indicesFetchedAt": _now_iso() if fetched.get("indices") else previous.get("indicesFetchedAt"),
         "discovered": previous.get("discovered") or {},
     }
     return save_cached(merged)

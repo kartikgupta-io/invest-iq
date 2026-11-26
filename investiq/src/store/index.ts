@@ -13,11 +13,13 @@ interface UiState {
   mobileNavOpen: boolean;
   commandOpen: boolean;
   aiDrawerOpen: boolean;
+  /** Slug/name of the security the drawer was opened for, if any. */
+  aiTarget: string | null;
   toggleSidebar: () => void;
   setSidebar: (v: boolean) => void;
   setMobileNav: (v: boolean) => void;
   setCommandOpen: (v: boolean) => void;
-  setAiDrawer: (v: boolean) => void;
+  setAiDrawer: (v: boolean, target?: string | null) => void;
   recentSearches: string[];
   pushRecent: (term: string) => void;
 }
@@ -29,11 +31,12 @@ export const useUiStore = create<UiState>()(
       mobileNavOpen: false,
       commandOpen: false,
       aiDrawerOpen: false,
+      aiTarget: null,
       toggleSidebar: () => set((s) => ({ sidebarCollapsed: !s.sidebarCollapsed })),
       setSidebar: (v) => set({ sidebarCollapsed: v }),
       setMobileNav: (v) => set({ mobileNavOpen: v }),
       setCommandOpen: (v) => set({ commandOpen: v }),
-      setAiDrawer: (v) => set({ aiDrawerOpen: v }),
+      setAiDrawer: (v, target = null) => set({ aiDrawerOpen: v, aiTarget: v ? target : null }),
       recentSearches: [],
       pushRecent: (term) =>
         set((s) => ({

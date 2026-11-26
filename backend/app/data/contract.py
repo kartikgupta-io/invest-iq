@@ -229,8 +229,16 @@ class CompanySummary(BaseModel):
 class MarketIndex(BaseModel):
     ticker: str
     name: str
-    value: float
-    changePct: float
+    # A level or move that could not be sourced stays None; the UI renders "—".
+    # Never default a missing market number to zero.
+    value: float | None = None
+    changePct: float | None = None
+    # Market time reported by the source, and the time InvestIQ last fetched it.
+    asOf: str | None = None
+    fetchedAt: str | None = None
+    source: str | None = None
+    # True when the last successful fetch is older than the index TTL.
+    stale: bool = False
 
 
 class Watchlist(BaseModel):

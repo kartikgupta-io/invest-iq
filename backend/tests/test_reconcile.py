@@ -223,6 +223,17 @@ def test_annual_maps_real_rows_and_preserves_nulls() -> None:
     assert first.metrics["ROE %"] == 9.5
 
 
+def test_missing_eps_with_payout_stays_null_instead_of_crashing() -> None:
+    """A real filing can report a payout without EPS — never invent the DPS."""
+    cache = _cache()
+    del cache["profiles"]["reliance"]["financials"]["FY2025"]["EPS in Rs"]
+    cache["profiles"]["reliance"]["financials"]["FY2025"]["Dividend Payout %"] = 30.0
+    company = build_company("reliance", cache, _base_company())
+    assert company is not None
+    assert company.annual[-1].eps is None
+    assert company.annual[-1].dividendPerShare is None
+
+
 def test_segments_empty_and_valuation_has_only_latest_point() -> None:
     company = build_company("reliance", _cache(), _base_company())
     assert company is not None

@@ -19,13 +19,12 @@ def _search_payload() -> dict:
     }
 
 
-def test_parse_search_results_prefers_indian_equities() -> None:
+def test_parse_search_results_keeps_only_indian_equities() -> None:
     parsed = live.parse_search_results(_search_payload())
-    assert [item["ticker"] for item in parsed] == ["HDFCBANK.NS", "HDB"]
+    # Foreign ADRs and ETFs are never cached, priced or linked as company pages.
+    assert [item["ticker"] for item in parsed] == ["HDFCBANK.NS"]
     assert parsed[0]["slug"] == "hdfcbank"
     assert parsed[0]["exchange"] == "NSE"
-    # ETFs are excluded entirely.
-    assert not any("GOLD" in item["ticker"] for item in parsed)
 
 
 def test_slug_and_all_quotes_merge_discovered() -> None:

@@ -47,6 +47,7 @@ def freshness() -> dict[str, object]:
         "asOf": saved_at,
         "ageSeconds": age_seconds,
         "staleAfterSeconds": STALE_AFTER_SECONDS,
+        "indexStaleAfterSeconds": live.index_ttl_seconds(),
         "source": "Yahoo Finance + Screener.in",
     }
 
@@ -67,5 +68,6 @@ async def refresh(request: Request) -> dict[str, object]:
         "asOf": cache.get("savedAt"),
         "quotes": len(cache.get("quotes") or {}),
         "profiles": len(cache.get("profiles") or {}),
+        "indices": len(cache.get("indices") or {}),
         "source": "Yahoo Finance + Screener.in",
     }

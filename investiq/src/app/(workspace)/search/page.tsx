@@ -2,14 +2,35 @@
 
 import Link from "next/link";
 import { useMemo, useState } from "react";
-import { Search as SearchIcon, Building2, TrendingUp, Globe2 } from "lucide-react";
+import { Search as SearchIcon, Building2, TrendingUp, Globe2, Sparkles } from "lucide-react";
 import { useCompanies, useCompanySearch } from "@/lib/api";
+import { useUiStore } from "@/store";
 import { colorFromSlug } from "@/data/account";
 import { formatCurrency, formatOrDash, formatPercent } from "@/lib/utils";
 import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
 import { SkeletonCard } from "@/components/ui/loader";
 import { EmptyState } from "@/components/ui/empty-state";
+
+/** Opens the grounded research drawer scoped to one searched security. */
+function AskAiButton({ slug, name }: { slug: string; name: string }) {
+  const setAiDrawer = useUiStore((s) => s.setAiDrawer);
+  return (
+    <button
+      type="button"
+      onClick={(event) => {
+        event.preventDefault();
+        event.stopPropagation();
+        setAiDrawer(true, slug);
+      }}
+      aria-label={`Ask AI about ${name}`}
+      title={`Ask AI about ${name}`}
+      className="shrink-0 rounded-lg border border-primary/30 bg-primary/10 px-2.5 py-1.5 text-xs font-medium text-primary transition-colors hover:bg-primary/20"
+    >
+      <span className="flex items-center gap-1"><Sparkles className="h-3.5 w-3.5" /> Ask AI</span>
+    </button>
+  );
+}
 
 export default function SearchPage() {
   const [query, setQuery] = useState("");
@@ -39,8 +60,9 @@ export default function SearchPage() {
       <div className="space-y-2">
         <h1 className="text-2xl font-bold">Discover companies</h1>
         <p className="text-sm text-muted-foreground">
-          Search by name or ticker across every NSE-listed domestic equity. Open any result to load live
-          sourced fundamentals, ratios and filings on demand.
+          Search by name or ticker across every NSE-listed domestic equity. Open any result for live
+          sourced fundamentals, or use <Sparkles className="inline h-3.5 w-3.5 text-primary" /> Ask AI for a
+          cited answer about that security.
         </p>
       </div>
 
@@ -89,8 +111,11 @@ export default function SearchPage() {
             </h2>
             <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 xl:grid-cols-4">
               {recommendedSlice.map((c) => (
-                <Link key={c.slug} href={`/company/${c.slug}`}>
-                  <div className="flex flex-col gap-2 rounded-2xl border border-border/60 bg-card/60 p-4 shadow-sm backdrop-blur-xl transition-colors hover:border-primary/40">
+                <div
+                  key={c.slug}
+                  className="flex flex-col gap-2 rounded-2xl border border-border/60 bg-card/60 p-4 shadow-sm backdrop-blur-xl transition-colors hover:border-primary/40"
+                >
+                  <Link href={`/company/${c.slug}`} className="flex flex-col gap-2">
                     <div className="flex items-center justify-between">
                       <span className="flex h-9 w-9 items-center justify-center rounded-lg" style={{ background: `${colorFromSlug(c.slug)}22` }}>
                         <Building2 className="h-4 w-4" style={{ color: colorFromSlug(c.slug) }} />
@@ -107,8 +132,9 @@ export default function SearchPage() {
                         {c.changePct >= 0 ? "+" : ""}{formatPercent(c.changePct)}
                       </Badge>
                     </div>
-                  </div>
-                </Link>
+                  </Link>
+                  <AskAiButton slug={c.slug} name={c.name} />
+                </div>
               ))}
             </div>
           </div>
@@ -149,8 +175,11 @@ export default function SearchPage() {
           ) : (
             <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
               {visibleRows.map((c) => (
-                <Link key={c.slug} href={`/company/${c.slug}`}>
-                  <div className="flex items-center justify-between rounded-2xl border border-border/60 bg-card/60 p-4 shadow-sm backdrop-blur-xl transition-colors hover:border-primary/40">
+                <div
+                  key={c.slug}
+                  className="flex items-center gap-2 rounded-2xl border border-border/60 bg-card/60 p-4 shadow-sm backdrop-blur-xl transition-colors hover:border-primary/40"
+                >
+                  <Link href={`/company/${c.slug}`} className="flex min-w-0 flex-1 items-center justify-between gap-3">
                     <div className="flex min-w-0 items-center gap-3">
                       <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg" style={{ background: `${colorFromSlug(c.slug)}22` }}>
                         <Building2 className="h-5 w-5" style={{ color: colorFromSlug(c.slug) }} />
@@ -177,8 +206,9 @@ export default function SearchPage() {
                           : formatOrDash(c.changePct, (value) => `${value >= 0 ? "+" : ""}${formatPercent(value)}`)}
                       </Badge>
                     </div>
-                  </div>
-                </Link>
+                  </Link>
+                  <AskAiButton slug={c.slug} name={c.name} />
+                </div>
               ))}
             </div>
           )}

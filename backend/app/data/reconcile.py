@@ -221,7 +221,11 @@ def _annual_and_valuation(
                 roce=pick(row, "ROCE %") or (roce_current if is_latest else None),
                 interestCover=divide(operating_profit, interest),
                 bookValue=book_value if is_latest else None,
-                dividendPerShare=divide(eps * dividend_payout, 100.0) if dividend_payout is not None else None,
+                dividendPerShare=(
+                    divide(eps * dividend_payout, 100.0)
+                    if dividend_payout is not None and eps is not None
+                    else None
+                ),
                 dividendYield=dividend_yield if is_latest else None,
                 sharesOutstanding=shares,
                 revenuePerShare=divide(revenue, shares) if shares else None,

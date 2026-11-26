@@ -21,6 +21,7 @@ import {
   formatNumber,
   formatOrDash,
   formatPercent,
+  relativeTime,
 } from "@/lib/utils";
 import type {
   CompanySummary,
@@ -173,7 +174,9 @@ export function DashboardView({ initial }: { initial: DashboardInitial }) {
       <section aria-labelledby="indices-heading" className="space-y-3">
         <header>
           <h2 id="indices-heading" className="text-base font-semibold">Market indices</h2>
-          <p className="text-xs text-muted-foreground">Real index levels and daily moves from Yahoo Finance.</p>
+          <p className="text-xs text-muted-foreground">
+            Real index levels from Yahoo Finance, re-fetched automatically every 60 seconds. Each tile shows when it was last fetched.
+          </p>
         </header>
 
         {indices.error ? (
@@ -197,18 +200,32 @@ export function DashboardView({ initial }: { initial: DashboardInitial }) {
         ) : (
           <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 xl:grid-cols-4">
             {indices.data.map((idx) => {
-              const positive = (idx.changePct ?? 0) >= 0;
+              const positive = idx.changePct != null && idx.changePct >= 0;
               return (
                 <StatTile
                   key={idx.ticker}
                   label={idx.name}
                   value={formatOrDash(idx.value, (n) => formatNumber(n))}
-                  icon={positive ? <ArrowUpRight className="h-4 w-4" /> : <ArrowDownRight className="h-4 w-4" />}
-                  accent={positive ? "positive" : "negative"}
+                  icon={
+                    idx.changePct == null ? null : positive ? (
+                      <ArrowUpRight className="h-4 w-4" />
+                    ) : (
+                      <ArrowDownRight className="h-4 w-4" />
+                    )
+                  }
+                  accent={idx.changePct == null ? "neutral" : positive ? "positive" : "negative"}
                   detail={
-                    <Badge variant={positive ? "success" : "destructive"} className="gap-1">
-                      {formatOrDash(idx.changePct, (n) => formatPercent(n, 2))}
-                    </Badge>
+                    <div className="flex flex-wrap items-center gap-1.5">
+                      <Badge variant={positive ? "success" : "destructive"} className="gap-1">
+                        {formatOrDash(idx.changePct, (n) => formatPercent(n, 2))}
+                      </Badge>
+                      <span
+                        className={cn("text-[10px]", idx.stale ? "text-amber-500" : "text-muted-foreground")}
+                        title={`Source: ${idx.source ?? "unknown"} · Market time: ${idx.asOf ?? "—"} · Fetched: ${idx.fetchedAt ?? "—"}`}
+                      >
+                        {idx.stale ? "Stale · " : ""}{relativeTime(idx.fetchedAt ?? idx.asOf)}
+                      </span>
+                    </div>
                   }
                 />
               );

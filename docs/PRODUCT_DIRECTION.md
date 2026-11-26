@@ -15,7 +15,7 @@ This correction was triggered by a user audit that found synthetic figures (SBIN
 | Price, change, day/52-week range, volume | Yahoo Finance NSE chart API | on demand, 30-minute cache |
 | Market cap, P/E, P/B, ROE, ROCE, dividend yield, book value | Screener.in consolidated page | on demand, 30-minute cache |
 | 12-year P&L, balance sheet, cash flow, ratios | Screener.in consolidated tables | on demand, 30-minute cache |
-| Index levels (NIFTY 50, SENSEX, NIFTY BANK) | Yahoo Finance | on demand, 30-minute cache |
+| Ten headline index levels (NIFTY 50, SENSEX, NIFTY BANK, IT, Fin Services, Auto, Pharma, FMCG, Metal, Midcap 50) | Yahoo Finance | on demand, 60-second TTL, automatic client polling |
 | Evidence snippets + links to annual reports | Screener.in commentary / issuer filings | on demand, 30-minute cache |
 
 **Never presented as real:** historical segment mixes, filing hashes/page counts, unsourced 10-year valuation history, bank-inappropriate concepts (EBITDA, net debt, free cash flow for banks). These render as "—" or an explicit empty state.
@@ -51,6 +51,11 @@ Verified in this environment before committing:
 So the product has exactly one AI path: `POST /api/v1/ai-local/ask` retrieves real evidence from the live snapshot, builds a grounded prompt, and asks the local LM Studio model for an answer with `[n]` citations. `GET /api/v1/ai-local/status` reports the detected provider/model.
 
 If no model is running, the endpoint still returns the retrieved sources with `available: false` and a clear reason. It never substitutes a template answer. No API key, no cloud dependency.
+
+The same grounded path is available **while searching any security**: every company result has an "Ask AI" action that opens the research drawer scoped to that slug. `POST /api/v1/ai-local/ask` then harvests that company on demand (Yahoo quote, Screener fundamentals) and adds real Google News / NSE announcement / Wikipedia evidence when needed. When no server model is running, the drawer offers the opt-in in-browser model, grounded in exactly those retrieved, clickable sources. Evidence is never scoped to a different company.
+
+## Market index freshness
+Index levels are not part of the slow full-snapshot harvest: `/market/indices` re-fetches Yahoo when its own 60-second TTL expires, guarded by an in-process lock so many tabs cannot stampede the source. Each value carries both the exchange's market time (`asOf`) and InvestIQ's fetch time (`fetchedAt`), the source, and a `stale` flag. Missing values stay `null` and render as "—"; the synthetic `indices.json` fixture is deleted. Long-running servers additionally auto-harvest the full snapshot every five minutes; serverless relies on the on-demand index refresh and the explicit "Refresh now" button.
 
 ## Delivery principles (SWR / SSR / DOM)
 

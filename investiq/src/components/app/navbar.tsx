@@ -69,8 +69,15 @@ export function Navbar() {
 
         <div className="hidden flex-1 items-center justify-center gap-5 overflow-hidden xl:flex">
           {indices.slice(0, 4).map((ix) => (
-            <span key={ix.ticker} className="flex items-center gap-1.5 text-xs text-muted-foreground">
-              <span className="font-medium text-foreground">{ix.ticker}</span>
+            <span
+              key={ix.ticker}
+              className="flex items-center gap-1.5 text-xs text-muted-foreground"
+              title={`${ix.name} · ${ix.source ?? "unknown source"} · ${ix.stale ? "stale" : "fetched"} ${ix.fetchedAt ?? ix.asOf ?? "unknown"}`}
+            >
+              <span className="font-medium text-foreground">
+                {ix.ticker}
+                {ix.stale ? <span className="ml-0.5 text-amber-500" aria-label="stale">●</span> : null}
+              </span>
               <span className="tabular-nums">
                 {formatOrDash(ix.value, (value) => value.toLocaleString("en-IN"))}
               </span>

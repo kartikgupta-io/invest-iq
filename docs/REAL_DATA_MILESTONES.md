@@ -39,6 +39,16 @@ Analysis conclusion: the existing app's data is synthetic and dated (fixture mti
 | M5 | Delete stale mock generators & fake marketing data | synthetic fixture generator deleted; fake testimonials/logos/metrics removed | ✅ (legacy fixture payload retained — see R3) |
 | M6 | End-to-end verification | 31 backend tests pass; build passes; live endpoints 200; CDP 0 errors | ✅ |
 
+## 3c. LIVE MARKET DATA + SECURITY AI — 26-Nov-2026
+
+| # | Milestone | Exit check | Status |
+| --- | --- | --- | --- |
+| M11 | Accurate, self-refreshing indices | `/market/indices` re-harvests Yahoo when its 60s TTL expires; 10 real headline indices carry `asOf`, `fetchedAt`, `source`, `stale`; synthetic `indices.json` deleted; 69 backend tests green | ✅ |
+| M12 | Automatic + manual refresh | Backend lifespan auto-harvests every 300s (configurable); SWR polls indices every 30s; "Refresh now" still forces a full harvest via `/freshness/refresh` | ✅ |
+| M13 | Any Indian security + cited AI while searching | NSE-wide local discovery (2,643 listings), foreign tickers rejected; "Ask AI" on every search result scopes `/ai-local/ask` to that company and harvests on-demand Screener + Google News/NSE/Wikipedia evidence; in-browser model fallback renders cited answers when no server model is running | ✅ |
+
+**Bugs fixed during this pass:** cached index payloads were six days old and rendered as live; `MarketIndex` had no provenance; missing index values were fabricated as `0.0`; a dividend payout with no EPS crashed company discovery for JIOFIN; 12 foreign tickers from a discovery test polluted the cache.
+
 ## 3b. ACCURACY CORRECTION — user review found M5/M6 claims were overstated (20-Nov-2026)
 
 **User finding (verbatim essence):** the `/companies/state-bank-of-india` page shows SBIN at ₹326.46, market cap ₹29.15 lakh crore, FY2026 net income ₹2.08 lakh crore, and segment shares summing to 108% — none of which match reality (real price ≈ ₹1,165.10, market cap ≈ ₹10.75 lakh crore, net profit ≈ ₹0.80–0.85 lakh crore). The dashboard shows no visible data sync/freshness status and silently falls back to local mock fixtures.

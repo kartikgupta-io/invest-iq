@@ -113,7 +113,9 @@ export function useAllCompanySlugs() {
 }
 
 export function useMarketIndices() {
-  return withIsError(useSWR<MarketIndex[]>(url("/market/indices"), fetcher));
+  // Index levels move during market hours: poll faster than the global 60s and
+  // let the backend re-fetch Yahoo when its short index TTL expires.
+  return withIsError(useSWR<MarketIndex[]>(url("/market/indices"), fetcher, { refreshInterval: 30_000 }));
 }
 
 export function useFreshness() {

@@ -102,7 +102,7 @@ class OfflineDataStore(DataStore):
         self._companies: dict[str, Company] = self._load_companies(fixtures / "companies")
         self._live_cache: dict = live_cache if live_cache is not None else get_cached()
         self._reconcile_live()
-        self._indices: list[MarketIndex] = self._load_indices(fixtures / "indices.json")
+        self._indices: list[MarketIndex] = self._load_indices()
         self._watchlists: list[Watchlist] = self._load_model_list(fixtures / "watchlists.json", Watchlist)
         # Notifications are derived from the live snapshot, never from a static
         # fixture — stale dates and invented events are no longer possible.
@@ -212,26 +212,11 @@ class OfflineDataStore(DataStore):
             if company.provenance is None:
                 company.provenance = {"mode": "legacy"}
 
-    def _load_indices(self, path: Path) -> list[MarketIndex]:
+    def _load_indices(self) -> list[MarketIndex]:
+        # The checked-in indices.json was synthetic and is no longer a fallback:
+        # only real, sourced levels from the live snapshot reach the API.
         indices = self._live_cache.get("indices") if isinstance(self._live_cache, dict) else None
-        if isinstance(indices, dict) and indices:
-            mapped: list[MarketIndex] = []
-            for symbol, data in indices.items():
-                if not isinstance(data, dict):
-                    continue
-                value = _as_float(data.get("value"))
-                change = _as_float(data.get("changePct"))
-                mapped.append(
-                    MarketIndex(
-                        ticker=str(symbol),
-                        name=str(data.get("name") or symbol),
-                        value=value if value is not None else 0.0,
-                        changePct=change if change is not None else 0.0,
-                    )
-                )
-            if mapped:
-                return mapped
-        return self._load_model_list(path, MarketIndex)
+        return [MarketIndex(**item) for item in live_sources.index_payloads({"indices": indices or {}})]
 
     def _sync_documents_and_chunks(self) -> None:
         """Keep the document index and search chunks aligned with active companies."""

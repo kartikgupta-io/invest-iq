@@ -204,8 +204,15 @@ export interface Watchlist {
 export interface MarketIndex {
   ticker: string;
   name: string;
-  value: number;
-  changePct: number;
+  /** Null when the source did not report a value — never a fabricated zero. */
+  value: number | null;
+  changePct: number | null;
+  /** Exchange market time and the time InvestIQ last fetched it. */
+  asOf: string | null;
+  fetchedAt: string | null;
+  source: string | null;
+  /** True when the last successful fetch is older than the index TTL. */
+  stale: boolean;
 }
 
 export interface User {
